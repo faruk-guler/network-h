@@ -50,7 +50,7 @@ D Sınıfı: 224–239 Multicast içindir.
 
 E Sınıfı: 240–254 Deneyler ve araştırmalar için ayrılmıştır.
 
-127: Loopback olarak ayrılmıştır.
+127.0.0.1 ile 127.255.255.255 aralığı: Loopback olarak ayrılmıştır.
 
 ##Private ip adresss:
 10.0.0.0 - 10.255.255.255 (10.0.0.0/8)
