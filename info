@@ -1,2 +1,23 @@
 # CIDR and IP Subnetting
+
 İlk olarak, IP adresi Network ve Host olmak üzere iki bölümden oluşmaktadır.
+|192.168.32| |170 |
+|Network   | |host|
+
+💊 CIDR(Classless Inter-Domain Routing) Nedir?
+CIDR, Subnet Mask'ın daha net ve anlaşılır bir biçimde gösterimidir. IP adreslerini ve ağları verimli bir şekilde bölmek için kullanılır.
+CIDR, IP adresinin sonuna eklenen bir eğik çizgi ve sayı ile gösterilir. [/*]
+Bu sayı, ağın kaç bitlik kısmının ağ adresi olduğunu veya bit’lerin soldan sağa kaç tanesinin 1 olduğunu gösterir.
+
+Örnek:
+10.5.83.0/24 Buradaki "/24" IP adresinin ilk 24 biti Ağ, kalan 8 biti ise Hostlar için kullanılır.
+
+| CIDR | Binary                               | Decimal
+/8  => 11111111.00000000.00000000.00000000 --> 255.0.0.0
+--
+/24 => 11111111.11111111.11111111.00000000 --> 255.255.255.0
+/25 => 11111111.11111111.11111111.10000000 --> 255.255.255.128
+/26 => 11111111.11111111.11111111.11000000 --> 255.255.255.192
+--
+--
+## Buradaki "1" ler network'ü temsil ederken "0" lar hostları temsil eder.
