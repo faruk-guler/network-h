@@ -1,4 +1,6 @@
-# CIDR and IP Subnetting
+#################################
+# CIDR and IP Subnetting        #
+#################################
 
 İlk olarak, IP adresi Network ve Host olmak üzere iki bölümden oluşmaktadır.
 |192.168.32| |170 |
