@@ -20,6 +20,7 @@ Bu sayı, ağın kaç bitlik kısmının ağ adresi olduğunu veya bit’lerin s
 /26 => 11111111.11111111.11111111.11000000 --> 255.255.255.192
 --
 --
+--
 ## Buradaki "1" ler network'ü temsil ederken "0" lar hostları temsil eder.
 
 😷😷 Subnet Mask/Netmask Nedir?
