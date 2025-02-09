@@ -63,3 +63,8 @@ C	192.168.0.0 – 192.168.255.255	192.168.0.0/16	255.255.0.0
 
 ##Public ip adresss:
 Public IP adresleri, private IP blokları dışında kalan tüm IP adreslerini kapsar.
+
+#Ornek Public IP Adresleri 🌍
+8.8.8.8 → Google DNS
+142.250.190.78 → Google
+104.18.7.35 → Cloudflare
