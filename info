@@ -21,3 +21,16 @@ Bu sayı, ağın kaç bitlik kısmının ağ adresi olduğunu veya bit’lerin s
 --
 --
 ## Buradaki "1" ler network'ü temsil ederken "0" lar hostları temsil eder.
+
+😷 Subnet Mask/Netmask Nedir?
+Subnet Mask bir IP adresi için bir tür filtre işlevi görür.
+Cihazlar bir alt ağ maskesiyle, bir IP adresine bakabilir ve hangi kısımların ağ bitleri ve hangilerinin ana bilgisayar bitleri olduğunu anlayabilir. 
+Daha sonra bunları kullanarak, diğer cihazlarla iletişim kurmanın yolunu bulmaya çalışır.
+
+>>> Subnet Mask neden gerekli?
+Neden Subnet'lere ihtiyaç duyarız tek bir ağ yeterli olmaz mı? 
+Çok sayıda cihazın bulunduğu devasa ağ hayal edelim, bir bilgisayar diğer cihazlarla iletişim kurması gerektiğinde, ona ulaşmak için bir yayın (broadcast) kullanır.
+Ağdaki tüm cihazlara yapılan bu çağrı trafik oluşturarak ağı yavaşlatır.
+En büyük nedeni Broadcast trafiğini önlemektir, Bu yüzden ağın küçük alt ağlara bölünmesi gerekir. 
+Router kullanılarak ağlar parçalanır ve fiziksel olarak ayrılır. 
+Broadcast Router' dan geçemediği için yalnızca bir ağ içerisinde hapsolur ve diğer ağlara erişemez. Bu sayede trafik sorunu ortadan kalkar.
