@@ -52,7 +52,7 @@ E Sınıfı: 240.0.0.0 - 255. 255.255.255 aralığı deneyler ve araştırmalar 
 
 127.0.0.1 ile 127.255.255.255 aralığı: Loopback olarak ayrılmıştır.
 
-##Private ip adresss:
+##Private ip adresss (RFC 1918):
 | Class | Private IP Aralığı | CIDR | Netmask |
 A	10.0.0.0 – 10.255.255.255	10.0.0.0/8	255.0.0.0
 B	172.16.0.0 – 172.31.255.255	172.16.0.0/12	255.240.0.0
@@ -62,3 +62,4 @@ C	192.168.0.0 – 192.168.255.255	192.168.0.0/16	255.255.0.0
 
 
 ##Public ip adresss:
+Public IP adresleri, private IP blokları dışında kalan tüm IP adreslerini kapsar.
