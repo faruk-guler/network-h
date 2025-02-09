@@ -4,7 +4,7 @@
 |192.168.32| |170 |
 |Network   | |host|
 
-💊 CIDR(Classless Inter-Domain Routing) Nedir?
+💊💊 CIDR(Classless Inter-Domain Routing) Nedir?
 CIDR, Subnet Mask'ın daha net ve anlaşılır bir biçimde gösterimidir. IP adreslerini ve ağları verimli bir şekilde bölmek için kullanılır.
 CIDR, IP adresinin sonuna eklenen bir eğik çizgi ve sayı ile gösterilir. [/*]
 Bu sayı, ağın kaç bitlik kısmının ağ adresi olduğunu veya bit’lerin soldan sağa kaç tanesinin 1 olduğunu gösterir.
@@ -22,7 +22,7 @@ Bu sayı, ağın kaç bitlik kısmının ağ adresi olduğunu veya bit’lerin s
 --
 ## Buradaki "1" ler network'ü temsil ederken "0" lar hostları temsil eder.
 
-😷 Subnet Mask/Netmask Nedir?
+😷😷 Subnet Mask/Netmask Nedir?
 Subnet Mask bir IP adresi için bir tür filtre işlevi görür.
 Cihazlar bir alt ağ maskesiyle, bir IP adresine bakabilir ve hangi kısımların ağ bitleri ve hangilerinin ana bilgisayar bitleri olduğunu anlayabilir. 
 Daha sonra bunları kullanarak, diğer cihazlarla iletişim kurmanın yolunu bulmaya çalışır.
@@ -34,3 +34,19 @@ Ağdaki tüm cihazlara yapılan bu çağrı trafik oluşturarak ağı yavaşlat�
 En büyük nedeni Broadcast trafiğini önlemektir, Bu yüzden ağın küçük alt ağlara bölünmesi gerekir. 
 Router kullanılarak ağlar parçalanır ve fiziksel olarak ayrılır. 
 Broadcast Router' dan geçemediği için yalnızca bir ağ içerisinde hapsolur ve diğer ağlara erişemez. Bu sayede trafik sorunu ortadan kalkar.
+
+📝📝 IP Adres Sınıfları:
+
+Class| IP Range| Netmask | CIDR
+
+A Sınıfı: 1–127 Ağ Maskesi: 255.0.0.0/8
+
+B Sınıfı: 128–191 Ağ Maskesi: 255.255.0.0/16
+
+C Sınıfı: 192–223 Ağ Maskesi: 255.255.255.0/24
+
+D Sınıfı: 224–239 Multicast içindir.
+
+E Sınıfı: 240–254 Deneyler ve araştırmalar için ayrılmıştır.
+
+127: Loopback olarak ayrılmıştır.
