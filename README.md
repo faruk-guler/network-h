@@ -1,1 +1,1 @@
-# root@debian:~# network -h
+# network "human-readable"
