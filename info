@@ -46,7 +46,7 @@ En büyük nedeni Broadcast trafiğini önlemektir, Bu yüzden ağın küçük a
 Router kullanılarak ağlar parçalanır ve fiziksel olarak ayrılır. 
 Broadcast Router' dan geçemediği için yalnızca bir ağ içerisinde hapsolur ve diğer ağlara erişemez. Bu sayede trafik sorunu ortadan kalkar.
 
-📝📝 IP Adres Sınıfları:
+📝📝 IP Adresleri ve Sınıflar:
 
 Class| IP Range| Netmask | CIDR
 
@@ -60,7 +60,9 @@ D Sınıfı: 224.0.0.0 – 239.255.255.255 aralığı Multicast içindir.
 
 E Sınıfı: 240.0.0.0 - 255. 255.255.255 aralığı deneyler ve araştırmalar için ayrılmıştır.
 
-127.0.0.1 ile 127.255.255.255 aralığı: Loopback olarak ayrılmıştır.
+Link-Local addres: 169.254.0.0 – 169.254.255.255 adres aralığıdır (APIPA)
+
+Loopback: 127.0.0.1 ile 127.255.255.255 aralığı: Host'un kendisini ifade eder
 
 ✅Private ip adresss:
 #Private IP, internette kullanılamazlar.
