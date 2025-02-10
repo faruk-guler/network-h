@@ -82,3 +82,7 @@ Public IP, private IP blokları dışında kalan tüm IP adreslerini kapsar.
 8.8.8.8 → Google DNS
 142.250.190.78 → Google
 104.18.7.35 → Cloudflare
+
+#Gateway:
+İki farklı ağ arasında veri iletişimini sağlayan donanım veya yazılım bileşenidir. 
+Temel işlevi, ağdaki verileri diğer ağa yönlendirmek ve doğru hedefe ulaşmasını sağlamaktır.
