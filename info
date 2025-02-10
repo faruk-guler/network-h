@@ -1,3 +1,11 @@
+#TCP-UDP
+TCP (Transmission Control Protocol)
+kullanılan en yaygın protokoldür. İletişimde kayıpsız veri gönderebilmek amacıyla yazılmıştır.
+Bir paketin tamamı teslim edilmezse, veri akışı durdurulur ve paket alınana kadar paket kaynaktan tekrar talep edilir.
+
+
+
+
 #Gateway
 Farklı ağları birbirine bağlayan, veri taşımasını sağlayan, yönlendirme işlemlerini gerçekleştiren bir cihaz veya yazılım bileşenidir.
 
