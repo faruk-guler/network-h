@@ -83,9 +83,9 @@ Public IP, private IP blokları dışında kalan tüm IP adreslerini kapsar.
 İki farklı ağ arasında iletişimi sağlayan donanım veya yazılım bileşenidir.
 Temelde ağdaki verileri diğer ağa yönlendirir ve doğru hedefe ulaşmasını sağlar.
 Ağ Adresi: 10.5.10.0/24
-Public IP: 193.156.56.164
 Gateway IP: 10.5.10.1
 Cihaz: 10.5.10.10
+Public IP: 193.156.56.164
 
 >> Yerel erişim: 10.5.10.10 cihazı, 10.5.10.20 ile iletişim kurmak isterse, gateway devreye girmez. Doğrudan iki cihaz arasında iletişim sağlanır.
 >> İnternet erişimi: 10.5.10.10 cihazı internete (193.156.56.164 public IP) bağlanmak istediğinde, paket önce 10.5.10.1 gateway cihazına yönlendirilir.
