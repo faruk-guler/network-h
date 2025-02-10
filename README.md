@@ -1,1 +1,1 @@
-# Network -H
+# root@debian:~# network -h
