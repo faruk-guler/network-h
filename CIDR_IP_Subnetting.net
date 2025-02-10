@@ -80,9 +80,9 @@ Public IP, private IP blokları dışında kalan tüm IP adreslerini kapsar.
 104.18.7.35 → Cloudflare
 
 👉🏻👉🏻Gateway:
-İki farklı ağ arasında veri iletişimini sağlayan donanım veya yazılım bileşenidir. 
-Temelde ağdaki verileri diğer ağa yönlendirmek ve doğru hedefe ulaşmasını sağlar.
+İki farklı ağ arasında iletişimi sağlayan donanım veya yazılım bileşenidir.
+Temelde ağdaki verileri diğer ağa yönlendirir ve doğru hedefe ulaşmasını sağlar.
 
-10.5.10.10 cihazı, 10.5.10.20 ile iletişim kurmak isterse,
-Bu iletişim yerel ağda gerçekleştiği için, gateway devreye girmez. Doğrudan iki cihaz arasında iletişim sağlanır.
-Ama, 10.5.10.10, internet dışındaki bir hedefe (örneğin 193.156.56.164 gibi bir public IP) erişmek istiyorsa, cihaz 10.5.10.1 gateway'ine yönlendirilir.
+>> Yerel erişim: 10.5.10.10 cihazı, 10.5.10.20 ile iletişim kurmak isterse, gateway devreye girmez. Doğrudan iki cihaz arasında iletişim sağlanır.
+>> İnternet erişimi: 10.5.10.10 cihazı internete (193.156.56.164 public IP) bağlanmak istediğinde, paket önce 10.5.10.1 gateway cihazına yönlendirilir.
+>> Gateway: Gateway ise (10.5.10.1) internet yönlendirmesini yapar ve veriyi hedefe iletir.
