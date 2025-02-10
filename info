@@ -1,3 +1,6 @@
+#Gateway
+Farklı ağları birbirine bağlayan, veri taşımasını sağlayan, yönlendirme işlemlerini gerçekleştiren bir cihaz veya yazılım bileşenidir.
+
 #MAC
 MAC adresi, diğer cihazlarla bağlantı kurabilen her aygıtta eşsiz olarak bulunan fiziksel adres ya da donanım adresi olarak da isimlendirilen bir adrestir. 
 IP adresi değişiklik gösterebilir ancak MAC adresi tektir ve değişmez. 
