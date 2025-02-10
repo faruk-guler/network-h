@@ -85,5 +85,4 @@ Temelde ağdaki verileri diğer ağa yönlendirmek ve doğru hedefe ulaşmasın�
 
 10.5.10.10 cihazı, 10.5.10.20 ile iletişim kurmak isterse,
 Bu iletişim yerel ağda gerçekleştiği için, gateway devreye girmez. Doğrudan iki cihaz arasında iletişim sağlanır.
-
-Eğer 10.5.10.10, internet dışındaki bir hedefe (örneğin 193.156.56.164 gibi bir public IP) erişmek istiyorsa, cihaz 10.5.10.1 gateway'ine yönlendirilir.
+Ama, 10.5.10.10, internet dışındaki bir hedefe (örneğin 193.156.56.164 gibi bir public IP) erişmek istiyorsa, cihaz 10.5.10.1 gateway'ine yönlendirilir.
