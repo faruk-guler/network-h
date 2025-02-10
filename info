@@ -1,12 +1,14 @@
-#################################
-# CIDR and IP Subnetting        #
-#################################
+##################################################################################
 
 ##IP Adresi Nedir?
 IP (Internet Protocol) adresi, cihazların internet veya yerel ağ üzerinde iletişim kurmasını sağlayan benzersiz bir kimliktir. 
 İki temel IP türü vardır:
 >IPv4: 32 bit uzunluğunda olup 192.168.1.1 gibi dört sayıdan oluşur.
 >IPv6: 128 bit uzunluğunda olup 2001:db8::ff00:42:8329 gibi daha uzun bir formata sahiptir.
+
+#################################
+# CIDR and IP Subnetting        #
+#################################
 
 İlk olarak, IP adresi Network ve Host olmak üzere iki bölümden oluşmaktadır.
 |192.168.32| |170 |
