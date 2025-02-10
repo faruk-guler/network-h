@@ -6,3 +6,10 @@ MAC adresi, diğer cihazlarla bağlantı kurabilen her aygıtta eşsiz olarak bu
 IP adresi değişiklik gösterebilir ancak MAC adresi tektir ve değişmez. 
 48 bit, 6 oktetten oluşan MAC adresinin ilk 24 biti yani 3 okteti üretici firmayı, ikinci 24 bit yani 3 oktet ise donanımın modeli, yılı, üretim yeri gibi bilgileri gösterir. 
 IP adresi tüm kullanıcılar tarafından görülebilirken, cihazın MAC adresi yalnızca aynı ağa bağlı olan kullanıcılar tarafından görüntülenir.
+
+#Fiziksel bağlantı:
+Turuncu-Beyaz, Turuncu
+Yeşil-Beyaz, Mavi
+Mavi-Beyaz, Yeşil
+Kahve-Beyaz, Kahve
+Dünyada bütün son bağlantılar bu sıralamayla yapılmaktadır.
