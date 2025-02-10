@@ -2,7 +2,7 @@
 #         CIDR and IP Subnetting        #
 #########################################
 
-##IP Adresi Nedir?
+⚡⚡IP Adresi Nedir?
 IP (Internet Protocol) adresi, cihazların internet veya yerel ağ üzerinde iletişim kurmasını sağlayan benzersiz bir kimliktir. 
 İki temel IP türü vardır:
 >IPv4: 32 bit uzunluğunda olup 192.168.1.1 gibi dört sayıdan oluşur.
@@ -79,6 +79,11 @@ Public IP, private IP blokları dışında kalan tüm IP adreslerini kapsar.
 142.250.190.78 → Google
 104.18.7.35 → Cloudflare
 
-#Gateway:
+👉🏻👉🏻Gateway:
 İki farklı ağ arasında veri iletişimini sağlayan donanım veya yazılım bileşenidir. 
-Temel işlevi, ağdaki verileri diğer ağa yönlendirmek ve doğru hedefe ulaşmasını sağlamaktır.
+Temelde ağdaki verileri diğer ağa yönlendirmek ve doğru hedefe ulaşmasını sağlar.
+
+10.5.10.10 cihazı, 10.5.10.20 ile iletişim kurmak isterse,
+Bu iletişim yerel ağda gerçekleştiği için, gateway devreye girmez. Doğrudan iki cihaz arasında iletişim sağlanır.
+
+Eğer 10.5.10.10, internet dışındaki bir hedefe (örneğin 193.156.56.164 gibi bir public IP) erişmek istiyorsa, cihaz 10.5.10.1 gateway'ine yönlendirilir.
