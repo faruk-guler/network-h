@@ -8,7 +8,7 @@ IP (Internet Protocol) adresi, cihazların internet veya yerel ağ üzerinde ile
 >IPv4: 32 bit uzunluğunda olup 192.168.1.1 gibi dört sayıdan oluşur.
 >IPv6: 128 bit uzunluğunda olup 2001:db8::ff00:42:8329 gibi daha uzun bir formata sahiptir.
 
-İlk olarak, IP adresi Network ve Host olmak üzere iki bölümden oluşmaktadır.
+IP adresi Network ve Host olmak üzere iki bölümden oluşmaktadır ve Adres Sınıflarına göre farklılık göstermektedir.
 |192.168.32| |170 |
 |Network   | |host|
 
