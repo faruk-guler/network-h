@@ -1,1 +1,1 @@
-# network "human-readable"
+# network "-h"
