@@ -16,7 +16,7 @@ Bu sayı, ağın kaç bitlik kısmının ağ adresi olduğunu veya bit’lerin s
 Örnek:
 10.5.83.0/24 Buradaki "/24" IP adresinin ilk 24 biti Ağ, kalan 8 biti ise Hostlar için kullanılır.
 
-| CIDR | Binary                               | Decimal
+|CIDR  |Binary                                 |Decimal
 /8  => 11111111.00000000.00000000.00000000 --> 255.0.0.0
 --
 /24 => 11111111.11111111.11111111.00000000 --> 255.255.255.0
