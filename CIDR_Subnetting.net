@@ -28,8 +28,8 @@ Bu sayı, ağın kaç bitlik kısmının ağ adresi olduğunu veya bit’lerin s
 ## Buradaki "1" ler network'ü temsil ederken "0" lar hostları temsil eder.
 
 🧪🧪 IP adresi Network ve Host olmak üzere iki bölümden oluşmaktadır ve Adres Sınıflarına göre farklılık göstermektedir.
-|192.168 |32.170 |
-|Network |   host|
+|192.168 |32.170|
+|Network |host  |
 
 😷😷 Subnet Mask/Netmask Nedir?
 Bir IP adresinin hangi kısmının ağ (network) ve hangi kısmının cihaz (host) adresi olduğunu belirleyen bir parametredir.
