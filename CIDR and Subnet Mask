@@ -26,7 +26,7 @@ Bu sayı, ağın kaç bitlik kısmının ağ adresi olduğunu veya bit’lerin s
 --
 --
 --
-## Buradaki "1" ler network'ü temsil ederken "0" lar hostları temsil eder.
+## 💊 Buradaki "1" ler network'ü temsil ederken "0" lar hostları temsil eder.
 
 🧪🧪 IP adresi Network ve Host olmak üzere iki bölümden oluşmaktadır ve Adres Sınıflarına göre farklılık göstermektedir.
 |192.168 |32.170|
