@@ -81,13 +81,13 @@ Public IP, private IP blokları dışında kalan tüm IP adreslerini kapsar.
 
 
 ## Model of subnet planning, design and implementation processes.
-+-------------------+      +---------------------+       +-------------------------+
-|  Analyze Needs    | ---> |  Design Subnets     | --->  |  Plan Implementation    |
-+-------------------+      +---------------------+       +-------------------------+
-|  - # Subnets      |      |  - Choose Network   |       |  - Subnets -> Locations |
-|  - # Hosts/Subnet |      |  - Choose 1 Mask    |       |  - Static IP            |
-|  - 1 Size Subnet  |      |  - List All Subnets |       |  - DHCP Ranges          |
-+-------------------+      +---------------------+       +-------------------------+
++-------------------+        +---------------------+       +-------------------------+
+| -1 Analyze Needs  | --->   | -2 Design Subnets   | --->  | -3 Plan Implementation  |
++-------------------+        +---------------------+       +-------------------------+
+|  - # Subnets      |        |  - Choose Network   |       |  - Subnets -> Locations |
+|  - # Hosts/Subnet |        |  - Choose 1 Mask    |       |  - Static IP            |
+|  - 1 Size Subnet  |        |  - List All Subnets |       |  - DHCP Ranges          |
++-------------------+        +---------------------+       +-------------------------+
 
 
 👉🏻👉🏻Gateway:
