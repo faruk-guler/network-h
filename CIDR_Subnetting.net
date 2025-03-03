@@ -79,6 +79,17 @@ Public IP, private IP blokları dışında kalan tüm IP adreslerini kapsar.
 142.250.190.78 → Google
 104.18.7.35 → Cloudflare
 
+
+## Model of subnet planning, design and implementation processes.
++-------------------+      +---------------------+       +-------------------------+
+|  Analyze Needs    | ---> |  Design Subnets     | --->  |  Plan Implementation    |
++-------------------+      +---------------------+       +-------------------------+
+|  - # Subnets      |      |  - Choose Network   |       |  - Subnets -> Locations |
+|  - # Hosts/Subnet |      |  - Choose 1 Mask    |       |  - Static IP            |
+|  - 1 Size Subnet  |      |  - List All Subnets |       |  - DHCP Ranges          |
++-------------------+      +---------------------+       +-------------------------+
+
+
 👉🏻👉🏻Gateway:
 İki farklı ağ arasında iletişimi sağlayan donanım veya yazılım bileşenidir.
 Temelde ağdaki verileri diğer ağa yönlendirir ve doğru hedefe ulaşmasını sağlar.
