@@ -32,6 +32,8 @@ Bu sayı, ağın kaç bitlik kısmının ağ adresi olduğunu veya bit’lerin s
 |Network |host  | -----> B Class
 |192.168 |32.170|
 
+https://github.com/faruk-guler/network-h/blob/main/Images/ip-class-net-hosts.png [incele*]
+
 
 😷😷 Subnet Mask/Netmask Nedir?
 Bir IP adresinin hangi kısmının ağ (network) ve hangi kısmının cihaz (host) adresi olduğunu belirleyen bir parametredir.
