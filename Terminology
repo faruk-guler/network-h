@@ -1,13 +1,12 @@
 # 📖 Terminology:
+# www.farukguler.com
 
-#TCP-UDP
->>TCP (Transmission Control Protocol):
-kullanılan en yaygın protokoldür. İletişimde kayıpsız veri gönderebilmek amacıyla yazılmıştır.
-Bir paketin tamamı teslim edilmezse, veri akışı durdurulur ve paket alınana kadar paket kaynaktan tekrar talep edilir.
 
->>UDP (User Datagram Protocol):
-Veri aktarım protokollerinden biridir. Verileri herhangi bir bağlantı kurmadan karşı tarafa göndermeyi sağlamaktadır.
-Paketlerin kaybolması-yanlış sırayla gitmesi durumunda düzeltme yapılmaz. Genel olarak  ses ve görüntü aktarımı gibi anlık aktarımda kullanılır. 
+# TCP (Transmission Control Protocol): Kullanılan en yaygın protokoldür. İletişimde kayıpsız veri gönderebilmek amacıyla yazılmıştır. Bir paketin tamamı teslim edilmezse, veri akışı durdurulur ve paket alınana kadar paket kaynaktan tekrar talep edilir.
+
+# UDP (User Datagram Protocol): Veri aktarım protokollerinden biridir. Verileri herhangi bir bağlantı kurmadan karşı tarafa göndermeyi sağlamaktadır. Paketlerin kaybolması-yanlış sırayla gitmesi durumunda düzeltme yapılmaz. Genel olarak  ses ve görüntü aktarımı gibi anlık aktarımda kullanılır. 
+
+
 
 #GATEWAY:
 Farklı ağları birbirine bağlayan, veri taşımasını sağlayan, yönlendirme işlemlerini gerçekleştiren bir cihaz veya yazılım bileşenidir.
