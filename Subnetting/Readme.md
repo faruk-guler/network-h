@@ -1,4 +1,4 @@
-# 🏡 Basic Subnetting (Basitleştirilmiş Alt Ağlara Bölme) Nedir?
+# 🏡 Basic Subnetting (Alt Ağlara Bölme) Nedir?
 Subnetting, büyük bir IP adres aralığını daha küçük ve yönetilebilir parçalara (subnet’lere) bölme işlemidir.  
 Amaç: IP adreslerini verimli kullanmak, ağı düzenlemek ve güvenliği artırmaktır.
 
