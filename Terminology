@@ -12,12 +12,7 @@ IP adresi değişiklik gösterebilir ancak MAC adresi tektir ve değişmez.
 48 bit, 6 oktetten oluşan MAC adresinin ilk 24 biti yani 3 okteti üretici firmayı, ikinci 24 bit yani 3 oktet ise donanımın modeli, yılı, üretim yeri gibi bilgileri gösterir. 
 IP adresi tüm kullanıcılar tarafından görülebilirken, cihazın MAC adresi yalnızca aynı ağa bağlı olan kullanıcılar tarafından görüntülenir.
 
-#FIZIKSEL BAGLANTI: RJ45 (Registered Jack 45)
-Turuncu-Beyaz, Turuncu
-Yeşil-Beyaz, Mavi
-Mavi-Beyaz, Yeşil
-Kahve-Beyaz, Kahve
->>Dünyada bütün son bağlantılar bu sıralamayla yapılmaktadır.
+
 
 
 # IP Adresi: İnternet Protokolü adresidir ve ağdaki her cihazın benzersiz tanımlayıcısıdır. IPv4 (32 bitlik) ve IPv6 (128 bitlik) olmak üzere iki ana sürümü vardır.
@@ -84,5 +79,14 @@ Kahve-Beyaz, Kahve
 # UDP User Datagram Protocol: Basit olarak, onay veya taşıma garantisi olmaksızın datagramların değiş tokuş edilmesine izin veren, TCP/IP protokol yığınındaki, bir connectionless transport katman protokolüdür,. UDP, RFC 768’de tanımlıdır.
 # UTP Unshielded twisted-pair: Kullanıcı cihazlarını switch ya da hub’a bağlamak için küçükten-genişe ağlarda kullanılan, bakır kablolaması. Ayrıca switch’i-switch’e veya hub’ı hub’a bağlamakta da kullanılır.
 # VLAN Virtual LAN: Bir veya daha fazla mantıksal segmentlere ayrılmış LAN’da (yönetim yazılımı kullanılarak yapılandırılan) cihazlar grubu. Cihazların, gerçekten çok farklı LAN segmentlerinde bulunduklarında, aynı fiziksel ortam aracına bağlıymış gibi iletişimde olmalarını mümkün kılar. VLAN’ler, fiziksel bağlantılar yerine mantıksal tabanlıdırlar ve bundan dolayı çok esnektirler.
+
+
+------------------
+#FIZIKSEL BAGLANTI: RJ45 (Registered Jack 45)
+Turuncu-Beyaz, Turuncu
+Yeşil-Beyaz, Mavi
+Mavi-Beyaz, Yeşil
+Kahve-Beyaz, Kahve
+>>Dünyada bütün son bağlantılar bu sıralamayla yapılmaktadır. Bu bir standarttır.
 
 # https://gelecegiyazanlar.turkcell.com.tr/konu/egitim/temel-network-egitimi/terimler-sozlugu
