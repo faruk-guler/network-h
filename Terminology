@@ -6,11 +6,6 @@
 # UDP (User Datagram Protocol): Veri aktarım protokollerinden biridir. Verileri herhangi bir bağlantı kurmadan karşı tarafa göndermeyi sağlamaktadır. Paketlerin kaybolması-yanlış sırayla gitmesi durumunda düzeltme yapılmaz. Genel olarak  ses ve görüntü aktarımı gibi anlık aktarımda kullanılır. 
 # GATEWAY: Farklı ağları birbirine bağlayan, veri taşımasını sağlayan, yönlendirme işlemlerini gerçekleştiren bir cihaz veya yazılım bileşenidir.
 
-
-#NAT: (Network Address Translation)
-IP adreslerini dönüştürmek için kullanılan bir yöntemdir. 
-Özellikle, bir ağdaki özel IP adreslerini internette kullanılabilecek genel IP adreslerine dönüştürmek amacıyla kullanılır.
-
 #ROUTING:
 Routing (yönlendirme) farklı ağlar arasındaki iletişimi sağlamak için kullanılır ve router cihazları tarafından gerçekleştirilir.
 
