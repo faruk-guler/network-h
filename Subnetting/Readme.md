@@ -14,9 +14,9 @@ Amaç: IP adreslerini verimli kullanmak, ağı düzenlemek ve güvenliği artır
 ---
 
 ## 🌟 Neden Önemli?
-- **Adres Verimliliği:** Adresler boşa gitmez.  
-- **Performans:** Bir bloktaki trafik diğerini etkilemez.  
-- **Hızlı Yönlendirme:** Router, tek tek dairelere bakmak yerine doğrudan doğru bloğa gider.  
+- **Adres Verimliliği:** Adresler boşa gitmez.
+- **Performans:** Bir bloktaki trafik diğerini etkilemez.
+- **Hızlı Yönlendirme:** Router, tek tek dairelere bakmak yerine doğrudan doğru bloğa gider.
 
 ---
 
@@ -29,8 +29,8 @@ Bu ayırma işlemini **Subnet Mask (Alt Ağ Maskesi)** adı verilen bir adres be
 ---
 
 ## 🔑 Temel Mantık
-- **1’ler (Ağ kısmı):** Blok adresini gösterir, sabit kalır.  
-- **0’lar (Host kısmı):** Daire numaralarını gösterir, değişebilir.  
+- **1’ler (Ağ kısmı):** Blok adresini gösterir, sabit kalır.
+- **0’lar (Host kısmı):** Daire numaralarını gösterir, değişebilir.
 
 Subnetting yaparken, **host kısmındaki bazı bitleri ağ kısmına taşırsın** → daha fazla blok oluşur ama her blokta daha az daire kalır.
 
@@ -56,7 +56,7 @@ Subnetting yaparken, **host kısmındaki bazı bitleri ağ kısmına taşırsın
 
 ---
 ## Hızlı Kural:
-- **Alt ağ sayısı** = `2ⁿ` (n = ödünç alınan bit sayısı)  
+- **Alt ağ sayısı** = `2ⁿ` (n = ödünç alınan bit sayısı)
 - **Host sayısı** = `2ᵐ – 2` (m = kalan host biti; –2 çünkü network ve broadcast adresleri kullanılmaz)
 
 > Örnek: `/26` → 26 network biti → 6 host biti → `2⁶ – 2 = 62` kullanılabilir IP
