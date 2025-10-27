@@ -70,7 +70,6 @@
 # UTP Unshielded twisted-pair: Kullanıcı cihazlarını switch ya da hub’a bağlamak için küçükten-genişe ağlarda kullanılan, bakır kablolaması. Ayrıca switch’i-switch’e veya hub’ı hub’a bağlamakta da kullanılır.
 # VLAN Virtual LAN: Bir veya daha fazla mantıksal segmentlere ayrılmış LAN’da (yönetim yazılımı kullanılarak yapılandırılan) cihazlar grubu. Cihazların, gerçekten çok farklı LAN segmentlerinde bulunduklarında, aynı fiziksel ortam aracına bağlıymış gibi iletişimde olmalarını mümkün kılar. VLAN’ler, fiziksel bağlantılar yerine mantıksal tabanlıdırlar ve bundan dolayı çok esnektirler.
 
-
 ------------------
 #FIZIKSEL BAGLANTI: RJ45 (Registered Jack 45)
 Turuncu-Beyaz, Turuncu
