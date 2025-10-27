@@ -5,16 +5,6 @@
 # TCP (Transmission Control Protocol): Kullanılan en yaygın protokoldür. İletişimde kayıpsız veri gönderebilmek amacıyla yazılmıştır. Bir paketin tamamı teslim edilmezse, veri akışı durdurulur ve paket alınana kadar paket kaynaktan tekrar talep edilir.
 # UDP (User Datagram Protocol): Veri aktarım protokollerinden biridir. Verileri herhangi bir bağlantı kurmadan karşı tarafa göndermeyi sağlamaktadır. Paketlerin kaybolması-yanlış sırayla gitmesi durumunda düzeltme yapılmaz. Genel olarak  ses ve görüntü aktarımı gibi anlık aktarımda kullanılır. 
 # GATEWAY: Farklı ağları birbirine bağlayan, veri taşımasını sağlayan, yönlendirme işlemlerini gerçekleştiren bir cihaz veya yazılım bileşenidir.
-
-#MAC
-MAC adresi, diğer cihazlarla bağlantı kurabilen her aygıtta eşsiz olarak bulunan fiziksel adres ya da donanım adresi olarak da isimlendirilen bir adrestir. 
-IP adresi değişiklik gösterebilir ancak MAC adresi tektir ve değişmez. 
-48 bit, 6 oktetten oluşan MAC adresinin ilk 24 biti yani 3 okteti üretici firmayı, ikinci 24 bit yani 3 oktet ise donanımın modeli, yılı, üretim yeri gibi bilgileri gösterir. 
-IP adresi tüm kullanıcılar tarafından görülebilirken, cihazın MAC adresi yalnızca aynı ağa bağlı olan kullanıcılar tarafından görüntülenir.
-
-
-
-
 # IP Adresi: İnternet Protokolü adresidir ve ağdaki her cihazın benzersiz tanımlayıcısıdır. IPv4 (32 bitlik) ve IPv6 (128 bitlik) olmak üzere iki ana sürümü vardır.
 # Pv6: IPv4'ün yerine geçmek üzere geliştirilmiş yeni nesil IP adresleme sistemidir. Adres tükenmesi sorununu çözmek için daha geniş bir adres alanı sunar ve IPv4'ten farklı olarak hexadecimal tabanında adresleri kullanır.
 # Subnet Maskesi: IP adresinin ağ kısmını ve host kısmını belirlemek için kullanılan bir numaralı yöntemdir. Örneğin, /24 subnet maskesi (255.255.255.0) IP adresinin ilk 24 bitinin ağ kısmını ve son 8 bitinin host kısmını belirtir.
