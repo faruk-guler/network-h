@@ -62,9 +62,9 @@ D Sınıfı: 224.0.0.0 – 239.255.255.255 aralığı  -------> Multicast içind
 
 E Sınıfı: 240.0.0.0 - 255.255.255.255 aralığı  ------->  Deneyler ve araştırmalar için ayrılmıştır.
 
-Link-Local addres: 169.254.0.0 – 169.254.255.255 adres aralığıdır (APIPA)
-
-Loopback: 127.0.0.1 ile 127.255.255.255 aralığı: Host'un kendisini ifade eder
+Extras:
+Link-Local addres: 169.254.0.0 – 169.254.255.255  -------> (APIPA) Adres aralığıdır.
+Loopback: 127.0.0.1 ile 127.255.255.255  -------> Host'un kendisini ifade eder.
 
 ✅Private ip adresss:
 #Private IP, internette kullanılamazlar.
