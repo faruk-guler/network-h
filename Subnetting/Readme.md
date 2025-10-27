@@ -68,5 +68,5 @@ Subnetting yaparken, **host kısmındaki bazı bitleri ağ kısmına taşırsın
 - Bit ödünç al → yeni mask oluştur → alt ağları listele.
 - **Formüller**: Host sayısı = `2^(host bitleri) - 2`, Alt ağ sayısı = `2^(ödünç alınan bitler)`.
 - **Pratik İpucu**: Subnet hesaplayıcıları (örn. subnet-calculator.com) veya Cisco CLI ile hızlıca yapabilirsin!
-
+> ℹ️ Not: Bu içerik IPv4 subnetting üzerine odaklanır. IPv6’da subnetting mantığı farklıdır ve genellikle /64 bloklar halinde planlanır.
 > Daha fazla bilgi için [farukguler.com Subnetting Aracı](https://farukguler.com/app/IPv4-subnet-calculator/) veya çevrimiçi araçları kullan!
