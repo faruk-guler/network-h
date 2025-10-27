@@ -61,12 +61,18 @@ Subnetting yaparken, **host kısmındaki bazı bitleri ağ kısmına taşırsın
    - 192.168.1.192 – 192.168.1.255 (Kullanılabilir: 192.168.1.193 - 192.168.1.254)
 
 ---
+## Hızlı Kural:
+- **Alt ağ sayısı** = `2ⁿ` (n = ödünç alınan bit sayısı)  
+- **Host sayısı** = `2ᵐ – 2` (m = kalan host biti; –2 çünkü network ve broadcast adresleri kullanılmaz)
+
+> Örnek: `/26` → 26 network biti → 6 host biti → `2⁶ – 2 = 62` kullanılabilir IP
+
+---
 
 ✅ **Özet:**  
 - Subnetting = Büyük ağı küçük parçalara bölme.
 - Bit ödünç al → yeni mask oluştur → alt ağları listele.
 - **Formüller**: Host sayısı = `2^(host bitleri) - 2`, Alt ağ sayısı = `2^(ödünç alınan bitler)`.
-- Formüle Örnek: /26 → 26 network biti → 6 host biti → 2⁶ – 2 = 62 kullanılabilir IP
 - **Pratik İpucu**: Subnet hesaplayıcıları (örn. subnet-calculator.com) veya Cisco CLI ile hızlıca yapabilirsin!
 
 > Daha fazla bilgi için [farukguler.com Subnetting Toolu](https://farukguler.com/app/IPv4-subnet-calculator/) veya çevrimiçi araçları kullan!
