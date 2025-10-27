@@ -42,6 +42,14 @@ Subnetting yaparken, **host kısmındaki bazı bitleri ağ kısmına taşırsın
 
 ---
 
+## 🧮 Basit Formüller
+| Hesaplama Türü         | Formül         | Açıklama                                      |
+|------------------------|----------------|-----------------------------------------------|
+| **Kullanılabilir Host Sayısı** | `2^n - 2` | `n` = Host bit sayısı (-2: Network ve Broadcast adresleri). |
+| **Alt Ağ Sayısı**      | `2^s`         | `s` = Ödünç alınan bit sayısı (subnet maskına eklenen). |
+
+---
+
 ✅ **Özet:**  
 Subnetting = Büyük bir ağı küçük parçalara bölmek.  
 Mantık = **1’ler ağı, 0’lar cihazı gösterir.**
