@@ -16,7 +16,7 @@ Amaç: IP adreslerini verimli kullanmak, ağı düzenlemek ve güvenliği artır
 ## 🌟 Neden Önemli?
 - **Adres Verimliliği:** Adresler boşa gitmez.
 - **Performans:** Bir bloktaki trafik diğerini etkilemez.
-- **Hızlı Yönlendirme:** Router, tek tek dairelere bakmak yerine doğrudan doğru bloğa gider.
+- **Hızlı Yönlendirme:** Router, tek tek dairelere bakmak yerine doğrudan ilgili bloğa gider.
 
 ---
 
