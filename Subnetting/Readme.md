@@ -27,6 +27,21 @@ Subnetting, bir IP adresinin "Host" (kullanıcı) için ayrılan kısmından "bi
 Bu ayırma işlemini **Subnet Mask (Alt Ağ Maskesi)** adı verilen bir adres belirler.
 
 ---
+```
+### IP Adress
+192.168.1.10
+│││││││││││└── Host kısmı (bilgisayar)
+└─────────── Network kısmı (ağ)
+```
+
+### Subnet Mask
+```
+255.255.255.0  ← Bu /24 demek
+│││││││││││
+└─────────── 1'ler = Network, 0'lar = Host
+```
+
+---
 
 ## 🔑 Temel Mantık
 - **1’ler (Ağ kısmı):** Blok adresini gösterir, sabit kalır.
