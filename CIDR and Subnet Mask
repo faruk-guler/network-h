@@ -56,11 +56,11 @@ A Sınıfı: 0.0.0.0  - 127.255.255.255 Ağ Maskesi: 255.0.0.0/8  -------> Büy�
 
 B Sınıfı: 128.0.0.0  - 191.255.255.255 aralığı Ağ Maskesi: 255.255.0.0/16  -------> Orta ölçekli Ağlar
 
-C Sınıfı: 192.0.0.0 - 223. 255.255.255 aralığı Ağ Maskesi: 255.255.255.0/24  -------> Küçük Ağlar
+C Sınıfı: 192.0.0.0 - 223.255.255.255 aralığı Ağ Maskesi: 255.255.255.0/24  -------> Küçük Ağlar
 
 D Sınıfı: 224.0.0.0 – 239.255.255.255 aralığı  -------> Multicast içindir.
 
-E Sınıfı: 240.0.0.0 - 255. 255.255.255 aralığı  ------->  Deneyler ve araştırmalar için ayrılmıştır.
+E Sınıfı: 240.0.0.0 - 255.255.255.255 aralığı  ------->  Deneyler ve araştırmalar için ayrılmıştır.
 
 Link-Local addres: 169.254.0.0 – 169.254.255.255 adres aralığıdır (APIPA)
 
