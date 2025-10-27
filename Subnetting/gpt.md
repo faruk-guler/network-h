@@ -20,6 +20,12 @@ Amaç: IP adreslerini verimli kullanmak, ağı düzenlemek ve güvenliği artır
 
 ---
 
+## Nasıl Çalışır? (Temel Mantık)
+
+Subnetting, bir IP adresinin "Host" (kullanıcı) için ayrılan kısmından "bit" (dijital 1 veya 0) "ödünç alıp" bu bitleri "Alt Ağ" (Subnet) adresi olarak kullanma prensibine dayanır.
+
+Bu ayırma işlemini **Subnet Mask (Alt Ağ Maskesi)** adı verilen bir adres belirler.
+
 ## 🔑 Temel Mantık
 - **1’ler (Ağ kısmı):** Blok adresini gösterir, sabit kalır.  
 - **0’lar (Host kısmı):** Daire numaralarını gösterir, değişebilir.  
