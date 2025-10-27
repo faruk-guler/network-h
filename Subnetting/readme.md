@@ -26,19 +26,13 @@ Subnetting, bir IP adresinin "Host" (kullanıcı) için ayrılan kısmından "bi
 
 Bu ayırma işlemini **Subnet Mask (Alt Ağ Maskesi)** adı verilen bir adres belirler.
 
+---
+
 ## 🔑 Temel Mantık
 - **1’ler (Ağ kısmı):** Blok adresini gösterir, sabit kalır.  
 - **0’lar (Host kısmı):** Daire numaralarını gösterir, değişebilir.  
 
 Subnetting yaparken, **host kısmındaki bazı bitleri ağ kısmına taşırsın** → daha fazla blok oluşur ama her blokta daha az daire kalır.
-
----
-
-## 🧮 Basit Formüller
-| Hesaplama Türü       | Formül                        | Açıklama |
-|-----------------------|-------------------------------|----------|
-| Kullanılabilir Host   | 2^(Host bit sayısı) - 2       | −2: Network ve Broadcast için |
-| Alt Ağ Sayısı         | 2^(Ödünç alınan bit sayısı)   | Yeni oluşturulan blok sayısı |
 
 ---
 
