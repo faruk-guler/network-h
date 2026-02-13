@@ -2,7 +2,6 @@
 
 <p align="center">
   <strong>🌐 Network -h: İnsanlar için Networking 🌐</strong><br>
-</p>
 
 > **"faruk-guler"**
 > > **"www.farukguler.com"**
