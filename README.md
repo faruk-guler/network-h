@@ -1,4 +1,4 @@
-# 🌐 Network -h (Network Humanity
+# 🌐 Network -h (Network Humanity)
 
 > **"faruk-guler"**
 > > **"www.farukguler.com"**
