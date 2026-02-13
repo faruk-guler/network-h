@@ -4,6 +4,10 @@
 
 ---
 
+## ACL (Access Control List)
+
+Ağ trafiğini filtrelemek ve güvenliği sağlamak için router veya switch üzerinde tanımlanan kurallar listesidir. İzin verilen veya engellenen IP adreslerini, portları ve protokolleri belirler.
+
 ## Alt Ağ (Subnet)
 
 Geniş bir IP ağının daha küçük parçalara bölünmesiyle oluşan ağdır. Bir subnet adresi tarafından tanımlanır. Ağ yöneticisi, güvenlik ve performans için ağı segmentlere ayırır.
@@ -19,6 +23,10 @@ Farklı ağları birbirine bağlayan, veri taşımasını sağlayan, yönlendirm
 ## ARP (Address Resolution Protocol)
 
 RFC 826 ile tanımlanan, IP adresinden MAC adresini bulan protokoldür.
+
+## Asimetrik Şifreleme
+
+Şifreleme ve şifre çözme işlemleri için farklı anahtarların (Public ve Private Key) kullanıldığı şifreleme yöntemidir. SSL/TLS ve SSH bu yöntemi kullanır.
 
 ## Atlama Sayısı (Hop Count)
 
@@ -287,6 +295,10 @@ Dış ağdan (İnternet) gelen belirli bir porttaki trafiğin, iç ağdaki (LAN)
 
 Ağ üzerindeki cihazların birbirleriyle iletişim kurabilmesi için belirlenmiş kurallar ve standartlar bütünüdür. Ortak bir dil gibidir (Örn: TCP/IP).
 
+## Root Bridge
+
+STP (Spanning Tree Protocol) topolojisinde referans noktası olarak seçilen ve tüm yolların hesaplandığı ana switch'tir. En düşük Bridge ID'ye sahip switch Root Bridge seçilir.
+
 ## Router (Yönlendirici)
 
 Ağ trafiğinin aktarımında en iyi yola karar veren **Network katmanı** (Layer 3) cihazıdır. IP adreslerine bakarak farklı ağlar arasında paket yönlendirir.
@@ -298,6 +310,10 @@ IP paketlerinin ağlar arasında yönlendirilmesi ve iletilmesi işlemidir.
 ## Sequencing (Sıralama)
 
 Sanal devrelerde segment'leri numaralayarak doğru sırayla yeniden birleştirmeyi sağlayan mekanizma. TCP bu özelliği kullanır.
+
+## STP (Spanning Tree Protocol)
+
+Ethernet ağlarında sonsuz döngüleri (Loop) engellemek için geliştirilmiş Layer 2 protokolüdür (IEEE 802.1D). Yedekli yolları geçici olarak kapatarak ağın çökmesini önler.
 
 ## SD-WAN (Software-Defined WAN)
 
@@ -322,6 +338,10 @@ TCP/IP protokol ailesinde standart terminal emülasyon protokolüdür. Uzak sunu
 ## TFTP (Trivial File Transfer Protocol)
 
 FTP'nin basitleştirilmiş versiyonudur. Sadece dosya alıp gönderebilir, directory listeleme gibi özellikler yoktur. **Port:** UDP 69.
+
+## Trunk Port
+
+Birden fazla VLAN'a ait trafiği taşıyabilen switch portudur. Genellikle switch'ler arası bağlantıda kullanılır ve 802.1Q etiketleme (tagging) yapar.
 
 ## TTL (Time to Live)
 

@@ -29,7 +29,7 @@ Bu dokümantasyon **sizin için** hazırlandı:
 ### 🌱 Temel Seviye (Başlangıç)
 
 | Modül | Konu | Açıklama |
-|:---:|---|---|
+| :---: | --- | --- |
 | **00** | [Network Nedir?](./00-Giris-Network-Nedir.md) | Ağların temelini ve LAN/WAN kavramlarını öğrenin |
 | **01** | [OSI ve TCP/IP Modelleri](./01-Temel-Kavramlar-OSI-ve-TCPIP-Modelleri.md) | Katmanlı yapının mantığını kavrayın |
 | **02** | [Fiziksel Bağlantı](./02-Fiziksel-Baglanti-Kablolama-ve-Medya.md) | Kablolar, fiber optik ve Wi-Fi nasıl çalışır? |
@@ -38,18 +38,19 @@ Bu dokümantasyon **sizin için** hazırlandı:
 ### 🚀 Orta Seviye (IP ve Subnetting - **En Önemli Bölüm!**)
 
 | Modül | Konu | Açıklama |
-|:---:|---|---|
+| :---: | --- | --- |
 | **04.1** | [IP Adresi ve CIDR](./04-IP-Adresleme-ve-Subnetting-IP-Adresi-ve-CIDR.md) | IP adresinin mantığını öğrenin (Apartman metaforu) |
 | **04.2** | [Subnetting Mantığı](./04-IP-Adresleme-ve-Subnetting-Subnetting-Mantigi.md) | Ağları neden ve nasıl böleriz? (Site yönetimi metaforu) |
 | **04.3** | [Pratik Subnetting Örnekleri](./04-IP-Adresleme-ve-Subnetting-Pratik-Ornekler.md) | 🆕 Gerçek senaryolarla adım adım hesaplama |
 | **04.4** | [VLSM](./04-IP-Adresleme-ve-Subnetting-VLSM.md) | 🆕 Esnek subnet boyutları (Custom pizza dilimleri) |
 | **04.5** | [Supernetting](./04-IP-Adresleme-ve-Subnetting-Supernetting.md) | 🆕 Ağları birleştirme (Rota Özeti / Supernetting) |
 | **04.6** | [IPv6 Derinlemesine](./04-IP-Adresleme-ve-Subnetting-IPv6-Derinlemesine.md) | 🆕 Geleceğin IP standardı (IPv6) |
+| **04.7** | [Gerçek Hayat Senaryosu](./04-7-Gercek-Hayat-Ag-Planlama-Atolyesi.md) | 🆕 **Atölye:** Sıfırdan 5 Katlı Bina Ağ Planlama |
 
 ### 🔥 İleri Seviye (Routing, Güvenlik ve WAN)
 
 | Modül | Konu | Açıklama |
-|:---:|---|---|
+| :---: | --- | --- |
 | **05** | [Routing (Yönlendirme)](./05-Yonlendirme-Routing-Router-Nasil-Calisir.md) | Router nasıl çalışır? Static vs Dynamic routing |
 | **06** | [Uygulama Protokolleri](./06-Uygulama-Protokolleri-DNS-DHCP-HTTP.md) | DNS, DHCP, HTTP(S), FTP nedir? |
 | **07** | [VLAN Temelleri](./07-VLAN-Temelleri.md) | 🆕 Sanal ağlar ve segmentasyon |
@@ -60,7 +61,7 @@ Bu dokümantasyon **sizin için** hazırlandı:
 ### 🛠️ Araçlar ve Referans
 
 | Modül | Konu | Açıklama |
-|:---:|---|---|
+| :---: | --- | --- |
 | **99** | [Ağ Araçları](./99-Araclar-ve-Komutlar-Ping-Tracert-Nmap.md) | Ping, Tracert, Nslookup, Nmap kullanımı |
 | **📖** | [Terminoloji Sözlüğü](./Terminology.md) | Tüm ağ terimlerinin açıklamaları |
 | **📊** | [IPv4 Subnet Tablosu](./04-IP-Adresleme-ve-Subnetting-IPv4-Subnet-Tablosu.md) | /32'den /0'a tüm CIDR değerleri |
@@ -143,4 +144,3 @@ veya
 👉 **[04 - IP Adresi ve CIDR](./04-IP-Adresleme-ve-Subnetting-IP-Adresi-ve-CIDR.md)** ile direkt en popüler konuya atlayın!
 
 ---
-

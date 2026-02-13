@@ -108,6 +108,47 @@ Saldırganın kendini "Gateway" (Modem) gibi tanıtması.
 
 ---
 
+---
+
+## 📋 Erişim Kontrol Listeleri (Access Control Lists - ACL)
+
+Güvenlik duvarının (Firewall) atasıdır. Router veya Switch üzerinde paketleri filtrelemek için kullanılır.
+
+> 💡 **Benzetme:** Bir gece kulübünün kapısındaki "Bodyguard". Elindeki listeye bakar: "Sen girebilirsin, sen giremezsin."
+
+### ACL Türleri (Cisco)
+
+#### 1. Standart ACL (1-99)
+
+Sadece **Kaynak IP**'ye bakar. Çok basittir.
+
+- **Kural:** "Ahmet girsin, Mehmet giremesin." (Nereye gittiği önemsiz).
+- **Yerleşim:** Hedefe en yakın yere konulmalıdır.
+
+#### 2. Genişletilmiş (Extended) ACL (100-199)
+
+**Kaynak IP, Hedef IP, Port ve Protokol**'e bakar. Çok yeteneklidir.
+
+- **Kural:** "Ahmet, Muhasebe Sunucusuna (Hedef) sadece Web (80) ile erişsin, ama FTP (21) yapamasın."
+- **Yerleşim:** Kaynağa en yakın yere konulmalıdır (Gereksiz trafik ağda dolaşmasın).
+
+### "Deny All" Kuralı 🚫
+
+Her ACL listesinin sonunda **görünmez bir "Her şeyi reddet"** kuralı vardır.
+
+- Eğer bir ACL yazıp içine sadece "Ahmet'i engelle" derseniz, **herkes engellenir!**
+- Mutlaka en sona "Diğerlerine izin ver" (`permit any`) eklemelisiniz.
+
+**Örnek Konfigürasyon:**
+
+```text
+Router(config)# access-list 10 permit 192.168.1.10   ! PC-A'ya izin ver
+Router(config)# access-list 10 deny 192.168.1.20     ! PC-B'yi engelle
+! (Görünmez Deny All buradadır, diğer herkes engellenir)
+```
+
+---
+
 ## 📡 Kablosuz Ağ Güvenliği (Wi-Fi)
 
 Wi-Fi sinyalleri havadan yayıldığı için çalınması en kolay verilerdir.

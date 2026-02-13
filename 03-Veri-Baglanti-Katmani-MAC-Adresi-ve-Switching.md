@@ -208,6 +208,63 @@ Layer 2'de veri, **Frame** (çerçeve) olarak taşınır:
 
 ---
 
+---
+
+## ⚠️ Loop (Döngü) Sorunu ve STP
+
+### Broadcast Fırtınası (Broadcast Storm) 🌪️
+
+Yedeklilik olması için iki switch arasına **iki kablo** taktığınızı düşünün.
+
+1. PC bir Broadcast paketi gönderir (Hedef: Herkes).
+2. Switch A, bu paketi Switch B'ye **iki kablodan da** yollar.
+3. Switch B, aldığı paketleri tekrar Switch A'ya yollar.
+4. Bu sonsuza kadar sürer! Saniyeler içinde milyonlarca paket oluşur ve ağ kilitlenir. 💀
+
+### Spanning Tree Protocol (STP) 🌳
+
+STP, bu döngüleri (loop) engellemek için geliştirilmiş bir protokoldür (IEEE 802.1D).
+
+**Nasıl Çalışır?**
+
+1. Switch'ler kendi aralarında konuşur (BPDU paketleri).
+2. Ağın merkezinde bir **Root Bridge** (Patron Switch) seçerler.
+3. Döngüye sebep olabilecek yedek yolları **Geçici Olarak Kapatırlar (Blocking Mode)**.
+4. Ana yol koparsa, yedek yolu otomatik olarak açarlar!
+
+> 💡 **Benzetme:** Trafikte alternatif yolların kapatılıp, sadece ana yolun açık tutulması. Ana yolda kaza olursa, polis bariyerleri kaldırıp yan yolu açar.
+
+**STP Port Durumları:**
+
+1. **Blocking:** Veri taşımaz, sadece dinler (Döngü olmasın diye).
+2. **Listening:** Root bridge'i öğrenmeye çalışır.
+3. **Learning:** MAC adreslerini öğrenir.
+4. **Forwarding:** Veri taşır (Normal çalışma).
+5. **Disabled:** Yönetici kapatmıştır.
+
+---
+
+## 🔗 Link Birleştirme (EtherChannel / LACP)
+
+İki switch arasına tek kablo yetmiyor (hız yavaş), ama iki kablo takınca da STP birini kapatıyor. Ne yapacağız? 🤔
+
+**Çözüm:** Kabloları sanal olarak **Tek Kablo** gibi göstermek!
+
+### EtherChannel Nedir?
+
+Birden fazla fiziksel portu (örn: 4 adet 1Gbps) birleştirip, tek bir mantıksal port (4 Gbps) yapmaktır.
+
+- **STP bunu tek kablo sanar**, bu yüzden yedek hattı kapatmaz.
+- Hız artar (Bant genişliği birleşir).
+- Kablonun biri kopsa bile diğerleri çalışmaya devam eder (Yedeklilik).
+
+**Protokoller:**
+
+1. **LACP (Link Aggregation Control Protocol):** Standarttır (802.3ad). Farklı marka cihazlar arasında çalışır.
+2. **PAgP:** Cisco'ya özeldir.
+
+---
+
 ## 💡 Özet
 
 | Kavram | Açıklama |

@@ -229,6 +229,14 @@ Her departmana **tam ihtiyacı kadar** verin (yukarıdaki Senaryo 1'deki gibi). 
 
 ---
 
+## 🚀 Meydan Okuma
+
+ Kendine güveniyor musun? O zaman **Gerçek Hayat Senaryosu** ile kendini sına!
+
+ 👉 [Ağ Planlama Atölyesi'ne Git](./04-7-Gercek-Hayat-Ag-Planlama-Atolyesi.md)
+
+ ---
+
 **Navigasyon:**
 
 - [⬅️ Önceki: Subnetting Mantığı](./04-IP-Adresleme-ve-Subnetting-Subnetting-Mantigi.md)

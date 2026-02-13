@@ -327,4 +327,4 @@ IPv6 artık kaçınılmaz. Birçok modern sistem varsayılan olarak IPv6 kullan�
 
 - [⬅️ Önceki: Supernetting](./04-IP-Adresleme-ve-Subnetting-Supernetting.md)
 - [🏠 Ana Sayfa](./README.md)
-- [➡️ Sonraki: Routing (Yönlendirme)](./05-Yonlendirme-Routing-Router-Nasil-Calisir.md)
+- [➡️ Sonraki: Gerçek Hayat Senaryosu (Workshop)](./04-7-Gercek-Hayat-Ag-Planlama-Atolyesi.md)
