@@ -1,8 +1,5 @@
 # 🌐 Network -h (Network Humanity
 
-<p align="center">
-  <strong>🌐 Network -h: İnsanlar için Networking 🌐</strong><br>
-
 > **"faruk-guler"**
 > > **"www.farukguler.com"**
 
