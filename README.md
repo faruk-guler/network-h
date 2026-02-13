@@ -2,7 +2,6 @@
 
 <p align="center">
   <strong>🌐 Network -h: İnsanlar için Networking 🌐</strong><br>
-  <em>Karmaşık değil, sadece farklı açıklanıyor!</em>
   <em>www.farukguler.com faruk-guler</em>
 </p>
 
