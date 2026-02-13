@@ -4,7 +4,8 @@
   <strong>🌐 Network -h: İnsanlar için Networking 🌐</strong><br>
 </p>
 
-> **"www.farukguler.com faruk-guler"**
+> **"faruk-guler"**
+> > **"www.farukguler.com"**
 
 Network -h (humanity), ağ teknolojilerini (IP, CIDR, Subnetting, Routing vb.) **gerçek hayat örnekleriyle**, **sıfırdan** ve **herkesin anlayabileceği şekilde** öğreten geniş kapsamlı bir Türkçe dokümantasyon projesidir.
 
