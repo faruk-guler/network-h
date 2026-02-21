@@ -56,6 +56,16 @@ Sadece trafiği engellemek yetmez, saldırıyı tanımak da gerekir.
 
 ---
 
+## 🛡️ Zero Trust (Sıfır Güven) Mimarisi
+
+Modern ağ dünyasında artık "iç ağ güvenlidir" mantığı bitti. **Zero Trust**, "Asla güvenme, her zaman doğrula" prensibine dayanır.
+
+1. **Hiçbir cihaz/kullanıcı otomatik güvenilmez:** İster ofis içinde olsun ister dışarıda.
+2. **En az ayrıcalık (Least Privilege):** Herkese sadece işini yapabileceği kadar yetki verilir.
+3. **Sürekli doğrulama:** Bağlantı her aşamada kontrol edilir.
+
+---
+
 ## 🚇 VPN (Sanal Özel Ağ / Virtual Private Network)
 
 VPN, halka açık internet üzerinde **şifreli bir tünel** oluşturur.

@@ -313,6 +313,21 @@ Sunucular: 2001:db8:acad:100::/64
 
 ---
 
+## 🏎️ IPv4'ten IPv6'ya Geçiş Yöntemleri
+
+İnternet bir gecede IPv6'ya geçemez. Bu yüzden birlikte yaşama yöntemleri kullanılır:
+
+### 1. Çift Yığın (Dual-Stack)
+Cihazlarda hem IPv4 hem IPv6 adresinin aynı anda bulunmasıdır. Modern sistemlerin çoğu varsayılan olarak budur.
+
+### 2. Tünelleme (Tunneling)
+IPv6 paketlerini, henüz IPv6 desteklemeyen bir ağdan geçirebilmek için **IPv4 paketlerinin içine saklayarak (kapsülleyerek)** taşımaktır.
+
+### 3. Çeviri (Translation - NAT64)
+IPv6 kullanan bir cihazın, sadece IPv4 destekleyen bir sunucuyla konuşabilmesi için yapılan protokol çevirisidir.
+
+---
+
 ## 🚀 IPv6 ile Geleceğe Hazır Olun
 
 IPv6 artık kaçınılmaz. Birçok modern sistem varsayılan olarak IPv6 kullanıyor:

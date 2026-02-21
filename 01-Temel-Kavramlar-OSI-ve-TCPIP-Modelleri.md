@@ -61,8 +61,19 @@ Verinin **formatını** belirler, sıkıştırır ve şifreler.
 
 Veriyi **parçalara** (segment) böler ve uçtan uca güvenilir iletim sağlar.
 
-- **TCP:** Güvenilir, sıralı, bağlantı odaklı (3-way handshake)
-- **UDP:** Hızlı, güvenilir değil, bağlantısız
+- **TCP:** Güvenilir, sıralı, bağlantı odaklı. Veri göndermeden önce "3-Way Handshake" (Üçlü El Sıkışma) yapar.
+
+```mermaid
+sequenceDiagram
+    participant C as İstemci (Client)
+    participant S as Sunucu (Server)
+    Note over C,S: 3-Way Handshake
+    C->>S: SYN (Selam, konuşabilir miyiz?)
+    S->>C: SYN-ACK (Selam, evet konuşabiliriz!)
+    C->>S: ACK (Tamam, başlıyorum o zaman.)
+```
+
+- **UDP:** Hızlı, **iletim garantisi sunmaz**, bağlantısız
 - **Port numaraları** bu katmanda tanımlanır
 
 | Özellik | TCP | UDP |

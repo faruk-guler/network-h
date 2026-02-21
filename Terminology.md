@@ -58,7 +58,9 @@ Gruptaki herhangi bir cihazdan başlatılan broadcast frame'lerini alan cihazlar
 
 ## CIDR (Classless Inter-Domain Routing)
 
-IP adreslerinin ve subnet maskelerinin esnek bir şekilde yönetilmesini sağlayan bir sistemdir.## PTR (Pointer) Kaydı
+IP adreslerinin ve subnet maskelerinin esnek bir şekilde yönetilmesini sağlayan bir sistemdir ve bir sayı ile belirtilir (Örn: `/24`). Bir IP ağ grubunun, diğer ağlara birleşik olarak daha geniş görünmesine izin verir.
+
+## PTR (Pointer) Kaydı
 
 Bir IP adresini bir alan adına eşleyen DNS kaydı (Ters DNS).
 
@@ -69,7 +71,6 @@ Ağ trafiğini önceliklendirme teknolojisidir. Ses ve video gibi gecikmeye duya
 ## SDN (Software Defined Networking)
 
 Ağın kontrol düzleminin (control plane) veri düzleminden (data plane) ayrıldığı ve yazılım ile merkezi olarak yönetildiği modern ağ mimarisidir.
- ve bir sayı ile belirtilir (örneğin, `/24`). Bir IP ağ grubunun, diğer ağlara birleşik olarak daha geniş görünmesine izin verir.
 
 ## Collision (Çarpışma)
 
@@ -101,7 +102,7 @@ Bir katmanın, alt katmandan gelen PDU'daki (Protocol Data Unit) başlık bilgis
 
 ## DHCP (Dynamic Host Configuration Protocol)
 
-Ağdaki cihazlara dinamik olarak IP adresi ve diğer ağ yapılandırma bilgilerini dağıtan bir protokoldir. **Port:** UDP 67 (Server) / UDP 68 (Client).
+Ağdaki cihazlara dinamik olarak IP adresi ve diğer ağ yapılandırma bilgilerini dağıtan bir protokoldür. **Port:** UDP 67 (Server) / UDP 68 (Client).
 
 ## DMZ (Demilitarized Zone)
 

@@ -25,7 +25,7 @@ En yaygın ağ kablolarıdır. İçlerinde bükümlü çift teller bulunur.
 | :--- | :--- | :--- | :--- | :--- |
 | **Cat5** | 100 Mbps | 100 MHz | 100m | Eski ağlar |
 | **Cat5e** | 1 Gbps | 100 MHz | 100m | Yaygın kullanım |
-| **Cat6**| 1 Gbps | 250 MHz | 100m | Ofis ağları |
+| **Cat6** | 1 Gbps | 250 MHz | 100m | Ofis ağları |
 | **Cat6a** | 10 Gbps | 500 MHz | 100m | Veri merkezleri |
 | **Cat7** | 10 Gbps | 600 MHz | 100m | Profesyonel |
 | **Cat8** | 25-40 Gbps | 2000 MHz | 30m | Veri merkezi switch |

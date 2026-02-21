@@ -91,7 +91,7 @@ Switch, aynı ağdaki cihazları birbirine bağlayan **Layer 2** cihazdır. Veri
 Veri paketlerinin birbiriyle çarpışabileceği alandır.
 
 - **Hub:** Tüm portlar **tek bir** collision domain'dir. İki kişi aynı anda konuşursa veri bozulur.
-- **Switch:** Her port **ayrı bir** collision domain'dir. Herkes aynı anda hatası konuşabilir.
+- **Switch:** Her port **ayrı bir** collision domain'dir. Herkes aynı anda konuşabilir.
 
 ### 2. Broadcast Domain (Yayın Alanı)
 
@@ -208,7 +208,6 @@ Layer 2'de veri, **Frame** (çerçeve) olarak taşınır:
 
 ---
 
----
 
 ## ⚠️ Loop (Döngü) Sorunu ve STP
 

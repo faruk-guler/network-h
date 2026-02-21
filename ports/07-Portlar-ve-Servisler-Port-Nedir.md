@@ -53,20 +53,20 @@ Portlar, 1000'er satırlık dosyalar halinde bölünmüştür:
 
 | Dosya     | Port Aralığı               |
 | :-------- | :------------------------- |
-| [1000.md](./07-Portlar-ve-Servisler-size-1000.md) | 0-1000 arası portlar |
-| [2000.md](./07-Portlar-ve-Servisler-size-2000.md) | 1001-2000 arası portlar |
-| [3000.md](./07-Portlar-ve-Servisler-size-3000.md) | 2001-3000 arası portlar |
-| [4000.md](./07-Portlar-ve-Servisler-size-4000.md) | 3001-4000 arası portlar |
-| [5000.md](./07-Portlar-ve-Servisler-size-5000.md) | 4001-5000 arası portlar |
-| [6000.md](./07-Portlar-ve-Servisler-size-6000.md) | 5001-6000 arası portlar |
-| [7000.md](./07-Portlar-ve-Servisler-size-7000.md) | 6001-7000 arası portlar |
-| [8000.md](./07-Portlar-ve-Servisler-size-8000.md) | 7001-8000 arası portlar |
-| [9000.md](./07-Portlar-ve-Servisler-size-9000.md) | 8001-9000 arası portlar |
-| [10000.md](./07-Portlar-ve-Servisler-size-10000.md) | 9001-10000 arası portlar |
-| [11000.md](./07-Portlar-ve-Servisler-size-11000.md) | 10001-11000 arası portlar |
-| [12000.md](./07-Portlar-ve-Servisler-size-12000.md) | 11001-12000 arası portlar |
-| [13000.md](./07-Portlar-ve-Servisler-size-13000.md) | 12001-13000 arası portlar |
-| [14000.md](./07-Portlar-ve-Servisler-size-14000.md) | 13001-14000+ arası portlar |
+| [0-1000.md](./07-Portlar-ve-Servisler-0-1000.md) | 0-1000 arası portlar |
+| [1001-2000.md](./07-Portlar-ve-Servisler-1001-2000.md) | 1001-2000 arası portlar |
+| [2001-3000.md](./07-Portlar-ve-Servisler-2001-3000.md) | 2001-3000 arası portlar |
+| [3001-4000.md](./07-Portlar-ve-Servisler-3001-4000.md) | 3001-4000 arası portlar |
+| [4001-5000.md](./07-Portlar-ve-Servisler-4001-5000.md) | 4001-5000 arası portlar |
+| [5001-6000.md](./07-Portlar-ve-Servisler-5001-6000.md) | 5001-6000 arası portlar |
+| [6001-7000.md](./07-Portlar-ve-Servisler-6001-7000.md) | 6001-7000 arası portlar |
+| [7001-8000.md](./07-Portlar-ve-Servisler-7001-8000.md) | 7001-8000 arası portlar |
+| [8001-9000.md](./07-Portlar-ve-Servisler-8001-9000.md) | 8001-9000 arası portlar |
+| [9001-10000.md](./07-Portlar-ve-Servisler-9001-10000.md) | 9001-10000 arası portlar |
+| [10001-11000.md](./07-Portlar-ve-Servisler-10001-11000.md) | 10001-11000 arası portlar |
+| [11001-12000.md](./07-Portlar-ve-Servisler-11001-12000.md) | 11001-12000 arası portlar |
+| [12001-13000.md](./07-Portlar-ve-Servisler-12001-13000.md) | 12001-13000 arası portlar |
+| [13001-14000.md](./07-Portlar-ve-Servisler-13001-14000.md) | 13001-14000+ arası portlar |
 
 Her dosya, IANA kayıtlı port numarasını, protokolünü, servis adını ve açıklamasını içerir.
 
