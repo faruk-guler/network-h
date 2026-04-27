@@ -1003,3 +1003,11 @@
 | 5197 | udp |  | Reserved |
 | 5198-5199 |  |  | Unassigned |
 | 5200 | tcp | targus-getdata | TARGUS GetData |
+
+
+---
+
+**Navigasyon:**
+
+- [⬅️ Geri: Portlar ve Servisler](./07-Portlar-ve-Servisler-Port-Nedir.md)
+- [🏠 Ana Sayfa](../README.md)

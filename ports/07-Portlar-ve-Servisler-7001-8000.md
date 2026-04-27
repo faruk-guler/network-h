@@ -1003,3 +1003,11 @@
 | 4301 | udp | d-data | Diagnostic Data |
 | 4302 | tcp | d-data-control | Diagnostic Data Control |
 | 4302 | udp | d-data-control | Diagnostic Data Control |
+
+
+---
+
+**Navigasyon:**
+
+- [⬅️ Geri: Portlar ve Servisler](./07-Portlar-ve-Servisler-Port-Nedir.md)
+- [🏠 Ana Sayfa](../README.md)

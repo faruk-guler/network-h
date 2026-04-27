@@ -1003,3 +1003,11 @@
 | 3208 | tcp | pfu-prcallback | PFU PR Callback |
 | 3208 | udp | pfu-prcallback | PFU PR Callback |
 | 3209 | tcp | netwkpathengine | HP OpenView Network Path Engine Server |
+
+
+---
+
+**Navigasyon:**
+
+- [⬅️ Geri: Portlar ve Servisler](./07-Portlar-ve-Servisler-Port-Nedir.md)
+- [🏠 Ana Sayfa](../README.md)

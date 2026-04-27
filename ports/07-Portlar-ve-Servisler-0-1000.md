@@ -1003,3 +1003,11 @@
 | 545 | udp | appleqtcsrvr | appleqtcsrvr |
 | 546 | tcp | dhcpv6-client | DHCPv6 Client |
 | 546 | udp | dhcpv6-client | DHCPv6 Client |
+
+
+---
+
+**Navigasyon:**
+
+- [⬅️ Geri: Portlar ve Servisler](./07-Portlar-ve-Servisler-Port-Nedir.md)
+- [🏠 Ana Sayfa](../README.md)

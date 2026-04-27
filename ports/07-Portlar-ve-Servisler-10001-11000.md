@@ -1003,3 +1003,11 @@
 | 8119-8120 |  |  | Unassigned |
 | 8121 | tcp | apollo-data | Apollo Data Port |
 | 8121 | udp | apollo-data | Apollo Data Port |
+
+
+---
+
+**Navigasyon:**
+
+- [⬅️ Geri: Portlar ve Servisler](./07-Portlar-ve-Servisler-Port-Nedir.md)
+- [🏠 Ana Sayfa](../README.md)

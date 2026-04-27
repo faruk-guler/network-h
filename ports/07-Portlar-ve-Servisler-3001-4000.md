@@ -1003,3 +1003,11 @@
 | 2231 | udp | wimaxasncp | WiMAX ASN Control Plane Protocol |
 | 2232 | tcp | ivs-video | IVS Video default |
 | 2232 | udp | ivs-video | IVS Video default |
+
+
+---
+
+**Navigasyon:**
+
+- [⬅️ Geri: Portlar ve Servisler](./07-Portlar-ve-Servisler-Port-Nedir.md)
+- [🏠 Ana Sayfa](../README.md)

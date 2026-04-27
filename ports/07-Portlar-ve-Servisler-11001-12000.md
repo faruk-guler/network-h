@@ -1003,3 +1003,11 @@
 | 11000 | tcp | irisa | IRISA |
 | 11000 | udp | irisa | IRISA |
 | 11001 | tcp | metasys | Metasys |
+
+
+---
+
+**Navigasyon:**
+
+- [⬅️ Geri: Portlar ve Servisler](./07-Portlar-ve-Servisler-Port-Nedir.md)
+- [🏠 Ana Sayfa](../README.md)

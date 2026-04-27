@@ -1003,3 +1003,11 @@
 | 31457 | udp | tetrinet | TetriNET Protocol |
 | 31458-31619 |  |  | Unassigned |
 | 31620 | tcp | lm-mon | lm mon |
+
+
+---
+
+**Navigasyon:**
+
+- [⬅️ Geri: Portlar ve Servisler](./07-Portlar-ve-Servisler-Port-Nedir.md)
+- [🏠 Ana Sayfa](../README.md)

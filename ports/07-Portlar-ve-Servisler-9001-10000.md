@@ -1003,3 +1003,11 @@
 | 6484 | udp | sun-sr-jms | Service Registry Default JMS Domain |
 | 6485 | tcp | sun-sr-iiop | Service Registry Default IIOP Domain |
 | 6485 | udp | sun-sr-iiop | Service Registry Default IIOP Domain |
+
+
+---
+
+**Navigasyon:**
+
+- [⬅️ Geri: Portlar ve Servisler](./07-Portlar-ve-Servisler-Port-Nedir.md)
+- [🏠 Ana Sayfa](../README.md)

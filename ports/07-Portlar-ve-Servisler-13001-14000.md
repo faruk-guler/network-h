@@ -444,3 +444,11 @@
 | 49150 | tcp | inspider | InSpider System |
 | 49150 | udp |  | Reserved |
 | 49151 |  |  | Reserved |
+
+
+---
+
+**Navigasyon:**
+
+- [⬅️ Geri: Portlar ve Servisler](./07-Portlar-ve-Servisler-Port-Nedir.md)
+- [🏠 Ana Sayfa](../README.md)

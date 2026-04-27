@@ -1003,3 +1003,11 @@
 | 2723 | udp | watchdog-nt | WatchDog NT Protocol |
 | 2724 | tcp | qotps | qotps |
 | 2724 | udp | qotps | qotps |
+
+
+---
+
+**Navigasyon:**
+
+- [⬅️ Geri: Portlar ve Servisler](./07-Portlar-ve-Servisler-Port-Nedir.md)
+- [🏠 Ana Sayfa](../README.md)

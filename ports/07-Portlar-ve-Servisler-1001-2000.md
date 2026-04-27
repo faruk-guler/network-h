@@ -1003,3 +1003,11 @@
 | 1248 | udp | hermes | hermes |
 | 1249 | tcp | mesavistaco | Mesa Vista Co |
 | 1249 | udp | mesavistaco | Mesa Vista Co |
+
+
+---
+
+**Navigasyon:**
+
+- [⬅️ Geri: Portlar ve Servisler](./07-Portlar-ve-Servisler-Port-Nedir.md)
+- [🏠 Ana Sayfa](../README.md)

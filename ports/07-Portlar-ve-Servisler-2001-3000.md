@@ -1003,3 +1003,11 @@
 | 1734 | tcp | cambertx-lm | Camber Corporation License Management |
 | 1734 | udp | cambertx-lm | Camber Corporation License Management |
 | 1735 | tcp | privatechat | PrivateChat |
+
+
+---
+
+**Navigasyon:**
+
+- [⬅️ Geri: Portlar ve Servisler](./07-Portlar-ve-Servisler-Port-Nedir.md)
+- [🏠 Ana Sayfa](../README.md)
