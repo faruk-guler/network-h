@@ -395,7 +395,3 @@ Subnet mask'in tersidir. Access Control List (ACL) ve OSPF konfigürasyonlarınd
 - [Turkcell Gelecegi Yazanlar - Terimler Sözlüğü](https://gelecegiyazanlar.turkcell.com.tr/konu/egitim/temel-network-egitimi/terimler-sozlugu)
 
 ---
-
-**Navigasyon:**
-
-- [🏠 Ana Sayfa](./README.md)
