@@ -1,0 +1,24 @@
+1. CIDR (Birleştirme)
+İnternet üzerindeki binlerce küçük yolu, tek bir ana yol gibi göstermektir.
+
+Mantık: "Supernetting" (Ağları birleştirme).
+
+Özet: Birçok küçük IP bloğunu tek bir büyük blok altında toplayıp internet trafiğini rahatlatır.
+
+Örnek: 4 adet küçük mahalleyi, dış dünyaya tek bir "İlçe" olarak tanıtmak.
+
+2. VLSM (Bölme)
+Elinizdeki bir IP bloğunu israf etmeden, ihtiyaca göre farklı boyutlarda parçalamaktır.
+
+Mantık: "Subnetting" (Ağı parçalara ayırma).
+
+Özet: Aynı ağ içinde hem 2 kişilik hem 50 kişilik odalar (alt ağlar) oluşturmanıza izin verir.
+
+Örnek: Bir pastayı 10 kişiye eşit değil de, bazısına büyük bazısına küçük dilimler halinde dağıtmak.
+
+Kısaca Fark
+CIDR: İnternet yollarını kısaltmak için ağları dışarıya karşı gruplar.
+
+VLSM: Şirket içinde IP israfını önlemek için ağı içeride farklı boyutlara böler.
+
+Her ikisi de artık "A, B, C sınıfı" gibi eski kurallara uymadığımız için hayatımızda.

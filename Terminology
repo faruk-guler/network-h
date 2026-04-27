@@ -1,7 +1,6 @@
 # 📖 Terminology:
 # www.farukguler.com
 
-
 # TCP (Transmission Control Protocol): Kullanılan en yaygın protokoldür. İletişimde kayıpsız veri gönderebilmek amacıyla yazılmıştır. Bir paketin tamamı teslim edilmezse, veri akışı durdurulur ve paket alınana kadar paket kaynaktan tekrar talep edilir.
 # UDP (User Datagram Protocol): Veri aktarım protokollerinden biridir. Verileri herhangi bir bağlantı kurmadan karşı tarafa göndermeyi sağlamaktadır. Paketlerin kaybolması-yanlış sırayla gitmesi durumunda düzeltme yapılmaz. Genel olarak  ses ve görüntü aktarımı gibi anlık aktarımda kullanılır. 
 # GATEWAY: Farklı ağları birbirine bağlayan, veri taşımasını sağlayan, yönlendirme işlemlerini gerçekleştiren bir cihaz veya yazılım bileşenidir.
@@ -71,7 +70,7 @@
 # VLAN Virtual LAN: Bir veya daha fazla mantıksal segmentlere ayrılmış LAN’da (yönetim yazılımı kullanılarak yapılandırılan) cihazlar grubu. Cihazların, gerçekten çok farklı LAN segmentlerinde bulunduklarında, aynı fiziksel ortam aracına bağlıymış gibi iletişimde olmalarını mümkün kılar. VLAN’ler, fiziksel bağlantılar yerine mantıksal tabanlıdırlar ve bundan dolayı çok esnektirler.
 
 ------------------
-#FIZIKSEL BAGLANTI: RJ45 (Registered Jack 45)
+# FIZIKSEL BAGLANTI: RJ45 (Registered Jack 45)
 Turuncu-Beyaz, Turuncu
 Yeşil-Beyaz, Mavi
 Mavi-Beyaz, Yeşil
