@@ -84,33 +84,6 @@ Tarihsel süreçte geliştirilmiş, günümüzde büyük çoğunluğu kullanımd
 | **IPX/SPX** | Novell | 1980'ler | Kullanımdan kalktı |
 | **NetBEUI** | Microsoft / IBM | 1985 | Kullanımdan kalktı |
 
-### DoD Modeli
-TCP/IP modelinin askeri versiyonudur. Katman yapısı ve protokolleri TCP/IP ile aynıdır.
-Bazı kaynaklarda TCP/IP yerine DoD modeli adıyla geçer.
-
-### AppleTalk
-Apple'ın Mac bilgisayarlarını birbirine bağlamak için geliştirdiği tescilli modeldir.
-TCP/IP'nin yaygınlaşmasıyla kullanımdan kalktı.
-
-### IPX/SPX
-Novell'in NetWare işletim sistemi için geliştirdiği modeldir.
-1980-90'larda kurumsal ağlarda yaygındı. TCP/IP'nin yaygınlaşmasıyla kullanımdan kalktı.
-
-### NetBEUI
-Microsoft ve IBM'in küçük LAN'lar için geliştirdiği protokol paketidir.
-Yönlendirilemez olduğu için büyük ağlarda kullanılamaz. Windows XP ile kullanımdan kalktı.
-
----
-
-## 4. Karşılaştırma
-
-| | OSI | TCP/IP |
-|---|---|---|
-| Amaç | Teorik referans | Pratik uygulama |
-| Katman sayısı | 7 | 4 |
-| Kullanım | Eğitim, sorun giderme | İnternetin gerçek çalışma modeli |
-| Geliştiren | ISO | DARPA |
-| Esneklik | Katı | Esnek |
 
 > Günümüzde fiilen kullanılan tek model **TCP/IP'dir.**
 > OSI ise öğretim ve sorun giderme amaçlı referans olarak yaşamaya devam eder.
