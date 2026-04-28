@@ -1,4 +1,4 @@
-# Geleceğin İnternet Adresi IPv6
+# Geleceğin İnternet Adresi "IPv6"
 
 IPv6 (Internet Protocol version 6), IPv4'ün yerini alacak yeni nesil IP adresleme sistemidir. Neredeyse **sonsuz sayıda adres** sunar!
 
