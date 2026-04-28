@@ -6,7 +6,7 @@ Tıpkı bir evin posta adresi gibi — veri paketi nereye gönderileceğini bu a
 🧪🧪 IP adresi Network ve Host olmak üzere iki bölümden oluşmaktadır ve Adres Sınıflarına göre farklılık göstermektedir.
 
 ```
-|Network |host  | -----> B Class
+|Network |host  | -----> Örnek B Class
 |192.168 |32.170|
 
 |Class  |Network         |host       |
