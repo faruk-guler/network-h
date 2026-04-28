@@ -2,8 +2,6 @@
 #   SINIFSIZ AĞ MİMARİSİ (CLASSLESS)   #
 ########################################
 
-
-
 💊💊 VLSM (Variable Length Subnet Masking)
 Geleneksel, katı IP sınıf kurallarını yıkarak, devasa bir ağı farklı boyutlardaki (farklı kapasitelerdeki) alt ağlara bölme teknolojisidir.
 Ağdaki IP israfını azaltmayı amaçlar.
@@ -38,9 +36,6 @@ Mantık: "Supernetting" (Ağları birleştirme).
 🧪🧪 IP adresi Network ve Host olmak üzere iki bölümden oluşmaktadır ve Adres Sınıflarına göre farklılık göstermektedir.
 |Network |host  | -----> B Class
 |192.168 |32.170|
-
-https://github.com/faruk-guler/network-h/blob/main/Images/ip-class-net-hosts.png
-
 
 😷😷 Subnet Mask/Netmask Nedir?
 Bir IP adresinin hangi kısmının ağ (network) ve hangi kısmının cihaz (host) adresi olduğunu belirleyen bir parametredir.
