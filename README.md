@@ -1,2 +1,1 @@
-# network for humanity
-by "faruk-guler"
+# network for humanity by "faruk-guler"
