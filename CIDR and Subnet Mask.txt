@@ -3,12 +3,6 @@
 ########################################
 https://farukguler.com/posts/cidr-and-ip-subnetting/
 
-⚡⚡IP Adresi Nedir?
-IP (Internet Protocol) adresi, cihazların internet veya yerel ağ üzerinde iletişim kurmasını sağlayan benzersiz bir kimliktir. 
-İki temel IP türü vardır:
->IPv4: 32 bit uzunluğunda olup 192.168.1.1 gibi dört sayıdan oluşur.
->IPv6: 128 bits yani 16 Byte’dır. uzunluğunda olup 2001:db8::ff00:42:8329 gibi daha uzun bir formata sahiptir.
-
 💊💊 CIDR(Classless Inter-Domain Routing) Nedir?
 CIDR, Subnet Mask'ın daha net ve anlaşılır bir biçimde gösterimidir. IP adreslerini ve ağları verimli bir şekilde bölmek için kullanılır.
 CIDR, IP adresinin sonuna eklenen bir eğik çizgi ve sayı ile gösterilir. [/*]
