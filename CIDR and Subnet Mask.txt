@@ -3,6 +3,10 @@
 ########################################
 https://farukguler.com/posts/cidr-and-ip-subnetting/
 
+ VLSM (Bölme)
+
+
+
 💊💊 CIDR(Classless Inter-Domain Routing) Nedir?
 CIDR, Subnet Mask'ın daha net ve anlaşılır bir biçimde gösterimidir. IP adreslerini ve ağları verimli bir şekilde bölmek için kullanılır.
 CIDR, IP adresinin sonuna eklenen bir eğik çizgi ve sayı ile gösterilir. [/*]
