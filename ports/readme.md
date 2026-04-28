@@ -4,8 +4,6 @@ IP adreslerini bir binanın dış kapı numarası (Public IP) veya daire numaras
 
 Bir IP adresi verinin hangi cihaza gideceğini belirlerken, Port numarası o verinin cihaz içindeki hangi uygulamaya veya servise teslim edileceğini belirler.
 
-Bu dizin, **IANA (Internet Assigned Numbers Authority)** tarafından kayıtlı tüm TCP/UDP portlarının kapsamlı listesini içerir.
-
 > 💡 **Port Nedir?** Port, bir IP adresindeki "kapı numarası"dır. IP adresi binanın adresi, port ise daire numarasıdır.
 
 ---
