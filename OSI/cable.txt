@@ -1,7 +1,0 @@
-------------------
-# FIZIKSEL BAGLANTI: RJ45 (Registered Jack 45)
-Turuncu-Beyaz, Turuncu
-Yeşil-Beyaz, Mavi
-Mavi-Beyaz, Yeşil
-Kahve-Beyaz, Kahve
->>Dünyada bütün son bağlantılar bu sıralamayla yapılmaktadır. Bu bir standarttır.
