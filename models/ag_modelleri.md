@@ -39,8 +39,7 @@ Alıcı tarafta ise **aşağıdan yukarıya** çıkarak her katman kendi başlı
 
 ## 2. TCP/IP Modeli (4 Katman)
 
-DARPA tarafından geliştirilen pratik modeldir.
-OSI'nin sadeleştirilmiş halidir. İnternetin gerçekte çalıştığı model budur.
+DARPA tarafından geliştirilen ve pratikte kullanılan gerçek modeldir. OSI'nin sadeleştirilmiş halidir. İnternetin çalıştığı model budur.
 
 | No | Katman | OSI Karşılığı | Örnek |
 |---|---|---|---|
