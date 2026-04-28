@@ -17,4 +17,3 @@ IPv4'te public adresler **classful (sınıflı) adresleme** sistemiyle 5 sınıf
 > Gerçek anlamda kullanılabilen public IP'ler yalnızca **A, B ve C sınıflarındadır**
 > (içlerindeki private aralıklar hariç tutularak).
  
----
