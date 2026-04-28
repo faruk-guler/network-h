@@ -9,9 +9,13 @@
 
 Bir 1 veya 0 olan ikili sayı. Sekiz bit, bir **byte** yapar.
 
+## Network Adresi
+
+Bir IP ağı için belirtilen ilk IP adresidir. Tüm host bitleri 0 olarak ayarlanmıştır. Örn: `192.168.1.0/24` ağının network adresi `192.168.1.0`'dır. Cihaza atanamaz.
+
 ## Octet
 
-Kesin ve değişmez bir şekilde 8 bit'ten oluşan ikili (binary) bir sayı bloğudur. Ağ dünyasında standartları korumak için kullanılır.
+IP adresinin bir bölümünü tanımlayan 8 bitlik değer. Her oktet 0-255 arasında bir değer alır. Ayrıca **byte** olarak da bilinir.
 
 
 
@@ -262,14 +266,6 @@ Ağdaki özel (private) IP adreslerini genel (public) IP adreslerine dönüştü
 ## Native VLAN
 
 Cisco switch'lerde varsayılan olarak **VLAN 1**'dir. Trunk portlarda tag'siz trafiğin ait olan VLAN'dır. Güvenlik için farklı bir VLAN'a değiştirilmesi önerilir.
-
-## Network Adresi
-
-Bir IP ağı için belirtilen ilk IP adresidir. Tüm host bitleri 0 olarak ayarlanmıştır. Örn: `192.168.1.0/24` ağının network adresi `192.168.1.0`'dır. Cihaza atanamaz.
-
-## Oktet
-
-IP adresinin bir bölümünü tanımlayan 8 bitlik değer. Her oktet 0-255 arasında bir değer alır. Ayrıca **byte** olarak da bilinir.
 
 ## OSI (Open Systems Interconnection)
 
