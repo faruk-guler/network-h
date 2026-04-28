@@ -28,9 +28,3 @@ Test-NetConnection server.com -Port 443  # PowerShell
 ```
 
 ---
-
-**Navigasyon:**
-
-- [⬅️ Önceki: VLAN Temelleri](../07-VLAN-Temelleri.md)
-- [🏠 Ana Sayfa](../README.md)
-- [➡️ Sonraki: Ağ Araçları](../99-Araclar-ve-Komutlar-Ping-Tracert-Nmap.md)
