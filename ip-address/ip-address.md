@@ -34,6 +34,4 @@ IPv4 adreslerinin yetmemeye başlaması nedeniyle **Public / Private / Reserved*
 az adresle daha fazla cihazı yönetmek için.
  
 IPv4 protokolünde toplam **2³² = 4.294.967.296** adet adres bulunur.
-Bu adresler iki (ana) kategoriye ayrılır: **Private (Özel)** ve **Public (Genel)**.
- 
 
