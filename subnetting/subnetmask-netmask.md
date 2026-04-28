@@ -1,4 +1,4 @@
-# 😷 Subnet Mask/Netmask Nedir?
+# 😷 Subnet Mask/Netmask Nedir??
 
 Bir IP adresinin hangi kısmının ağ (network) ve hangi kısmının cihaz (host) adresi olduğunu belirleyen bir parametredir.
 
