@@ -1,10 +1,9 @@
 # Portlar ve Servisler:
 
-IP adreslerini bir binanın dış kapı numarası (Public IP) veya daire numarası (Private IP) olarak düşünürsek, Portlar o dairenin içindeki pencereler veya kapılar gibidir.
+> 💡 **Port Nedir?** Port, bir IP adresindeki "kapı numarası"dır. IP adresi binanın adresi, port ise daire numarasıdır.
 
 Bir IP adresi verinin hangi cihaza gideceğini belirlerken, Port numarası o verinin cihaz içindeki hangi uygulamaya veya servise teslim edileceğini belirler.
 
-> 💡 **Port Nedir?** Port, bir IP adresindeki "kapı numarası"dır. IP adresi binanın adresi, port ise daire numarasıdır.
 
 ---
 
