@@ -38,9 +38,6 @@ Mantık: "Supernetting" (Ağları birleştirme).
 |Network |host  | -----> B Class
 |192.168 |32.170|
 
->> Extras:
-Link-Local addres: 169.254.0.0 – 169.254.255.255  -------> (APIPA) Adres aralığıdır.
-Loopback: 127.0.0.1 ile 127.255.255.255  -------> Host'un kendisini ifade eder.
 
 |Class  |Network         |host       |
 A ----> |10.             |.0.0.0     |
