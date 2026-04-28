@@ -12,9 +12,8 @@ Private IP adresleri yalnızca yerel ağ (LAN) içinde geçerlidir.
  
 > **Not:** Bu adresler internette yönlendirilemez. İki farklı evde aynı `192.168.1.5` adresi
 > bulunabilir — çünkü her ikisi de kendi yerel ağlarında geçerlidir, dışarıdan görünmezler.
- 
 
-=======
+
 ## 1. Private IP Adresleri
  
 Private IP adresleri yalnızca yerel ağ (LAN) içinde geçerlidir.
