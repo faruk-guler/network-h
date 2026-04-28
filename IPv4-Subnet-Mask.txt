@@ -32,3 +32,5 @@
 /2	192.0.0.0	63.255.255.255	1,073,741,824	1,073,741,822
 /1	128.0.0.0	127.255.255.255	2,147,483,648	2,147,483,646
 /0	0.0.0.0	255.255.255.255	4,294,967,296	4,294,967,294
+
+*: /31 ağları, RFC 3021 uyarınca Noktadan Noktaya (Point-to-Point) bağlantılar için tüm adreslerin kullanılmasına (0 ve 1) izin verir.
