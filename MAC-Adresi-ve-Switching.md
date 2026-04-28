@@ -1,4 +1,4 @@
-# Veri Bağlantı Katmanı: MAC Adresi ve Switching
+# MAC Adresi ve Switching
 
 Veri Bağlantı Katmanı (OSI Layer 2), **aynı ağ** içindeki cihazlar arasındaki iletişimi sağlar. Bu katmanın iki kahramanı vardır: **MAC Adresi** ve **Switch**.
 
