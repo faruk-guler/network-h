@@ -1,7 +1,7 @@
 # Ağ Modelleri
 
 Ağ iletişiminin nasıl çalışacağını tanımlayan standart çerçevelerdir.
-Farklı üreticilerin cihazlarının birbiriyle konuşabilmesi için ortak bir dil sağlarlar. Teorik bir referans modelidir. "Veri nasıl iletilmeli?" sorusuna katmanlı bir cevap verir. Her katman yalnızca kendi işini yapar.
+Farklı üreticilerin cihazlarının birbiriyle konuşabilmesi için ortak bir dil sağlarlar.
 
 ---
 
