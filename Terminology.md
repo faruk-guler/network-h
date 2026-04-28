@@ -17,7 +17,9 @@ Bir IP ağı için belirtilen ilk IP adresidir. Tüm host bitleri 0 olarak ayarl
 
 IP adresinin bir bölümünü tanımlayan 8 bitlik değer. Her oktet 0-255 arasında bir değer alır. Ayrıca **byte** olarak da bilinir.
 
+## Broadcast Adresi
 
+Bir ağdaki tüm cihazlara gönderilen mesajların ulaştırıldığı adrestir. Örneğin, /24 subnet maskesi ile `192.168.1.0` IP ağı için broadcast adresi `192.168.1.255`'tir.
 
 ---
 
@@ -57,15 +59,9 @@ Ağ sinyalleri arasında kullanılan en yüksek ve en düşük frekanslar arası
 
 Birleri ve sıfırları kullanan, iki karakterli bir numaralama yöntemi. İkili numaralama sistemi, bilgilerin tamamen dijital gösterimi temeline dayanır.
 
-
-
 ## Bridge (Köprü)
 
 Bir ağdaki iki segmenti bağlamak ve aralarında paketleri aktarmak için kullanılan cihaz. OSI referans modelinin **2. katmanı** (Veri Hattı) üzerinde çalışır. Bridge'in amacı, gelen bir frame'i MAC adresine bağlı olarak filtrelemek, göndermek ve yaymaktır.
-
-## Broadcast Adresi
-
-Bir ağdaki tüm cihazlara gönderilen mesajların ulaştırıldığı adrestir. Örneğin, /24 subnet maskesi ile `192.168.1.0` IP ağı için broadcast adresi `192.168.1.255`'tir.
 
 ## Yayın Alanı (Broadcast Domain)
 
