@@ -8,7 +8,7 @@ Daha sonra bunları kullanarak, diğer cihazlarla iletişim kurmanın yolunu bul
 
 ---
 
-## > Subnet Mask neden gerekli?
+## >_ Subnet Mask neden gerekli?
 
 Neden Subnet'lere ihtiyaç duyarız tek bir ağ yeterli olmaz mı?
 
