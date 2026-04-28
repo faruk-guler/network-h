@@ -1,5 +1,9 @@
 # 07 - Portlar ve Servisler: Port Referans Rehberi
 
+IP adreslerini bir binanın dış kapı numarası (Public IP) veya daire numarası (Private IP) olarak düşünürsek, Portlar o dairenin içindeki pencereler veya kapılar gibidir.
+
+Bir IP adresi verinin hangi cihaza gideceğini belirlerken, Port numarası o verinin cihaz içindeki hangi uygulamaya veya servise teslim edileceğini belirler.
+
 Bu dizin, **IANA (Internet Assigned Numbers Authority)** tarafından kayıtlı tüm TCP/UDP portlarının kapsamlı listesini içerir.
 
 > 💡 **Port Nedir?** Port, bir IP adresindeki "kapı numarası"dır. IP adresi binanın adresi, port ise daire numarasıdır.
