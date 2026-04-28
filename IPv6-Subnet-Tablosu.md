@@ -1,4 +1,4 @@
-# 📊 IPv6 Subnet Tablosu (Tam Referans)
+# 📊 IPv6 Subnet Tablosu
 
 IPv6 önek (prefix) uzunlukları ve barındırdıkları IP adresi sayıları. Bu tablo `/128`'den `/0`'a kadar **tüm değerleri** içerir.
 
