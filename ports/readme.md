@@ -26,5 +26,3 @@ telnet server.com 443                # Windows/Linux
 nc -zv server.com 443                # Linux (netcat)
 Test-NetConnection server.com -Port 443  # PowerShell
 ```
-
----
