@@ -1,4 +1,3 @@
-<<<<<<< HEAD:ip-address/public.md
 ## 2. Public IP Adresleri
  
 Public IP adresleri, internette **küresel olarak benzersizdir**.
@@ -38,4 +37,4 @@ IPv4'te public adresler **classful (sınıflı) adresleme** sistemiyle 5 sınıf
 > Gerçek anlamda kullanılabilen public IP'ler yalnızca **A, B ve C sınıflarındadır**
 > (içlerindeki private aralıklar hariç tutularak).
  
->>>>>>> 9baad07dbff3c208041e1c6a1d10a0f28fb6207b:public-private-addresses/public.md
+
