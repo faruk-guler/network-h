@@ -1,6 +1,7 @@
 # 📖 Ağ Terminolojisi Sözlüğü
 
-> **Kaynak:** [www.farukguler.com](https://www.farukguler.com)
+> **Kaynaklar:** [www.farukguler.com](https://www.farukguler.com)
+> - [Turkcell Gelecegi Yazanlar - Terimler Sözlüğü](https://gelecegiyazanlar.turkcell.com.tr/konu/egitim/temel-network-egitimi/terimler-sozlugu)
 
 ---
 
@@ -387,11 +388,5 @@ IEEE 802.11 standardına dayanan kablosuz yerel ağ teknolojisidir. **Wi-Fi 4** 
 ## Wildcard Mask (Ters Maske)
 
 Subnet mask'in tersidir. Access Control List (ACL) ve OSPF konfigürasyonlarında kullanılır. Subnet mask `255.255.255.0` ise wildcard mask `0.0.0.255` olur.
-
----
-
-## Kaynaklar
-
-- [Turkcell Gelecegi Yazanlar - Terimler Sözlüğü](https://gelecegiyazanlar.turkcell.com.tr/konu/egitim/temel-network-egitimi/terimler-sozlugu)
 
 ---
