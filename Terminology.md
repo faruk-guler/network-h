@@ -1,8 +1,9 @@
 # 📖 Ağ Terminolojisi Sözlüğü
 
 > **Kaynaklar:**
-> 
-> https://www.farukguler.com , https://gelecegiyazanlar.turkcell.com.tr/konu/egitim/temel-network-egitimi/terimler-sozlugu
+>
+> - https://www.farukguler.com  
+> - https://gelecegiyazanlar.turkcell.com.tr/konu/egitim/temel-network-egitimi/terimler-sozlugu
 
 ## Bit
 
