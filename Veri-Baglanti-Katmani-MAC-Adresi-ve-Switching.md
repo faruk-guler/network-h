@@ -275,9 +275,3 @@ Birden fazla fiziksel portu (örn: 4 adet 1Gbps) birleştirip, tek bir mantıksa
 | **Broadcast** | FF:FF:FF:FF:FF:FF → Herkese gönder |
 
 ---
-
-**Navigasyon:**
-
-- [⬅️ Önceki: Fiziksel Bağlantı](./02-Fiziksel-Baglanti-Kablolama-ve-Medya.md)
-- [🏠 Ana Sayfa](./README.md)
-- [➡️ Sonraki: IP Adresleme ve CIDR](./04-IP-Adresleme-ve-Subnetting-IP-Adresi-ve-CIDR.md)
