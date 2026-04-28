@@ -2,7 +2,7 @@
 
 > 💡 **Port Nedir?** Port, bir IP adresindeki "kapı numarası"dır. IP adresi binanın adresi, port ise daire numarasıdır.
 
-Bir IP adresi verinin hangi cihaza gideceğini belirlerken, Port numarası o verinin cihaz içindeki hangi uygulamaya veya servise teslim edileceğini belirler. Port numaralarının hangi servislere ayrılacağını ve standartlarını IANA (Internet Assigned Numbers Authority) belirler ve bu listeyi kendi web sitesinde herkese açık ve güncel bir şekilde yayınlar. "https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml"
+Bir IP adresi verinin hangi cihaza gideceğini belirlerken, Port numarası o verinin cihaz içindeki hangi uygulamaya veya servise teslim edileceğini belirler. Port numaralarının hangi servislere ayrılacağını ve standartlarını IANA (Internet Assigned Numbers Authority) belirler ve bu listeyi kendi web sitesinde herkese açık ve güncel bir şekilde yayınlar. https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml
 
 ---
 
