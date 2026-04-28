@@ -38,55 +38,14 @@ Mantık: "Supernetting" (Ağları birleştirme).
 |Network |host  | -----> B Class
 |192.168 |32.170|
 
-
-📝📝 IP Adresleri ve Sınıflar:
-
-Class| IP Range| Netmask | CIDR
-
-A Sınıfı: 0.0.0.0  - 127.255.255.255 Ağ Maskesi: 255.0.0.0/8  -------> Büyük Ağlar
-
-B Sınıfı: 128.0.0.0  - 191.255.255.255 aralığı Ağ Maskesi: 255.255.0.0/16  -------> Orta ölçekli Ağlar
-
-C Sınıfı: 192.0.0.0 - 223.255.255.255 aralığı Ağ Maskesi: 255.255.255.0/24  -------> Küçük Ağlar
-
-D Sınıfı: 224.0.0.0 – 239.255.255.255 aralığı  -------> Multicast içindir.
-
-E Sınıfı: 240.0.0.0 - 255.255.255.255 aralığı  ------->  Deneyler ve araştırmalar için ayrılmıştır.
-
 >> Extras:
 Link-Local addres: 169.254.0.0 – 169.254.255.255  -------> (APIPA) Adres aralığıdır.
 Loopback: 127.0.0.1 ile 127.255.255.255  -------> Host'un kendisini ifade eder.
-
-✅Private ip adresss:
-#Private IP, internette kullanılamazlar.
-
-|Class |Private IP Range |CIDR |Netmask |
-A ----> 10.0.0.0 – 10.255.255.255	10.0.0.0/8	255.0.0.0
-B ---->	172.16.0.0 – 172.31.255.255	172.16.0.0/12	255.240.0.0
-C ---->	192.168.0.0 – 192.168.255.255	192.168.0.0/16	255.255.0.0
 
 |Class  |Network         |host       |
 A ----> |10.             |.0.0.0     |
 B ----> |172.16.         |.0.0       |
 C ----> |192.168.0.      |.0         |
-
-✅Public ip adresss:
-Public IP, private IP blokları dışında kalan tüm IP adreslerini kapsar.
-
-#Ornek Public IP Adresleri 🌍
-8.8.8.8 → Google DNS
-142.250.190.78 → Google
-104.18.7.35 → Cloudflare
-
-
-## Model of subnet planning, design and implementation processes.
-+-------------------+        +---------------------+       +-------------------------+
-| -1 Analyze Needs  | --->   | -2 Design Subnets   | --->  | -3 Plan Implementation  |
-+-------------------+        +---------------------+       +-------------------------+
-|  - # Subnets      |        |  - Choose Network   |       |  - Subnets -> Locations |
-|  - # Hosts/Subnet |        |  - Choose 1 Mask    |       |  - Static IP            |
-|  - 1 Size Subnet  |        |  - List All Subnets |       |  - DHCP Ranges          |
-+-------------------+        +---------------------+       +-------------------------+
 
 
 👉🏻👉🏻Gateway:
