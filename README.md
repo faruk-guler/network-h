@@ -1,4 +1,4 @@
-# network for humanity by "faruk-guler"
+# Network for Humanity by "faruk-guler"
 
 #### BINARY (İkili Sistem) Elektrik var yada yok
 
