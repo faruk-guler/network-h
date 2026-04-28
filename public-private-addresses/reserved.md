@@ -18,4 +18,3 @@ Ne private ne de normal public sayılan, belirli amaçlar için ayrılmış aral
 | `240.0.0.0` – `255.255.255.254` | `/4` | Gelecek kullanım, deneysel (Class E) | RFC 1112 |
 | `255.255.255.255` | `/32` | Sınırlı broadcast — tüm ağa yayın | RFC 919 |
  
----
