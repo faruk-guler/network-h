@@ -9,6 +9,9 @@
 
 Bir 1 veya 0 olan ikili sayı. Sekiz bit, bir **byte** yapar.
 
+## Byte
+Byte (bayt), dijital sistemlerde veri depolama ve işleme için kullanılan temel birimlerden biridir. Günümüzde standart olarak 1 byte = 8 bit kabul edilir.
+
 ## Network Adresi
 
 Bir IP ağı için belirtilen ilk IP adresidir. Tüm host bitleri 0 olarak ayarlanmıştır. Örn: `192.168.1.0/24` ağının network adresi `192.168.1.0`'dır. Cihaza atanamaz.
