@@ -1,4 +1,4 @@
-# 07 - Portlar ve Servisler: Port Referans Rehberi
+# Portlar ve Servisler:
 
 IP adreslerini bir binanın dış kapı numarası (Public IP) veya daire numarası (Private IP) olarak düşünürsek, Portlar o dairenin içindeki pencereler veya kapılar gibidir.
 
