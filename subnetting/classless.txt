@@ -33,15 +33,3 @@ Mantık: "Supernetting" (Ağları birleştirme).
 ## 💊 Buradaki "1" ler network'ü temsil ederken "0" lar hostları temsil eder.
 
 😉💡 Her ikisi de artık "A, B, C sınıfı" gibi eski kurallara uymadığımız için hayatımızdadır.
-
-🧪🧪 IP adresi Network ve Host olmak üzere iki bölümden oluşmaktadır ve Adres Sınıflarına göre farklılık göstermektedir.
-|Network |host  | -----> B Class
-|192.168 |32.170|
-
-
-|Class  |Network         |host       |
-A ----> |10.             |.0.0.0     |
-B ----> |172.16.         |.0.0       |
-C ----> |192.168.0.      |.0         |
-
-
