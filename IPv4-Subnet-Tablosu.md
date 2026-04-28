@@ -41,7 +41,3 @@ Aşağıdaki tablo, CIDR notasyonundan alt ağ maskelerine kadar IPv4 için hız
 > **\***: /31 ağları, RFC 3021 uyarınca Noktadan Noktaya (Point-to-Point) bağlantılar için tüm adreslerin kullanılmasına (0 ve 1) izin verir.
 
 ---
-
-**Navigasyon:**
-
-- [🏠 Ana Sayfa](./README.md)
