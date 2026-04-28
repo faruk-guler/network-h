@@ -3,6 +3,18 @@
 IP Adresi (Internet Protocol Address), bir ağa bağlı her cihazın sahip olduğu **sayısal kimlik numarasıdır.**
 Tıpkı bir evin posta adresi gibi — veri paketi nereye gönderileceğini bu adres sayesinde bulur.
 
+🧪🧪 IP adresi Network ve Host olmak üzere iki bölümden oluşmaktadır ve Adres Sınıflarına göre farklılık göstermektedir.
+
+```
+|Network |host  | -----> B Class
+|192.168 |32.170|
+
+|Class  |Network         |host       |
+A ----> |10.             |.0.0.0     |
+B ----> |172.16.         |.0.0       |
+C ----> |192.168.0.      |.0         |
+```
+
 ---
 
 ## Günlük Hayattan Örnek
