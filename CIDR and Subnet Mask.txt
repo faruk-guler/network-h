@@ -3,11 +3,32 @@
 ########################################
 https://farukguler.com/posts/cidr-and-ip-subnetting/
 
-⚡⚡IP Adresi Nedir?
-IP (Internet Protocol) adresi, cihazların internet veya yerel ağ üzerinde iletişim kurmasını sağlayan benzersiz bir kimliktir. 
-İki temel IP türü vardır:
->IPv4: 32 bit uzunluğunda olup 192.168.1.1 gibi dört sayıdan oluşur.
->IPv6: 128 bit uzunluğunda olup 2001:db8::ff00:42:8329 gibi daha uzun bir formata sahiptir.
+. CIDR (Birleştirme)
+İnternet üzerindeki binlerce küçük yolu, tek bir ana yol gibi göstermektir.
+
+Mantık: "Supernetting" (Ağları birleştirme).
+
+Özet: Birçok küçük IP bloğunu tek bir büyük blok altında toplayıp internet trafiğini rahatlatır.
+
+Örnek: 4 adet küçük mahalleyi, dış dünyaya tek bir "İlçe" olarak tanıtmak.
+
+2. VLSM (Bölme)
+Elinizdeki bir IP bloğunu israf etmeden, ihtiyaca göre farklı boyutlarda parçalamaktır.
+
+Mantık: "Subnetting" (Ağı parçalara ayırma).
+
+Özet: Aynı ağ içinde hem 2 kişilik hem 50 kişilik odalar (alt ağlar) oluşturmanıza izin verir.
+
+Örnek: Bir pastayı 10 kişiye eşit değil de, bazısına büyük bazısına küçük dilimler halinde dağıtmak.
+
+Kısaca Fark
+CIDR: İnternet yollarını kısaltmak için ağları dışarıya karşı gruplar.
+
+VLSM: Şirket içinde IP israfını önlemek için ağı içeride farklı boyutlara böler.
+
+Her ikisi de artık "A, B, C sınıfı" gibi eski kurallara uymadığımız için hayatımızda.
+
+
 
 💊💊 CIDR(Classless Inter-Domain Routing) Nedir?
 CIDR, Subnet Mask'ın daha net ve anlaşılır bir biçimde gösterimidir. IP adreslerini ve ağları verimli bir şekilde bölmek için kullanılır.

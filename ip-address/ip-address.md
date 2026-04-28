@@ -29,9 +29,3 @@ Senin cihazın              →    google.com sunucusu
 | Durum | Hâlâ yaygın | Geçiş süreci devam ediyor |
 
 ---
-
-IPv4 adreslerinin yetmemeye başlaması nedeniyle **Public / Private / Reserved** ayrımı ortaya çıktı —
-az adresle daha fazla cihazı yönetmek için.
- 
-IPv4 protokolünde toplam **2³² = 4.294.967.296** adet adres bulunur.
-
