@@ -13,3 +13,6 @@ Private IP adresleri yalnızca yerel ağ (LAN) içinde geçerlidir.
 > **Not:** Bu adresler internette yönlendirilemez. İki farklı evde aynı 192.168.1.5 adresi
 > bulunabilir — çünkü her ikisi de kendi yerel ağlarında geçerlidir, dışarıdan görünmezler.
  
+# Extra:
+- APIPA Link-Local addres: 169.254.0.0 – 169.254.255.255
+- Loopback: 127.0.0.1 - 127.255.255.255
