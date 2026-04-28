@@ -13,6 +13,7 @@ Mantık: "Subnetting" (Ağı parçalara ayırma)
 CIDR, Subnet Mask'ın daha net ve anlaşılır bir biçimde gösterimidir. IP adreslerini ve ağları verimli bir şekilde "bölmek" için kullanılır.
 CIDR, IP adresinin sonuna eklenen bir eğik çizgi ve sayı ile gösterilir. [/*]
 Bu sayı, ağın kaç bitlik kısmının ağ adresi olduğunu veya bit’lerin soldan sağa kaç tanesinin 1 olduğunu gösterir.
+Aslında ISP’lerin (internet servis sağlayıcıların), bir firma ya da ev kullanıcısı için bir adres ayırmak için kullandıkları yöntemde budur.
 
 Mantık: "Supernetting" (Ağları birleştirme).
 Özet: Birçok küçük IP bloğunu tek bir büyük blok altında toplayıp internet trafiğini rahatlatır.
