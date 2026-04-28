@@ -5,6 +5,9 @@
 > https://www.farukguler.com , https://gelecegiyazanlar.turkcell.com.tr/konu/egitim/temel-network-egitimi/terimler-sozlugu
 ---
 
+
+---
+
 ## ACL (Access Control List)
 
 Ağ trafiğini filtrelemek ve güvenliği sağlamak için router veya switch üzerinde tanımlanan kurallar listesidir. İzin verilen veya engellenen IP adreslerini, portları ve protokolleri belirler.
