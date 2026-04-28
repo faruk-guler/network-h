@@ -5,6 +5,15 @@
 > https://www.farukguler.com , https://gelecegiyazanlar.turkcell.com.tr/konu/egitim/temel-network-egitimi/terimler-sozlugu
 ---
 
+## Bit
+
+Bir 1 veya 0 olan ikili sayı. Sekiz bit, bir **byte** yapar.
+
+## Octet
+
+Kesin ve değişmez bir şekilde 8 bit'ten oluşan ikili (binary) bir sayı bloğudur. Ağ dünyasında standartları korumak için kullanılır.
+
+
 
 ---
 
@@ -44,9 +53,7 @@ Ağ sinyalleri arasında kullanılan en yüksek ve en düşük frekanslar arası
 
 Birleri ve sıfırları kullanan, iki karakterli bir numaralama yöntemi. İkili numaralama sistemi, bilgilerin tamamen dijital gösterimi temeline dayanır.
 
-## Bit
 
-Bir 1 veya 0 olan ikili sayı. Sekiz bit, bir **byte** yapar.
 
 ## Bridge (Köprü)
 
