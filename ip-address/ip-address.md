@@ -25,5 +25,5 @@ Senin cihazın              →    google.com sunucusu
 |---|---|---|
 | Örnek | 192.168.1.1 | 2001:0db8:85a3::8a2e |
 | Format | 32 bit, 4 oktet | 128 bit |
-| Toplam adres | ~4,3 milyar | 340 trilyon trilyon trilyon |
+| Toplam adres | ~4,3 milyar | Yaklaşık 340 Undesilyon |
 | Durum | Hâlâ yaygın | Geçiş süreci devam ediyor |
