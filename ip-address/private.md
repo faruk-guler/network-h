@@ -1,4 +1,3 @@
-<<<<<<< HEAD:ip-address/private.md
 ## 1. Private IP Adresleri
  
 Private IP adresleri yalnızca yerel ağ (LAN) içinde geçerlidir.
@@ -31,5 +30,3 @@ Private IP adresleri yalnızca yerel ağ (LAN) içinde geçerlidir.
 > **Not:** Bu adresler internette yönlendirilemez. İki farklı evde aynı 192.168.1.5 adresi
 > bulunabilir — çünkü her ikisi de kendi yerel ağlarında geçerlidir, dışarıdan görünmezler.
  
-
->>>>>>> 9baad07dbff3c208041e1c6a1d10a0f28fb6207b:public-private-addresses/private.md
