@@ -1,7 +1,13 @@
 # Routing (Yönlendirme)
 
->> Yerel erişim: 10.5.10.10 cihazı, 10.5.10.20 ile iletişim kurmak isterse, gateway devreye girmez. Doğrudan iki cihaz arasında iletişim sağlanır.
+> Yerel erişim: 10.5.10.10 cihazı, 10.5.10.20 ile iletişim kurmak isterse, gateway devreye girmez. Doğrudan iki cihaz arasında iletişim sağlanır.
 
->> İnternet erişimi: 10.5.10.10 cihazı internete (193.156.56.164 public IP) bağlanmak istediğinde, paket önce 10.5.10.1 gateway cihazına yönlendirilir.
+> İnternet erişimi: 10.5.10.10 cihazı internete (193.156.56.164 public IP) bağlanmak istediğinde, paket önce 10.5.10.1 gateway cihazına yönlendirilir.
 
->> Gateway: Gateway ise (193.156.56.164) public ip adresine internet yönlendirmesini yapar ve veriyi hedefe iletir.
+> Gateway: Gateway ise (193.156.56.164) public ip adresine internet yönlendirmesini yapar ve veriyi hedefe iletir.
+
+## Varsayılan Ağ Geçidi (Default Gateway)
+
+Özellikle "İnternete nasıl çıkıyoruz?" sorusunun cevabı budur.
+
+Senin Metnin: "İnternet erişimi: Paket önce 10.5.10.1 gateway cihazına yönlendirilir" kısmı tam olarak bu başlığın kalbidir. Okuyucuya her cihazın bir "çıkış kapısı" (gateway) olması gerektiğini burada öğretebilirsin.
