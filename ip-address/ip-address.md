@@ -28,7 +28,8 @@ Senin cihazın              →    google.com sunucusu
 | Toplam adres | ~4,3 milyar | Yaklaşık 340 Undesilyon |
 | Durum | Hâlâ yaygın | Geçiş süreci devam ediyor |
 
-🧪🧪 IP adresi Network ve Host olmak üzere iki bölümden oluşmaktadır ve Adres Sınıflarına göre farklılık göstermektedir.
+
+🧪🧪 IP adresi Network ve Host olmak üzere iki bölümden oluşmaktadır ve Adres Sınıflarına göre farklılık göstermektedir. (IPv4 örneği)
 
 ```
 |Network |host  | -----> Örnek B Class
