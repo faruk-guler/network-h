@@ -1,4 +1,0 @@
-
-Binary: İkiliğin Diyalektiği Antik Yunan’daki Dyad ($δυάς$) kavramı. Evrendeki her şeyin "Var" (1) ve "Yok" (0) arasındaki o muazzam dengeden oluşur. Elektrik var yada yok
-Decimal: Latince Decem (On)
-Hexadecimal: Melez Yunanca Hex (6) + Latince Decem (10) Hexadecimal (onaltılık) sayı sistemi "0-9" arası rakamlar ve "A-F" arası harfler
