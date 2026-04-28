@@ -1,4 +1,4 @@
-# 09 - WAN Teknolojileri: Dünyayı Birbirine Bağlamak 🌍
+# WAN Teknolojileri: Dünyayı Birbirine Bağlamak 🌍
 
 **LAN (Yerel Ağ)** bir binayı bağlar, **WAN (Geniş Alan Ağı)** ise dünyayı! İnternet, dünyanın en büyük WAN'ıdır. Ancak şirketler, ofislerini birbirine bağlamak için internet dışında özel WAN teknolojileri de kullanır.
 
@@ -107,8 +107,3 @@ Bulut sağlayıcısının veri merkezinde size ayrılmış **sanal özel ağdır
 Ofisinizdeki fiziksel sunucular ile Bulut'taki sunucuların birbirine VPN veya Direct Connect (özel hat) ile bağlanmasıdır.
 
 ---
-
-**Navigasyon:**
-
-- [⬅️ Önceki: Ağ Güvenliği](./08-Ag-Guvenligi-Temelleri.md)
-- [🏠 Ana Sayfa](./README.md)
