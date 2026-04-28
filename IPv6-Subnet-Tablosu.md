@@ -155,8 +155,3 @@ IPv6 önek (prefix) uzunlukları ve barındırdıkları IP adresi sayıları. Bu
 5. **/48 Kurum Tahsisi:** Bir /48 alan bir şirkete **65,536 adet /64 alt ağı** verir. Bu, dünyadaki çoğu kuruluş için fazlasıyla yeterlidir!
 
 ---
-
-**Navigasyon:**
-
-- [🏠 Ana Sayfa](./README.md)
-- [📊 IPv4 Subnet Tablosu](./04-IP-Adresleme-ve-Subnetting-IPv4-Subnet-Tablosu.md)
