@@ -28,4 +28,3 @@ Senin cihazın              →    google.com sunucusu
 | Toplam adres | ~4,3 milyar | 340 trilyon trilyon trilyon |
 | Durum | Hâlâ yaygın | Geçiş süreci devam ediyor |
 
----
