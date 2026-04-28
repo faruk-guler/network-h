@@ -1,8 +1,8 @@
 # 📖 Ağ Terminolojisi Sözlüğü
 
-> **Kaynaklar:** [www.farukguler.com](https://www.farukguler.com)
-> - [Turkcell Gelecegi Yazanlar - Terimler Sözlüğü](https://gelecegiyazanlar.turkcell.com.tr/konu/egitim/temel-network-egitimi/terimler-sozlugu)
-
+> **Kaynaklar:**
+> 
+> https://www.farukguler.com , https://gelecegiyazanlar.turkcell.com.tr/konu/egitim/temel-network-egitimi/terimler-sozlugu
 ---
 
 ## ACL (Access Control List)
