@@ -1,17 +1,7 @@
 # ARP – Adres Çözümleme Protokolü
+RFC 826 ile tanımlanan, IP adresinden MAC adresini bulan protokoldür.
 
 > **"IP adresini biliyorum, ama kapıyı çalmak için isim lazım."**
-
----
-
-## Ne İşe Yarar?
-
-Ağda bir cihaza veri göndermek için hem **IP adresi** hem de **MAC adresi** gerekir.
-
-- IP adresi → elimizde var.
-- MAC adresi → **bilmiyoruz.**
-
-ARP, bu MAC adresini sormak için kullanılır.
 
 ---
 
@@ -32,15 +22,12 @@ ARP, bu MAC adresini sormak için kullanılır.
 Öğrenilen IP-MAC eşleşmeleri saklanır. Görüntülemek için:
 
 ```bash
+Linux:
 arp -a
+
+Windows:
+arp -a
+
 ```
 
 ---
-
-## Özet
-
-| | |
-|---|---|
-| **Ne yapar?** | IP → MAC adresini öğrenir |
-| **Nerede çalışır?** | Yerel ağ (LAN) |
-| **IPv6'daki karşılığı** | NDP |
