@@ -1,24 +1,6 @@
-# 🏡 Basic Subnetting (Alt Ağlara Bölme) Nedir?
+# 🏡 Subnetting (Alt Ağlara Bölme) Nedir?
 Subnetting, büyük bir IP adres aralığını daha küçük ve yönetilebilir parçalara (subnet’lere) bölme işlemidir.  
 Amaç: IP adreslerini verimli kullanmak, ağı düzenlemek, performansı artırmak.
-
----
-
-## 📖 Günlük Hayat Metaforu
-| Ağ Kavramı        | Günlük Hayat Karşılığı   | Açıklama |
-|-------------------|--------------------------|----------|
-| Büyük Ağ (IP Bloğu) | Devasa Konut Sitesi     | Binlerce daire (cihaz) için ayrılmış büyük adres aralığı |
-| Subnetting        | Siteyi Bloklara Ayırmak  | Büyük IP aralığını A Blok, B Blok, C Blok gibi küçük parçalara bölmek |
-| Alt Ağ Maskesi    | Kapıcı/Güvenlik Kuralı   | Bir IP adresinin hangi blokta olduğunu ve o blokta kaç daire (cihaz) olduğunu belirler |
-
----
-
-## 🌟 Neden Önemli?
-- **Adres Verimliliği:** Adresler boşa gitmez.
-- **Performans:** Bir bloktaki trafik diğerini etkilemez.
-- **Hızlı Yönlendirme:** Router, tek tek dairelere bakmak yerine doğrudan ilgili bloğa gider.
-
----
 
 ## Nasıl Çalışır?
 
