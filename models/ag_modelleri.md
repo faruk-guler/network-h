@@ -3,7 +3,7 @@
 Ağ iletişiminin nasıl çalışacağını tanımlayan standart çerçevelerdir.
 Farklı üreticilerin cihazlarının birbiriyle konuşabilmesi için ortak bir dil sağlarlar.
 
-## 1. OSI Modeli (7 Katman)
+## 1. OSI Modeli (7 Katman)..
 
 ISO tarafından geliştirilen teorik referans modelidir.
 "Veri nasıl iletilmeli?" sorusuna katmanlı bir cevap verir.
