@@ -6,7 +6,7 @@ Amaç: IP adreslerini verimli kullanmak, ağı düzenlemek, performansı artırm
 
 Subnetting, bir IP adresinin "Host" (kullanıcı) için ayrılan kısmından "bit" (dijital 1 veya 0) "ödünç alıp" bu bitleri "Alt Ağ" (Subnet) adresi olarak kullanma prensibine dayanır.
 
-Bu ayırma işlemini **Subnet Mask (Alt Ağ Maskesi)** adı verilen bir adres belirler.
+Bu ayırma işlemini **Subnet Mask (Alt Ağ Maskesi)** adı verilen bir adres belirler. Netmask yani Subnetmask network ve host id belirlemek içindir.
 
 ---
 ```
