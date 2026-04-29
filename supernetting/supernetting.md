@@ -1,4 +1,4 @@
-# 04 - Supernetting (Rota Özeti / Ağ Birleştirme)
+# Supernetting (Rota Özeti / Ağ Birleştirme)
 
 **Supernetting**, subnettingin tam tersidir! Birden fazla küçük ağı, **tek bir büyük ağ** gibi göstererek routing tablosunu küçültürüz.
 
