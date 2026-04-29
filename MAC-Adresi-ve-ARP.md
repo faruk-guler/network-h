@@ -57,8 +57,11 @@ ifconfig en0            # "ether" satırı
 ## 🔗 ARP (Address Resolution Protocol)
 
 ### ARP Nedir?
+RFC 826 ile tanımlanan, IP adresinden MAC adresini bulan protokoldür. Öğrenilen IP-MAC eşleşmeleri RAM'de geçici olarak saklanır. Bilgisayar kapatılınca veya süre dolunca silinir. Bu sayede aynı cihaza her veri gönderildiğinde tekrar ARP isteği yapılmaz.
 
-Bir cihaz, hedef IP adresini bilir ama MAC adresini bilmez. ARP, **IP → MAC** çevirisini yapar.
+> **"IP adresini biliyorum, ama kapıyı çalmak için isim lazım."**
+
+---
 
 ### ARP Nasıl Çalışır?
 
