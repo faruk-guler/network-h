@@ -1,11 +1,3 @@
-# MAC Adresi ve Switching
-
-Veri Bağlantı Katmanı (OSI Layer 2), **aynı ağ** içindeki cihazlar arasındaki iletişimi sağlar. Bu katmanın iki kahramanı vardır: **MAC Adresi** ve **Switch**.
-
-> 💡 **Benzetme:** IP adresi şehir adresi, MAC adresi ise **TC kimlik numarası** gibidir. IP değişebilir ama MAC (genellikle) sabittir.
-
----
-
 ## 🆔 MAC Adresi (Media Access Control)
 
 ### MAC Adresi Nedir?
