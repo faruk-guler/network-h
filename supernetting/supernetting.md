@@ -314,9 +314,3 @@ Eğer her `/24`'ü ayrı ayrı duyursalardı, internet routing tablosu patlardı
 </details>
 
 ---
-
-**Navigasyon:**
-
-- [⬅️ Önceki: VLSM](./04-IP-Adresleme-ve-Subnetting-VLSM.md)
-- [🏠 Ana Sayfa](./README.md)
-- [➡️ Sonraki: IPv6 Derinlemesine](./04-IP-Adresleme-ve-Subnetting-IPv6-Derinlemesine.md)
