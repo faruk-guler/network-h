@@ -4,6 +4,8 @@
 
 **Network (Ağ)**, iki veya daha fazla cihazın **veri paylaşmak** için birbirine bağlandığı yapıdır. İnternet, dünyanın en büyük ağıdır!
 
+---
+
 | Sistem | Slogan | Kök | Örnek |
 |---|---|---|---|
 | Binary | Elektrik var ya da yok | Latince *Bini* (İkişerli) | `11000000.10101000.00000001.00000001` |
