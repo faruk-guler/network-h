@@ -1,4 +1,4 @@
-# 04 - Supernetting (Rota Özeti / Ağ Birleştirme)
+# Supernetting (Rota Özeti / Ağ Birleştirme)
 
 **Supernetting**, subnettingin tam tersidir! Birden fazla küçük ağı, **tek bir büyük ağ** gibi göstererek routing tablosunu küçültürüz.
 
@@ -274,16 +274,6 @@ Eğer her `/24`'ü ayrı ayrı duyursalardı, internet routing tablosu patlardı
 
 4. **Dokümantasyon:** Hangi blokları özetlediğinizi mutlaka not edin, aksi halde ağ yönetimi karmaşıklaşır.
 
----
-
-## 🔗 İlgili Konular
-
-- [VLSM (Variable Length Subnet Masking)](./04-IP-Adresleme-ve-Subnetting-VLSM.md)
-- [CIDR Notasyonu](./04-IP-Adresleme-ve-Subnetting-IP-Adresi-ve-CIDR.md)
-- [Routing Protokolleri](./05-Yonlendirme-Routing-Router-Nasil-Calisir.md)
-
----
-
 ## 🧮 Pratik Alıştırma
 
 **Soruların:**
@@ -314,9 +304,3 @@ Eğer her `/24`'ü ayrı ayrı duyursalardı, internet routing tablosu patlardı
 </details>
 
 ---
-
-**Navigasyon:**
-
-- [⬅️ Önceki: VLSM](./04-IP-Adresleme-ve-Subnetting-VLSM.md)
-- [🏠 Ana Sayfa](./README.md)
-- [➡️ Sonraki: IPv6 Derinlemesine](./04-IP-Adresleme-ve-Subnetting-IPv6-Derinlemesine.md)
