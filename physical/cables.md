@@ -1,4 +1,4 @@
-#### RJ45 Konnektör ve Renk Sırası
+#### RJ45 Konnektör
 
 **T568B Standardı (En yaygın):**
 
