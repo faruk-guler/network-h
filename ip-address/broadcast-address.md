@@ -1,4 +1,5 @@
-
+# Broadcast
+Bir subnet içindeki son IP adresi broadcast adresidir, bu adrese gönderilen paket tüm hostlara iletilir.
 
 ## Local Broadcast Adresler
 
