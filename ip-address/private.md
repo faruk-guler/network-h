@@ -1,4 +1,4 @@
-## Private IP Adresleri
+# Private IP Adresleri
  
 Private IP adresleri yalnızca yerel ağ (LAN) içinde geçerlidir.
 İnternete doğrudan çıkamazlar; router üzerinden NAT ile public IP'ye dönüştürülürler.
@@ -13,9 +13,9 @@ Private IP adresleri yalnızca yerel ağ (LAN) içinde geçerlidir.
 > **Not:** Bu adresler internette yönlendirilemez. İki farklı evde aynı 192.168.1.5 adresi
 > bulunabilir — çünkü her ikisi de kendi yerel ağlarında geçerlidir, dışarıdan görünmezler.
 
-# Loopback:
+## Loopback:
 Hostların kendini test etmeleri ve iç ağında kullanmaları içindir.(servisler vb.) Tüm bu network Loopback için ayrılmıştır.
 - Loopback: 127.0.0.1 - 127.255.255.255
 
-# Extra:
+## Extra:
 - APIPA Link-Local addres: 169.254.0.0 – 169.254.255.255 > 🔹 DHCP servere ulaşılamadığında hostun KENDİNE atadığı otomatik IP adresidir.
