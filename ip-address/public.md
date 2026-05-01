@@ -1,4 +1,4 @@
-## 2. Public IP Adresleri
+## Public IP Adresleri
  
 Public IP adresleri, internette **küresel olarak benzersizdir**.
 ISP'ler (Türk Telekom, Superonline vb.) tarafından IANA → RIR → ISP zinciriyle dağıtılır.
