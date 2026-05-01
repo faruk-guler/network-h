@@ -1,24 +1,4 @@
-# 🏡 Subnetting (Alt Ağlara Bölme) Nedir?
-Subnetting, büyük bir IP adres aralığını daha küçük ve yönetilebilir parçalara (subnet’lere) bölme işlemidir.  
-Amaç: IP adreslerini verimli kullanmak, ağı düzenlemek, performansı artırmak.
-
-## Nasıl Çalışır?
-
-Subnetting, bir IP adresinin "Host" (kullanıcı) için ayrılan kısmından "bit" (dijital 1 veya 0) "ödünç alıp" bu bitleri "Alt Ağ" (Subnet) adresi olarak kullanma prensibine dayanır.
-
-Bu ayırma işlemini **Subnet Mask (Alt Ağ Maskesi)** adı verilen bir adres belirler. Netmask yani Subnetmask network ve host id belirlemek içindir.
-
----
-```
-# IP Adress
-192.168.1.10
-│││││││││││└── Host kısmı (bilgisayar)
-└─────────── Network kısmı (ağ)
-
-# Subnet Mask
-255.255.255.0  ← Bu /24 demek
-│││││││││││
-└─────────── 1'ler = Network, 0'lar = Host
+= Host
 ```
 ---
 
