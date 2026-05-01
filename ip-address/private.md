@@ -18,5 +18,4 @@ Hostların kendini test etmeleri ve iç ağında kullanmaları içindir.(servisl
 - Loopback: 127.0.0.1 - 127.255.255.255
 
 # Extra:
-- APIPA Link-Local addres: 169.254.0.0 – 169.254.255.255
-- Default Gateway: 0
+- APIPA Link-Local addres: 169.254.0.0 – 169.254.255.255 > 🔹 DHCP servere ulaşılamadığında cihazın KENDİNE atadığı otomatik IP adresidir.
