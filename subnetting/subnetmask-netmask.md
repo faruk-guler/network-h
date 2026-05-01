@@ -15,15 +15,14 @@ Neden Subnet'lere ihtiyaç duyarız tek bir ağ yeterli olmaz mı?
 - Broadcast Router' dan geçemediği için yalnızca bir ağ içerisinde hapsolur ve diğer ağlara erişemez. Bu sayede trafik sorunu ortadan kalkar.
 
 
-**Subnet Mask (Alt Ağ Maskesi);**
+## Default Subnet Mask
+```
 
-A Sınıfı Adres:
+|Class  |Network          |Host       |
+A ----> |255.             |.0.0.0     |
+B ----> |255.255.         |.0.0       |
+C ----> |255.255.255.     |.0         |
 
-**255.0.0.0**  
-| Network | Host |
-
-B Sınıfı Adres: **255.255.0.0**  
-(Network | Host)
-
-C Sınıfı Adres: **255.255.255.0**  
-(Network | Host)
+|Network |Host  |
+|192.168 |32.170| > B class örneği
+```
