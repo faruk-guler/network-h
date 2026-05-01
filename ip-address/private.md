@@ -17,5 +17,6 @@ Private IP adresleri yalnızca yerel ağ (LAN) içinde geçerlidir.
 Hostların kendini test etmeleri ve iç ağında kullanmaları içindir.(servisler vb.) Tüm bu network Loopback için ayrılmıştır.
 - Loopback: 127.0.0.1 - 127.255.255.255
 
-## Extra:
-- APIPA Link-Local addres: 169.254.0.0 – 169.254.255.255 > 🔹 DHCP servere ulaşılamadığında hostun KENDİNE atadığı otomatik IP adresidir.
+## APIPA:
+DHCP servere ulaşılamadığında hostun KENDİNE atadığı otomatik IP adresidir.
+- APIPA Link-Local addres: 169.254.0.0 – 169.254.255.255
