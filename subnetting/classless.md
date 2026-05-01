@@ -1,14 +1,5 @@
 #   CLASSLESS (SINIFSIZ) AĞ MİMARİSİ
 
-💊💊 VLSM (Variable Length Subnet Masking)
-
-Geleneksel, katı IP sınıf kurallarını yıkarak, devasa bir ağı farklı boyutlardaki (farklı kapasitelerdeki) alt ağlara bölme teknolojisidir.
-Ağdaki IP israfını azaltmayı amaçlar.
-```
-Mantık: "Subnetting" (Ağı parçalara ayırma)
-Özet: Aynı ağ içinde hem 2 kişilik hem 50 kişilik odalar (alt ağlar) oluşturmanıza izin verir.
-```
-
 💊💊 CIDR (Classless Inter-Domain Routing)
 Subnet Mask'ın daha net ve anlaşılır bir biçimde gösterimidir. IP adreslerini ve ağları verimli bir şekilde "bölmek" için kullanılır. Aslında ISP’lerin (internet servis sağlayıcıların), bir firma ya da ev kullanıcısı için bir adres ayırmak için kullandıkları yöntemde budur.
 
@@ -34,4 +25,13 @@ Mantık: "Supernetting" (Ağları birleştirme).
 ## 💊 Buradaki "1" ler network'ü temsil ederken "0" lar hostları temsil eder.
 
 😉💡 Her ikisi de artık "A, B, C sınıfı" gibi eski kurallara uymadığımız için hayatımızdadır.
+```
+
+💊💊 VLSM (Variable Length Subnet Masking)
+
+Geleneksel, katı IP sınıf kurallarını yıkarak, devasa bir ağı farklı boyutlardaki (farklı kapasitelerdeki) alt ağlara bölme teknolojisidir.
+Ağdaki IP israfını azaltmayı amaçlar.
+```
+Mantık: "Subnetting" (Ağı parçalara ayırma)
+Özet: Aynı ağ içinde hem 2 kişilik hem 50 kişilik odalar (alt ağlar) oluşturmanıza izin verir.
 ```
