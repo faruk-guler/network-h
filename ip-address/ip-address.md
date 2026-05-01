@@ -31,7 +31,7 @@ Senin cihazın              →    google.com sunucusu
 
 🧪🧪 IP Adresi formatı "Network" ve "Host" olmak üzere iki bölümden oluşmaktadır ve Adres Sınıflarına göre farklılık göstermektedir. Network ağı, Host ise uç cihazları ifade eder.
 ```
-|Network |host  | -----> Örnek B Class
+|Network |host  |
 |192.168 |32.170|
 
 |Class  |Network         |host       |
@@ -39,3 +39,4 @@ A ----> |10.             |.0.0.0     |
 B ----> |172.16.         |.0.0       |
 C ----> |192.168.0.      |.0         |
 ```
+B Class IPv5 örneği
