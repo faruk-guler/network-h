@@ -21,8 +21,8 @@ Neden Subnet'lere ihtiyaç duyarız tek bir ağ yeterli olmaz mı?
 
 ## Default Subnet Mask
 ```
-
 |Class  |Network          |Host       |
+
 A ----> |255.             |.0.0.0     |
 B ----> |255.255.         |.0.0       |
 C ----> |255.255.255.     |.0         |
