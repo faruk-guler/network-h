@@ -1,5 +1,4 @@
-= Host
-```
+
 ---
 
 ## 🔑 Temel Mantık
