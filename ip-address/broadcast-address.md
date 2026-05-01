@@ -2,8 +2,8 @@
 
 ## Local Broadcast Adresler
 
-- Aynı Anda Yerel Alanda Tüm Cihazlara Veri Göndermek İçin Kullanılıyor.
-- IP Adresinin Tüm Bitleri Binary "1" Yapılarak Elde Ediliyor.
+- Aynı Anda Yerel Alanda Tüm Cihazlara Veri Göndermek İçin Kullanılır.
+- IP Adresinin Tüm Bitleri Binary "1" Yapılarak Elde Edilir.
 
 **Binary:** `11111111.11111111.11111111.11111111`
 
@@ -16,8 +16,8 @@
 
 ## Directed Broadcast Adresler
 
-- Belirli Bir Network'te Bulunan Tüm Cihazlara Veri Göndermek İçin Kullanılıyor.
-- IP Adresinin Kullanıcı İçin Ayrılmış Oktetlerinde Tüm Bitleri Binary "1" Yapılarak Elde Ediliyor.
+- Belirli Bir Network'te Bulunan Tüm Cihazlara Veri Göndermek İçin Kullanılır
+- IP Adresinin Kullanıcı İçin Ayrılmış Oktetlerinde Tüm Bitleri Binary "1" Yapılarak Elde Edilir.
 
 **Network:** `172.16.0.0`
 
