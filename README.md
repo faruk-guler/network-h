@@ -6,6 +6,8 @@
 
 ---
 
+## Sayı Sistemleri
+
 | Sistem | Slogan | Kök | Örnek |
 |---|---|---|---|
 | Binary | Elektrik var ya da yok | Latince bīnārius (İkişerli) | `11000000.10101000.00000001.00000001` |
