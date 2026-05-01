@@ -1,4 +1,4 @@
-## Public IP Adresleri
+# Public IP Adresleri
  
 Public IP adresleri, internette **küresel olarak benzersizdir**.
 ISP'ler (Türk Telekom, Superonline vb.) tarafından IANA → RIR → ISP zinciriyle dağıtılır.
@@ -17,7 +17,7 @@ IPv4'te public adresler **classful (sınıflı) adresleme** sistemiyle 5 sınıf
 > Gerçek anlamda kullanılabilen public IP'ler yalnızca **A, B ve C sınıflarındadır**
 > (içlerindeki private aralıklar hariç tutularak).
  
-# Ornek Public IP Adresleri 🌍
+## Ornek Public IP Adresleri 🌍
 - 8.8.8.8 → Google DNS
 - 142.250.190.78 → Google
 - 104.18.7.35 → Cloudflare
