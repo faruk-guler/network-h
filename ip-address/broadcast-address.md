@@ -11,9 +11,7 @@
 
 > Router Broadcast Paketlerini Geçirmez
 
-**Örnek**: DHCP ip adresi talepleri
-
-*DHCP server farklı ağda ise routerler üzerinde IP Helper açılmalıdır.*
+**Örnek**: DHCP ip adresi talepleri *DHCP server farklı ağda ise routerler üzerinde IP Helper açılmalıdır.*
 
 ---
 
