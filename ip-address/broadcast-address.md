@@ -13,6 +13,8 @@
 
 **Örnek**: DHCP ip adresi talepleri
 
+*DHCP server farklı ağda ise routerler üzerinde IP Helper açılmalıdır.*
+
 ---
 
 ## Directed Broadcast Adresler
