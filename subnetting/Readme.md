@@ -1,6 +1,4 @@
 
-
-
 ## 🧮 Basit Formüller
 | Hesaplama Türü         | Formül         | Açıklama                                      |
 |------------------------|----------------|-----------------------------------------------|
@@ -29,10 +27,9 @@
 ---
 
 ✅ **Özet:**  
-- **Subnetting** = Büyük ağı küçük parçalara bölmek.
-- **Broadcast** = Bir subnet içindeki son IP adresi broadcast adresidir, bu adrese gönderilen paket tüm hostlara iletilir.
+
 - "Host bitlerinden ödünç al, Network bitlerine ekle" - Bu basit mantığı unutmayın!
 - **Formüller**: Host sayısı = `2^(host bitleri) - 2`, Alt ağ sayısı = `2^(ödünç alınan bitler)`.
 - **Pratik İpucu**: Subnet hesaplayıcıları (örn. subnet-calculator.com) veya Cisco CLI ile hızlıca yapabilirsin!
 - > ℹ️ Not: Bu içerik IPv4 subnetting üzerine odaklanır. IPv6’da subnetting mantığı farklıdır ve genellikle /64 bloklar halinde planlanır.
-> Daha fazla bilgi için [farukguler.com Subnetting Aracı](https://farukguler.com/app/IPv4-subnet-calculator/) veya çevrimiçi araçları kullan!
+
