@@ -1,6 +1,6 @@
 ## 🆔 MAC Adresi (Media Access Control)
 
-### MAC Adresi Nedir?*
+### MAC Adresi Nedir?
 
 Her ağ kartının (NIC) fabrikada atanan **benzersiz fiziksel adresidir**.
 
