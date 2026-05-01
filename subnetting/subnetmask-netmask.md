@@ -24,7 +24,7 @@ IP Adresi: 87.121.165.49 = 01010111.01111001.10100101.00110001
 NetMask (/14): 11111111.11111100.00000000.00000000 = 255.252.0.0
                | | |     ↑14 bit network↑ ↑18 bit host↑
 
-🎯 Adım 2: Network Adresi (AND İşlemi)
+🔢 Adım 2: Network Adresi (AND İşlemi)
 
 IP:        01010111.01111001.10100101.00110001
 Mask:      11111111.11111100.00000000.00000000
@@ -34,7 +34,7 @@ Decimal:   87     . 120    . 0      . 0
 
 ✅ Network Adresi: 87.120.0.0
 
-📡 Adım 3: Broadcast Adresi (Host Bitleri = 1)
+🔢 Adım 3: Broadcast Adresi (Host Bitleri = 1)
 Broadcast Adresi;
 Network:   01010111.01111000.00000000.00000000
 Hostleri 1 yap:
