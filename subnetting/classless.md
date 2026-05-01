@@ -34,4 +34,8 @@ Ağdaki IP israfını azaltmayı amaçlar.
 ```
 Mantık: "Subnetting" (Ağı parçalara ayırma)
 Özet: Aynı ağ içinde hem 2 kişilik hem 50 kişilik odalar (alt ağlar) oluşturmanıza izin verir.
+IP NetMask
+192.168.1.1 255.255.255.0
+192.168.1.1 /24
+
 ```
