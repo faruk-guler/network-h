@@ -9,7 +9,11 @@ Yani, ağ maskesi, bir IP adresinin hangi kısmının ağla, hangi kısmının i
 AND kuralı: "Her iki bit de 1 ise sonuç 1, diğer tüm durumlarda sonuç 0" ✅
 
 ```
-
+IP Adresi: 172.16.1.1 =  10101100.00010000.00000001.00000001
+                         ⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️⬇️
+Net Mask: 255.255.0.0  = 11111111.11111111.00000000.00000000
+-------------------------------------------------------------
+Network: 172.16.0.0  =   10101100.00010000.00000000.00000000
 ```
 
 ## >_ Subnet Mask neden gerekli?
