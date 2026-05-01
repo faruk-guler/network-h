@@ -5,6 +5,8 @@
 > - https://www.farukguler.com  
 > - https://gelecegiyazanlar.turkcell.com.tr/konu/egitim/temel-network-egitimi/terimler-sozlugu
 
+---
+
 ## Bit
 
 Bir 1 veya 0 olan ikili sayı. Sekiz bit, bir **byte** yapar.
@@ -24,7 +26,6 @@ IP adresinin bir bölümünü tanımlayan 8 bitlik değer. Her oktet 0-255 aras�
 
 Bir ağdaki tüm cihazlara gönderilen mesajların ulaştırıldığı adrestir. Örneğin, /24 subnet maskesi ile `192.168.1.0` IP ağı için broadcast adresi `192.168.1.255`'tir.
 
----
 ---
 
 ## ACL (Access Control List)
