@@ -29,8 +29,7 @@ Senin cihazın              →    google.com sunucusu
 | Durum | Hâlâ yaygın | Geçiş süreci devam ediyor |
 
 
-🧪🧪 IP adresi formatı Network ve Host olmak üzere iki bölümden oluşmaktadır ve Adres Sınıflarına göre farklılık göstermektedir. (IPv4 örneği)
-
+🧪🧪 IP adresi formatı Network ve Host olmak üzere iki bölümden oluşmaktadır ve Adres Sınıflarına göre farklılık göstermektedir. (IPv4 örneği) Network ağı, Host ise uç cihazları ifade eder.
 ```
 |Network |host  | -----> Örnek B Class
 |192.168 |32.170|
