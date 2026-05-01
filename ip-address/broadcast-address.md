@@ -9,7 +9,7 @@
 
 **Decimal:** `255.255.255.255`
 
-> Router Broadcast Paket Geçirmez
+> Router Broadcast Paketlerini Geçirmez
 
 **Örnek**: DHCP ip adresi talepleri
 
