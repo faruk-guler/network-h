@@ -6,7 +6,11 @@ Yani, ağ maskesi, bir IP adresinin hangi kısmının ağla, hangi kısmının i
 
 - Bir cihaz IP adresi ile subnet maskını mantıksal olarak "AND" işlemine tabi tutar ve bulduğu sonuç network adresi olur ve bunu öğrenir. Cihaz hangi ağda olduğunu öğrendikten sonra  bulunduğu ağ içindeki diğer cihazlara doğrudan erişebilir.
 
----
+AND kuralı: "Her iki bit de 1 ise sonuç 1, diğer tüm durumlarda sonuç 0" ✅
+
+```
+
+```
 
 ## >_ Subnet Mask neden gerekli?
 
