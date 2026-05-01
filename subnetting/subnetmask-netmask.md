@@ -2,7 +2,9 @@
 
 Bir IP adresinin hangi kısmının ağ (network) ve hangi kısmının cihaz (host) olduğunu belirleyen bir parametredir.
 
-Yani, ağ maskesi, bir IP adresinin hangi kısmının ağla, hangi kısmının ise o ağdaki cihazlarla ilişkili olduğunu ayırır. Daha sonra bunları kullanarak, diğer cihazlarla iletişim kurmanın yolunu bulmaya çalışır. Normal şartlarda aynı ağda olmayan cihazlar birbirleri  ile haberleşemez
+Yani, ağ maskesi, bir IP adresinin hangi kısmının ağla, hangi kısmının ise o ağdaki cihazlarla ilişkili olduğunu ayırır. Daha sonra bunları kullanarak, diğer cihazlarla iletişim kurmanın yolunu bulmaya çalışır. Normal şartlarda aynı ağda olmayan cihazlar birbirleri  ile haberleşemez!
+
+Bir cihaz IP adresi ile subnet maskını mantıksal olarak "AND" işlemine tabi tutarak 
 
 ---
 
