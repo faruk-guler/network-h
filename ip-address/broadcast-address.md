@@ -1,4 +1,4 @@
-# IP Adresleme (IPV4)
+
 
 ## Local Broadcast Adresler
 
