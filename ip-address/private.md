@@ -1,4 +1,4 @@
-## 1. Private IP Adresleri
+## Private IP Adresleri
  
 Private IP adresleri yalnızca yerel ağ (LAN) içinde geçerlidir.
 İnternete doğrudan çıkamazlar; router üzerinden NAT ile public IP'ye dönüştürülürler.
