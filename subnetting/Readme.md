@@ -1,13 +1,5 @@
 
----
 
-## 🔑 Temel Mantık
-- **1’ler (Ağ kısmı):** Blok adresini gösterir, sabit kalır.
-- **0’lar (Host kısmı):** Daire numaralarını gösterir, değişebilir.
-
-Subnetting yaparken, **host kısmındaki bazı bitleri ağ kısmına taşırsın** → daha fazla blok oluşur ama her blokta daha az daire kalır.
-
----
 
 ## 🧮 Basit Formüller
 | Hesaplama Türü         | Formül         | Açıklama                                      |
