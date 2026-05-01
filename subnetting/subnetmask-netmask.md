@@ -4,7 +4,7 @@ Bir IP adresinin hangi kısmının ağ (network) ve hangi kısmının cihaz (hos
 
 Yani, ağ maskesi, bir IP adresinin hangi kısmının ağla, hangi kısmının ise o ağdaki cihazlarla ilişkili olduğunu ayırır. Daha sonra bunları kullanarak, diğer cihazlarla iletişim kurmanın yolunu bulmaya çalışır. Normal şartlarda aynı ağda bulunmayan cihazlar birbirleri  ile haberleşemez! bu durumda iletişim için bir router (yönlendirici) gerekir.
 
-- Bir cihaz IP adresi ile subnet maskını mantıksal olarak "AND" işlemine tabi tutar ve bulduğu sonuç network adresi olur ve bunu öğrenir. Cihaz hangi ağda olduğunu öğrendikten sonra  bulunduğu ağ içindeki diğer cihazlara doğrudan erişebilir.
+- Bir cihaz IP adresi ile subnet maskını mantıksal olarak "AND" işlemine tabi tutar ve bulduğu sonuç ciahzın network adresi olur ve bunu öğrenir. Cihaz hangi ağda olduğunu öğrendikten sonra  bulunduğu ağ içindeki diğer cihazlara doğrudan erişebilir.
 
 AND kuralı: "Her iki bit de 1 ise sonuç 1, diğer tüm durumlarda sonuç 0" ✅
 
