@@ -25,6 +25,7 @@ Neden Subnet'lere ihtiyaç duyarız tek bir ağ yeterli olmaz mı?
 - En büyük nedeni Broadcast trafiğini önlemektir, Bu yüzden ağın küçük alt ağlara bölünmesi gerekir.
 - Router kullanılarak ağlar parçalanır ve fiziksel olarak ayrılır.
 - Broadcast Router' dan geçemediği için yalnızca bir ağ içerisinde hapsolur ve diğer ağlara erişemez. Bu sayede trafik sorunu ortadan kalkar.
+- Güvenliği sağlamak
 
 
 ## Default Subnet Mask
