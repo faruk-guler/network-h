@@ -1,4 +1,4 @@
-## 3. Özel Amaçlı (Reserved) Aralıklar
+## Reserved (Özel Amaçlı) Aralıklar
  
 Ne private ne de normal public sayılan, belirli amaçlar için ayrılmış aralıklardır:
  
