@@ -34,7 +34,7 @@ Senin cihazın              →    google.com sunucusu
 |Network |host  |
 |192.168 |32.170|
 
-|Class  |Network         |host       |
+|Class  |Network         |Host       |
 A ----> |10.             |.0.0.0     |
 B ----> |172.16.         |.0.0       |
 C ----> |192.168.0.      |.0         |
