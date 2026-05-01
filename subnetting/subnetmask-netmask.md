@@ -8,12 +8,8 @@ Bir IP adresinin hangi kısmının ağ (network) ve hangi kısmının cihaz (hos
 
 Neden Subnet'lere ihtiyaç duyarız tek bir ağ yeterli olmaz mı?
 
-Çok sayıda cihazın bulunduğu devasa ağ hayal edelim, bir bilgisayar diğer cihazlarla iletişim kurması gerektiğinde, ona ulaşmak için bir yayın (broadcast) kullanır.
+Çok sayıda cihazın bulunduğu devasa ağ hayal edelim, bir bilgisayar diğer cihazlarla iletişim kurması gerektiğinde, ona ulaşmak için bir yayın (broadcast) kullanır. Ağdaki tüm cihazlara yapılan bu çağrı trafik oluşturarak ağı yavaşlatır.
 
-Ağdaki tüm cihazlara yapılan bu çağrı trafik oluşturarak ağı yavaşlatır.
-
-En büyük nedeni Broadcast trafiğini önlemektir, Bu yüzden ağın küçük alt ağlara bölünmesi gerekir.
-
-Router kullanılarak ağlar parçalanır ve fiziksel olarak ayrılır.
-
-Broadcast Router' dan geçemediği için yalnızca bir ağ içerisinde hapsolur ve diğer ağlara erişemez. Bu sayede trafik sorunu ortadan kalkar.
+- En büyük nedeni Broadcast trafiğini önlemektir, Bu yüzden ağın küçük alt ağlara bölünmesi gerekir.
+- Router kullanılarak ağlar parçalanır ve fiziksel olarak ayrılır.
+- Broadcast Router' dan geçemediği için yalnızca bir ağ içerisinde hapsolur ve diğer ağlara erişemez. Bu sayede trafik sorunu ortadan kalkar.
