@@ -23,3 +23,5 @@
 **Network:** `172.16.0.0`
 
 **Directed Broadcast Adres:** `172.16.255.255`
+
+> Router Broadcast Paketlerini Geçirmek için yapılandırılabilir.
