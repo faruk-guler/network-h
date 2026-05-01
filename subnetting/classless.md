@@ -1,4 +1,4 @@
-#   SINIFSIZ AĞ MİMARİSİ (CLASSLESS)
+#   CLASSLESS (SINIFSIZ) AĞ MİMARİSİ
 
 💊💊 VLSM (Variable Length Subnet Masking)
 
