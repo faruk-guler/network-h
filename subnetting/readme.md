@@ -13,7 +13,7 @@ Subnetting, büyük bir IP bloğunu, daha yönetilebilir küçük ağlara (subne
 ## 🔍 Kontrol Formülleri (3 Formül)
 > "Bu bölüm yeterli mi?" sorusunu cevaplar
  
-| Sıra | Formül | Örnek (/26) | Sonuç | özet|
+| Sıra | Formül | Örnek (/26) | Sonuç | Özet|
 |---|--------|-------------|-------|-------| 
 | 5 | **n** = 32 − CIDR | 32 − 26 | **6** |
 | 6 | **Toplam IP** = 2ⁿ | 2⁶ | **64** |
