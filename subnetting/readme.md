@@ -29,7 +29,7 @@ Bir şirketin 16 departmanı var. Her departmanın 512 IP talebi olduğunu varsa
 
 > ✅ Networkümüz: 10.5.0.0
  
-### Artış sayısı yöntemi ile hesaplama
+### Artış sayısı formülü ile hesaplama
  
 | Adım | İşlem | Sonuç |
 |------|-------|-------|
