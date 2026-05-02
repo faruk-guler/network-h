@@ -1,80 +1,55 @@
-# Ağda Haberleşme Türleri
+# Haberleşme Türleri
 
-Bir ağda 4 tür haberleşme vardır: **Unicast**, **Multicast**, **Broadcast** ve **Anycast**.
-
----
-
-## 1) Unicast
-
-Bir cihazdan **sadece bir** cihaza yapılan iletim.
-
-Gönderici ile alıcı arasında bire bir iletişim kurulur. Veri paketi yalnızca hedef cihaza ulaşır, ağdaki diğer cihazlar bu iletimi görmez.
-
-**Gerçek hayattan örnekler:**
-
-- Tarayıcınızdan bir web sitesine istek göndermek (HTTP/HTTPS)
-- WhatsApp'ta birine mesaj atmak
-- Bir sunucuya SSH bağlantısı açmak
-- E-posta göndermek (SMTP)
-- VoIP ile bire bir sesli arama yapmak
+Bir ağda cihazlar birbirleriyle üç farklı şekilde haberleşir: **Unicast**, **Multicast** ve **Broadcast**.
 
 ---
 
-## 2) Multicast
+## 1) Unicast — Bire Bir İletim
 
-Bir cihazdan **belirli bir gruba** üye cihazlara yapılan iletim.
+Bir cihazdan **tek bir** cihaza yapılan iletimdir.
 
-Veri paketi, ilgili gruba kayıtlı olan cihazlara iletilir. Gruba üye olmayan cihazlar bu veriyi almaz. Böylece bant genişliği verimli kullanılır.
+Veri paketi yalnızca hedef cihaza ulaşır. Ağdaki diğer cihazlar bu iletimden haberdar olmaz.
 
-**Gerçek hayattan örnekler:**
+**Örnekler:**
 
-- Canlı yayın platformlarında video akışı (IPTV, online konser)
-- Kurumsal ağlarda videokonferans (sadece toplantıya katılanlar alır)
-- Borsa veri akışları (abone olan kullanıcılara anlık fiyat gönderimi)
-- Yönlendiriciler arasındaki routing protokolleri (OSPF, RIP v2)
-- Online oyunlarda aynı sunucudaki oyunculara konum güncellemesi
+- Bir web sitesine bağlanmak
+- E-posta göndermek
+- WhatsApp'ta mesaj atmak
 
 ---
 
-## 3) Broadcast
+## 2) Multicast — Gruba İletim
 
-Bir cihazdan **ağdaki tüm** cihazlara yapılan iletim.
+Bir cihazdan **belirli bir gruba** üye cihazlara yapılan iletimdir.
 
-Veri paketi, ağdaki her cihaza gönderilir. Cihazlar paketi dinlemek zorunda olsun ya da olmasın, tümü bu iletiyi alır. Ağın son host IP adresi (`.255`) broadcast için kullanılır.
+Veri paketi yalnızca o gruba kayıtlı cihazlara ulaşır. Gruba dahil olmayan cihazlar bu veriyi almaz.
 
-**Gerçek hayattan örnekler:**
+**Örnekler:**
 
-- DHCP: Bilgisayarın ağa bağlandığında IP adresi istemesi (`192.168.1.255`)
-- ARP: Bir cihazın MAC adresini öğrenmek için tüm ağa sorması
-- Ağdaki yazıcıları veya paylaşılan kaynakları keşfetme (NetBIOS)
-- Yönlendiricinin ağ yapılandırmasını duyurması
-- Wake-on-LAN: Ağdaki bir cihazı uzaktan uyandırma paketi
+- IPTV ile canlı yayın izlemek
+- Kurumsal ağda video konferans
+- Online oyunlarda oyunculara konum güncellemesi göndermek
 
 ---
 
-## 4) Anycast
+## 3) Broadcast — Herkese İletim
 
-Bir cihazdan **en yakın veya en uygun** cihaza yapılan iletim.
+Bir cihazdan **ağdaki tüm** cihazlara yapılan iletimdir.
 
-Aynı IP adresine sahip birden fazla sunucu farklı konumlarda bulunur. Gönderilen paket, ağ topolojisine göre bu sunucuların en yakınına yönlendirilir. Özellikle IPv6 ile yaygınlaşmıştır.
+Veri paketi, ağdaki her cihaza ulaşır. İstemeseler de tüm cihazlar bu iletiyi alır. Ağın son host IP adresi olan `.255` adresi broadcast için kullanılır.
 
-**Gerçek hayattan örnekler:**
+**Örnekler:**
 
-- Google DNS (`8.8.8.8`): Dünyada onlarca sunucu aynı IP'yi paylaşır, sorgu en yakınına gider
-- Cloudflare DNS (`1.1.1.1`): Aynı mantıkla küresel ölçekte çalışır
-- CDN (Content Delivery Network): İçerik isteği coğrafi olarak en yakın sunucudan karşılanır
-- IPv6 yönlendirici keşfi: Cihaz, en yakın yönlendiriciye ulaşmak için anycast kullanır
-- DDoS koruması: Saldırı trafiği anycast ile birden fazla noktaya dağıtılarak absorbe edilir
+- Bilgisayarın ağa bağlandığında IP adresi istemesi (DHCP)
+- Bir cihazın MAC adresini öğrenmek için ağa soru sorması (ARP)
+- Ağdaki yazıcı veya paylaşılan kaynakları keşfetmek
 
 ---
 
-## Karşılaştırma
+## Özet Tablo
 
-| Özellik | Unicast | Multicast | Broadcast | Anycast |
-|---|---|---|---|---|
-| Hedef | Tek cihaz | Belirli grup | Tüm cihazlar | En yakın cihaz |
-| Bant genişliği | Düşük | Orta | Yüksek | Düşük |
-| Ölçeklenebilirlik | Yüksek | Orta | Düşük | Çok yüksek |
-| Kullanım amacı | Bireysel iletişim | Grup yayını | Ağ keşfi, duyuru | Yük dengeleme, DNS |
-| Örnek IP | `192.168.1.5` | `224.0.0.1` | `192.168.1.255` | `8.8.8.8` |
-| IP Sürümü | IPv4/IPv6 | IPv4/IPv6 | Yalnızca IPv4 | Ağırlıklı IPv6 |
+| | Unicast | Multicast | Broadcast |
+|---|---|---|---|
+| **Hedef** | Tek cihaz | Belirli grup | Tüm cihazlar |
+| **Örnek IP** | `192.168.1.5` | `224.0.0.1` | `192.168.1.255` |
+| **Kullanım** | Web, e-posta | IPTV, konferans | DHCP, ARP |
