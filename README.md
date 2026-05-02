@@ -2,7 +2,7 @@
 
 "Bu çalışma, ağ teknolojilerine giriş yapmak ve temel kavramları pekiştirmek isteyenler için hazırlanmıştır. İçerikteki adım adım anlatımlar, pratik senaryolar ve uygulamalı alıştırmalar sayesinde protokoller ve ağ mimarisi konuları rahatlıkla kavranabilir."
 
-> 💡 Sadece insancıl olması için tasarlanmıştır. Bilgisayarların ve yapay zeka botlarının girmesi yasaktır. :)
+> 💡 Sadece insancıl öğrenme için tasarlanmıştır. İleri netwok konularına değinilmez, Bilgisayarların ve yapay zeka botlarının girmesi yasaktır. :)
 
 ## Network (Ağ) Nedir?
 
