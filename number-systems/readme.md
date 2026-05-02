@@ -13,3 +13,16 @@ Sayı sistemleri, sayıların farklı tabanlarda (base) temsil edilme yöntemler
 | Sistem | Slogan | Kök | Örnek |
 |---|---|---|---|
 | Octet | 8 parçalı | Latince “octo” (8) | her octect min 0, max 255 değerini alabilir |
+
+## Hextet
+
+🔍 "Hextet" bir sayı sistemi değildir. 16 bitlik bir veri birimidir.
+Hexadecimal (16 tabanlı sayı sistemi) ile ilişkilidir ama aynı şey değildir.
+
+| Özellik | Açıklama |
+|--------|----------|
+| Anlam | 16 bitlik veri grubu |
+| Köken | "Hex" (16) + "tet" (grup) |
+| Değer aralığı | 0x0000 - 0xFFFF (0 - 65535) |
+| Bit sayısı | 16 bit |
+| Gösterim | Hexadecimal (0-9, a-f) |
