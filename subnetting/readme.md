@@ -21,7 +21,8 @@ Subnetting, büyük bir IP bloğunu, daha yönetilebilir küçük ağlara (subne
 
 ---
 
-### 🏢 Gerçek Dünya Örneği — 10.5.0.0/18 → 18 Departman, ~300 IP/departman
+### 🏢 Gerçek Dünya Örneği 
+10.5.0.0/18 → 18 Departman, ~Ortalama 300 IP/departman
  
 > **Neden bu ağ?**
 > 300 IP → en yakın 2'nin kuvveti → **512 IP/departman (/23 subnet)**
