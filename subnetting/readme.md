@@ -21,22 +21,25 @@ Subnetting, büyük bir IP bloğunu, daha yönetilebilir küçük ağlara (subne
 
 ---
 
-### 🏢 Gerçek Dünya Örneği 
-10.5.0.0/18 → 18 Departman, ~Ortalama 300 IP/departman
+## 5. Gerçek Dünya Örneği
  
-> **Neden bu ağ?**
-> 300 IP → en yakın 2'nin kuvveti → **512 IP/departman (/23 subnet)**
-> 18 departman × 512 = 9,216 IP gerekli → **10.5.0.0/18** seçildi (16,384 IP toplam)
+### 🏢 Senaryo
+ 
+Bir şirketin 16 departmanı var. Her departmana 512 IP lazım. 16 zaten 2'nin kuvveti olduğu için yuvarlama yok, hiç rezerve kalmıyor — ağ sıfır israfla bölünüyor.
+ 
+### Hesaplama
  
 | Adım | İşlem | Sonuç |
 |------|-------|-------|
-| Toplam IP | 2^(32−18) = 2¹⁴ | **16,384** |
-| Planlanacak subnet sayısı | 18 → yukarı yuvarla → 2⁵ | **32** |
-| Artış (3. oktette) | 16,384 ÷ 32 = 512 IP = **2 × 256** | **2** (3. oktet 2'şer ilerler) |
-| Her departmana düşen kullanılabilir IP | 512 − 2 | **510 cihaz** |
+| Toplam IP | 16 × 512 = 2¹³ | **8,192** |
+| Ağ | 8,192 = 2^(32−19) | **10.5.0.0/19** |
+| Artış (3. oktette) | 512 IP = 2 × 256 → 3. oktet 2'şer ilerler | **2** |
+| Kullanılabilir IP/dept | 512 − 2 | **510 cihaz** |
  
-| # | Departman | Ağ Adresi | Broadcast | Kullanılabilir |
-|---|-----------|-----------|-----------|----------------|
+### Subnet Tablosu
+ 
+| # | Departman | Ağ Adresi | Broadcast | Kullanılabilir Aralık |
+|---|-----------|-----------|-----------|----------------------|
 | 1 | Yönetim | 10.5.0.0 | 10.5.1.255 | 10.5.0.1 − 10.5.1.254 |
 | 2 | BT / IT | 10.5.2.0 | 10.5.3.255 | 10.5.2.1 − 10.5.3.254 |
 | 3 | İnsan Kaynakları | 10.5.4.0 | 10.5.5.255 | 10.5.4.1 − 10.5.5.254 |
@@ -52,16 +55,10 @@ Subnetting, büyük bir IP bloğunu, daha yönetilebilir küçük ağlara (subne
 | 13 | Müşteri Hizmetleri | 10.5.24.0 | 10.5.25.255 | 10.5.24.1 − 10.5.25.254 |
 | 14 | Eğitim | 10.5.26.0 | 10.5.27.255 | 10.5.26.1 − 10.5.27.254 |
 | 15 | Satın Alma | 10.5.28.0 | 10.5.29.255 | 10.5.28.1 − 10.5.29.254 |
-| 16 | Strateji | 10.5.30.0 | 10.5.31.255 | 10.5.30.1 − 10.5.31.254 |
-| 17 | Operasyon | 10.5.32.0 | 10.5.33.255 | 10.5.32.1 − 10.5.33.254 |
-| 18 | Sunucu Odası | 10.5.34.0 | 10.5.35.255 | 10.5.34.1 − 10.5.35.254 |
-| — | *(Rezerve)* | 10.5.36.0 | 10.5.63.255 | *14 subnet × 512 = 7,168 IP rezerve* |
+| 16 | Sunucu Odası | 10.5.30.0 | 10.5.31.255 | 10.5.30.1 − 10.5.31.254 |
  
-> ✅ **Gerçek hayat notları:**
-> - Her departmana **510 cihaz** bağlanabilir (bilgisayar, telefon, yazıcı, kamera vb.)
-> - 3. oktet 2'şer 2'şer ilerliyor çünkü her subnet 2 tam oktet kapsıyor
-> - 10.5.36.0 − 10.5.63.255 arası **rezerve** → yeni departmanlar veya büyüme için hazır
-> - Sunucu Odası kasıtlı olarak en sona konuldu → yönetimi kolaylaştırır
+> ✅ 10.5.0.0/19 tam olarak 16 eşit parçaya bölündü.
+> Her departmana **510 cihaz** bağlanabilir.
  
 > 💡 **Altın Kural:** Departman sayısı 2'nin kuvveti değilse her zaman **yukarı yuvarla**.
 > 18 → 32, 22 → 32, 13 → 16, 5 → 8 gibi.
