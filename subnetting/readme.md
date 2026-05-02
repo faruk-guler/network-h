@@ -26,6 +26,8 @@ Subnetting, büyük bir IP bloğunu, daha yönetilebilir küçük ağlara (subne
 ### 🏢 Senaryo
  
 Bir şirketin 16 departmanı var. Her departmanın 512 IP talebi olduğunu varsayarak gerekli hesaplamayı yapalım.
+
+> ✅ Networkümüz: 10.5.0.0
  
 ### Artış sayısı yöntemi ile hesaplama
  
