@@ -2,7 +2,6 @@
 
 Bir ağda 3 tür haberleşme vardır: **Unicast**, **Multicast** ve **Broadcast**.
 
----
 
 ## 1) Unicast
 
