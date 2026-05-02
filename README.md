@@ -8,3 +8,11 @@
 
 **Network (Ağ)**, iki veya daha fazla cihazın **veri paylaşmak** için birbirine bağlandığı yapıdır. İnternet, dünyanın en büyük ağıdır!
 
+ ```bash
+root@guler-host:~# network -h
+- images
+- ip-address
+- .....
+- 
+root@guler-host:~#
+ ```
