@@ -55,7 +55,7 @@ Bir şirketin 16 departmanı var. Her departmana 512 IP lazım. 16 zaten 2'nin k
 | 13 | Müşteri Hizmetleri | 10.5.24.0 | 10.5.25.255 | 10.5.24.1 − 10.5.25.254 |
 | 14 | Eğitim | 10.5.26.0 | 10.5.27.255 | 10.5.26.1 − 10.5.27.254 |
 | 15 | Satın Alma | 10.5.28.0 | 10.5.29.255 | 10.5.28.1 − 10.5.29.254 |
-| 16 | Sunucu Odası | 10.5.30.0 | 10.5.31.255 | 10.5.30.1 − 10.5.31.254 |
+| 16 | Sunucu/Server Odası | 10.5.30.0 | 10.5.31.255 | 10.5.30.1 − 10.5.31.254 |
  
 > ✅ 10.5.0.0/19 tam olarak 16 eşit parçaya bölündü.
 > Her departmana **510 cihaz** bağlanabilir.
