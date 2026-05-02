@@ -1,4 +1,4 @@
-#### RJ45 Konnektör
+### RJ45 Konnektör
 
 **T568B Standardı (En yaygın):**
 
