@@ -7,7 +7,7 @@ Subnetting, büyük bir IP bloğunu, daha yönetilebilir küçük ağlara (subne
 |---|--------|-------------|-------|
 | 1 | **Artış** = 256 − Maske | 256 − 192 | **64** |
 | 2 | **Alt Ağ Sayısı** = 2^(Yeni−Eski) | 2^(26−24) | **4** |
-| 3 | **Ağ Adresi** = IP'yi Artış'a böl → aşağı yuvarla × Artış | 70 ÷ 64 = 1 → 1 × 64 | **10.0.0.64** |
+| 3 | **Ağ Adresi** = IP'yi Artış'a böl → aşağı yuvarla × Artış | `10.0.0.70` için: 70 ÷ 64 = 1 → 1 × 64 | **10.0.0.64** |
 | 4 | **Broadcast** = Ağ Adresi + Artış − 1 | 64 + 64 − 1 | **10.0.0.127** |
 
 ## 🔍 Kontrol Formülleri (3 Formül)
