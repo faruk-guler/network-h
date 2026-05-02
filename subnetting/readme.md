@@ -60,8 +60,7 @@ Bir şirketin 16 departmanı var. Her departmana 512 IP lazım. 16 zaten 2'nin k
 > ✅ 10.5.0.0/19 tam olarak 16 eşit parçaya bölündü.
 > Her departmana **510 cihaz** bağlanabilir.
  
-> 💡 **Altın Kural:** Departman sayısı 2'nin kuvveti değilse her zaman **yukarı yuvarla**.
-> 18 → 32, 22 → 32, 13 → 16, 5 → 8 gibi.
+> 💡 Departman sayısı 2'nin kuvvetiyse (8, 16, 32...) direkt 256'ya böl. Değilse (13, 18, 22...) bir üst 2'nin kuvvetine yuvarla, sonra böl.
 
 ### 🔑 Temel Kavramlar
 *   **Network ID (Ağ Adresi):** Subnet'in başlangıç noktasıdır. Cihazlara verilmez.
