@@ -20,10 +20,10 @@ Bir cihaz veri gönderirken şu kararı verir:
 
 Aşağıdaki şemada **default gateway** kavramını iki farklı seviyede görebilirsiniz:
 
-                İNTERNET
-                   │
-                   │
-          ┌────────▼───────┐
+                  INTERNET
+                     │
+                     │
+          ┌──────────▼─────┐
           │   ISP Router   │ ← Default Gateway (Modem için)
           │                │
           └───────┬────────┘
@@ -34,7 +34,7 @@ Aşağıdaki şemada **default gateway** kavramını iki farklı seviyede göreb
     │             |              │
     │    ┌────────|─────┐        │
     │    │ ADSL/Kablo   │        │
-    │    │    MODEM     │ ← Default Gateway (Bilgisayarlar için)
+    │    │    MODEM     │ ← Default Gateway (Bilgisayar için)
     │    └──────────────┘        │
     │         │  │  │            │
     │    ┌────┘  │  └──┐         │
