@@ -1,7 +1,8 @@
 # Ağda Haberleşme Türleri
 
-Bir ağda 3 tür haberleşme vardır: **Unicast**, **Multicast** ve **Broadcast**.
+Bir ağda 4 tür haberleşme vardır: **Unicast**, **Multicast**, **Broadcast** ve **Anycast**.
 
+---
 
 ## 1) Unicast
 
@@ -51,12 +52,29 @@ Veri paketi, ağdaki her cihaza gönderilir. Cihazlar paketi dinlemek zorunda ol
 
 ---
 
+## 4) Anycast
+
+Bir cihazdan **en yakın veya en uygun** cihaza yapılan iletim.
+
+Aynı IP adresine sahip birden fazla sunucu farklı konumlarda bulunur. Gönderilen paket, ağ topolojisine göre bu sunucuların en yakınına yönlendirilir. Özellikle IPv6 ile yaygınlaşmıştır.
+
+**Gerçek hayattan örnekler:**
+
+- Google DNS (`8.8.8.8`): Dünyada onlarca sunucu aynı IP'yi paylaşır, sorgu en yakınına gider
+- Cloudflare DNS (`1.1.1.1`): Aynı mantıkla küresel ölçekte çalışır
+- CDN (Content Delivery Network): İçerik isteği coğrafi olarak en yakın sunucudan karşılanır
+- IPv6 yönlendirici keşfi: Cihaz, en yakın yönlendiriciye ulaşmak için anycast kullanır
+- DDoS koruması: Saldırı trafiği anycast ile birden fazla noktaya dağıtılarak absorbe edilir
+
+---
+
 ## Karşılaştırma
 
-| Özellik | Unicast | Multicast | Broadcast |
-|---|---|---|---|
-| Hedef | Tek cihaz | Belirli grup | Tüm cihazlar |
-| Bant genişliği | Düşük | Orta | Yüksek |
-| Ölçeklenebilirlik | Yüksek | Orta | Düşük |
-| Kullanım amacı | Bireysel iletişim | Grup yayını | Ağ keşfi, duyuru |
-| Örnek IP | `192.168.1.5` | `224.0.0.1` | `192.168.1.255` |
+| Özellik | Unicast | Multicast | Broadcast | Anycast |
+|---|---|---|---|---|
+| Hedef | Tek cihaz | Belirli grup | Tüm cihazlar | En yakın cihaz |
+| Bant genişliği | Düşük | Orta | Yüksek | Düşük |
+| Ölçeklenebilirlik | Yüksek | Orta | Düşük | Çok yüksek |
+| Kullanım amacı | Bireysel iletişim | Grup yayını | Ağ keşfi, duyuru | Yük dengeleme, DNS |
+| Örnek IP | `192.168.1.5` | `224.0.0.1` | `192.168.1.255` | `8.8.8.8` |
+| IP Sürümü | IPv4/IPv6 | IPv4/IPv6 | Yalnızca IPv4 | Ağırlıklı IPv6 |
