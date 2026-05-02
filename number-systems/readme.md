@@ -9,7 +9,7 @@ Sayı sistemleri, sayıların farklı tabanlarda (base) temsil edilme yöntemler
 
 ---
 ## Octet
-🔍 "Octet" bir sayı sistemi değildir. 8 bitten oluşan bir veri birimi/gruplama kavramıdır. 
+🔍 "Octet" bir sayı sistemi değildir. 8 bitten oluşan bir veri birimi/gruplama kavramıdır. Octal ile karıştırılmamalıdır.
 | Sistem | Slogan | Kök | Örnek |
 |---|---|---|---|
 | Octect | 8 parçalı | yunanca 8 parcalı demektir | her octect min 0, max 255 değerini alabilir |
