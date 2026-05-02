@@ -1,4 +1,4 @@
-# Network for Humanity by "faruk-guler"
+# Network for Humanity
 
 "Bu çalışma, ağ teknolojilerine giriş yapmak ve temel kavramları pekiştirmek isteyenler için hazırlanmıştır. İçerikteki adım adım anlatımlar, pratik senaryolar ve uygulamalı alıştırmalar sayesinde protokoller ve ağ mimarisi konuları rahatlıkla kavranabilir."
 
