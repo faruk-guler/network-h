@@ -1,6 +1,6 @@
 # Ağ Cihazları
 
-Bir ağı oluşturan cihazların her birinin kendine özgü bir görevi vardır. Bu bölümde temel ağ cihazlarını tanıyacaksınız.
+Bir ağı oluşturan cihazların her birinin kendine özgü bir görevi vardır. Bu bölümde bazı temel ağ cihazlarını tanıyacaksınız.
 
 ---
 
