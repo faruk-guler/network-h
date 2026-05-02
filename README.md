@@ -12,7 +12,7 @@
 root@guler-host:~# network -h
 - images
 - ip-address
+- models
 - .....
-- 
 root@guler-host:~#
  ```
