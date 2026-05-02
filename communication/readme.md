@@ -1,6 +1,13 @@
 # Ağda Haberleşme Türleri
 
-Bir ağda 4 tür haberleşme vardır: **Unicast**, **Multicast**, **Broadcast** ve **Anycast**.
+Haberleşme türleri bağlama göre farklılık gösterir:
+
+| Kapsam | Türler |
+|---|---|
+| Temel eğitim (IPv4) | 3 — Unicast, Multicast, Broadcast |
+| IPv6 | 3 — Unicast, Multicast, Anycast |
+| Modern genel ağ | 4 — Unicast, Multicast, Broadcast, Anycast |
+| İleri düzey | 5 — + Incast |
 
 ---
 
@@ -40,7 +47,7 @@ Veri paketi, ilgili gruba kayıtlı olan cihazlara iletilir. Gruba üye olmayan 
 
 Bir cihazdan **ağdaki tüm** cihazlara yapılan iletim.
 
-Veri paketi, ağdaki her cihaza gönderilir. Cihazlar paketi dinlemek zorunda olsun ya da olmasın, tümü bu iletiyi alır. Ağın son host IP adresi (`.255`) broadcast için kullanılır.
+Veri paketi, ağdaki her cihaza gönderilir. Yalnızca IPv4'te desteklenir; IPv6'da broadcast yoktur, yerini Multicast almıştır. Ağın son host IP adresi (`.255`) broadcast için kullanılır.
 
 **Gerçek hayattan örnekler:**
 
@@ -56,7 +63,7 @@ Veri paketi, ağdaki her cihaza gönderilir. Cihazlar paketi dinlemek zorunda ol
 
 Bir cihazdan **en yakın veya en uygun** cihaza yapılan iletim.
 
-Aynı IP adresine sahip birden fazla sunucu farklı konumlarda bulunur. Gönderilen paket, ağ topolojisine göre bu sunucuların en yakınına yönlendirilir. Özellikle IPv6 ile yaygınlaşmıştır.
+Aynı IP adresine sahip birden fazla sunucu farklı konumlarda bulunur. Gönderilen paket, ağ topolojisine göre bu sunucuların en yakınına yönlendirilir. IPv6'da native olarak desteklenir; IPv4'te BGP protokolü üzerinden uygulanabilir.
 
 **Gerçek hayattan örnekler:**
 
@@ -68,13 +75,29 @@ Aynı IP adresine sahip birden fazla sunucu farklı konumlarda bulunur. Gönderi
 
 ---
 
+## 5) Incast
+
+**Birden fazla kaynaktan tek bir hedefe** eş zamanlı yapılan iletim.
+
+Unicast'ın tersi gibi düşünülebilir: çok-tek (many-to-one) iletişimdir. Özellikle veri merkezi ağlarında karşılaşılır. Çok sayıda sunucunun aynı anda aynı hedefe veri göndermesi ağda tıkanıklığa (incast collapse) yol açabilir.
+
+**Gerçek hayattan örnekler:**
+
+- Bir depolama sunucusundan paralel veri okuma yapan birden fazla uygulama sunucusu
+- MapReduce iş yüklerinde tüm worker node'ların sonuçları master node'a göndermesi
+- Mikro servis mimarisinde bir servisin paralel API çağrılarının tek noktada toplanması
+- Dağıtık veritabanlarında küme içi senkronizasyon trafiği
+- CDN'de orijin sunucuya ani ve yoğun geri dönüş trafiği
+
+---
+
 ## Karşılaştırma
 
-| Özellik | Unicast | Multicast | Broadcast | Anycast |
-|---|---|---|---|---|
-| Hedef | Tek cihaz | Belirli grup | Tüm cihazlar | En yakın cihaz |
-| Bant genişliği | Düşük | Orta | Yüksek | Düşük |
-| Ölçeklenebilirlik | Yüksek | Orta | Düşük | Çok yüksek |
-| Kullanım amacı | Bireysel iletişim | Grup yayını | Ağ keşfi, duyuru | Yük dengeleme, DNS |
-| Örnek IP | `192.168.1.5` | `224.0.0.1` | `192.168.1.255` | `8.8.8.8` |
-| IP Sürümü | IPv4/IPv6 | IPv4/IPv6 | Yalnızca IPv4 | Ağırlıklı IPv6 |
+| Özellik | Unicast | Multicast | Broadcast | Anycast | Incast |
+|---|---|---|---|---|---|
+| Yön | 1 → 1 | 1 → grup | 1 → hepsi | 1 → en yakın | çok → 1 |
+| Bant genişliği | Düşük | Orta | Yüksek | Düşük | Yüksek |
+| Ölçeklenebilirlik | Yüksek | Orta | Düşük | Çok yüksek | Düşük |
+| IP Sürümü | IPv4/IPv6 | IPv4/IPv6 | Yalnızca IPv4 | Ağırlıklı IPv6 | IPv4/IPv6 |
+| Örnek IP | `192.168.1.5` | `224.0.0.1` | `192.168.1.255` | `8.8.8.8` | — |
+| Kullanım | HTTP, SSH, e-posta | IPTV, OSPF | DHCP, ARP | DNS, CDN | Veri merkezi |
