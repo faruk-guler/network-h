@@ -12,7 +12,7 @@ Bir cihaz veri gönderirken şu kararı verir:
 - 🎯 **Hedef aynı ağdaysa** → Doğrudan gönderir (gateway kullanmaz)
 - 🌍 **Hedef farklı ağdaysa** → Default Gateway'e gönderir
 
-> **Örnek:** Evinizdeki bir bilgisayar Google'a (8.8.8.8) bağlanmak istiyorsa, önce bu paketi modem'e (default gateway) gönderir. Modem de sıradaki adıma iletir.
+> **Örnek:** Evinizdeki bir bilgisayar Google'a (8.8.8.8) bağlanmak istiyorsa, önce bu paketi modem'e (default gateway) gönderir. Modem de sıradaki adıma iletir. Sıradaki adımda standart ev kullanıcıları için ISP Router olur.
 
 ---
 
