@@ -1,7 +1,7 @@
 # 📘 IP Subnetting (Alt Ağlara Bölme) Rehberi
 
 ## 1. Konu Özeti: Subnetting Nedir?
-Subnetting, büyük bir IP bloğunu, daha yönetilebilir küçük ağlara (subnets) bölme işlemidir.
+Subnetting, büyük bir IP bloğunu, daha yönetilebilir küçük ağlara (subnets) bölme işlemidir. Bunu yapmak için farklı formüller vardır.
 
 ### 🔑 Temel Kavramlar
 *   **Network ID (Ağ Adresi):** Subnet'in başlangıç noktasıdır. Cihazlara verilmez.
