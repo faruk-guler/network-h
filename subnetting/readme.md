@@ -10,7 +10,7 @@ Subnetting, büyük bir IP bloğunu, daha yönetilebilir küçük ağlara (subne
 | 3 | **Ağ Adresi** = IP'yi Artış'a böl → aşağı yuvarla × Artış | `10.0.0.70` için: 70 ÷ 64 = 1 → 1 × 64 | **10.0.0.64** |
 | 4 | **Broadcast** = Ağ Adresi + Artış − 1 | 64 + 64 − 1 | **10.0.0.127** |
 
-## 🔍 Kontrol Formülleri (3 Formül)
+## 🔍 Kontrol Formülleri (+3 Formül daha)
 > "Bu bölüm yeterli mi?" sorusunu cevaplar
  
 | Sıra | Formül | Örnek (/26) | Sonuç | Özet|
