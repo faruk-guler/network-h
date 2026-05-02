@@ -21,9 +21,6 @@ Subnetting, büyük bir IP bloğunu, daha yönetilebilir küçük ağlara (subne
 
 ---
 
-## 🔄 5 ADIMDA HESAPLAMA
-
-
 ### 🔑 Temel Kavramlar
 *   **Network ID (Ağ Adresi):** Subnet'in başlangıç noktasıdır. Cihazlara verilmez.
 *   **Broadcast Adresi:** Subnet'in bitiş noktasıdır. Tüm cihaza mesaj atmak için kullanılır, cihazlara verilmez.
