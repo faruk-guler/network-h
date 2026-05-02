@@ -17,7 +17,7 @@ root@guler-host:~# network -h
 root@guler-host:~#
  ```
 
-Name: Network for Humanity
-Date: 2026
-Author: faruk-guler
+Name: Network for Humanity  
+Date: 2026  
+Author: faruk-guler  
 License: Apache 2.0
