@@ -21,7 +21,7 @@ Subnetting, büyük bir IP bloğunu, daha yönetilebilir küçük ağlara (subne
 
 ---
 
-## 5. Gerçek Dünya Örneği
+## Gerçek Dünya Örneği
  
 ### 🏢 Senaryo
  
