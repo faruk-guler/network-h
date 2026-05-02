@@ -6,12 +6,18 @@ Subnetting, büyük bir IP bloğunu, daha yönetilebilir küçük ağlara (subne
 | # | Formül | Örnek (/26) | Sonuç |
 |---|--------|-------------|-------|
 | 1 | **Artış** = 256 − Maske | 256 − 192 | **64** |
-| 2 | **n** = 32 − CIDR | 32 − 26 | **6** |
-| 3 | **Toplam IP** = 2ⁿ | 2⁶ | **64** |
-| 4 | **Kullanılabilir IP** = 2ⁿ − 2 | 64 − 2 | **62** |
-| 5 | **Alt Ağ Sayısı** = 2^(Yeni−Eski) | 2^(26−24) | **4** |
-| 6 | **Ağ Adresi** = IP'yi Artış'a böl → aşağı yuvarla × Artış | 70 ÷ 64 = 1 → 1 × 64 | **10.0.0.64** |
-| 7 | **Broadcast** = Ağ Adresi + Artış − 1 | 64 + 64 − 1 | **10.0.0.127** |
+| 2 | **Alt Ağ Sayısı** = 2^(Yeni−Eski) | 2^(26−24) | **4** |
+| 3 | **Ağ Adresi** = IP'yi Artış'a böl → aşağı yuvarla × Artış | 70 ÷ 64 = 1 → 1 × 64 | **10.0.0.64** |
+| 4 | **Broadcast** = Ağ Adresi + Artış − 1 | 64 + 64 − 1 | **10.0.0.127** |
+
+## 🔍 Kontrol Formülleri (3 Formül)
+> "Bu bölüm yeterli mi?" sorusunu cevaplar
+ 
+| # | Formül | Örnek (/26) | Sonuç |
+|---|--------|-------------|-------|
+| 5 | **n** = 32 − CIDR | 32 − 26 | **6** |
+| 6 | **Toplam IP** = 2ⁿ | 2⁶ | **64** |
+| 7 | **Kullanılabilir IP** = 2ⁿ − 2 | 64 − 2 | **62** |
 
 ---
 
