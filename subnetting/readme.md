@@ -3,7 +3,7 @@
 ## Subnetting Nedir?
 Subnetting, büyük bir IP bloğunu, daha yönetilebilir küçük ağlara (subnets) bölme işlemidir. Bunu yapmak için farklı formüller vardır.
 
-| # | Formül | Örnek (/26) | Sonuç |
+| Sıra | Formül | Örnek (/26) | Sonuç |
 |---|--------|-------------|-------|
 | 1 | **Artış** = 256 − Maske | 256 − 192 | **64** |
 | 2 | **Alt Ağ Sayısı** = 2^(Yeni−Eski) | 2^(26−24) | **4** |
@@ -13,7 +13,7 @@ Subnetting, büyük bir IP bloğunu, daha yönetilebilir küçük ağlara (subne
 ## 🔍 Kontrol Formülleri (3 Formül)
 > "Bu bölüm yeterli mi?" sorusunu cevaplar
  
-| # | Formül | Örnek (/26) | Sonuç |
+| Sıra | Formül | Örnek (/26) | Sonuç |
 |---|--------|-------------|-------|
 | 5 | **n** = 32 − CIDR | 32 − 26 | **6** |
 | 6 | **Toplam IP** = 2ⁿ | 2⁶ | **64** |
