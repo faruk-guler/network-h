@@ -1,0 +1,23 @@
+# Public IP Adresleri
+ 
+Public IP adresleri, internette **küresel olarak benzersizdir**.
+ISP'ler (Türk Telekom, Superonline vb.) tarafından IANA → RIR → ISP zinciriyle dağıtılır.
+ 
+IPv4'te public adresler **classful (sınıflı) adresleme** sistemiyle 5 sınıfa ayrılmıştır:
+ 
+| Sınıf | Başlangıç IP | Bitiş IP | CIDR | Kullanım | Toplam Adres |
+|---|---|---|---|---|---|
+| **A** | 1.0.0.0 | 126.255.255.255 | /8 blokları | Unicast, Çok büyük ağlar (Google, devlet, büyük ISP'ler) | ~2,1 milyar |
+| **B** | 128.0.0.0 | 191.255.255.255 | /16 blokları | Unicast, Orta-büyük kurumlar, üniversiteler | ~1,07 milyar |
+| **C** | 192.0.0.0 | 223.255.255.255 | /24 blokları | Unicast, Küçük-orta ölçekli ağlar, bireysel ISP tahsisleri | ~536 milyon |
+| **D** | 224.0.0.0 | 239.255.255.255 | — | Multicast, (grup yayınları) — kullanıcılara atanmaz | 268 milyon |
+| **E** | 240.0.0.0 | 255.255.255.255 | — | Reserved, / deneysel gelecek kullanım için ayrılmış — atanmaz | 268 milyon |
+ 
+> **Önemli:** D ve E sınıfları son kullanıcılara atanmaz.
+> Gerçek anlamda kullanılabilen public IP'ler yalnızca **A, B ve C sınıflarındadır**
+> (içlerindeki private aralıklar hariç tutularak).
+ 
+## Ornek Public IP Adresleri 🌍
+- 8.8.8.8 → Google DNS
+- 142.250.190.78 → Google
+- 104.18.7.35 → Cloudflare

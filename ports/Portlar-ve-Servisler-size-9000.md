@@ -1,0 +1,1013 @@
+﻿# List of All Ports
+
+
+| Ports | Protocols | Services | Comments |
+| :--- | :--- | :--- | :--- |
+| 4303 | tcp | srcp | Simple Railroad Command Protocol |
+| 4303 | udp | srcp | Simple Railroad Command Protocol |
+| 4304 | tcp | owserver | One-Wire Filesystem Server |
+| 4304 | udp | owserver | One-Wire Filesystem Server |
+| 4305 | tcp | batman | better approach to mobile ad-hoc networking |
+| 4305 | udp | batman | better approach to mobile ad-hoc networking |
+| 4306 | tcp | pinghgl | Hellgate London |
+| 4306 | udp | pinghgl | Hellgate London |
+| 4307 | tcp | trueconf | TrueConf Videoconference Service |
+| 4307 | udp | trueconf | TrueConf Videoconference Service |
+| 4308 | tcp | compx-lockview | CompX-LockView |
+| 4308 | udp | compx-lockview | CompX-LockView |
+| 4309 | tcp | dserver | Exsequi Appliance Discovery |
+| 4309 | udp | dserver | Exsequi Appliance Discovery |
+| 4310 | tcp | mirrtex | Mir-RT exchange service |
+| 4310 | udp | mirrtex | Mir-RT exchange service |
+| 4311 | tcp | p6ssmc | P6R Secure Server Management Console |
+| 4311 | udp |  | Reserved |
+| 4312 | tcp | pscl-mgt | Parascale Membership Manager |
+| 4312 | udp |  | Reserved |
+| 4313 | tcp | perrla | PERRLA User Services |
+| 4313 | udp |  | Reserved |
+| 4314 | tcp | choiceview-agt | ChoiceView Agent |
+| 4314 | udp |  | Reserved |
+| 4315 |  |  | Unassigned |
+| 4316 | tcp | choiceview-clt | ChoiceView Client |
+| 4316 | udp |  | Reserved |
+| 4317 | tcp | opentelemetry | OpenTelemetry Protocol |
+| 4317 | udp |  | Reserved |
+| 4318 |  |  | Unassigned |
+| 4319 | tcp | skytale | Sentyron SkyTale encrypted communication |
+| 4319 | udp | skytale | Sentyron SkyTale encrypted communication |
+| 4320 | tcp | fdt-rcatp | FDT Remote Categorization Protocol |
+| 4320 | udp | fdt-rcatp | FDT Remote Categorization Protocol |
+| 4321 | tcp | rwhois | Remote Who Is |
+| 4321 | udp | rwhois | Remote Who Is |
+| 4322 | tcp | trim-event | TRIM Event Service |
+| 4322 | udp | trim-event | TRIM Event Service |
+| 4323 | tcp | trim-ice | TRIM ICE Service |
+| 4323 | udp | trim-ice | TRIM ICE Service |
+| 4324 |  |  | Reserved |
+| 4325 | tcp | geognosisadmin | Cadcorp GeognoSIS Administrator |
+| 4325 | udp | geognosisman | Cadcorp GeognoSIS Administrator |
+| 4326 | tcp | geognosis | Cadcorp GeognoSIS |
+| 4326 | udp | geognosis | Cadcorp GeognoSIS |
+| 4327 | tcp | jaxer-web | Jaxer Web Protocol |
+| 4327 | udp | jaxer-web | Jaxer Web Protocol |
+| 4328 | tcp | jaxer-manager | Jaxer Manager Command Protocol |
+| 4328 | udp | jaxer-manager | Jaxer Manager Command Protocol |
+| 4329 | tcp | publiqare-sync | PubliQare Distributed Environment Synchronisation Engine |
+| 4329 | udp |  | Reserved |
+| 4330 | tcp | dey-sapi | DEY Storage Administration REST API |
+| 4330 | udp |  | Reserved |
+| 4331 | tcp | ktickets-rest | ktickets REST API for event management and ticketing systems (embedded POS devices) |
+| 4331 | udp |  | Reserved |
+| 4332 | tcp | getty-focus | Getty Images FOCUS service |
+| 4332 | udp |  | Reserved |
+| 4333 | tcp | ahsp | ArrowHead Service Protocol (AHSP) |
+| 4333 | udp | ahsp | ArrowHead Service Protocol (AHSP) |
+| 4333 | sctp | ahsp | ArrowHead Service Protocol (AHSP) |
+| 4334 | tcp | netconf-ch-ssh | NETCONF Call Home (SSH) |
+| 4334 | udp |  | Reserved |
+| 4335 | tcp | netconf-ch-tls | NETCONF Call Home (TLS) |
+| 4335 | udp |  | Reserved |
+| 4336 | tcp | restconf-ch-tls | RESTCONF Call Home (TLS) |
+| 4336 | udp |  | Reserved |
+| 4337-4339 |  |  | Unassigned |
+| 4340 | tcp | gaia | Gaia Connector Protocol |
+| 4340 | udp | gaia | Gaia Connector Protocol |
+| 4341 | tcp |  | Reserved |
+| 4341 | udp | lisp-data | LISP Data Packets |
+| 4342 | tcp |  | Reserved |
+| 4342 | udp | lisp-control | LISP Control Packets |
+| 4343 | tcp | unicall | UNICALL |
+| 4343 | udp | unicall | UNICALL |
+| 4344 | tcp | vinainstall | VinaInstall |
+| 4344 | udp | vinainstall | VinaInstall |
+| 4345 | tcp | m4-network-as | Macro 4 Network AS |
+| 4345 | udp | m4-network-as | Macro 4 Network AS |
+| 4346 | tcp | elanlm | ELAN LM |
+| 4346 | udp | elanlm | ELAN LM |
+| 4347 | tcp | lansurveyor | LAN Surveyor |
+| 4347 | udp | lansurveyor | LAN Surveyor |
+| 4348 | tcp | itose | ITOSE |
+| 4348 | udp | itose | ITOSE |
+| 4349 | tcp | fsportmap | File System Port Map |
+| 4349 | udp | fsportmap | File System Port Map |
+| 4350 | tcp | net-device | Net Device |
+| 4350 | udp | net-device | Net Device |
+| 4351 | tcp | plcy-net-svcs | PLCY Net Services |
+| 4351 | udp | plcy-net-svcs | PLCY Net Services |
+| 4352 | tcp | pjlink | Projector Link |
+| 4352 | udp | pjlink | Projector Link |
+| 4353 | tcp | f5-iquery | F5 iQuery |
+| 4353 | udp | f5-iquery | F5 iQuery |
+| 4354 | tcp | qsnet-trans | QSNet Transmitter |
+| 4354 | udp | qsnet-trans | QSNet Transmitter |
+| 4355 | tcp | qsnet-workst | QSNet Workstation |
+| 4355 | udp | qsnet-workst | QSNet Workstation |
+| 4356 | tcp | qsnet-assist | QSNet Assistant |
+| 4356 | udp | qsnet-assist | QSNet Assistant |
+| 4357 | tcp | qsnet-cond | QSNet Conductor |
+| 4357 | udp | qsnet-cond | QSNet Conductor |
+| 4358 | tcp | qsnet-nucl | QSNet Nucleus |
+| 4358 | udp | qsnet-nucl | QSNet Nucleus |
+| 4359 | tcp | omabcastltkm | OMA BCAST Long-Term Key Messages |
+| 4359 | udp | omabcastltkm | OMA BCAST Long-Term Key Messages |
+| 4360 | tcp | matrix-vnet | Matrix VNet Communication Protocol IANA assigned this well-formed service name as a replacement for "matrix_vnet". |
+| 4360 | tcp | matrix_vnet | Matrix VNet Communication Protocol |
+| 4360 | udp |  | Reserved |
+| 4361 | tcp |  | Reserved |
+| 4361 | udp | nacnl | NavCom Discovery and Control Port |
+| 4362 | tcp |  | Reserved |
+| 4362 | udp | afore-vdp-disc | AFORE vNode Discovery protocol |
+| 4363-4365 |  |  | Unassigned |
+| 4366 | udp | shadowstream | ShadowStream System |
+| 4366 | tcp |  | Reserved |
+| 4367 |  |  | Unassigned |
+| 4368 | tcp | wxbrief | WeatherBrief Direct |
+| 4368 | udp | wxbrief | WeatherBrief Direct |
+| 4369 | tcp | epmd | Erlang Port Mapper Daemon |
+| 4369 | udp | epmd | Erlang Port Mapper Daemon |
+| 4370 | tcp | elpro-tunnel | ELPRO V2 Protocol Tunnel IANA assigned this well-formed service name as a replacement for "elpro_tunnel". |
+| 4370 | tcp | elpro_tunnel | ELPRO V2 Protocol Tunnel |
+| 4370 | udp | elpro-tunnel | ELPRO V2 Protocol Tunnel IANA assigned this well-formed service name as a replacement for "elpro_tunnel". |
+| 4370 | udp | elpro_tunnel | ELPRO V2 Protocol Tunnel |
+| 4371 | tcp | l2c-control | LAN2CAN Control |
+| 4371 | udp | l2c-disc | LAN2CAN Discovery |
+| 4372 | tcp | l2c-data | LAN2CAN Data |
+| 4372 | udp | l2c-data | LAN2CAN Data |
+| 4373 | tcp | remctl | Remote Authenticated Command Service |
+| 4373 | udp | remctl | Remote Authenticated Command Service |
+| 4374 | tcp | psi-ptt | PSI Push-to-Talk Protocol |
+| 4374 | udp |  | Reserved |
+| 4375 | tcp | tolteces | Toltec EasyShare |
+| 4375 | udp | tolteces | Toltec EasyShare |
+| 4376 | tcp | bip | BioAPI Interworking |
+| 4376 | udp | bip | BioAPI Interworking |
+| 4377 | tcp | cp-spxsvr | Cambridge Pixel SPx Server |
+| 4377 | udp | cp-spxsvr | Cambridge Pixel SPx Server |
+| 4378 | tcp | cp-spxdpy | Cambridge Pixel SPx Display |
+| 4378 | udp | cp-spxdpy | Cambridge Pixel SPx Display |
+| 4379 | tcp | ctdb | CTDB |
+| 4379 | udp | ctdb | CTDB |
+| 4380-4388 |  |  | Unassigned |
+| 4389 | tcp | xandros-cms | Xandros Community Management Service |
+| 4389 | udp | xandros-cms | Xandros Community Management Service |
+| 4390 | tcp | wiegand | Physical Access Control |
+| 4390 | udp | wiegand | Physical Access Control |
+| 4391 | tcp | apwi-imserver | American Printware IMServer Protocol |
+| 4391 | udp |  | Reserved |
+| 4392 | tcp | apwi-rxserver | American Printware RXServer Protocol |
+| 4392 | udp |  | Reserved |
+| 4393 | tcp | apwi-rxspooler | American Printware RXSpooler Protocol |
+| 4393 | udp |  | Reserved |
+| 4394 | tcp |  | Reserved |
+| 4394 | udp | apwi-disc | American Printware Discovery |
+| 4395 | tcp | omnivisionesx | OmniVision communication for Virtual environments |
+| 4395 | udp | omnivisionesx | OmniVision communication for Virtual environments |
+| 4396 | tcp | fly | Fly Object Space |
+| 4396 | udp |  | Reserved |
+| 4397-4399 |  |  | Unassigned |
+| 4400 | tcp | ds-srv | ASIGRA Services |
+| 4400 | udp | ds-srv | ASIGRA Services |
+| 4401 | tcp | ds-srvr | ASIGRA Televaulting DS-System Service |
+| 4401 | udp | ds-srvr | ASIGRA Televaulting DS-System Service |
+| 4402 | tcp | ds-clnt | ASIGRA Televaulting DS-Client Service |
+| 4402 | udp | ds-clnt | ASIGRA Televaulting DS-Client Service |
+| 4403 | tcp | ds-user | ASIGRA Televaulting DS-Client Monitoring/Management |
+| 4403 | udp | ds-user | ASIGRA Televaulting DS-Client Monitoring/Management |
+| 4404 | tcp | ds-admin | ASIGRA Televaulting DS-System Monitoring/Management |
+| 4404 | udp | ds-admin | ASIGRA Televaulting DS-System Monitoring/Management |
+| 4405 | tcp | ds-mail | ASIGRA Televaulting Message Level Restore service |
+| 4405 | udp | ds-mail | ASIGRA Televaulting Message Level Restore service |
+| 4406 | tcp | ds-slp | ASIGRA Televaulting DS-Sleeper Service |
+| 4406 | udp | ds-slp | ASIGRA Televaulting DS-Sleeper Service |
+| 4407 | tcp | nacagent | Network Access Control Agent |
+| 4407 | udp |  | Reserved |
+| 4408 | tcp | slscc | SLS Technology Control Centre |
+| 4408 | udp |  | Reserved |
+| 4409 | tcp | netcabinet-com | Net-Cabinet comunication |
+| 4409 | udp |  | Reserved |
+| 4410 | tcp | itwo-server | RIB iTWO Application Server |
+| 4410 | udp |  | Reserved |
+| 4411 | tcp | found | Found Messaging Protocol |
+| 4411 | udp |  | Reserved |
+| 4412 | tcp |  | Reserved |
+| 4412 | udp | smallchat | SmallChat |
+| 4413 | tcp | vision-mon | FORTÉ Vision Monitoring platform |
+| 4413 | udp | vision-mon-disc | FORTÉ Vision Monitoring platform |
+| 4414 | tcp | updog | Updog Monitoring and Status Framework |
+| 4414 | udp |  | Reserved |
+| 4415 | tcp | brcd-vr-req | Brocade Virtual Router Request |
+| 4415 | udp |  | Reserved |
+| 4416 | tcp | pjj-player | PJJ Media Player |
+| 4416 | udp | pjj-player-disc | PJJ Media Player discovery |
+| 4417 | tcp | workflowdir | Workflow Director Communication |
+| 4417 | udp |  | Reserved |
+| 4418 | tcp |  | Reserved |
+| 4418 | udp | axysbridge | AXYS communication protocol |
+| 4419 | tcp | cbp | Colnod Binary Protocol |
+| 4419 | udp |  | Reserved |
+| 4420 | tcp | nvme | NVM Express over Fabrics storage access |
+| 4420 | udp | nvme | NVM Express over Fabrics storage access |
+| 4421 | tcp | scaleft | Multi-Platform Remote Management for Cloud Infrastructure |
+| 4421 | udp |  | Reserved |
+| 4422 | tcp | tsepisp | TSEP Installation Service Protocol |
+| 4422 | udp |  | Reserved |
+| 4423 | tcp | thingkit | thingkit secure mesh |
+| 4423 | udp |  | Reserved |
+| 4424 |  |  | Unassigned |
+| 4425 | tcp | netrockey6 | NetROCKEY6 SMART Plus Service |
+| 4425 | udp | netrockey6 | NetROCKEY6 SMART Plus Service |
+| 4426 | tcp | beacon-port-2 | SMARTS Beacon Port |
+| 4426 | udp | beacon-port-2 | SMARTS Beacon Port |
+| 4427 | tcp | drizzle | Drizzle database server |
+| 4427 | udp |  | Reserved |
+| 4428 | tcp | omviserver | OMV-Investigation Server-Client |
+| 4428 | udp |  | Reserved |
+| 4429 | tcp | omviagent | OMV Investigation Agent-Server |
+| 4429 | udp |  | Reserved |
+| 4430 | tcp | rsqlserver | REAL SQL Server |
+| 4430 | udp | rsqlserver | REAL SQL Server |
+| 4431 | tcp | wspipe | adWISE Pipe |
+| 4431 | udp |  | Reserved |
+| 4432 | tcp | l-acoustics | L-ACOUSTICS management |
+| 4432 | udp | l-acoustics | L-ACOUSTICS management |
+| 4433 | tcp | vop | Versile Object Protocol |
+| 4433 | udp |  | Reserved |
+| 4434-4440 |  |  | Unassigned |
+| 4441 | tcp |  | Reserved |
+| 4441 | udp | netblox | Netblox Protocol |
+| 4442 | tcp | saris | Saris |
+| 4442 | udp | saris | Saris |
+| 4443 | tcp | pharos | Pharos |
+| 4443 | udp | pharos | Pharos |
+| 4444 | tcp | krb524 | KRB524 |
+| 4444 | udp | krb524 | KRB524 |
+| 4444 | tcp | nv-video | NV Video default |
+| 4444 | udp | nv-video | NV Video default |
+| 4445 | tcp | upnotifyp | UPNOTIFYP |
+| 4445 | udp | upnotifyp | UPNOTIFYP |
+| 4446 | tcp | n1-fwp | N1-FWP |
+| 4446 | udp | n1-fwp | N1-FWP |
+| 4447 | tcp | n1-rmgmt | N1-RMGMT |
+| 4447 | udp | n1-rmgmt | N1-RMGMT |
+| 4448 | tcp | asc-slmd | ASC Licence Manager |
+| 4448 | udp | asc-slmd | ASC Licence Manager |
+| 4449 | tcp | privatewire | PrivateWire |
+| 4449 | udp | privatewire | PrivateWire |
+| 4450 | tcp | camp | Common ASCII Messaging Protocol |
+| 4450 | udp | camp | Common ASCII Messaging Protocol |
+| 4451 | tcp | ctisystemmsg | CTI System Msg |
+| 4451 | udp | ctisystemmsg | CTI System Msg |
+| 4452 | tcp | ctiprogramload | CTI Program Load |
+| 4452 | udp | ctiprogramload | CTI Program Load |
+| 4453 | tcp | nssalertmgr | NSS Alert Manager |
+| 4453 | udp | nssalertmgr | NSS Alert Manager |
+| 4454 | tcp | nssagentmgr | NSS Agent Manager |
+| 4454 | udp | nssagentmgr | NSS Agent Manager |
+| 4455 | tcp | prchat-user | PR Chat User |
+| 4455 | udp | prchat-user | PR Chat User |
+| 4456 | tcp | prchat-server | PR Chat Server |
+| 4456 | udp | prchat-server | PR Chat Server |
+| 4457 | tcp | prRegister | PR Register |
+| 4457 | udp | prRegister | PR Register |
+| 4458 | tcp | mcp | Matrix Configuration Protocol |
+| 4458 | udp | mcp | Matrix Configuration Protocol |
+| 4459 |  |  | Unassigned |
+| 4460 | tcp | ntske | Network Time Security Key Establishment |
+| 4460 | udp |  | Reserved |
+| 4461-4483 |  |  | Unassigned |
+| 4484 | tcp | hpssmgmt | hpssmgmt service |
+| 4484 | udp | hpssmgmt | hpssmgmt service |
+| 4485 | tcp | assyst-dr | Assyst Data Repository Service |
+| 4485 | udp |  | Reserved |
+| 4486 | tcp | icms | Integrated Client Message Service |
+| 4486 | udp | icms | Integrated Client Message Service |
+| 4487 | tcp | prex-tcp | Protocol for Remote Execution over TCP |
+| 4487 | udp |  | Reserved |
+| 4488 | tcp | awacs-ice | Apple Wide Area Connectivity Service ICE Bootstrap |
+| 4488 | udp | awacs-ice | Apple Wide Area Connectivity Service ICE Bootstrap |
+| 4489-4499 |  |  | Unassigned |
+| 4500 | tcp | ipsec-nat-t | IPsec NAT-Traversal |
+| 4500 | udp | ipsec-nat-t | IPsec NAT-Traversal |
+| 4501 |  |  | Unassigned |
+| 4502 | sctp | a25-fap-fgw | A25 (FAP-FGW) |
+| 4503 | tcp |  | Reserved |
+| 4503 | udp | m-bus-oms | M-Bus-OMS over UDP |
+| 4504-4533 |  |  | Unassigned |
+| 4534 | tcp |  | Reserved |
+| 4534 | udp | armagetronad | Armagetron Advanced Game Server |
+| 4535 | tcp | ehs | Event Heap Server |
+| 4535 | udp | ehs | Event Heap Server |
+| 4536 | tcp | ehs-ssl | Event Heap Server SSL |
+| 4536 | udp | ehs-ssl | Event Heap Server SSL |
+| 4537 | tcp | wssauthsvc | WSS Security Service |
+| 4537 | udp | wssauthsvc | WSS Security Service |
+| 4538 | tcp | swx-gate | Software Data Exchange Gateway |
+| 4538 | udp | swx-gate | Software Data Exchange Gateway |
+| 4539-4544 |  |  | Unassigned |
+| 4545 | tcp | worldscores | WorldScores |
+| 4545 | udp | worldscores | WorldScores |
+| 4546 | tcp | sf-lm | SF License Manager (Sentinel) |
+| 4546 | udp | sf-lm | SF License Manager (Sentinel) |
+| 4547 | tcp | lanner-lm | Lanner License Manager |
+| 4547 | udp | lanner-lm | Lanner License Manager |
+| 4548 | tcp | synchromesh | Synchromesh |
+| 4548 | udp | synchromesh | Synchromesh |
+| 4549 | tcp | aegate | Aegate PMR Service |
+| 4549 | udp | aegate | Aegate PMR Service |
+| 4550 | tcp | gds-adppiw-db | Perman I Interbase Server |
+| 4550 | udp | gds-adppiw-db | Perman I Interbase Server |
+| 4551 | tcp | ieee-mih | MIH Services |
+| 4551 | udp | ieee-mih | MIH Services |
+| 4552 | tcp | menandmice-mon | Men and Mice Monitoring |
+| 4552 | udp | menandmice-mon | Men and Mice Monitoring |
+| 4553 | tcp | icshostsvc | ICS host services |
+| 4553 | udp |  | Reserved |
+| 4554 | tcp | msfrs | MS FRS Replication |
+| 4554 | udp | msfrs | MS FRS Replication |
+| 4555 | tcp | rsip | RSIP Port |
+| 4555 | udp | rsip | RSIP Port |
+| 4556 | tcp | dtn-bundle | DTN Bundle TCP CL Protocol |
+| 4556 | udp | dtn-bundle | DTN Bundle UDP CL Protocol |
+| 4556 | dccp | dtn-bundle | DTN Bundle DCCP CL Protocol |
+| 4557 | tcp |  | Reserved |
+| 4557 | udp | mtcevrunqss | Marathon everRun Quorum Service Server |
+| 4558 | tcp |  | Reserved |
+| 4558 | udp | mtcevrunqman | Marathon everRun Quorum Service Manager |
+| 4559 | tcp | hylafax | HylaFAX |
+| 4559 | udp | hylafax | HylaFAX |
+| 4560-4562 |  |  | Unassigned |
+| 4563 | tcp | amahi-anywhere | Amahi Anywhere |
+| 4563 | udp |  | Reserved |
+| 4564-4565 |  |  | Unassigned |
+| 4566 | tcp | kwtc | Kids Watch Time Control Service |
+| 4566 | udp | kwtc | Kids Watch Time Control Service |
+| 4567 | tcp | tram | TRAM |
+| 4567 | udp | tram | TRAM |
+| 4568 | tcp | bmc-reporting | BMC Reporting |
+| 4568 | udp | bmc-reporting | BMC Reporting |
+| 4569 | tcp | iax | Inter-Asterisk eXchange |
+| 4569 | udp | iax | Inter-Asterisk eXchange |
+| 4570 | tcp | deploymentmap | Service to distribute and update within a site deployment information for Oracle Communications Suite |
+| 4570 | udp |  | Reserved |
+| 4571-4572 |  |  | Unassigned |
+| 4573 | tcp | cardifftec-back | A port for communication between a server and client for a custom backup system |
+| 4573 | udp |  | Reserved |
+| 4574-4589 |  |  | Unassigned |
+| 4590 | tcp | rid | RID over HTTP/TLS |
+| 4590 | udp |  | Reserved |
+| 4591 | tcp | l3t-at-an | HRPD L3T (AT-AN) |
+| 4591 | udp | l3t-at-an | HRPD L3T (AT-AN) |
+| 4592 | tcp |  | Reserved |
+| 4592 | udp | hrpd-ith-at-an | HRPD-ITH (AT-AN) |
+| 4593 | tcp | ipt-anri-anri | IPT (ANRI-ANRI) |
+| 4593 | udp | ipt-anri-anri | IPT (ANRI-ANRI) |
+| 4594 | tcp | ias-session | IAS-Session (ANRI-ANRI) |
+| 4594 | udp | ias-session | IAS-Session (ANRI-ANRI) |
+| 4595 | tcp | ias-paging | IAS-Paging (ANRI-ANRI) |
+| 4595 | udp | ias-paging | IAS-Paging (ANRI-ANRI) |
+| 4596 | tcp | ias-neighbor | IAS-Neighbor (ANRI-ANRI) |
+| 4596 | udp | ias-neighbor | IAS-Neighbor (ANRI-ANRI) |
+| 4597 | tcp | a21-an-1xbs | A21 (AN-1xBS) |
+| 4597 | udp | a21-an-1xbs | A21 (AN-1xBS) |
+| 4598 | tcp | a16-an-an | A16 (AN-AN) |
+| 4598 | udp | a16-an-an | A16 (AN-AN) |
+| 4599 | tcp | a17-an-an | A17 (AN-AN) |
+| 4599 | udp | a17-an-an | A17 (AN-AN) |
+| 4600 | tcp | piranha1 | Piranha1 |
+| 4600 | udp | piranha1 | Piranha1 |
+| 4601 | tcp | piranha2 | Piranha2 |
+| 4601 | udp | piranha2 | Piranha2 |
+| 4602 | tcp | mtsserver | EAX MTS Server |
+| 4602 | udp |  | Reserved |
+| 4603 | tcp | menandmice-upg | Men & Mice Upgrade Agent |
+| 4603 | udp |  | Reserved |
+| 4604 | tcp | irp | Identity Registration Protocol |
+| 4604 | udp |  | Reserved |
+| 4605 | tcp | sixchat | Direct End to End Secure Chat Protocol |
+| 4605 | udp |  | Reserved |
+| 4606 | tcp | sixid | Secure ID to IP registration and lookup |
+| 4606 | udp |  | Reserved |
+| 4607-4620 |  |  | Unassigned |
+| 4621 | tcp |  | Reserved |
+| 4621 | udp | ventoso | Bidirectional single port remote radio VOIP and Control stream |
+| 4622-4645 |  |  | Unassigned |
+| 4646 | tcp | dots-signal | Distributed Denial-of-Service Open Threat Signaling (DOTS) Signal Channel Protocol. The service name is used to construct the SRV service names "_dots-signal._udp" and "_dots-signal._tcp" for discovering DOTS servers used to establish DOTS signal channel. |
+| 4646 | udp | dots-signal | Distributed Denial-of-Service Open Threat Signaling (DOTS) Signal Channel Protocol. The service name is used to construct the SRV service names "_dots-signal._udp" and "_dots-signal._tcp" for discovering DOTS servers used to establish DOTS signal channel. |
+| 4647-4657 |  |  | Unassigned |
+| 4658 | tcp | playsta2-app | PlayStation2 App Port |
+| 4658 | udp | playsta2-app | PlayStation2 App Port |
+| 4659 | tcp | playsta2-lob | PlayStation2 Lobby Port |
+| 4659 | udp | playsta2-lob | PlayStation2 Lobby Port |
+| 4660 | tcp | smaclmgr | smaclmgr |
+| 4660 | udp | smaclmgr | smaclmgr |
+| 4661 | tcp | kar2ouche | Kar2ouche Peer location service |
+| 4661 | udp | kar2ouche | Kar2ouche Peer location service |
+| 4662 | tcp | oms | OrbitNet Message Service |
+| 4662 | udp | oms | OrbitNet Message Service |
+| 4663 | tcp | noteit | Note It! Message Service |
+| 4663 | udp | noteit | Note It! Message Service |
+| 4664 | tcp | ems | Rimage Messaging Server |
+| 4664 | udp | ems | Rimage Messaging Server |
+| 4665 | tcp | contclientms | Container Client Message Service |
+| 4665 | udp | contclientms | Container Client Message Service |
+| 4666 | tcp | eportcomm | E-Port Message Service |
+| 4666 | udp | eportcomm | E-Port Message Service |
+| 4667 | tcp | mmacomm | MMA Comm Services |
+| 4667 | udp | mmacomm | MMA Comm Services |
+| 4668 | tcp | mmaeds | MMA EDS Service |
+| 4668 | udp | mmaeds | MMA EDS Service |
+| 4669 | tcp | eportcommdata | E-Port Data Service |
+| 4669 | udp | eportcommdata | E-Port Data Service |
+| 4670 | tcp | light | Light packets transfer protocol |
+| 4670 | udp | light | Light packets transfer protocol |
+| 4671 | tcp | acter | Bull RSF action server |
+| 4671 | udp | acter | Bull RSF action server |
+| 4672 | tcp | rfa | remote file access server |
+| 4672 | udp | rfa | remote file access server |
+| 4673 | tcp | cxws | CXWS Operations |
+| 4673 | udp | cxws | CXWS Operations |
+| 4674 | tcp | appiq-mgmt | AppIQ Agent Management |
+| 4674 | udp | appiq-mgmt | AppIQ Agent Management |
+| 4675 | tcp | dhct-status | BIAP Device Status |
+| 4675 | udp | dhct-status | BIAP Device Status |
+| 4676 | tcp | dhct-alerts | BIAP Generic Alert |
+| 4676 | udp | dhct-alerts | BIAP Generic Alert |
+| 4677 | tcp | bcs | Business Continuity Servi |
+| 4677 | udp | bcs | Business Continuity Servi |
+| 4678 | tcp | traversal | boundary traversal |
+| 4678 | udp | traversal | boundary traversal |
+| 4679 | tcp | mgesupervision | MGE UPS Supervision |
+| 4679 | udp | mgesupervision | MGE UPS Supervision |
+| 4680 | tcp | mgemanagement | MGE UPS Management |
+| 4680 | udp | mgemanagement | MGE UPS Management |
+| 4681 | tcp | parliant | Parliant Telephony System |
+| 4681 | udp | parliant | Parliant Telephony System |
+| 4682 | tcp | finisar | finisar |
+| 4682 | udp | finisar | finisar |
+| 4683 | tcp | spike | Spike Clipboard Service |
+| 4683 | udp | spike | Spike Clipboard Service |
+| 4684 | tcp | rfid-rp1 | RFID Reader Protocol 1.0 |
+| 4684 | udp | rfid-rp1 | RFID Reader Protocol 1.0 |
+| 4685 | tcp | autopac | Autopac Protocol |
+| 4685 | udp | autopac | Autopac Protocol |
+| 4686 | tcp | msp-os | Manina Service Protocol |
+| 4686 | udp | msp-os | Manina Service Protocol |
+| 4687 | tcp | nst | Network Scanner Tool FTP |
+| 4687 | udp | nst | Network Scanner Tool FTP |
+| 4688 | tcp | mobile-p2p | Mobile P2P Service |
+| 4688 | udp | mobile-p2p | Mobile P2P Service |
+| 4689 | tcp | altovacentral | Altova DatabaseCentral |
+| 4689 | udp | altovacentral | Altova DatabaseCentral |
+| 4690 | tcp | prelude | Prelude IDS message proto |
+| 4690 | udp | prelude | Prelude IDS message proto |
+| 4691 | tcp | mtn | monotone Netsync Protocol |
+| 4691 | udp | mtn | monotone Netsync Protocol |
+| 4692 | tcp | conspiracy | Conspiracy messaging |
+| 4692 | udp | conspiracy | Conspiracy messaging |
+| 4693-4699 |  |  | Unassigned |
+| 4700 | tcp | netxms-agent | NetXMS Agent |
+| 4700 | udp | netxms-agent | NetXMS Agent |
+| 4701 | tcp | netxms-mgmt | NetXMS Management |
+| 4701 | udp | netxms-mgmt | NetXMS Management |
+| 4702 | tcp | netxms-sync | NetXMS Server Synchronization |
+| 4702 | udp | netxms-sync | NetXMS Server Synchronization |
+| 4703 | tcp | npqes-test | Network Performance Quality Evaluation System Test Service |
+| 4703 | udp |  | Reserved |
+| 4704 | tcp | assuria-ins | Assuria Insider |
+| 4704 | udp |  | Reserved |
+| 4705-4710 |  |  | Unassigned |
+| 4711 | tcp | trinity-dist | Trinity Trust Network Node Communication |
+| 4711 | udp | trinity-dist | Trinity Trust Network Node Communication |
+| 4711 | sctp | trinity-dist | Trinity Trust Network Node Communication |
+| 4712-4724 |  |  | Unassigned |
+| 4725 | tcp | truckstar | TruckStar Service |
+| 4725 | udp | truckstar | TruckStar Service |
+| 4726 | tcp |  | Reserved |
+| 4726 | udp | a26-fap-fgw | A26 (FAP-FGW) |
+| 4727 | tcp | fcis | F-Link Client Information Service |
+| 4727 | udp | fcis-disc | F-Link Client Information Service Discovery |
+| 4728 | tcp | capmux | CA Port Multiplexer |
+| 4728 | udp | capmux | CA Port Multiplexer |
+| 4729 | tcp |  | Reserved |
+| 4729 | udp | gsmtap | GSM Interface Tap |
+| 4730 | tcp | gearman | Gearman Job Queue System |
+| 4730 | udp | gearman | Gearman Job Queue System |
+| 4731 | tcp | remcap | Remote Capture Protocol |
+| 4731 | udp |  | Reserved |
+| 4732 | tcp |  | Reserved |
+| 4732 | udp | ohmtrigger | OHM server trigger |
+| 4733 | tcp | resorcs | RES Orchestration Catalog Services |
+| 4733 | udp |  | Reserved |
+| 4734-4736 |  |  | Unassigned |
+| 4737 | tcp | ipdr-sp | IPDR/SP |
+| 4737 | udp | ipdr-sp | IPDR/SP |
+| 4738 | tcp | solera-lpn | SoleraTec Locator |
+| 4738 | udp | solera-lpn | SoleraTec Locator |
+| 4739 | tcp | ipfix | IP Flow Info Export |
+| 4739 | udp | ipfix | IP Flow Info Export |
+| 4739 | sctp | ipfix | IP Flow Info Export |
+| 4740 | tcp | ipfixs | ipfix protocol over TLS |
+| 4740 | sctp | ipfixs | ipfix protocol over DTLS |
+| 4740 | udp | ipfixs | ipfix protocol over DTLS |
+| 4741 | tcp | lumimgrd | Luminizer Manager |
+| 4741 | udp | lumimgrd | Luminizer Manager |
+| 4742 | tcp | sicct | SICCT |
+| 4742 | udp | sicct-sdp | SICCT Service Discovery Protocol |
+| 4743 | tcp | openhpid | openhpi HPI service |
+| 4743 | udp | openhpid | openhpi HPI service |
+| 4744 | tcp | ifsp | Internet File Synchronization Protocol |
+| 4744 | udp | ifsp | Internet File Synchronization Protocol |
+| 4745 | tcp | fmp | Funambol Mobile Push |
+| 4745 | udp | fmp | Funambol Mobile Push |
+| 4746 | tcp |  | Reserved |
+| 4746 | udp | intelliadm-disc | IntelliAdmin Discovery |
+| 4747 | udp | buschtrommel | peer-to-peer file exchange protocol |
+| 4747 | tcp |  | Reserved |
+| 4748-4748 |  |  | Unassigned |
+| 4749 | tcp | profilemac | Profile for Mac |
+| 4749 | udp | profilemac | Profile for Mac |
+| 4750 | tcp | ssad | Simple Service Auto Discovery |
+| 4750 | udp | ssad | Simple Service Auto Discovery |
+| 4751 | tcp | spocp | Simple Policy Control Protocol |
+| 4751 | udp | spocp | Simple Policy Control Protocol |
+| 4752 | tcp | snap | Simple Network Audio Protocol |
+| 4752 | udp | snap | Simple Network Audio Protocol |
+| 4753 | tcp | simon | Simple Invocation of Methods Over Network (SIMON) |
+| 4753 | udp | simon-disc | Simple Invocation of Methods Over Network (SIMON) Discovery |
+| 4754 | tcp |  | Reserved |
+| 4754 | udp | gre-in-udp | GRE-in-UDP Encapsulation |
+| 4755 | tcp |  | Reserved |
+| 4755 | udp | gre-udp-dtls | GRE-in-UDP Encapsulation with DTLS |
+| 4756 | tcp | RDCenter | Reticle Decision Center |
+| 4756 | udp |  | Reserved |
+| 4757-4773 |  |  | Unassigned |
+| 4774 | tcp | converge | Converge RPC |
+| 4774 | udp |  | Reserved |
+| 4775-4783 |  |  | Unassigned |
+| 4784 | tcp | bfd-multi-ctl | BFD Multihop Control |
+| 4784 | udp | bfd-multi-ctl | BFD Multihop Control |
+| 4785 | tcp |  | Reserved |
+| 4785 | udp | cncp | Cisco Nexus Control Protocol |
+| 4786 | tcp | smart-install | Smart Install Service |
+| 4786 | udp |  | Reserved |
+| 4787 | tcp | sia-ctrl-plane | Service Insertion Architecture (SIA) Control-Plane |
+| 4787 | udp |  | Reserved |
+| 4788 | tcp | xmcp | eXtensible Messaging Client Protocol |
+| 4788 | udp |  | Reserved |
+| 4789 | udp | vxlan | Virtual eXtensible Local Area Network (VXLAN) |
+| 4789 | tcp |  | Reserved |
+| 4790 | udp | vxlan-gpe | Generic Protocol Extension for Virtual eXtensible Local Area Network (VXLAN) |
+| 4790 | tcp |  | Reserved |
+| 4791 | udp | roce | IP Routable RocE |
+| 4791 | tcp |  | Reserved |
+| 4792 | tcp | unified-bus | IP Routable Unified Bus |
+| 4792 | udp | unified-bus | IP Routable Unified Bus |
+| 4793 | tcp |  | Reserved |
+| 4793 | udp | uet | Ultra Ethernet Transport |
+| 4794-4799 |  |  | Unassigned |
+| 4800 | tcp | iims | Icona Instant Messenging System |
+| 4800 | udp | iims | Icona Instant Messenging System |
+| 4801 | tcp | iwec | Icona Web Embedded Chat |
+| 4801 | udp | iwec | Icona Web Embedded Chat |
+| 4802 | tcp | ilss | Icona License System Server |
+| 4802 | udp | ilss | Icona License System Server |
+| 4803 | tcp | notateit | Notateit Messaging |
+| 4803 | udp | notateit-disc | Notateit Messaging Discovery |
+| 4804 | tcp |  | Reserved |
+| 4804 | udp | aja-ntv4-disc | AJA ntv4 Video System Discovery |
+| 4805-4826 |  |  | Unassigned |
+| 4827 | tcp | htcp | HTCP |
+| 4827 | udp | htcp | HTCP |
+| 4828-4836 |  |  | Unassigned |
+| 4837 | tcp | varadero-0 | Varadero-0 |
+| 4837 | udp | varadero-0 | Varadero-0 |
+| 4838 | tcp | varadero-1 | Varadero-1 |
+| 4838 | udp | varadero-1 | Varadero-1 |
+| 4839 | tcp | varadero-2 | Varadero-2 |
+| 4839 | udp | varadero-2 | Varadero-2 |
+| 4840 | tcp | opcua-tcp | OPC UA Connection Protocol |
+| 4840 | udp | opcua-udp | OPC UA Multicast Datagram Protocol |
+| 4841 | tcp | quosa | QUOSA Virtual Library Service |
+| 4841 | udp | quosa | QUOSA Virtual Library Service |
+| 4842 | tcp | gw-asv | nCode ICE-flow Library AppServer |
+| 4842 | udp | gw-asv | nCode ICE-flow Library AppServer |
+| 4843 | tcp | opcua-tls | OPC UA TCP Protocol over TLS/SSL |
+| 4843 | udp | opcua-tls | OPC UA TCP Protocol over TLS/SSL |
+| 4844 | tcp | gw-log | nCode ICE-flow Library LogServer |
+| 4844 | udp | gw-log | nCode ICE-flow Library LogServer |
+| 4845 | tcp | wcr-remlib | WordCruncher Remote Library Service |
+| 4845 | udp | wcr-remlib | WordCruncher Remote Library Service |
+| 4846 | tcp | contamac-icm | Contamac ICM Service IANA assigned this well-formed service name as a replacement for "contamac_icm". |
+| 4846 | tcp | contamac_icm | Contamac ICM Service |
+| 4846 | udp | contamac-icm | Contamac ICM Service IANA assigned this well-formed service name as a replacement for "contamac_icm". |
+| 4846 | udp | contamac_icm | Contamac ICM Service |
+| 4847 | tcp | wfc | Web Fresh Communication |
+| 4847 | udp | wfc | Web Fresh Communication |
+| 4848 | tcp | appserv-http | App Server - Admin HTTP |
+| 4848 | udp | appserv-http | App Server - Admin HTTP |
+| 4849 | tcp | appserv-https | App Server - Admin HTTPS |
+| 4849 | udp | appserv-https | App Server - Admin HTTPS |
+| 4850 | tcp | sun-as-nodeagt | Sun App Server - NA |
+| 4850 | udp | sun-as-nodeagt | Sun App Server - NA |
+| 4851 | tcp | derby-repli | Apache Derby Replication |
+| 4851 | udp | derby-repli | Apache Derby Replication |
+| 4852-4866 |  |  | Unassigned |
+| 4867 | tcp | unify-debug | Unify Debugger |
+| 4867 | udp | unify-debug | Unify Debugger |
+| 4868 | tcp | phrelay | Photon Relay |
+| 4868 | udp | phrelay | Photon Relay |
+| 4869 | tcp | phrelaydbg | Photon Relay Debug |
+| 4869 | udp | phrelaydbg | Photon Relay Debug |
+| 4870 | tcp | cc-tracking | Citcom Tracking Service |
+| 4870 | udp | cc-tracking | Citcom Tracking Service |
+| 4871 | tcp | wired | Wired |
+| 4871 | udp | wired | Wired |
+| 4872-4875 |  |  | Unassigned |
+| 4876 | tcp | tritium-can | Tritium CAN Bus Bridge Service |
+| 4876 | udp | tritium-can | Tritium CAN Bus Bridge Service |
+| 4877 | tcp | lmcs | Lighting Management Control System |
+| 4877 | udp | lmcs | Lighting Management Control System |
+| 4878 | tcp |  | Reserved |
+| 4878 | udp | inst-discovery | Agilent Instrument Discovery |
+| 4879 | tcp | wsdl-event | WSDL Event Receiver |
+| 4879 | udp |  | Reserved |
+| 4880 | tcp | hislip | IVI High-Speed LAN Instrument Protocol |
+| 4880 | udp |  | Reserved |
+| 4881 | tcp |  | Reserved |
+| 4881 | udp | socp-t | SOCP Time Synchronization Protocol |
+| 4882 | tcp |  | Reserved |
+| 4882 | udp | socp-c | SOCP Control Protocol |
+| 4883 | tcp | wmlserver | Meier-Phelps License Server |
+| 4883 | udp |  | Reserved |
+| 4884 | tcp | hivestor | HiveStor Distributed File System |
+| 4884 | udp | hivestor | HiveStor Distributed File System |
+| 4885 | tcp | abbs | ABBS |
+| 4885 | udp | abbs | ABBS |
+| 4886-4887 |  |  | Unassigned |
+| 4888 | tcp | xcap-portal | xcap code analysis portal public user access |
+| 4888 | udp |  | Reserved |
+| 4889 | tcp | xcap-control | xcap code analysis portal cluster control and administration |
+| 4889 | udp |  | Reserved |
+| 4890-4893 |  |  | Unassigned |
+| 4894 | tcp | lyskom | LysKOM Protocol A |
+| 4894 | udp | lyskom | LysKOM Protocol A |
+| 4895-4898 |  |  | Unassigned |
+| 4899 | tcp | radmin-port | RAdmin Port |
+| 4899 | udp | radmin-port | RAdmin Port |
+| 4900 | tcp | hfcs | HFSQL Client/Server Database Engine |
+| 4900 | udp | hfcs | HFSQL Client/Server Database Engine |
+| 4901 | tcp | flr-agent | FileLocator Remote Search Agent IANA assigned this well-formed service name as a replacement for "flr_agent". |
+| 4901 | tcp | flr_agent | FileLocator Remote Search Agent |
+| 4901 | udp |  | Reserved |
+| 4902 | tcp | magiccontrol | magicCONROL RF and Data Interface |
+| 4902 | udp |  | Reserved |
+| 4903-4911 |  |  | Unassigned |
+| 4912 | tcp | lutap | Technicolor LUT Access Protocol |
+| 4912 | udp |  | Reserved |
+| 4913 | tcp | lutcp | LUTher Control Protocol |
+| 4914 | tcp | bones | Bones Remote Control |
+| 4914 | udp | bones | Bones Remote Control |
+| 4915 | tcp | frcs | Fibics Remote Control Service |
+| 4915 | udp |  | Reserved |
+| 4916-4935 |  |  | Unassigned |
+| 4936 | udp | an-signaling | Signal protocol port for autonomic networking |
+| 4936 | tcp |  | Reserved |
+| 4937 | tcp |  | Reserved |
+| 4937 | udp | atsc-mh-ssc | ATSC-M/H Service Signaling Channel |
+| 4938-4939 |  |  | Unassigned |
+| 4940 | tcp | eq-office-4940 | Equitrac Office |
+| 4940 | udp | eq-office-4940 | Equitrac Office |
+| 4941 | tcp | eq-office-4941 | Equitrac Office |
+| 4941 | udp | eq-office-4941 | Equitrac Office |
+| 4942 | tcp | eq-office-4942 | Equitrac Office |
+| 4942 | udp | eq-office-4942 | Equitrac Office |
+| 4943-4948 |  |  | Unassigned |
+| 4949 | tcp | munin | Munin Graphing Framework |
+| 4949 | udp | munin | Munin Graphing Framework |
+| 4950 | tcp | sybasesrvmon | Sybase Server Monitor |
+| 4950 | udp | sybasesrvmon | Sybase Server Monitor |
+| 4951 | tcp | pwgwims | PWG WIMS |
+| 4951 | udp | pwgwims | PWG WIMS |
+| 4952 | tcp | sagxtsds | SAG Directory Server |
+| 4952 | udp | sagxtsds | SAG Directory Server |
+| 4953 | tcp | dbsyncarbiter | Synchronization Arbiter |
+| 4953 | udp |  | Reserved |
+| 4954-4968 |  |  | Unassigned |
+| 4969 | tcp | ccss-qmm | CCSS QMessageMonitor |
+| 4969 | udp | ccss-qmm | CCSS QMessageMonitor |
+| 4970 | tcp | ccss-qsm | CCSS QSystemMonitor |
+| 4970 | udp | ccss-qsm | CCSS QSystemMonitor |
+| 4971 | tcp | burp | BackUp and Restore Program |
+| 4971 | udp |  | Reserved |
+| 4972-4979 |  |  | Unassigned |
+| 4980 | udp | ctxs-vpp | Citrix Virtual Path |
+| 4980 | tcp |  | Reserved |
+| 4981-4982 |  |  | Unassigned |
+| 4983 |  |  | Unassigned |
+| 4984 | tcp | webyast | WebYast |
+| 4984 | udp |  | Reserved |
+| 4985 | tcp | gerhcs | GER HC Standard |
+| 4985 | udp |  | Reserved |
+| 4986 | tcp | mrip | Model Railway Interface Program |
+| 4986 | udp | mrip | Model Railway Interface Program |
+| 4987 | tcp | smar-se-port1 | SMAR Ethernet Port 1 |
+| 4987 | udp | smar-se-port1 | SMAR Ethernet Port 1 |
+| 4988 | tcp | smar-se-port2 | SMAR Ethernet Port 2 |
+| 4988 | udp | smar-se-port2 | SMAR Ethernet Port 2 |
+| 4989 | tcp | parallel | Parallel for GAUSS (tm) |
+| 4989 | udp | parallel | Parallel for GAUSS (tm) |
+| 4990 | tcp | busycal | BusySync Calendar Synch. Protocol |
+| 4990 | udp | busycal | BusySync Calendar Synch. Protocol |
+| 4991 | tcp | vrt | VITA Radio Transport |
+| 4991 | udp | vrt | VITA Radio Transport |
+| 4992-4998 |  |  | Unassigned |
+| 4999 | tcp | hfcs-manager | HFSQL Client/Server Database Engine Manager |
+| 4999 | udp | hfcs-manager | HFSQL Client/Server Database Engine Manager |
+| 5000 | tcp | commplex-main | - |
+| 5000 | udp | commplex-main | - |
+| 5001 | tcp | commplex-link | - |
+| 5001 | udp | commplex-link | - |
+| 5002 | tcp | rfe | radio free ethernet |
+| 5002 | udp | rfe | radio free ethernet |
+| 5003 | tcp | fmpro-internal | FileMaker, Inc. - Proprietary transport |
+| 5003 | udp | fmpro-internal | FileMaker, Inc. - Proprietary name binding |
+| 5004 | tcp | avt-profile-1 | RTP media data |
+| 5004 | udp | avt-profile-1 | RTP media data |
+| 5004 | dccp | avt-profile-1 | RTP media data |
+| 5005 | tcp | avt-profile-2 | RTP control protocol |
+| 5005 | udp | avt-profile-2 | RTP control protocol |
+| 5005 | dccp | avt-profile-2 | RTP control protocol |
+| 5006 | tcp | wsm-server | wsm server |
+| 5006 | udp | wsm-server | wsm server |
+| 5007 | tcp | wsm-server-ssl | wsm server ssl |
+| 5007 | udp | wsm-server-ssl | wsm server ssl |
+| 5008 | tcp | synapsis-edge | Synapsis EDGE |
+| 5008 | udp | synapsis-edge | Synapsis EDGE |
+| 5009 | tcp | winfs | Microsoft Windows Filesystem |
+| 5009 | udp | winfs | Microsoft Windows Filesystem |
+| 5010 | tcp | telelpathstart | TelepathStart |
+| 5010 | udp | telelpathstart | TelepathStart |
+| 5011 | tcp | telelpathattack | TelepathAttack |
+| 5011 | udp | telelpathattack | TelepathAttack |
+| 5012 | tcp | nsp | NetOnTap Service |
+| 5012 | udp | nsp | NetOnTap Service |
+| 5013 | tcp | fmpro-v6 | FileMaker, Inc. - Proprietary transport |
+| 5013 | udp | fmpro-v6 | FileMaker, Inc. - Proprietary transport |
+| 5014 | tcp |  | Reserved |
+| 5014 | udp | onpsocket | Overlay Network Protocol |
+| 5015 | tcp | fmwp | FileMaker, Inc. - Web publishing |
+| 5015 | udp |  | Reserved |
+| 5016-5019 |  |  | Unassigned |
+| 5020 | tcp | zenginkyo-1 | zenginkyo-1 |
+| 5020 | udp | zenginkyo-1 | zenginkyo-1 |
+| 5021 | tcp | zenginkyo-2 | zenginkyo-2 |
+| 5021 | udp | zenginkyo-2 | zenginkyo-2 |
+| 5022 | tcp | mice | mice server |
+| 5022 | udp | mice | mice server |
+| 5023 | tcp | htuilsrv | Htuil Server for PLD2 |
+| 5023 | udp | htuilsrv | Htuil Server for PLD2 |
+| 5024 | tcp | scpi-telnet | SCPI-TELNET |
+| 5024 | udp | scpi-telnet | SCPI-TELNET |
+| 5025 | tcp | scpi-raw | SCPI-RAW |
+| 5025 | udp | scpi-raw | SCPI-RAW |
+| 5026 | tcp | strexec-d | Storix I/O daemon (data) |
+| 5026 | udp | strexec-d | Storix I/O daemon (data) |
+| 5027 | tcp | strexec-s | Storix I/O daemon (stat) |
+| 5027 | udp | strexec-s | Storix I/O daemon (stat) |
+| 5028 | tcp | qvr | Quiqum Virtual Relais |
+| 5028 | udp |  | Reserved |
+| 5029 | tcp | infobright | Infobright Database Server |
+| 5029 | udp | infobright | Infobright Database Server |
+| 5030 | tcp |  | Reserved |
+| 5030 | udp |  | Reserved |
+| 5031 | tcp |  | Reserved |
+| 5031 | udp | dmp | Direct Message Protocol |
+| 5032 | tcp | signacert-agent | SignaCert Enterprise Trust Server Agent |
+| 5032 | udp |  | Reserved |
+| 5033 | tcp | jtnetd-server | Janstor Secure Data |
+| 5033 | udp |  | Reserved |
+| 5034 | tcp | jtnetd-status | Janstor Status |
+| 5034 | udp |  | Reserved |
+| 5035-5041 |  |  | Unassigned |
+| 5042 | tcp | asnaacceler8db | asnaacceler8db |
+| 5042 | udp | asnaacceler8db | asnaacceler8db |
+| 5043 | tcp | swxadmin | ShopWorX Administration |
+| 5043 | udp | swxadmin | ShopWorX Administration |
+| 5044 | tcp | lxi-evntsvc | LXI Event Service |
+| 5044 | udp | lxi-evntsvc | LXI Event Service |
+| 5045 | tcp | osp | Open Settlement Protocol |
+| 5045 | udp |  | Reserved |
+| 5046 | tcp |  | Reserved |
+| 5046 | udp | vpm-udp | Vishay PM UDP Service |
+| 5047 | tcp |  | Reserved |
+| 5047 | udp | iscape | iSCAPE Data Broadcasting |
+| 5048 | tcp | texai | Texai Message Service |
+| 5048 | udp |  | Reserved |
+| 5049 | tcp | ivocalize | iVocalize Web Conference |
+| 5049 | udp | ivocalize | iVocalize Web Conference |
+| 5050 | tcp | mmcc | multimedia conference control tool |
+| 5050 | udp | mmcc | multimedia conference control tool |
+| 5051 | tcp | ita-agent | ITA Agent |
+| 5051 | udp | ita-agent | ITA Agent |
+| 5052 | tcp | ita-manager | ITA Manager |
+| 5052 | udp | ita-manager | ITA Manager |
+| 5053 | tcp | rlm | RLM License Server |
+| 5053 | udp | rlm-disc | RLM Discovery Server |
+| 5054 | tcp | rlm-admin | RLM administrative interface |
+| 5054 | udp |  | Reserved |
+| 5055 | tcp | unot | UNOT |
+| 5055 | udp | unot | UNOT |
+| 5056 | tcp | intecom-ps1 | Intecom Pointspan 1 |
+| 5056 | udp | intecom-ps1 | Intecom Pointspan 1 |
+| 5057 | tcp | intecom-ps2 | Intecom Pointspan 2 |
+| 5057 | udp | intecom-ps2 | Intecom Pointspan 2 |
+| 5058 | tcp |  | Reserved |
+| 5058 | udp | locus-disc | Locus Discovery |
+| 5059 | tcp | sds | SIP Directory Services |
+| 5059 | udp | sds | SIP Directory Services |
+| 5060 | tcp | sip | SIP |
+| 5060 | udp | sip | SIP |
+| 5060 | sctp | sip | SIP |
+| 5061 | tcp | sips | SIP-TLS |
+| 5061 | udp | sips | SIP-TLS |
+| 5061 | sctp | sips | SIP-TLS |
+| 5062 | tcp | na-localise | Localisation access |
+| 5062 | udp | na-localise | Localisation access |
+| 5063 | tcp | csrpc | centrify secure RPC |
+| 5063 | udp |  | Reserved |
+| 5064 | tcp | ca-1 | Channel Access 1 |
+| 5064 | udp | ca-1 | Channel Access 1 |
+| 5065 | tcp | ca-2 | Channel Access 2 |
+| 5065 | udp | ca-2 | Channel Access 2 |
+| 5066 | tcp | stanag-5066 | STANAG-5066-SUBNET-INTF |
+| 5066 | udp | stanag-5066 | STANAG-5066-SUBNET-INTF |
+| 5067 | tcp | authentx | Authentx Service |
+| 5067 | udp | authentx | Authentx Service |
+| 5068 | tcp | bitforestsrv | Bitforest Data Service |
+| 5068 | udp |  | Reserved |
+| 5069 | tcp | i-net-2000-npr | I/Net 2000-NPR |
+| 5069 | udp | i-net-2000-npr | I/Net 2000-NPR |
+| 5070 | tcp | vtsas | VersaTrans Server Agent Service |
+| 5070 | udp | vtsas | VersaTrans Server Agent Service |
+| 5071 | tcp | powerschool | PowerSchool |
+| 5071 | udp | powerschool | PowerSchool |
+| 5072 | tcp | ayiya | Anything In Anything |
+| 5072 | udp | ayiya | Anything In Anything |
+| 5073 | tcp | tag-pm | Advantage Group Port Mgr |
+| 5073 | udp | tag-pm | Advantage Group Port Mgr |
+| 5074 | tcp | alesquery | ALES Query |
+| 5074 | udp | alesquery | ALES Query |
+| 5075 | tcp | pvaccess | Experimental Physics and Industrial Control System |
+| 5075 | udp |  | Reserved |
+| 5076-5077 |  |  | Unassigned |
+| 5078 | udp | pixelpusher | PixelPusher pixel data |
+| 5078 | tcp |  | Reserved |
+| 5079 | tcp |  | Reserved |
+| 5079 | udp | cp-spxrpts | Cambridge Pixel SPx Reports |
+| 5080 | tcp | onscreen | OnScreen Data Collection Service |
+| 5080 | udp | onscreen | OnScreen Data Collection Service |
+| 5081 | tcp | sdl-ets | SDL - Ent Trans Server |
+| 5081 | udp | sdl-ets | SDL - Ent Trans Server |
+| 5082 | tcp | qcp | Qpur Communication Protocol |
+| 5082 | udp | qcp | Qpur Communication Protocol |
+| 5083 | tcp | qfp | Qpur File Protocol |
+| 5083 | udp | qfp | Qpur File Protocol |
+| 5084 | tcp | llrp | EPCglobal Low-Level Reader Protocol |
+| 5084 | udp | llrp | EPCglobal Low-Level Reader Protocol |
+| 5085 | tcp | encrypted-llrp | EPCglobal Encrypted LLRP |
+| 5085 | udp | encrypted-llrp | EPCglobal Encrypted LLRP |
+| 5086 | tcp | aprigo-cs | Aprigo Collection Service |
+| 5086 | udp |  | Reserved |
+| 5087 | tcp | biotic | BIOTIC - Binary Internet of Things Interoperable Communication |
+| 5087 | udp |  | Reserved |
+| 5088-5089 |  |  | Unassigned |
+| 5090 | sctp | car | Candidate AR |
+| 5091 | sctp | cxtp | Context Transfer Protocol |
+| 5092 | tcp |  | Reserved |
+| 5092 | udp | magpie | Magpie Binary |
+| 5093 | tcp | sentinel-lm | Sentinel LM |
+| 5093 | udp | sentinel-lm | Sentinel LM |
+| 5094 | tcp | hart-ip | HART-IP |
+| 5094 | udp | hart-ip | HART-IP |
+| 5095-5098 |  |  | Unassigned |
+| 5099 | tcp | sentlm-srv2srv | SentLM Srv2Srv |
+| 5099 | udp | sentlm-srv2srv | SentLM Srv2Srv |
+| 5100 | tcp | socalia | Socalia service mux |
+| 5100 | udp | socalia | Socalia service mux |
+| 5101 | tcp | talarian-tcp | Talarian_TCP |
+| 5101 | udp | talarian-udp | Talarian_UDP |
+| 5102 | tcp | oms-nonsecure | Oracle OMS non-secure |
+| 5102 | udp | oms-nonsecure | Oracle OMS non-secure |
+| 5103 | tcp | actifio-c2c | Actifio C2C |
+| 5103 | udp |  | Reserved |
+| 5104 | tcp |  | Reserved |
+| 5104 | udp | tinymessage | TinyMessage |
+| 5105 | tcp |  | Reserved |
+| 5105 | udp | hughes-ap | Hughes Association Protocol |
+| 5106 | tcp | actifioudsagent | Actifio UDS Agent |
+| 5106 | udp |  | Reserved |
+| 5107 | tcp | actifioreplic | Disk to Disk replication between Actifio Clusters |
+| 5107 | udp |  | Reserved |
+| 5108-5110 |  |  | Unassigned |
+| 5111 | tcp | taep-as-svc | TAEP AS service |
+| 5111 | udp | taep-as-svc | TAEP AS service |
+| 5112 | tcp | pm-cmdsvr | PeerMe Msg Cmd Service |
+| 5112 | udp | pm-cmdsvr | PeerMe Msg Cmd Service |
+| 5113 |  |  | Unassigned |
+| 5114 | tcp | ev-services | Enterprise Vault Services |
+| 5114 | udp |  | Reserved |
+| 5115 | tcp | autobuild | Symantec Autobuild Service |
+| 5115 | udp |  | Reserved |
+| 5116 | tcp |  | Reserved |
+| 5116 | udp | emb-proj-cmd | EPSON Projecter Image Transfer |
+| 5117 | tcp | gradecam | GradeCam Image Processing |
+| 5117 | udp |  | Reserved |
+| 5118-5119 |  |  | Unassigned |
+| 5120 | tcp | barracuda-bbs | Barracuda Backup Protocol |
+| 5120 | udp | barracuda-bbs | Barracuda Backup Protocol |
+| 5121-5132 |  |  | Unassigned |
+| 5133 | tcp | nbt-pc | Policy Commander |
+| 5133 | udp | nbt-pc | Policy Commander |
+| 5134 | tcp | ppactivation | PP ActivationServer |
+| 5134 | udp |  | Reserved |
+| 5135 | tcp | erp-scale | ERP-Scale |
+| 5135 | udp |  | Reserved |
+| 5136 | tcp |  | Reserved |
+| 5136 | udp | minotaur-sa | Minotaur SA |
+| 5137 | tcp | ctsd | MyCTS server port |
+| 5137 | udp | ctsd | MyCTS server port |
+| 5138-5144 |  |  | Unassigned |
+| 5145 | tcp | rmonitor-secure | RMONITOR SECURE IANA assigned this well-formed service name as a replacement for "rmonitor_secure". |
+| 5145 | tcp | rmonitor_secure | RMONITOR SECURE |
+| 5145 | udp | rmonitor-secure | RMONITOR SECURE IANA assigned this well-formed service name as a replacement for "rmonitor_secure". |
+| 5145 | udp | rmonitor_secure | RMONITOR SECURE |
+| 5146 | tcp | social-alarm | Social Alarm Service |
+| 5146 | udp |  | Reserved |
+| 5147-5149 |  |  | Unassigned |
+| 5150 | tcp | atmp | Ascend Tunnel Management Protocol |
+| 5150 | udp | atmp | Ascend Tunnel Management Protocol |
+| 5151 | tcp | esri-sde | ESRI SDE Instance     IANA assigned this well-formed service name as a replacement for "esri_sde". |
+| 5151 | tcp | esri_sde | ESRI SDE Instance |
+| 5151 | udp | esri-sde | ESRI SDE Remote Start     IANA assigned this well-formed service name as a replacement for "esri_sde". |
+| 5151 | udp | esri_sde | ESRI SDE Remote Start |
+| 5152 | tcp | sde-discovery | ESRI SDE Instance Discovery |
+| 5152 | udp | sde-discovery | ESRI SDE Instance Discovery |
+| 5153 | tcp |  | Reserved |
+| 5153 | udp |  | Reserved |
+| 5154 | tcp | bzflag | BZFlag game server |
+| 5154 | udp | bzflag | BZFlag game server |
+| 5155 | tcp | asctrl-agent | Oracle asControl Agent |
+| 5155 | udp | asctrl-agent | Oracle asControl Agent |
+| 5156 | tcp | rugameonline | Russian Online Game |
+| 5156 | udp |  | Reserved |
+| 5157 | tcp | mediat | Mediat Remote Object Exchange |
+| 5157 | udp |  | Reserved |
+| 5158-5160 |  |  | Unassigned |
+| 5161 | tcp | snmpssh | SNMP over SSH Transport Model |
+| 5161 | udp |  | Reserved |
+| 5162 | tcp | snmpssh-trap | SNMP Notification over SSH Transport Model |
+| 5162 | udp |  | Reserved |
+| 5163 | tcp | sbackup | Shadow Backup |
+| 5163 | udp |  | Reserved |
+| 5164 | tcp | vpa | Virtual Protocol Adapter |
+| 5164 | udp | vpa-disc | Virtual Protocol Adapter Discovery |
+| 5165 | tcp | ife-icorp | ife_1corp IANA assigned this well-formed service name as a replacement for "ife_icorp". |
+| 5165 | tcp | ife_icorp | ife_1corp |
+| 5165 | udp | ife-icorp | ife_1corp IANA assigned this well-formed service name as a replacement for "ife_icorp". |
+| 5165 | udp | ife_icorp | ife_1corp |
+| 5166 | tcp | winpcs | WinPCS Service Connection |
+| 5166 | udp | winpcs | WinPCS Service Connection |
+| 5167 | tcp | scte104 | SCTE104 Connection |
+| 5167 | udp | scte104 | SCTE104 Connection |
+| 5168 | tcp | scte30 | SCTE30 Connection |
+| 5168 | udp | scte30 | SCTE30 Connection |
+| 5169-5171 |  |  | Unassigned |
+| 5172 | tcp | pcoip-mgmt | PC over IP Endpoint Management |
+| 5172 | udp |  | Reserved |
+| 5173-5189 |  |  | Unassigned |
+| 5190 | tcp | aol | America-Online |
+| 5190 | udp | aol | America-Online |
+| 5191 | tcp | aol-1 | AmericaOnline1 |
+| 5191 | udp | aol-1 | AmericaOnline1 |
+| 5192 | tcp | aol-2 | AmericaOnline2 |
+| 5192 | udp | aol-2 | AmericaOnline2 |
+| 5193 | tcp | aol-3 | AmericaOnline3 |
+| 5193 | udp | aol-3 | AmericaOnline3 |
+| 5194 | tcp | cpscomm | CipherPoint Config Service |
+| 5194 | udp |  | Reserved |
+| 5195 | tcp | ampl-lic | The protocol is used by a license server and client programs to control use of program licenses that float to networked machines |
+| 5195 | udp |  | Reserved |
+| 5196 | tcp | ampl-tableproxy | The protocol is used by two programs that exchange "table" data used in the AMPL modeling language |
+| 5196 | udp |  | Reserved |
+| 5197 | tcp | tunstall-lwp | Tunstall Lone worker device interface |
+| 5197 | udp |  | Reserved |
+| 5198-5199 |  |  | Unassigned |
+| 5200 | tcp | targus-getdata | TARGUS GetData |
+
+
+---
+
+**Navigasyon:**
+
+- [⬅️ Geri: Portlar ve Servisler](./07-Portlar-ve-Servisler-Port-Nedir.md)
+- [🏠 Ana Sayfa](../README.md)
