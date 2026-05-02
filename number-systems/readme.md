@@ -10,19 +10,13 @@ Sayı sistemleri, sayıların farklı tabanlarda (base) temsil edilme yöntemler
 ---
 ## Octet
 🔍 "Octet" bir sayı sistemi değildir. 8 bitten oluşan bir veri birimi/gruplama kavramıdır. Octal ile karıştırılmamalıdır.
-| Sistem | Slogan | Kök | Örnek |
-|---|---|---|---|
-| Octet | 8 parçalı | Latince “octo” (8) | her octect min 0, max 255 değerini alabilir |
+| Sistem | Slogan | Kök | Örnek | Kullanım |
+|---|---|---|---|---|
+| Octet | 8 parçalı | Latince “octo” (8) | her octect min 0, max 255 değerini alabilir | IPv4 adresleri 4 octet'ten oluşur |
 
 ## Hextet
+🔍 "Hextet" bir sayı sistemi değildir. 16 bitten oluşan bir veri birimi/gruplama kavramıdır. Hexadecimal ile ilişkilidir ama aynı şey değildir.
 
-🔍 "Hextet" bir sayı sistemi değildir. 16 bitlik bir veri birimidir.
-Hexadecimal (16 tabanlı sayı sistemi) ile ilişkilidir ama aynı şey değildir.
-
-| Özellik | Açıklama |
-|--------|----------|
-| Anlam | 16 bitlik veri grubu |
-| Köken | "Hex" (16) + "tet" (grup) |
-| Değer aralığı | 0x0000 - 0xFFFF (0 - 65535) |
-| Bit sayısı | 16 bit |
-| Gösterim | Hexadecimal (0-9, a-f) |
+| Sistem | Slogan | Kök | Örnek | Kullanım |
+|--------|--------|-----|-------|-------|
+| Hextet | 16 bitlik grup | "Hex" (16) + "tet" (grup) | Her hextet 0x0000–0xFFFF (0–65535) arası değer alır | IPv6 adresleri 8 hextet'ten oluşur |
