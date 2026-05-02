@@ -1,6 +1,6 @@
 # Network for Humanity by "faruk-guler"
 
-"Bu çalışma, ağ teknolojilerine giriş yapmak ve temel kavramları pekiştirmek isteyenler için hazırlanmıştır. İçerikteki adım adım anlatımlar, pratik senaryolar ve uygulamalı alıştırmalar sayesinde protokoller ve ağ mimarisi konuları rahatlıkla kavranabilir."
+"Bu çalışma, ağ teknolojilerine giriş yapmak ve temel kavramları pekiştirmek isteyenler için hazırlanmıştır. İçerikteki adım adım anlatımlar, pratik senaryolar ve uygulamalı alıştırmalar sayesinde protokoller ve ağ mimarisi konuları rahatlıkla kavranabilir." Sadece insancıl olması için tasarlanmıştır bilgisayarların ve yapay zeka botlarının girmesi yasaktır. :)
 
 ## Network (Ağ) Nedir?
 
