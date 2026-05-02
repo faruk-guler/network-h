@@ -25,7 +25,7 @@ Subnetting, büyük bir IP bloğunu, daha yönetilebilir küçük ağlara (subne
  
 ### 🏢 Senaryo
  
-Bir şirketin 16 departmanı var. Her departmana 512 IP lazım. 16 zaten 2'nin kuvveti olduğu için yuvarlama yok, hiç rezerve kalmıyor — ağ sıfır israfla bölünüyor.
+Bir şirketin 16 departmanı var. Her departmanın 512 IP talebi olduğunu varsayarak gerekli hesaplamayı yapalım.
  
 ### Hesaplama
  
@@ -57,7 +57,8 @@ Bir şirketin 16 departmanı var. Her departmana 512 IP lazım. 16 zaten 2'nin k
 | 15 | Satın Alma | 10.5.28.0 | 10.5.29.255 | 10.5.28.1 − 10.5.29.254 |
 | 16 | Sunucu/Server Odası | 10.5.30.0 | 10.5.31.255 | 10.5.30.1 − 10.5.31.254 |
  
-> ✅ 10.5.0.0/19 tam olarak 16 eşit parçaya bölündü.
+> ✅ 10.5.0.0/19 tam olarak 16 eşit parçaya bölündü. 16 zaten 2'nin kuvveti olduğu için yuvarlama yok, hiç rezerve kalmıyor — ağ sıfır israfla bölünüyor.
+
 > Her departmana **510 cihaz** bağlanabilir.
 
 > 💡 İhtiyaç duyulan IP veya departman sayısını her zaman bir üst 2'nin kuvvetine (8, 16, 32, 64...) yuvarlayarak tasarıma başlamalısınız."
