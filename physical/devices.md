@@ -57,6 +57,7 @@ Switch'in aksine Router, **IP adreslerine** göre çalışır. Evinizin ağını
 - OSI modelinin 3. katmanında (Ağ) çalışır
 - IP adreslerine göre en iyi rotayı hesaplar
 - Farklı ağlar (LAN, WAN, internet) arasında köprü kurar
+- Routerler Broadcast yayınlarını geçirmezler.
 
 ---
 
