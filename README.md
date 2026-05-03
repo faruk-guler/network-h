@@ -6,7 +6,7 @@
 
 **Network (Ağ)**, iki veya daha fazla cihazın **veri paylaşmak** için birbirine bağlandığı yapıdır. İnternet, dünyanın en büyük ağıdır!
 
-<img src="https://farukguler.com/assets/img/handbook.jpg" alt="alt text" width="380" height="230">
+<img src="images/net-bgn.jpg" alt="alt text" width="380" height="230">
 
 🅻🆄🆂🆄🅰🅻 - 🅷🅰🅽🅳🅱🅾🅾🅺
 - Name: Network for Humanity  
