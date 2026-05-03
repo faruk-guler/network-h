@@ -31,6 +31,9 @@ Senin cihazın              →    google.com sunucusu
 
 🧪🧪 IP Adresi formatı "Network" ve "Host" olmak üzere iki bölümden oluşmaktadır ve Adres Sınıflarına göre farklılık göstermektedir. Network ağı, Host ise uç cihazları ifade eder.
 ```
+192 . xx. xx .   xx
+└─────────────┘ └──┘
+Network         Host
 
 |Class  |Network         |Host       |
 A ----> |10.             |.0.0.0     |
