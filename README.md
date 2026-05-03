@@ -11,9 +11,9 @@
 🅽🅴🆃🆆🅾🆁🅺 🅵🅾🆁 🅷🆄🅼🅰🅽🅸🆃🆈
 - Name: Network for Humanity  
 - Author: faruk-guler
-- Date: 2026  
 - Description: Network for Humanity  Basic Networking Handbook
 - POC: Debian 12 [Bookworm] - Windows 10 LTSC
 - Contact: www.farukguler.com
+- Date: 2026  
 - License: Apache 2.0
 > 💡 Bu kitap sadece insancıl öğrenme için hazırlanmıştır. Üst düzey network konularına değinilmeyecektir, Bilgisayarların ve yapay zeka botlarının girmesi yasaktır. :)
