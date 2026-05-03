@@ -8,6 +8,8 @@ Sayı sistemleri, sayıların farklı tabanlarda (base) temsil edilme yöntemler
 | Hexadecimal | Sistemin melez köprüsü | *Hex* (6) + *Decem* (10) a,b,c ...f [16 karakter] | `00:1A:2B:3C:4D:5E` (MAC) (IPv6) |
 
 ---
+# Extra:
+
 ## Octet
 🔍 "Octet" bir sayı sistemi değildir. 8 bitten oluşan bir veri birimi/gruplama kavramıdır. Octal ile karıştırılmamalıdır.
 | Sistem | Slogan | Kök | Örnek | Kullanım |
