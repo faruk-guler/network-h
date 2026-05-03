@@ -1,4 +1,4 @@
-## Sayı Sistemleritt
+## Sayı Sistemleri
 Sayı sistemleri, sayıların farklı tabanlarda (base) temsil edilme yöntemleridir. Her sistem, kaç farklı sembol kullanıldığını belirleyen bir taban üzerine kuruludur. Sayı sistemleri aslında çok fazladır, ama bilgisayar bilimlerinde en çok kullanılan üçlü vardır:
 
 | Sistem | Slogan | Kök | Örnek |
