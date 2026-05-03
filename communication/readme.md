@@ -2,8 +2,6 @@
 
 Bir ağda cihazlar birbirleriyle üç farklı şekilde haberleşir: **Unicast**, **Multicast** ve **Broadcast**.
 
----
-
 ## 1) Unicast — Bire Bir İletim
 
 Bir cihazdan **tek bir** cihaza yapılan iletimdir.
