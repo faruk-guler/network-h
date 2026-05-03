@@ -22,3 +22,6 @@ Sayı sistemleri, sayıların farklı tabanlarda (base) temsil edilme yöntemler
 | Sistem | Slogan | Kök | Örnek | Kullanım |
 |--------|--------|-----|-------|-------|
 | Hextet | 16 bitlik grup | "Hex" (16) + "tet" (grup) | Her hextet 0x0000–0xFFFF (0–65535) arası değer alır | IPv6 adresleri 8 hextet'ten oluşur |
+
+- ASCII tablosu (harf → binary → decimal → hex karşılıkları) tablosuna ulaşmak için:
+https://www.asciitable.com
