@@ -44,3 +44,4 @@ C ----> |192.168.0.      |.0         |
 |Network |Host  |
 |192.168 |32.170| > B class örneği
 ```
+> 💡 Host ID leri Min 0 Max 254 olabilir
