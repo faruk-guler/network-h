@@ -30,11 +30,11 @@ Senin cihazın              →    google.com sunucusu
 
 
 ## 🧪🧪 IP Adresi Formatı
-IP "Network" ve "Host" olmak üzere iki bölümden oluşmaktadır ve Adres Sınıflarına göre farklılık göstermektedir. Network ağı, Host ise uç cihazları ifade eder.
+IP "Network ID" ve "Host ID" olmak üzere iki bölümden oluşmaktadır ve Adres Sınıflarına göre farklılık göstermektedir. Network ağı, Host ise uç cihazları ifade eder.
 ```
 xxx . xx. xx .   xx
 └─────────────┘ └──┘
-Network         Host
+Network ID      Host ID
 
 |Class  |Network         |Host       |
 A ----> |10.             |.0.0.0     |
