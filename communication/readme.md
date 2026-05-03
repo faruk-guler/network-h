@@ -1,6 +1,6 @@
 # Haberleşme Türleri
 
-Bir ağda cihazlar birbirleriyle üç farklı şekilde haberleşir: **Unicast**, **Multicast** ve **Broadcast**.
+Bir ağdaki cihazlar birbirleriyle üç farklı şekilde haberleşirler: **Unicast**, **Multicast** ve **Broadcast**.
 
 ## 1) Unicast — Bire Bir İletim
 
