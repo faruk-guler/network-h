@@ -10,7 +10,7 @@
 
 🅽🅴🆃🆆🅾🆁🅺 🅵🅾🆁 🅷🆄🅼🅰🅽🅸🆃🆈
 - Name: Network for Humanity  
-- Author: faruk-guelr
+- Author: faruk-guler
 - Date: 2026  
 - Description: Network for Humanity  Basic Networking Handbook
 - POC: Debian 12 [Bookworm] - Windows 10
