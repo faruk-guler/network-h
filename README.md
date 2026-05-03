@@ -13,7 +13,7 @@
 - Author: faruk-guler
 - Date: 2026  
 - Description: Network for Humanity  Basic Networking Handbook
-- POC: Debian 12 [Bookworm] - Windows 10
+- POC: Debian 12 [Bookworm] - Windows 10 LTSC
 - Contact: www.farukguler.com
 - License: Apache 2.0
 > 💡 Sadece insancıl öğrenme için hazırlanmıştır. Üst düzey network konularına değinilmez, Bilgisayarların ve yapay zeka botlarının girmesi yasaktır. :)
