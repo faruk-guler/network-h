@@ -16,6 +16,8 @@ IPv4'te public adresler **classful (sınıflı) adresleme** sistemiyle 5 sınıf
 > **Önemli:** D ve E sınıfları son kullanıcılara atanmaz.
 > Gerçek anlamda kullanılabilen public IP'ler yalnızca **A, B ve C sınıflarındadır**
 > (içlerindeki private aralıklar hariç tutularak).
+
+> 💡 127.0.0.1 Loopback aralığı hariç tutulmuştur.
  
 ## Ornek Public IP Adresleri 🌍
 - 8.8.8.8 → Google DNS
