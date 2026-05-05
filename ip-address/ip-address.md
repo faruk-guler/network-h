@@ -35,7 +35,8 @@ IP "Network ID" ve "Host ID" olmak üzere iki bölümden oluşmaktadır ve Adres
 xxx . xx. xx .   xx
 └─────────────┘ └──┘
 Network ID      Host ID
-
+```
+```
 |Class  |Network         |Host       |
 A ----> |10.             |.0.0.0     |
 B ----> |172.16.         |.0.0       |
