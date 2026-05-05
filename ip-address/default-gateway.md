@@ -37,8 +37,8 @@ Aşağıdaki şemada **default gateway** kavramını iki farklı seviyede göreb
     │    │    MODEM     │ ← Default Gateway (Bilgisayar için)
     │    └──────────────┘       │
     │         │  │ │            │
-    │    ┌────┘  │ └──┐         │
-    │    │       │    │         │
-    │  Laptop  PC   Telefon     │
+    │  ┌──────┘  │ └──┐         │
+    │  │         │    │         │
+    │ Laptop    PC   Telefon    │
     │                           │
     └───────────────────────────┘
