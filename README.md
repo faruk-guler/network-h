@@ -8,7 +8,7 @@
 
 <img src="images/book.jpg" alt="alt text" width="280" height="330">
 
-🅽🅴🆃🆆🅾🆁🅺 🅵🅾🆁 🅷🆄🅼🅰🅽🅸🆃🆈
+🅽🅴🆃🆆🅾🆁🅺 - 🅵🅾🆁 - 🅷🆄🅼🅰🅽🅸🆃🆈
 - Name: Network for Humanity  
 - Author: faruk-guler
 - Description: Network for Humanity  Basic Networking Handbook
