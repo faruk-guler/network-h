@@ -33,8 +33,8 @@
 * **Avantajları**: Tahmin edilebilir veri akışı.
 
 * **Dezavantajları**: Halkadaki bir kopma iletişimi tamamen bozabilir.
-
-* **(Mesh) Örgü Topolojisi**
+  
+### **(Mesh) Örgü Topolojisi**
 
 * Her cihaz ağdaki **diğer her cihaza** bağlıdır.
 
