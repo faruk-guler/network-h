@@ -4,7 +4,7 @@
 
 ### **Yaygın Ağ Topolojisi Türleri**
 
-### **Veri Yolu Topolojisi**
+### **(Bus) Veri Yolu Topolojisi**
 
 * Tüm cihazlar, **omurga** olarak bilinen **tek bir merkezi kabloya** bağlıdır.
 
@@ -14,7 +14,7 @@
 
 * **Dezavantajları**: Omurgada meydana gelen bir arıza tüm ağı çökertebilir.
 
-### **Yıldız Topolojisi**
+### **(Star) Yıldız Topolojisi**
 
 * Tüm cihazlar **merkezi bir hub veya anahtara** bağlıdır.
 
@@ -24,7 +24,7 @@
 
 * **Dezavantajları**: Hub/anahtar arızalanırsa, tüm ağ çöker.
 
-### **Halka Topolojisi**
+### **(Ring) Halka Topolojisi**
 
 * Cihazlar **dairesel bir döngü** şeklinde bağlanır.
 
@@ -34,7 +34,7 @@
 
 * **Dezavantajları**: Halkadaki bir kopma iletişimi tamamen bozabilir.
 
-* **Örgü Topolojisi**
+* **(Mesh) Örgü Topolojisi**
 
 * Her cihaz ağdaki **diğer her cihaza** bağlıdır.
 
@@ -44,7 +44,7 @@
 
 * **Dezavantajları**: Kurulumu ve bakımı pahalı ve karmaşıktır.
 
-### **Hibrit Topoloji**
+### **(Hybrid) Hibrit Topoloji**
 
 * **İki veya daha fazla topolojinin** birleşimi (örneğin, **yıldız-bus** veya **yıldız-halka**).
 
