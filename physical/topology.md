@@ -1,4 +1,4 @@
-# **Ağ Topolojisi**
+# **Ağ Topolojileri**
 
 **Ağ topolojisi**, bir bilgisayar ağındaki cihazların **fiziksel veya mantıksal düzenlemesini** ifade eder. Farklı düğümlerin (bilgisayarlar, anahtarlar ve yönlendiriciler gibi) nasıl bağlandığını ve aralarında **veri akışının** nasıl gerçekleştiğini tanımlar.
 
