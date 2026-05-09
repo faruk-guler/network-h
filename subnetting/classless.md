@@ -33,9 +33,11 @@ Mantık: "Supernetting" (Ağları birleştirme).
 /32 => 11111111.11111111.11111111.11111111 --> 255.255.255.2555 Toplam IP = 0
 
 🔥 Buradaki "1" ler network'ü temsil ederken "0" lar hostları temsil eder.
+```
 
-Hedef: Şirkette 1500 IP adresine ihtiyacım var?
+### Hedef: 📌 Şirkette 1500 IP adresine ihtiyacım var?
 
+```
 2¹⁰ = 1024   ❌ Yetmez
 2¹¹ = 2048   ✅ Yeter (2048 ≥ 1500)
 → Host için 11 bit lazım!
