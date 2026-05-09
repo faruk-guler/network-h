@@ -1,3 +1,8 @@
+## ASCII Nedir?
+ASCII (okunuşu: aski), bilgisayarlarda harfleri, sayıları ve sembolleri temsil etmek için kullanılan bir kodlama sistemidir.
+Açılımı: American Standard Code for Information Interchange
+(Bilgi Değişimi için Amerikan Standart Kodu)
+
 **Küçük Harfler:**
 
 | Harf | Binary | Decimal | Hex |
