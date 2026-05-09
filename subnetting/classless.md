@@ -29,8 +29,6 @@ Mantık: "Supernetting" (Ağları birleştirme).
 --
 --
 ## 💊 Buradaki "1" ler network'ü temsil ederken "0" lar hostları temsil eder.
-
-😉💡 Her ikisi de artık "A, B, C sınıfı" gibi eski kurallara uymadığımız için hayatımızdadır.
 ```
 > | 💡 CIDR, IP adresinin sonuna eklenen bir eğik çizgi ve sayı ile gösterilir. [/*]
 Bu sayı, ağın kaç bitlik kısmının ağ adresi olduğunu ve bit’lerin soldan sağa kaç tanesinin (1) olduğunu gösterir
