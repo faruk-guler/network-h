@@ -80,7 +80,7 @@ VLSM ile içini böl:
 └── 192.168.10.240/29  → Müdürlük  →   6 IP  (ihtiyaç:   5)
 
 ```
-> 💡 Aynı ağ içinde; örneğin hem 2 kişilik hemde 50 vb kişilik odalar (alt ağlar) oluşturmanıza izin verir.
+> 💡 Aynı ağ içinde; örneğin hem 2 kişilik hemde 50 vb. kişilik odalar (alt ağlar) oluşturmanıza izin verir.
 
 ## HESAP ARAÇLARI:
 https://jodies.de/ipcalc
