@@ -3,6 +3,9 @@ ASCII (okunuşu: aski), bilgisayarlarda harfleri, sayıları ve sembolleri temsi
 Açılımı: American Standard Code for Information Interchange
 (Bilgi Değişimi için Amerikan Standart Kodu)
 
+💡 Neden İhtiyaç Duyuldu?
+Bilgisayarlar yalnızca 0 ve 1 anlar. Ama insanlar harf ve sembollerle iletişim kurar. ASCII, bu iki dünya arasında bir köprü görevi görür.
+
 **Küçük Harfler:**
 
 | Harf | Binary | Decimal | Hex |
