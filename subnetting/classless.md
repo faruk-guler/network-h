@@ -1,4 +1,4 @@
-#   Classless (Sınıfsız) Ağ Mimarisi
+# Classless (Sınıfsız) Ağ Mimarisi
 
 ## 💊💊 CIDR (Classless Inter-Domain Routing)
 Subnet Mask'ın daha net ve anlaşılır bir biçimde gösterimidir. Eski sınıf tabanlı adresleme sisteminin yerini almak üzere 1993 yılında tanıtıldı.  IP adreslerini ve ağları verimli bir şekilde "bölmek" için kullanılır. Aslında ISP’lerin (internet servis sağlayıcıların), bir firma ya da ev kullanıcısı için bir adres ayırmak için kullandıkları yöntemde budur.
