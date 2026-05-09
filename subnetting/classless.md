@@ -6,7 +6,7 @@ Modern yöntemdir. Sabit sınıf mantığını kaldırır ve IP adreslerini ihti
 ### 🥺 Classful (Eski Yöntem)
 
 IP adreslerini A, B, C gibi sabit gruplara ayıran eski sistemdir. Yani ağlar “hazır paketler” halinde gelir. Örneğin 500 IP’ye ihtiyacın olsa bile sana ya çok küçük ya da çok büyük bir blok verilir (mesela 65.000 IP’lik Class B gibi), bu yüzden IP adresleri boşa harcanır.
-> | Bir şirketin 900 IP'ye ihtiyacı var. Class C (254 IP) yetmez, mecburen Class B (65.000 IP) almak zorunda kalır. Kullanılan 900 IP dışında ~64.100 IP adresi çöpe gider.
+> | Bir şirketin 900 IP'ye ihtiyacı var. Class C (254 IP) yetmez, mecburen Class B (65.000 IP) almak zorunda kalır. Kullanılan 900 IP dışında ~64.100 IP adresi çöpe gider. Gereksiz Broadcast trafiği olur ve Routerlerde CPU yükü artar.
 ---
 
 ## 💊💊 CIDR (Classless Inter-Domain Routing)
