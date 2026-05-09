@@ -28,6 +28,11 @@ Senin cihazın              →    google.com sunucusu
 | Toplam adres | ~4,3 milyar | Yaklaşık 340 Undesilyon |
 | Durum | Hâlâ yaygın | Geçiş süreci devam ediyor |
 
+```
+192.           168.          1.             10.
+11000000      10101000     00000001      00001010
+8 bit     +   8 bit     +  8 bit      +  8 bit    =    32 bit
+```
 
 ## 🧪🧪 IP Adresi Formatı
 IP "Network ID" ve "Host ID" olmak üzere iki bölümden oluşmaktadır ve Adres Sınıflarına göre farklılık göstermektedir. Network ağı, Host ise uç cihazları ifade eder.
