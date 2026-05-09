@@ -38,7 +38,7 @@ Mantık: "Supernetting" (Ağları birleştirme).
 > | 💡 CIDR, IP adresinin sonuna eklenen bir eğik çizgi ve sayı ile gösterilir. [/*]
 Bu sayı, ağın kaç bitlik kısmının ağ adresi olduğunu ve bit’lerin soldan sağa kaç tanesinin (1) olduğunu gösterir
 
-### Hedef: 📌 Şirkette 1500 IP adresine ihtiyacım var?
+### 📌 Şirkette 1500 IP adresine ihtiyacım var?
 
 ```
 2¹⁰ = 1024   ❌ Yetmez
