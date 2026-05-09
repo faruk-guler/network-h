@@ -43,7 +43,8 @@ Decimal:   87     . 123    . 255    . 255
 
 ✅ Broadcast Adresi: 87.123.255.255
 ```
-
+> 💡 Her zaman en sağdan ve 2⁰ ile başlayın.
+> 
 ## >_ Subnet Mask neden gerekli?
 
 Neden Subnet'lere ihtiyaç duyarız tek bir ağ yeterli olmaz mı?
