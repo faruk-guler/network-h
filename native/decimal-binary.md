@@ -1,3 +1,5 @@
+# CIDR Subnet Mask Tablosu
+
 | CIDR | Subnet Mask (decimal) | Subnet Mask (binary) |
 |------|----------------------|----------------------|
 | /0   | 0.0.0.0              | 00000000.00000000.00000000.00000000 |
