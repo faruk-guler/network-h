@@ -14,7 +14,8 @@ Private IP adresleri yalnızca yerel ağ (LAN) içinde geçerlidir.
 
 > **Not:** Bu adresler internette yönlendirilemez. İki farklı evde aynı `192.168.1.5` adresi
 > bulunabilir — çünkü her ikisi de kendi yerel ağlarında geçerlidir, dışarıdan görünmezler.
-
+> 
+> 💡 Sınıfları belirleyen Subnet Mask'tır.
 ---
 
 > ℹ️ Aşağıdaki aralıklar RFC 1918 kapsamında değildir; ancak yerel kullanım amacıyla ayrılmış olduğundan private adreslerle birlikte ele alınmaktadır.
