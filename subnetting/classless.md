@@ -68,8 +68,8 @@ CIDR'nin gelişmiş bir alt kümesidir. Değişken Uzunluklu Alt Ağ Maskesi anl
 192.168.10.255  → broadcast   ❌
 
 VLSM ile içini böl:
-─────────────────────────────────────────
-
+───────────────────────
+        ↓
 192.168.10.0/24
 │
 ├── 192.168.10.0/25    → Yazılım   → 126 IP  (ihtiyaç: 100)
