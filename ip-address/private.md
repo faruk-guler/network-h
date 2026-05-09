@@ -18,7 +18,7 @@ Private IP adresleri yalnızca yerel ağ (LAN) içinde geçerlidir.
 > 💡 Sınıfları belirleyen Subnet Mask'tır.
 ---
 
-> ℹ️ Aşağıdaki aralıklar RFC 1918 kapsamında değildir; ancak yerel kullanım amacıyla ayrılmış olduğundan private adreslerle birlikte ele alınmaktadır.
+ℹ️ Aşağıdaki aralıklar RFC 1918 kapsamında değildir; ancak yerel kullanım amacıyla ayrılmış olduğundan private adreslerle birlikte ele alınmaktadır.
 
 ## Loopback
 
