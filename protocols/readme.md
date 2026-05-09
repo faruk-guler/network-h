@@ -43,4 +43,4 @@ Protokoller genellikle OSI (Open Systems Interconnection) modelindeki yedi katma
 | RDP | 3389 | Uzak Masaüstü Bağlantısı |
 
 ---
-*Bu doküman, ağ yönetimi ve sistem yönetimi temellerini anlamak için oluşturulmuş bir referans kılavuzudur.*
+> **Not:** Ağ dünyası yalnızca yukarıda bahsedilen birkaç protokolden ibaret değildir. Dosya aktarımı (*FTP*), uzaktan güvenli bağlantı (*SSH*), otomatik IP dağıtımı (*DHCP*), e-posta iletimi (*SMTP*) veya karmaşık cihaz yönlendirmeleri (*BGP, OSPF*) gibi çok çeşitli ihtiyaçlar için tasarlanmış **yüzlerce farklı protokol bulunmaktadır**.
