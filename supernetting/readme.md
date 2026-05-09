@@ -1,4 +1,4 @@
-# Supernetting — Ağları Birleştirmek
+# Supernetting - Ağları Birleştirmek
 
 Supernetting (Ağ Birleştirme) Route Summarization
 Subnetting'in tam tersidir. Parçalanmış küçük ağları (örneğin 10.5.0.0/24, 10.5.1.0/24, 10.5.2.0/24) yönlendiriciye (router) tek tek öğretmek yerine, bunları matematiksel olarak birleştirip tek bir büyük ağ (örn: 10.5.0.0/22) olarak özetleme işlemidir. Yönlendirme tablolarını şişirmemek için hayat kurtarır.
