@@ -81,7 +81,7 @@ C ----> |255.255.255.     |.0         |
 +--------------+------------------+
 
 Özet:
-2⁰ = 1
+2⁰ = 1 >>> Üslü sayıların kuralı gereği herhangi bir sayının 0. kuvveti 1 olur.
 2¹ = 2
 ......
 ......
