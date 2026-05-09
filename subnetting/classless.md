@@ -30,7 +30,8 @@ Mantık: "Supernetting" (Ağları birleştirme).
 /30 => 11111111.11111111.11111111.11111100 --> Subnet en fazla /30 olabilir. > Toplam IP = 4 Broadcast ve Network çıkar = 2
 --
 /32 => 11111111.11111111.11111111.11111111 --> 255.255.255.2555 Toplam IP = 0
-## 💊 Buradaki "1" ler network'ü temsil ederken "0" lar hostları temsil eder.
+
+🔥 Buradaki "1" ler network'ü temsil ederken "0" lar hostları temsil eder.
 ```
 > | 💡 CIDR, IP adresinin sonuna eklenen bir eğik çizgi ve sayı ile gösterilir. [/*]
 Bu sayı, ağın kaç bitlik kısmının ağ adresi olduğunu ve bit’lerin soldan sağa kaç tanesinin (1) olduğunu gösterir
