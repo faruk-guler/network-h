@@ -1,7 +1,7 @@
 # Classless (Sınıfsız) Ağ Mimarisi
 
 Modern yöntemdir. Sabit sınıf mantığını kaldırır ve IP adreslerini ihtiyaca göre böler. Yani kaç IP gerekiyorsa o kadar verilir (/24, /23 gibi). Örneğin 510 IP gerekiyorsa tam ona uygun bir blok verilir, ne fazla ne eksik olur. Bu yüzden IP israfını büyük ölçüde önler.
-> | Aynı şirket 900 IP istiyor. CIDR ile tam ihtiyaca uygun /22 bloğu (1022 IP) verilir. Sadece ~120 IP boşta kalır, geri kalan tüm adresler verimli kullanılır.
+> | Bir şirket 900 IP istiyor. CIDR ile tam ihtiyaca uygun /22 bloğu (1022 IP) verilir. Sadece ~120 IP boşta kalır, geri kalan tüm adresler verimli kullanılır.
 
 ### Classful (Eski Yöntem)
 
