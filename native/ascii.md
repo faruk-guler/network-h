@@ -6,7 +6,7 @@ Bilgisayarlar yalnızca 0 ve 1 anlar. Ama insanlar harf ve sembollerle iletişim
 
 **Örnek: Küçük Harfler:**
 
-| Harf | Binary | Decimal | Hex |
+| Harf | Binary(ikilik) | Decimal(onluk) | Hex(onaltılık) |
 |------|--------|---------|-----|
 | a | 01100001 | 097 | 61 |
 | b | 01100010 | 098 | 62 |
