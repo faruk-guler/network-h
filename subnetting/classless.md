@@ -35,6 +35,9 @@ Mantık: "Supernetting" (Ağları birleştirme).
 🔥 Buradaki "1" ler network'ü temsil ederken "0" lar hostları temsil eder.
 ```
 
+> | 💡 CIDR, IP adresinin sonuna eklenen bir eğik çizgi ve sayı ile gösterilir. [/*]
+Bu sayı, ağın kaç bitlik kısmının ağ adresi olduğunu ve bit’lerin soldan sağa kaç tanesinin (1) olduğunu gösterir
+
 ### Hedef: 📌 Şirkette 1500 IP adresine ihtiyacım var?
 
 ```
@@ -45,9 +48,6 @@ Mantık: "Supernetting" (Ağları birleştirme).
 CIDR: 32 - 11 = 21
 ✅ Sonuç: /21
 ```
-> | 💡 CIDR, IP adresinin sonuna eklenen bir eğik çizgi ve sayı ile gösterilir. [/*]
-Bu sayı, ağın kaç bitlik kısmının ağ adresi olduğunu ve bit’lerin soldan sağa kaç tanesinin (1) olduğunu gösterir
-
 ## 🖧 VLSM (Variable Length Subnet Masking)
 
 Geleneksel, katı IP sınıf kurallarını yıkarak, devasa bir ağı farklı boyutlardaki (farklı kapasitelerdeki) alt ağlara bölme teknolojisidir.
