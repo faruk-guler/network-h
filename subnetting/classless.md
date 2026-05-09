@@ -75,7 +75,7 @@ VLSM ile içini böl:
 ├── 192.168.10.0/25    → Yazılım   → 126 IP  (ihtiyaç: 100)
 ├── 192.168.10.128/26  → Satış     →  62 IP  (ihtiyaç:  50)
 ├── 192.168.10.192/27  → Muhasebe  →  30 IP  (ihtiyaç:  25)
-├── 192.168.10.224/28  → Sunuuc    →  14 IP  (ihtiyaç:  10)
+├── 192.168.10.224/28  → Sunucular →  14 IP  (ihtiyaç:  10)
 └── 192.168.10.240/29  → Müdürlük  →   6 IP  (ihtiyaç:   5)
 ```
 > 💡 Aynı ağ içinde; örneğin hem 2 kişilik hemde 50 vb. kişilik odalar (alt ağlar) oluşturmanıza izin verir.
