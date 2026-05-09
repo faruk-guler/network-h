@@ -83,6 +83,5 @@ VLSM ile içini böl:
 > 💡 Aynı ağ içinde; örneğin hem 2 kişilik hemde 50 vb. kişilik odalar (alt ağlar) oluşturmanıza izin verir.
 
 ## HESAP ARAÇLARI:
-https://farukguler.com/app/ip-subnet-calculator
-
-https://jodies.de/ipcalc
+- [IP Subnet Calculator](https://farukguler.com/app/ip-subnet-calculator)
+- [IP Calculator](https://jodies.de/ipcalc)
