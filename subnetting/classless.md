@@ -22,6 +22,7 @@ Mantık: "Supernetting" (Ağları birleştirme).
 |CIDR  |Binary                                 |Decimal
 /8  => 11111111.00000000.00000000.00000000 --> 255.0.0.0
 --
+/21 => 11111111.11111111.11111000.00000000 --> 255.255.248.0 > 8 + 8 + 5 + 0 = 21
 /24 => 11111111.11111111.11111111.00000000 --> 255.255.255.0 > 8 + 8 + 8 + 0 = 24
 /25 => 11111111.11111111.11111111.10000000 --> 255.255.255.128
 /26 => 11111111.11111111.11111111.11000000 --> 255.255.255.192
@@ -32,6 +33,15 @@ Mantık: "Supernetting" (Ağları birleştirme).
 /32 => 11111111.11111111.11111111.11111111 --> 255.255.255.2555 Toplam IP = 0
 
 🔥 Buradaki "1" ler network'ü temsil ederken "0" lar hostları temsil eder.
+
+Hedef: Şirkette 1500 IP adresine ihtiyacım var?
+
+2¹⁰ = 1024   ❌ Yetmez
+2¹¹ = 2048   ✅ Yeter (2048 ≥ 1500)
+→ Host için 11 bit lazım!
+
+CIDR: 32 - 11 = 21
+✅ Sonuç: /21
 ```
 > | 💡 CIDR, IP adresinin sonuna eklenen bir eğik çizgi ve sayı ile gösterilir. [/*]
 Bu sayı, ağın kaç bitlik kısmının ağ adresi olduğunu ve bit’lerin soldan sağa kaç tanesinin (1) olduğunu gösterir
