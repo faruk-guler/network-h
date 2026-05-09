@@ -66,7 +66,7 @@ Kullanılabilir IP: 192.168.10.1 — 192.168.10.254 arası
 
 
 ```
-> 💡 Aynı ağ içinde; örneğin hem 2 kişilik hemde 50-60 vb kişilik odalar (alt ağlar) oluşturmanıza izin verir.
+> 💡 Aynı ağ içinde; örneğin hem 2 kişilik hemde 50 vb kişilik odalar (alt ağlar) oluşturmanıza izin verir.
 
 ## HESAP ARAÇLARI:
 https://jodies.de/ipcalc
