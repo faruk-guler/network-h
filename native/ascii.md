@@ -58,4 +58,6 @@ Bilgisayarlar yalnızca 0 ve 1 anlar. Ama insanlar harf ve sembollerle iletişim
 | Küçük harfler | 97–122 | a → z |
 | Semboller | 123–127 | { \| } ~ DEL |
 
-> 💡 **Not:** ASCII 7 bittir, 0-127 arası **128 karakter** içerir. Genişletilmiş ASCII ise 8 bit ile **256 karaktere** çıkar (Türkçe ğ, ş, ı gibi karakterler burada yer alır).
+> ⚠️ **Not:** ASCII yalnızca 0–127 arasındaki temel karakterleri kapsar (İngilizce harfler, rakamlar ve bazı semboller).
+Türkçe ğ, ş, ı, ö, ü, ç gibi karakterler ASCII’de bulunmaz.
+Bu karakterler için Extended ASCII (ISO-8859-9) gibi eski genişletilmiş kodlamalar veya günümüzde standart olan Unicode (UTF-8) kullanılır.
