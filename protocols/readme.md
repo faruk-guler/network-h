@@ -2,10 +2,10 @@
 
 Bilgisayar ağlarında iletişim, rastgele gerçekleşen bir veri akışı değil, belirli kurallar çerçevesinde yönetilen bir süreçtir. Bu kurallar bütününe **Protokol** adı verilir. Protokoller, verinin nasıl paketleneceğini, nasıl adresleneceğini, nasıl iletileceğini ve hata durumunda ne yapılacağını tanımlar.
 
-## 1. Protokol Nedir?
+## Protokol Nedir?
 Bir ağ protokolü, ağ üzerindeki iki veya daha fazla cihazın birbirini anlamasını sağlayan ortak dildir. Tıpkı insanların iletişim kurarken kullandığı dil bilgisi kuralları gibi, makineler de veri alışverişi yaparken protokol standartlarına uymak zorundadır.
 
-## 2. OSI Modeli ve Katmanlı Yapı
+## OSI Modeli ve Katmanlı Yapı
 Protokoller genellikle OSI (Open Systems Interconnection) modelindeki yedi katmana göre sınıflandırılır. Her katman, bir üst katmana hizmet sunar ve kendine özgü protokollere sahiptir.
 
 | Katman No | Katman Adı | Fonksiyon | Önemli Protokoller |
