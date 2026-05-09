@@ -61,7 +61,6 @@ Mantık: "Subnetting" (Ağı parçalara ayırma)
 | IP | Subnet Mask |
 192.168.1.1 255.255.255.0
 192.168.1.1 /24
-
 ```
 ## HESAP ARAÇLARI:
 https://jodies.de/ipcalc
