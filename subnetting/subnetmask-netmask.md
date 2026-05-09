@@ -18,7 +18,7 @@ Network: 172.16.0.0   =  10101100.00010000.00000000.00000000  > 172.16.0.0 ağı
 ## Network ve Broadcast Hesaplama Örneği: 87.121.165.49/14
 
 ```
-🔢 Adım 1: Decimalden Binary'e Dönüşüm
+🔢 Adım 1: Binary'den Decimal'e Dönüşüm
 
 IP Adresi: 87.121.165.49 = 01010111.01111001.10100101.00110001
 NetMask (/14): 11111111.11111100.00000000.00000000 = 255.252.0.0
@@ -45,7 +45,7 @@ Decimal:   87     . 123    . 255    . 255
 ```
 > 💡 Her zaman en sağdan ve 2⁰ ile başlayın.
 
-> 💡 Decimalden Binary'e, Binaryden ise Decimale dönüşüm mümkündür.
+> 💡 Decimalden Binary'e dönüşüm mümkündür.
 
 ## >_ Subnet Mask neden gerekli?
 
