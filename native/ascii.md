@@ -4,7 +4,7 @@ ASCII (okunuşu: aski), bilgisayarlarda harfleri, sayıları ve sembolleri temsi
 ### 💡 Neden İhtiyaç Duyuldu?
 Bilgisayarlar yalnızca 0 ve 1 anlar. Ama insanlar harf ve sembollerle iletişim kurar. ASCII, bu iki dünya arasında bir köprü görevi görür.
 
-**Küçük Harfler:**
+**Örnek: Küçük Harfler:**
 
 | Harf | Binary | Decimal | Hex |
 |------|--------|---------|-----|
