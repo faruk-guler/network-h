@@ -48,4 +48,5 @@ Mantık: "Subnetting" (Ağı parçalara ayırma)
 192.168.1.1 /24
 
 ```
+## HESAP ARAÇLARI:
 https://jodies.de/ipcalc
