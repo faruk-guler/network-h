@@ -84,4 +84,5 @@ VLSM ile içini böl:
 
 ## HESAP ARAÇLARI:
 https://farukguler.com/app/ip-subnet-calculator
+
 https://jodies.de/ipcalc
