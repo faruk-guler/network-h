@@ -15,7 +15,7 @@ Protokoller genellikle OSI (Open Systems Interconnection) modelindeki yedi katma
 | 3 | Ağ (Network) | Yönlendirme ve mantıksal adresleme | IP (IPv4/IPv6), ICMP, ARP |
 | 2 | Veri Bağı (Data Link) | Fiziksel adresleme (MAC) | Ethernet, Switch protokolleri |
 
-## 3. En Yaygın Ağ Protokolleri
+## En Yaygın Ağ Protokolleri
 
 ### Uygulama Katmanı Protokolleri
 * **HTTP/HTTPS (HyperText Transfer Protocol):** Web sayfalarının tarayıcılara iletilmesini sağlar. HTTPS, veriyi TLS/SSL ile şifreleyerek güvenli hale getirir.
@@ -32,7 +32,7 @@ Protokoller genellikle OSI (Open Systems Interconnection) modelindeki yedi katma
 * **IP (Internet Protocol):** Veri paketlerinin kaynaktan hedefe yönlendirilmesini sağlar. IPv4 32-bit (Octet bazlı), IPv6 ise 128-bit (Hextet bazlı) adresleme kullanır.
 * **ICMP (Internet Control Message Protocol):** Ağdaki hata raporlama ve teşhis işlemlerinde kullanılır (Ping komutu gibi).
 
-## 4. Özet Tablo: Protokoller ve Portlar
+## Özet Tablo: Protokoller ve Portlar
 
 | Protokol | Varsayılan Port | Kullanım Amacı |
 | :--- | :--- | :--- |
