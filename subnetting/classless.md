@@ -53,7 +53,7 @@ CIDR: 32 - 11 = 21
 
 ## 🖧 VLSM (Variable Length Subnet Masking)
 
-CIDR'nin bir alt kümesidir. Aynı ağ bloğu içinde farklı boyutlarda subnetler oluşturmanıza olanak tanıyan tekniktir.
+CIDR'nin bir alt kümesidir. Değişken Uzunluklu Alt Ağ Maskesi anlamına gelir. Aynı ağ bloğu içinde farklı boyutlarda subnetler oluşturmanıza olanak tanıyan tekniktir.
 ```
 Mantık: "Subnetting" (Ağı parçalara ayırma)
 Özet: Aynı ağ içinde hem 2 kişilik hem 50 kişilik odalar (alt ağlar) oluşturmanıza izin verir.
