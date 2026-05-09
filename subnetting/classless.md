@@ -57,21 +57,27 @@ CIDR: 32 - 11 = 21
 
 CIDR'nin gelişmiş bir alt kümesidir. Değişken Uzunluklu Alt Ağ Maskesi anlamına gelir. Aynı ağ bloğu içinde farklı boyutlarda subnetler oluşturmanıza olanak tanıyan tekniktir.
 ```
-📌 Elimizdeki ağ:  192.168.10.0/24
+📌 Elimizdeki ağ: 192.168.10.0/24  →  254 kullanılabilir IP
 
+192.168.10.0    → ağ adresi   ❌
 192.168.10.1
 192.168.10.2
 192.168.10.3
-...          →  254 kişi tek odada, duvarsız, bölümsüz
+...              →  254 cihaz tek odada, duvarsız, bölümsüz
 192.168.10.254
+192.168.10.255  → broadcast   ❌
 
-192.168.10.0/24  →  bunu al ve içini böl:
+─────────────────────────────────────────
+VLSM ile içini böl:
+─────────────────────────────────────────
 
-├── 192.168.10.0/25    → Yazılım  (126 IP)
-├── 192.168.10.128/26  → Satış    (62 IP)
-├── 192.168.10.192/27  → Muhasebe (30 IP)
-├── 192.168.10.224/28  → Yönetim  (14 IP)
-└── 192.168.10.240/29  → Sunucu   (6 IP)
+192.168.10.0/24
+│
+├── 192.168.10.0/25    → Yazılım   → 126 IP  (ihtiyaç: 100)
+├── 192.168.10.128/26  → Satış     →  62 IP  (ihtiyaç:  50)
+├── 192.168.10.192/27  → Muhasebe  →  30 IP  (ihtiyaç:  25)
+├── 192.168.10.224/28  → Yönetim   →  14 IP  (ihtiyaç:  10)
+└── 192.168.10.240/29  → Sunucu    →   6 IP  (ihtiyaç:   5)
 
 ```
 > 💡 Aynı ağ içinde; örneğin hem 2 kişilik hemde 50 vb kişilik odalar (alt ağlar) oluşturmanıza izin verir.
