@@ -61,3 +61,8 @@ Bilgisayarlar yalnızca 0 ve 1 anlar. Ama insanlar harf ve sembollerle iletişim
 > ⚠️ **Not:** ASCII yalnızca 0–127 arasındaki temel karakterleri kapsar (İngilizce harfler, rakamlar ve bazı semboller).
 Türkçe ğ, ş, ı, ö, ü, ç gibi karakterler ASCII’de bulunmaz.
 Bu karakterler için Extended ASCII (ISO-8859-9) gibi eski genişletilmiş kodlamalar veya günümüzde standart olan Unicode (UTF-8) kullanılır.
+
+- [tr.wikipedia.org/wiki/ASCII](https://tr.wikipedia.org/wiki/ASCII)
+- [en.wikipedia.org/wiki/ASCII](https://en.wikipedia.org/wiki/ASCII)
+- [ascii-code.com](https://www.ascii-code.com)
+- [unicode.org](https://unicode.org)
