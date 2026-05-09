@@ -36,7 +36,7 @@ Mantık: "Supernetting" (Ağları birleştirme).
 😉💡 Her ikisi de artık "A, B, C sınıfı" gibi eski kurallara uymadığımız için hayatımızdadır.
 ```
 
-## 💊💊 VLSM (Variable Length Subnet Masking)
+## 🖧 VLSM (Variable Length Subnet Masking)
 
 Geleneksel, katı IP sınıf kurallarını yıkarak, devasa bir ağı farklı boyutlardaki (farklı kapasitelerdeki) alt ağlara bölme teknolojisidir.
 Ağdaki IP israfını azaltmayı amaçlar.
