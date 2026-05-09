@@ -34,8 +34,10 @@ Mantık: "Supernetting" (Ağları birleştirme).
 🔥 Buradaki "1" ler network'ü temsil ederken "0" lar hostları temsil eder.
 ```
 
->  💡 CIDR, IP adresinin sonuna eklenen bir eğik çizgi ve sayı ile gösterilir. [/*]
+> 💡 CIDR, IP adresinin sonuna eklenen bir eğik çizgi ve sayı ile gösterilir. [/*]
 Bu sayı, ağın kaç bitlik kısmının ağ adresi olduğunu ve bit’lerin soldan sağa kaç tanesinin (1) olduğunu gösterir.
+> 
+> 💡 Prefix, IP adresinin ağ kısmını belirten bit sayısıdır.  /18 gibi
 > 
 > 💡 Subnet en fazla /30 olabilir. > Toplam IP = 4 Broadcast ve Network çıkarılınca kalan = 2
 
