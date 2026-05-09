@@ -1,4 +1,4 @@
-# Ağ Protokolleri: Dijital İletişimin Temelleri
+# Ağ Protokolleri
 
 Bilgisayar ağlarında iletişim, rastgele gerçekleşen bir veri akışı değil, belirli kurallar çerçevesinde yönetilen bir süreçtir. Bu kurallar bütününe **Protokol** adı verilir. Protokoller, verinin nasıl paketleneceğini, nasıl adresleneceğini, nasıl iletileceğini ve hata durumunda ne yapılacağını tanımlar.
 
