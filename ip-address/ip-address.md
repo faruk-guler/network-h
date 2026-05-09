@@ -34,6 +34,7 @@ Senin cihazın              →    google.com sunucusu
 [1]1000000    [1]0101000     00000[0]01    00001[0]1[0]
 8 bit     +   8 bit     +  8 bit      +  8 bit    =    32 bit
 ```
+Bit sayımı sağdan başlanarak yapılmalıdır.
 
 ## 🧪🧪 IP Adresi Formatı
 IP "Network ID" ve "Host ID" olmak üzere iki bölümden oluşmaktadır ve Adres Sınıflarına göre farklılık göstermektedir. Network ağı, Host ise uç cihazları ifade eder.
