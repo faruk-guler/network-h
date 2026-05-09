@@ -39,6 +39,6 @@ Aşağıdaki şemada **default gateway** kavramını iki farklı seviyede göreb
     │         │  │ │            │
     │  ┌──────┘  │ └──┐         │
     │  │         │    │         │
-    │ Laptop    PC   Telefon    │
+    │ Laptop    PC  Telefon     │
     │                           │
     └───────────────────────────┘
