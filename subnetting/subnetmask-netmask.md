@@ -45,6 +45,7 @@ Decimal:   87     . 123    . 255    . 255
 ```
 > 💡 Her zaman en sağdan ve 2⁰ ile başlayın.
 >  Decimalden Binary'e, Binaryden ise Decimale dönüşüm mümkündür.
+
 ## >_ Subnet Mask neden gerekli?
 
 Neden Subnet'lere ihtiyaç duyarız tek bir ağ yeterli olmaz mı?
