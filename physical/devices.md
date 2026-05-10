@@ -16,6 +16,20 @@ Her NIC'in dünyada eşsiz bir **MAC adresi** vardır. Bilgisayar, telefon veya 
 - OSI modelinin 2. katmanında (Veri Bağlantısı) çalışır
 - Günümüzde çoğu cihaza entegre olarak üretilir
 
+**NIC Türleri**
+ 
+**Kablolu (Ethernet NIC)**
+RJ-45 portu üzerinden çalışır. Yüksek hız ve kararlı bağlantı sağlar. Masaüstü bilgisayarlar ve sunucularda tercih edilir.
+ 
+**Kablosuz (Wi-Fi NIC)**
+Radyo dalgalarıyla iletişim kurar. Dizüstü bilgisayarlar ve mobil cihazlarda yaygındır.
+ 
+**Fiber NIC**
+Işık sinyalleriyle çalışır. Çok yüksek hız gerektiren veri merkezi ve omurga ağlarında kullanılır.
+ 
+**Sanal NIC (vNIC)**
+Fiziksel donanım yoktur; yazılımla oluşturulur. Sanal makinelerde ve bulut ortamlarında kullanılır.
+
 ---
 
 ## 2) Hub — Çoklayıcı
