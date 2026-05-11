@@ -1006,8 +1006,3 @@
 
 
 ---
-
-**Navigasyon:**
-
-- [⬅️ Geri: Portlar ve Servisler](./07-Portlar-ve-Servisler-Port-Nedir.md)
-- [🏠 Ana Sayfa](../README.md)
