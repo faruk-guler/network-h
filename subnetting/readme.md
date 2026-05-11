@@ -16,9 +16,9 @@ Subnetting, büyük bir IP bloğunu, daha yönetilebilir küçük ağlara (subne
  
 | No | Formül | Örnek (/26) | Sonuç | Özet|
 |---|--------|-------------|-------|-------| 
-| 5 | **n** = 32 − CIDR | 32 − 26 | **6** |
-| 6 | **Toplam IP** = 2ⁿ | 2⁶ | **64** |
-| 7 | **Kullanılabilir IP** = 2ⁿ − 2 | 64 − 2 | **62** | Network ve Broadcast adresleri çıkarılır |
+| 5 | **n** = 32 − CIDR | 32 − 26 | **6** | Host Bit Sayısı: IP adresindeki değişebilen (hostlara ayrılan) bit miktarını gösterir. |
+| 6 | **Toplam IP** = 2ⁿ | 2⁶ | **64** | Blok Boyutu: O ağın kapladığı toplam alan. (Artış miktarına her zaman eşittir) |
+| 7 | **Kullanılabilir IP** = 2ⁿ − 2 | 64 − 2 | **62** | Cihaz Kapasitesi: Network ve Broadcast adresleri çıkarıldıktan sonra cihazlara verilebilecek IP sayısı|
 
 > 💡 Kullanılabilir IP'den 2 çıkarılır çünkü ilk adres **Network**, son adres **Broadcast** için ayrılır.
 
