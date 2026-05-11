@@ -60,13 +60,9 @@ Bir şirketin 16 departmanı var. Her departmanın 512 IP talebi olduğunu varsa
 | 15 | Satın Alma | 10.5.28.0 | 10.5.29.255 | 10.5.28.1 − 10.5.29.254 |
 | 16 | Sunucu/Server Odası | 10.5.30.0 | 10.5.31.255 | 10.5.30.1 − 10.5.31.254 |
  
-> ✅ 10.5.0.0/19 tam olarak 16 eşit parçaya bölündü. 16 zaten 2'nin kuvveti olduğu için yuvarlama yok, hiç rezerve kalmıyor ve ağ sıfır israfla bölünüyor.
+> ✅ 10.5.0.0/19 tam olarak 16 eşit parçaya bölündü. 16 zaten 2'nin kuvveti olduğu için yuvarlama yok, hiç rezerve kalmıyor ve ağ sıfır israfla bölünüyor. Her departmana **510 cihaz** bağlanabilir.
 
-> Her departmana **510 cihaz** bağlanabilir.
-
-> 💡 İhtiyaç duyulan IP veya departman sayısını her zaman bir üst 2'nin kuvvetine (8, 16, 32, 64...) yuvarlayarak tasarıma başlamalısınız."
-
-> 💡 Departman sayısı 2'nin kuvvetiyse (8, 16, 32...) direkt 256'ya böl. Değilse (13, 18, 22...) bir üst 2'nin kuvvetine yuvarla, sonra böl.
+> 💡 Departman veya IP sayısı 2'nin kuvvetiyse (8, 16, 32...) doğrudan kullanın. Değilse (13, 18, 22...) bir üst 2'nin kuvvetine yuvarlayın.
 
 ### 🔑 Temel Kavramlar
 *   **Network ID (Ağ Adresi):** Subnet'in başlangıç noktasıdır. Cihazlara verilmez.
