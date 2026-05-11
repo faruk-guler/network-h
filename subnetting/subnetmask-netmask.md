@@ -89,7 +89,7 @@ Neden Subnet'lere ihtiyaç duyarız tek bir ağ yeterli olmaz mı?
 2⁰ = 1
 2¹ = 2
 ...
-
+...
 2⁷ = 2 × 2 × 2 × 2 × 2 × 2 × 2 = 128
 ```
 > 💡 Üslü sayıların kuralı gereği herhangi bir sayının 0. kuvveti 1 olur.
