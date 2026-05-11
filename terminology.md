@@ -100,6 +100,15 @@ Bilgi güvenliğinin temel modelidir: Gizlilik (Yetkisiz erişimi önleme), Büt
 
 Çarpışan frame'lerin tespit edildiği Ethernet'teki ağ alanı. Collision'lar hub ve repeater'lar ile yayılır, fakat LAN switch ve router'larla yayılmaz.
 
+## DNS Cache
+
+İşletim sistemi veya DNS sunucusunun daha önce çözümlenmiş domain → IP eşleşmelerini geçici olarak saklamasıdır. Sorgu hızını artırır.
+
+## FQDN (Fully Qualified Domain Name)
+Bir cihazın veya servisin tam alan adıdır. Örnek: www.google.com.
+
+## 
+
 ## Connection-Oriented (Bağlantı Odaklı)
 
 Herhangi bir veri transfer edilmeden önce sanal bir devre oluşturan veri transfer yöntemi. Güvenli veri transferi için onay ve akış kontrolü kullanır. **TCP** bu yöntemi kullanır.
