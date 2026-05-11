@@ -64,8 +64,12 @@ Bir şirketin 16 departmanı var. Her departmanın 512 IP talebi olduğunu varsa
 
 > 💡 Departman veya IP sayısı 2'nin kuvvetiyse (8, 16, 32...) doğrudan kullanın. Değilse (13, 18, 22...) bir üst 2'nin kuvvetine yuvarlayın.
 
-### 🔑 Temel Kavramlar
-*   **Network ID (Ağ Adresi):** Subnet'in başlangıç noktasıdır. Cihazlara verilmez.
-*   **Broadcast Adresi:** Subnet'in bitiş noktasıdır. Tüm cihaza mesaj atmak için kullanılır, cihazlara verilmez.
-*   **CIDR (/xx):** Ağ maskesinin kaç bitlik olduğunu gösterir. (Örn: /24, /26)
-*   **Artış Sayısı (Block Size):** Bir alt ağın kaç IP adresinden oluştuğunu belirleyen sihirli sayıdır.
+
+## 🔑 Temel Kavramlar
+
+| Kavram | Açıklama |
+|--------|----------|
+| **Network Adresi** | Subnet'in ilk adresidir. Cihazlara atanamaz. |
+| **Broadcast Adresi** | Subnet'in son adresidir. Tüm cihazlara mesaj göndermek için kullanılır, atanamaz. |
+| **CIDR (/xx)** | Ağ maskesinin kaç bitlik olduğunu gösterir. Örn: /24, /26 |
+| **Artış (Block Size)** | Bir subnet'in kaç IP'den oluştuğunu gösterir. 256 − Maske ile bulunur. |
