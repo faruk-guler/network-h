@@ -39,7 +39,7 @@ Bu sayı, ağın kaç bitlik kısmının ağ adresi olduğunu ve bit’lerin sol
 > 
 > 💡 Prefix, IP adresinin ağ kısmını belirten bit sayısıdır.  /18 gibi
 > 
-> 💡 Subnet en fazla /30 olabilir. > Toplam IP = 4 Broadcast ve Network çıkarılınca kalan = 2
+> 💡 Cihazlara IP atanabilen en küçük subnet /30'dur. > Toplam IP = 4 Broadcast ve Network çıkarılınca kalan = 2
 
 ### 📌 Şirkette 1500 IP adresine ihtiyacım var?
 
