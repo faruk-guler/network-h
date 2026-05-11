@@ -2,6 +2,7 @@
 
 ## Subnetting Nedir?
 Subnetting, büyük bir IP bloğunu, daha yönetilebilir küçük ağlara (subnets) bölme işlemidir. Bunu yapmak için farklı formüller vardır.
+> 💡 256, bir oktetin alabileceği maksimum değerdir (2^8). Maskeden çıkarınca kalan host alanını verir.
 
 | No | Formül | Örnek (/26) | Sonuç |
 |---|--------|-------------|-------|
