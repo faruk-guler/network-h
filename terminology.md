@@ -160,6 +160,10 @@ Ağ trafiğini izleyen ve belirlenen güvenlik kurallarına göre gelen/giden pa
 
 Uygulama katmanına ulaşan, yani protokol başlıkları ve hatalı paketler çıkarıldıktan sonra kalan **gerçek yararlı veri** hızıdır.
 
+## Loopback Address
+
+Bir cihazın kendi ağ kartını ve TCP/IP yığınını test etmek için kullandığı özel adrestir. IPv4 için 127.0.0.1, IPv6 için ::1/128 olarak tanımlanır.
+
 ## Handshake
 
 Senkronize operasyonlardan emin olmak için ağdaki bir veya daha fazla cihaz arasında gidip gelen aktarımların serisi. Örnek: TCP 3-way handshake (SYN → SYN-ACK → ACK).
