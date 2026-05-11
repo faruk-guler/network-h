@@ -83,5 +83,4 @@ Tarihsel süreçte geliştirilmiş, günümüzde büyük çoğunluğu kullanımd
 | **NetBEUI** | Microsoft / IBM | 1985 | Kullanımdan kalktı |
 
 
-> Günümüzde fiilen kullanılan tek model **TCP/IP'dir.**
-> OSI ise öğretim ve sorun giderme amaçlı referans olarak yaşamaya devam eder.
+> 💡 Günümüzde fiilen kullanılan tek model **TCP/IP'dir.** OSI ise öğretim ve sorun giderme amaçlı referans olarak yaşamaya devam eder.
