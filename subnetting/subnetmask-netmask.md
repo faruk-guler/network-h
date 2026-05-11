@@ -12,8 +12,10 @@ A ----> |255.             |.0.0.0     |
 B ----> |255.255.         |.0.0       |
 C ----> |255.255.255.     |.0         |
 ```
+> 💡 CIDR çıkmadan önce her cihaz sınıfına göre bu sabit maskeleri kullanmak zorundaydı.
+---
 
-- Bir cihaz IP adresi ile subnet maskını mantıksal olarak "AND" işlemine tabi tutar, çıkan değer cihazın network adresi olur. Cihaz hangi networkte olduğunu öğrendikten sonra  bulunduğu ağ içindeki diğer cihazlara doğrudan erişebilir.
+Bir cihaz IP adresi ile subnet maskını mantıksal olarak "AND" işlemine tabi tutar, çıkan değer cihazın network adresi olur. Cihaz hangi networkte olduğunu öğrendikten sonra  bulunduğu ağ içindeki diğer cihazlara doğrudan erişebilir.
 
 AND kuralı: "Her iki bit de 1 ise sonuç 1, diğer tüm durumlarda sonuç 0" ✅
 
