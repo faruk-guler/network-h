@@ -217,7 +217,7 @@ Superonline  : 78.188.0.0/16
 Vodafone     : 185.18.0.0/16
 ```
 
-E�er her küçük ağı ayrı ayrı duyursalardı, internet router'larının listesi taşınamaz hale gelirdi. Supernetting sayesinde her operatör tek bir satırda temsil edilir.
+Eğer her küçük ağı ayrı ayrı duyursalardı, internet router'larının listesi taşınamaz hale gelirdi. Supernetting sayesinde her operatör tek bir satırda temsil edilir.
 
 ---
 
@@ -245,45 +245,3 @@ Hangi ağları birleştirdiğinizi not alın. İleride bir sorun çıktığında
 - İnternet bu teknik sayesinde milyonlarca ağı yönetilebilir tutar.
 
 ---
-
-## Alıştırma
-
-**Soru 1:** Şu 4 ağı tek bir supernet ile özetleyin:
-
-```
-10.10.8.0/24
-10.10.9.0/24
-10.10.10.0/24
-10.10.11.0/24
-```
-
-<details>
-<summary>Cevabı Göster</summary>
-
-**10.10.8.0/22**
-
-- 4 ağ → /24'ten /22'ye
-- İlk adres: .8 → 8, 4'ün katıdır ✅
-- Ağlar ardışık ✅
-
-</details>
-
----
-
-**Soru 2:** `172.20.0.0/22` adresi kaç tane `/24` ağını kapsar?
-
-<details>
-<summary>Cevabı Göster</summary>
-
-**4 adet /24 ağı**
-
-Tablodan bakıyoruz: /22 = 4 ağ. Bu adresin içinde şunlar gizlidir:
-
-```
-172.20.0.0/24
-172.20.1.0/24
-172.20.2.0/24
-172.20.3.0/24
-```
-
-</details>
