@@ -37,7 +37,7 @@ Bir şirketin 16 departmanı var. Her departmanın 512 IP talebi olduğunu varsa
 | Toplam IP | 16 × 512 = 2¹³ | **8,192** |
 | Ağ | 8,192 = 2^(32−19) | **10.5.0.0/19** |
 | Artış (3. oktette) | 512 IP = 2 × 256 → 3. oktet 2'şer ilerler | **2** |
-| Kullanılabilir IP/dept | 512 − 2 | **510 cihaz** |
+| Kullanılabilir IP/Departman | 512 − 2 | **510 cihaz** |
  
 ### Subnet Tablosu
  
