@@ -29,7 +29,7 @@ Mantık: "Supernetting" (Ağları birleştirme).
 /26 => 11111111.11111111.11111111.11000000 --> 255.255.255.192
 ...
 ...
-/32 => 11111111.11111111.11111111.11111111 --> 255.255.255.2555 Toplam IP = 0
+/32 => 11111111.11111111.11111111.11111111 --> 255.255.255.255 Toplam IP = 0
 
 🔥 Buradaki "1" ler network'ü temsil ederken "0" lar hostları temsil eder.
 ```
