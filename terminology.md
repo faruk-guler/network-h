@@ -84,6 +84,50 @@ Bir IP adresini bir alan adına eşleyen DNS kaydı (Ters DNS).
 
 Ağ trafiğini önceliklendirme teknolojisidir. Ses ve video gibi gecikmeye duyarlı trafiğin, dosya indirme gibi az öncelikli trafikten önce iletilmesini sağlar.
 
+## MTU (Maximum Transmission Unit)
+
+Bir ağ arayüzünün tek seferde taşıyabileceği maksimum paket boyutudur. Ethernet için genellikle 1500 byte.
+
+## MSS (Maximum Segment Size)
+
+TCP’nin tek segmentte taşıyabileceği maksimum veri miktarıdır.
+
+## PoE (Power over Ethernet)
+
+Ethernet kablosu üzerinden hem veri hem elektrik taşınmasını sağlayan teknolojidir. IP kamera ve Access Point’lerde yaygındır.
+
+## RADIUS
+
+Merkezi kimlik doğrulama (AAA) protokolüdür. VPN, Wi-Fi ve kurumsal erişimlerde kullanılır.
+
+## Access Point (AP)
+
+Kablosuz istemcilerin ağa bağlanmasını sağlayan cihazdır.
+
+## SNMP (Simple Network Management Protocol)
+
+Ağ cihazlarını izlemek ve yönetmek için kullanılan protokoldür. Port: UDP 161/162.
+
+## NTP (Network Time Protocol)
+
+Ağ cihazlarının saat senkronizasyonunu sağlayan protokoldür. Port: UDP 123.
+
+## CDN (Content Delivery Network)
+
+İçeriği kullanıcıya en yakın sunucudan dağıtan sistemdir. Web performansını artırır.
+
+## Overlay Network
+
+Fiziksel ağ üzerinde mantıksal olarak oluşturulan sanal ağ yapısıdır.
+
+## Underlay Network
+
+Overlay ağın üzerinde çalıştığı fiziksel IP ağıdır.
+
+## Jumbo Frame
+
+Standart Ethernet frame’inden daha büyük frame yapısıdır. Genellikle MTU > 1500.
+
 ## SDN (Software Defined Networking)
 
 Ağın kontrol düzleminin (control plane) veri düzleminden (data plane) ayrıldığı ve yazılım ile merkezi olarak yönetildiği modern ağ mimarisidir.
