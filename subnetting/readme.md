@@ -20,7 +20,7 @@ Subnetting, büyük bir IP bloğunu, daha yönetilebilir küçük ağlara (subne
 | 6 | **Toplam IP** = 2ⁿ | 2⁶ | **64** |
 | 7 | **Kullanılabilir IP** = 2ⁿ − 2 | 64 − 2 | **62** | Network ve Broadcast adresleri çıkarılır |
 
----
+> 💡 Kullanılabilir IP'den 2 çıkarılır çünkü ilk adres **Network**, son adres **Broadcast** için ayrılır.
 
 ## Gerçek Dünya Örneği
  
