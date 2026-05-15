@@ -1,4 +1,4 @@
-# CIDR Subnet Mask Tablosui
+# CIDR Subnet Mask Tablosu
 
 | CIDR | Subnet Mask (decimal) | Subnet Mask (binary) |
 |------|----------------------|----------------------|
