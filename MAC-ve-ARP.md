@@ -89,6 +89,8 @@ arp -a
 # Örnek çıktı:
 # 192.168.1.1    00-1a-2b-3c-4d-5e    dynamic
 # 192.168.1.20   bb-bb-bb-bb-bb-bb    dynamic
-```
 
----
+# ARP tablosu temizle
+arp -a
+
+```
