@@ -15,10 +15,13 @@
 
 > 💡 Üslü sayıların kuralı gereği herhangi bir sayının 0. kuvveti 1 olur.
 
+---
 
+## 🔔 1 olan bitlerin üstlerini al ve topla:
 ```
-192.           168.          1.            10.
-[32]          [24]                [11]          [3] [1]
+IP Adresi: 192.           168.          1.            10.
+
+[32]          [24]                [11]          [3] [1] 
 [1]1000000    [1]0101000     00000[0]01    00001[0]1[0]
 8 bit     +   8 bit     +  8 bit      +  8 bit    =    32 bit
 ```
