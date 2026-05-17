@@ -11,7 +11,7 @@
  
 > 💡 Eğer bit `1` ise tablodaki değer **toplanır**, `0` ise o değer **yok sayılır**. Çünkü 0 varsa veri yok, 1 varsa veri var demektir.
 
-> 💡 Her octecte tekrar "0" dan başlanmalıdır.
+> 💡 Her oktette tekrar "0" dan başlanmalıdır.
 
 > 💡 Üslü sayıların kuralı gereği herhangi bir sayının 0. kuvveti 1 olur.
 
