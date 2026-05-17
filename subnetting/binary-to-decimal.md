@@ -26,3 +26,11 @@ IP Adresi: 192.           168.          1.            10.
 8 bit     +   8 bit     +  8 bit      +  8 bit    =    32 bit
 ```
 - Bit sayımı sağdan başlanarak yapılmalıdır.
+
+  ### IP Adresi: 192.168.1.10 (32-Bit Analizi)
+
+| Oktet | 1. Oktet (192) | 2. Oktet (168) | 3. Oktet (1) | 4. Oktet (10) |
+|-------|----------------|----------------|--------------|---------------|
+| **Binary** | `11000000` | `10101000` | `00000001` | `00001010` |
+| **Bit Aralığı** | Bit 1 - 8 | Bit 9 - 16 | Bit 17 - 24 | Bit 25 - 32 |
+| **Hesaplama** | 128+64 | 128+32+8 | 1 | 8+2 |
