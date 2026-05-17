@@ -18,19 +18,10 @@
 ---
 
 ## 🔔 1 olan bitlerin üstlerini al ve topla:
+```text
+IP Adresi: 192.168.1.10
+Decimal : 192  .  168  .   1   .  10
+Binary  : 11000000 . 10101000 . 00000001 . 00001010 > 8 bit     +   8 bit     +  8 bit      +  8 bit    =    32 bit
+Hesaplama: | 128+64 | 128+32+8 | 1 | 8+2 |
 ```
-IP Adresi: 192.           168.          1.            10.
-
-[32]          [24]                [11]          [3] [1] 
-[1]1000000    [1]0101000     00000[0]01    00001[0]1[0]
-8 bit     +   8 bit     +  8 bit      +  8 bit    =    32 bit
-```
-- Bit sayımı sağdan başlanarak yapılmalıdır.
-
-  ### IP Adresi: 192.168.1.10 (32-Bit Analizi)
-
-| Oktet | 1. Oktet (192) | 2. Oktet (168) | 3. Oktet (1) | 4. Oktet (10) |
-|-------|----------------|----------------|--------------|---------------|
-| **Binary** | `11000000` | `10101000` | `00000001` | `00001010` |
-| **Bit Aralığı** | Bit 1 - 8 | Bit 9 - 16 | Bit 17 - 24 | Bit 25 - 32 |
-| **Hesaplama** | 128+64 | 128+32+8 | 1 | 8+2 |
+> 💡 **Önemli:** Bit sayımı sağdan **0'** ile başlanarak yapılmalıdır.
