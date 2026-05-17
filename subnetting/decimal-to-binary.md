@@ -23,7 +23,7 @@ Decimal sayıyı başlangıçta 'kalan' olarak al; her bit değerine sor: 'Kalan
 
 IP Adresi: 10.5.39.163 için;
 
-| Oktet | Decimal | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 | Binary | Kontrol |
+| Oktet | Decimal/Kalan | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 | Binary | Kontrol |
 |-------|---------|-----|----|----|----|---|---|---|---|--------|---------|
 | 1. | `10` | 0 | 0 | 0 | 0 | **1** | 0 | **1** | 0 | `00001010` | 8+2=10 ✅ |
 | 2. | `5` | 0 | 0 | 0 | 0 | 0 | **1** | 0 | **1** | `00000101` | 4+1=5 ✅ |
