@@ -18,8 +18,8 @@
 
 ---
 
-## 🔔 “Decimal içinde varsa 1, yoksa 0”
-"Kalan sayımın içinde bu değer var mı? sorusunu sorarak tüm bitler sorulanması kuralına dayanır"
+## 🔔 “İçinde varsa 1, yoksa 0”
+Decimal sayıyı "Her bit için sor: 'Kalan'ın içinde bu değer var mı?' "Kalan'ın içinde bu değer var mı?"
 IP Adresi: 10.5.39.163 için;
 
 | Oktet | Decimal | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 | Binary | Kontrol |
