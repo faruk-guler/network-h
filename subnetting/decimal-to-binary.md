@@ -18,7 +18,7 @@
 
 ---
 
-## 🔔 "2'ye Böl, Kalanı Yaz!"
+## 🔔 “Sığıyorsa 1, Sığmıyorsa 0”
 
 IP Adresi: 10.5.39.163 için;
 
