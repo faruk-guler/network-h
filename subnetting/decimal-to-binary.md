@@ -1,4 +1,4 @@
-# 🔢 Decimal → Binary Dönüşümü
+# Decimal → Binary Dönüşümü
  
 Binary (ikili) sayı sistemi yalnızca `0` ve `1` rakamlarını kullanır.
 Ağ dünyasında IP adresleri ve subnet mask'lar arka planda binary olarak işlenir.
