@@ -1,4 +1,4 @@
-# 🔟 Decimal → 🔢 Binary Dönüşümü
+# 🔟 Decimal → Binary Dönüşümü
  
 ## Üsler Tablosu (İkinin Kuvvetleri)
 
