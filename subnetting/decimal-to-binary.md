@@ -18,7 +18,7 @@
 
 ---
 
-## 🔔 “İçinde varsa 1, yoksa 0”
+## 🔔 “Kalanda varsa 1, yoksa 0”
 Decimal sayıyı "Her bit için sor: 'Kalan'ın içinde bu değer var mı?' "Kalan'ın içinde bu değer var mı?"
 IP Adresi: 10.5.39.163 için;
 
