@@ -18,7 +18,7 @@
 
 ---
 
-## 🔔 “Sığıyorsa 1, Sığmıyorsa 0”
+## 🔔 “Soldan sığıyorsa 1, sığmıyorsa 0”
 
 IP Adresi: 10.5.39.163 için;
 
