@@ -17,11 +17,13 @@
 
 ---
 
-## 🔔 1 olan bitlerin üstlerini al ve topla:
+## 🔔 1 olan bitlerin üslerini al ve topla: 
 ```text
+Binary  : 11000000 . 10101000 . 00000001 . 00001010 > 8+8+8+8= 32 bit
+Gösterim: 2⁷+2⁶      2⁷+2⁵+2³   2⁰
+Topla   : 128+64   | 128+32+8   | 1 | 8+2 |
+Decimal : 192      . 168      . 1        . 10
+
 IP Adresi: 192.168.1.10
-Decimal : 192  .  168  .   1   .  10
-Binary  : 11000000 . 10101000 . 00000001 . 00001010 > 8 bit     +   8 bit     +  8 bit      +  8 bit    =    32 bit
-Hesaplama: | 128+64 | 128+32+8 | 1 | 8+2 |
 ```
 > 💡 **Önemli:** Bit sayımı sağdan **0'** ile başlanarak yapılmalıdır.
