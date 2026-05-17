@@ -18,7 +18,7 @@
 
 ---
 
-## 🔔 Sığıyorsa 1, sığmıyorsa 0!
+## 🔔 Kutuyu aç, sığmayanı at!
 
 IP Adresi: 10.5.39.163 için;
 
