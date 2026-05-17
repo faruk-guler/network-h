@@ -18,7 +18,7 @@
 
 ---
 
-## 🔔 Kutuyu aç, sığmayanı at!
+## 🔔 "2'ye Böl, Kalanı Yaz!"
 
 IP Adresi: 10.5.39.163 için;
 
