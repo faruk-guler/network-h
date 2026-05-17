@@ -1,25 +1,23 @@
 # 🔟 Decimal → 🔢 Binary Dönüşümü
  
-Binary (ikili) sayı sistemi yalnızca `0` ve `1` rakamlarını kullanır.
-Ağ dünyasında IP adresleri ve subnet mask'lar arka planda binary olarak işlenir.
-Bu yüzden decimal → binary dönüşümünü bilmek subnetting'in temelidir.
- 
----
- 
-## 📌 Üsler Tablosu
- 
-Her oktet (byte) **8 bit**'ten oluşur. Her bitin sabit bir ağırlık değeri vardır:
- 
-```
-Pozisyon →   8      7      6      5      4      3      2      1
-Değer    →  2⁷     2⁶     2⁵     2⁴     2³     2²     2¹     2⁰
-Decimal  → 128     64     32     16      8      4      2      1
-```
- 
-> 💡 Bit `1` ise o pozisyonun değeri **toplanır**, `0` ise **yok sayılır**.
- 
----
+## Üsler Tablosu (İkinin Kuvvetleri)
 
+|       Bit     |*. | 8.  | 7. | 6. | 5. | 4. | 3. | 2. | 1. |
+|:--------------|:-------:|:-------:|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
+| Gösterim (2ⁿ) | * |   2⁷    |   2⁶   |   2⁵   |   2⁴   |   2³   |   2²   |   2¹   |   2⁰   |
+| Decimal Değer | * | **128** | **64** | **32** | **16** | **8**  | **4**  | **2**  | **1**  |
+
+- ...
+- 2⁷ = 2 × 2 × 2 × 2 × 2 × 2 × 2 = 128
+ 
+> 💡 Eğer bit `1` ise tablodaki değer **toplanır**, `0` ise o değer **yok sayılır**. Çünkü 0 varsa veri yok, 1 varsa veri var demektir.
+
+> 💡 Her oktette tekrar "0" dan başlanmalıdır.
+
+> 💡 Üslü sayıların kuralı gereği herhangi bir sayının 0. kuvveti 1 olur.
+
+---
+ 
 ### 10.5.39.163 → Binary Dönüşüm Tablosu
 
 | Oktet | Decimal | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 | Binary | Kontrol |
