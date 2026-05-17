@@ -1,4 +1,4 @@
-# Ağ Modelleri
+# 🕸 Ağ Modelleri
 
 Ağ iletişiminin nasıl çalışacağını tanımlayan standart çerçevelerdir.
 Farklı üreticilerin cihazlarının birbiriyle konuşabilmesi için ortak bir dil sağlarlar.
