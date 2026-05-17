@@ -19,7 +19,7 @@
 ---
 
 ## 🔔 “Kutuda varsa 1, yoksa 0”
-Decimal sayıyı başlangıçta 'Kutu' olarak al; her bit değerine sor, İçinde bu değer varsa 1 yaz ve çıkar, yoksa 0 yaz ve sonrakine geç."
+Decimal sayıyı başlangıçta 'Kutu' kabul et; her bit değerine sor, kutu içinde bu değer varsa 1 yaz ve çıkar, yoksa 0 yaz ve sonrakine geç."
 
 IP Adresi: 10.5.39.163 için;
 
