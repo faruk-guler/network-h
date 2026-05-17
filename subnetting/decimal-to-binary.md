@@ -17,8 +17,10 @@
 > 💡 Üslü sayıların kuralı gereği herhangi bir sayının 0. kuvveti 1 olur.
 
 ---
- 
-### 10.5.39.163 → Binary Dönüşüm Tablosu
+
+## 🔔 ???
+
+IP Adresi: 10.5.39.163 için;
 
 | Oktet | Decimal | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 | Binary | Kontrol |
 |-------|---------|-----|----|----|----|---|---|---|---|--------|---------|
