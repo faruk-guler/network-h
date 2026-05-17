@@ -17,13 +17,11 @@
 
 ---
 
-## 🔔 1 olan bitlerin üslerini al ve topla: 
+## 🔔 1 olan bitlerin üslerini al ve topla: IP Adresi: 192.168.1.10
 ```text
 Binary  : 11000000 . 10101000 . 00000001 . 00001010
 Gösterim: 2⁷+2⁶      2⁷+2⁵+2³   2⁰         2³+2¹
 al topla: 128+64   | 128+32+8 | 1        | 8+2 |
 Decimal : 192      . 168      . 1        . 10
-
-IP Adresi: 192.168.1.10
 ```
 > 💡 **Önemli:** Bit sayımı sağdan **0'** ile başlanarak yapılmalıdır.
