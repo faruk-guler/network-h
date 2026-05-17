@@ -18,7 +18,7 @@
 
 ---
 
-## 🔔 “Decimale sığıyorsa 1, sığmıyorsa 0”
+## 🔔 “Decimal içinde varsa 1, yoksa 0”
 
 IP Adresi: 10.5.39.163 için;
 
