@@ -56,8 +56,6 @@ Decimal:   87     . 123    . 255    . 255
 ```
 > 💡 Her zaman en sağdan ve 2⁰ ile başlayın.
 
-> 💡 Decimalden Binary'e dönüşüm mümkündür. 192.168.1.1 → 11000000.10101000.00000001.00000001
-
 ## >_ Subnet Mask neden gerekli?
 
 Neden Subnet'lere ihtiyaç duyarız tek bir ağ yeterli olmaz mı?
