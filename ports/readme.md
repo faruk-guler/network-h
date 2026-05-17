@@ -1,4 +1,4 @@
-# Portlar ve Servisler:
+# 🔗 Portlar ve Servisler:
 
 > 💡 **Port Nedir?** Port, bir IP adresindeki "kapı numarası"dır. IP adresi binanın adresi, port ise daire numarasıdır.
 
