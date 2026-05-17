@@ -18,12 +18,12 @@
 
 ---
 
-## 🔔 “Kalanda varsa 1, yoksa 0”
-Decimal sayıyı başlangıçta 'Kalan' olarak al; her bit değerine sor, Kalan'ın içinde bu değer varsa 1 yaz ve çıkar, yoksa 0 yaz ve sonrakine geç."
+## 🔔 “Kutuda varsa 1, yoksa 0”
+Decimal sayıyı başlangıçta 'Kutu' olarak al; her bit değerine sor, Kalan'ın içinde bu değer varsa 1 yaz ve çıkar, yoksa 0 yaz ve sonrakine geç."
 
 IP Adresi: 10.5.39.163 için;
 
-| Oktet | Decimal/Kalan | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 | Binary | Kontrol |
+| Oktet | Decimal/Kutu | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 | Binary | Kontrol |
 |-------|---------|-----|----|----|----|---|---|---|---|--------|---------|
 | 1. | `10` | 0 | 0 | 0 | 0 | **1** | 0 | **1** | 0 | `00001010` | 8+2=10 ✅ |
 | 2. | `5` | 0 | 0 | 0 | 0 | 0 | **1** | 0 | **1** | `00000101` | 4+1=5 ✅ |
