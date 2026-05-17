@@ -20,6 +20,7 @@
 
 ## 🔔 “Kalanda varsa 1, yoksa 0”
 Decimal sayıyı başlangıçta 'kalan' olarak al; her bit değerine sor: 'Kalan'ın içinde bu değer varsa 1 yaz ve çıkar, yoksa 0 yaz ve sonrakine geç."
+
 IP Adresi: 10.5.39.163 için;
 
 | Oktet | Decimal | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 | Binary | Kontrol |
