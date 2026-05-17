@@ -1,4 +1,4 @@
-# Ağ Protokolleri
+# 📋 Ağ Protokolleri
 
 ## Protokol Nedir?
 Bilgisayar ağlarında iletişim, rastgele gerçekleşen bir veri akışı değil, belirli kurallar çerçevesinde yönetilen bir süreçtir. Bu kurallar bütününe **Protokol** adı verilir. Protokoller, verinin nasıl paketleneceğini, nasıl adresleneceğini, nasıl iletileceğini ve hata durumunda ne yapılacağını tanımlar. Bir ağ protokolü, ağ üzerindeki iki veya daha fazla cihazın birbirini anlamasını sağlayan ortak dildir. Tıpkı insanların iletişim kurarken kullandığı dil bilgisi kuralları gibi, makineler de veri alışverişi yaparken protokol standartlarına uymak zorundadır.
