@@ -1,4 +1,4 @@
-# Veri Birimleri:
+# 🗃️ Veri Birimleri:
 
 ## Octet
 🔍 "Octet" bir sayı sistemi değildir. 8 bitten oluşan bir veri birimi/gruplama kavramıdır. Octal ile karıştırılmamalıdır.
