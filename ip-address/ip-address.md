@@ -19,7 +19,7 @@ Senin cihazın              →    google.com sunucusu
 
 ---
 
-## İki Versiyonu Vardır
+## IP adresinin iki versiyonu vardır
 
 | | IPv4 | IPv6 |
 |---|---|---|
@@ -28,14 +28,6 @@ Senin cihazın              →    google.com sunucusu
 | Toplam adres | ~4,3 milyar | Yaklaşık 340 Undesilyon |
 | Durum | Hâlâ yaygın | Geçiş süreci devam ediyor |
 
-```
-192.           168.          1.            10.
-[32]          [24]                [11]          [3] [1]
-[1]1000000    [1]0101000     00000[0]01    00001[0]1[0]
-8 bit     +   8 bit     +  8 bit      +  8 bit    =    32 bit
-```
-- Bit sayımı sağdan başlanarak yapılmalıdır.
-- 0 varsa veri yok, 1 varsa veri var demektir.
 
 ## 🧪🧪 IP Adresi Formatı
 IP "Network ID" ve "Host ID" olmak üzere iki bölümden oluşmaktadır ve Adres Sınıflarına göre farklılık göstermektedir. Network ağı, Host ise uç cihazları ifade eder.
