@@ -134,5 +134,3 @@ IXP (TR-IX gibi)
 | WWW | İnternet üzerinde çalışan bir hizmet, internetin kendisi değil |
 
 ---
-
-> *Bir sonraki bölüm: **Bir Paketin Yolculuğu** — Tüm bu sistemin içinde tek bir verinin adım adım hikayesi.*
