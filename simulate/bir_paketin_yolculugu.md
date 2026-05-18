@@ -148,5 +148,3 @@ Teknik bilgi vermek için değil.
 İnternetin altındaki **insani emeği ve mühendislik harikasını** görmeni sağlamak için.
 
 ---
-
-> *Bir sonraki bölüm: **IP Adresleri ve Subnetting** — Ağların posta kodu sistemi nasıl çalışır?*
