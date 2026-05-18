@@ -288,5 +288,3 @@ ls /opt/unetlab/addons/qemu/
 Bireysel öğrenim ve bu kitaptaki laboratuvarlar için **Community Edition** yeterlidir.
 
 ---
-
-> **Sonraki Adım:** EVE-NG kurulumunuz hazır. Bir sonraki bölümde ilk Cisco IOL laboratuvarını oluşturarak temel yönlendirme senaryolarını simüle edeceğiz.
