@@ -91,6 +91,6 @@ arp -a
 # 192.168.1.20   bb-bb-bb-bb-bb-bb    dynamic
 
 # ARP tablosu temizle
-arp -a
+arp -d
 
 ```
