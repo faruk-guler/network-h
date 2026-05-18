@@ -45,4 +45,6 @@ C ----> |192.168.0.      |.0         |
 |Network |Host  |
 |172.16  |32.170| > B class örneği
 ```
-> 💡 Host ID leri Min 0, Max 254 olabilir. C Class'ta ise Host ID minimum 1'dir, 0 olamaz. Çünkü Host ID tek oktettir. (8 bit)
+
+> 💡 Host ID, teorik olarak min 0 (Network Adresi) ile max 255 (Broadcast Adresi) değerlerini alır.
+> Ancak bu iki uç adres cihazlara atanamaz. Cihazlara atanabilir aralık her subnet'te .1 ile .254 arasındadır.
