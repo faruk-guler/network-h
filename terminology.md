@@ -58,7 +58,7 @@ Yoldaki router'ların sayısına bağlı olarak kaynak ve hedef arasındaki uzak
 
 ## Bant Genişliği (Bandwidth)
 
-Ağ sinyalleri arasında kullanılan en yüksek ve en düşük frekanslar arasındaki aralık. Yaygın olarak, bir ağ protokolü veya ortamının ölçülen throughput (yapılan iş) kapasitesine işaret eder.
+Ağ sinyalleri arasında kullanılan en yüksek ve en düşük frekanslar arasındaki aralık. Yaygın olarak, bir ağ protokolü veya ortamının ölçülen throughput (yapılan iş) kapasitesine işaret eder. "Belirli bir sürede taşınabilecek maksimum veri miktarı"
 
 ## Binary (İkili)
 
