@@ -11,8 +11,8 @@ Protokoller genellikle OSI (Open Systems Interconnection) modelindeki yedi katma
 | :--- | :--- | :--- | :--- |
 | 7 | Uygulama (Application) | Kullanıcı arayüzü ve ağ servisleri | HTTP, FTP, DNS, SSH, SMTP |
 | 4 | İletim (Transport) | Veri akış kontrolü ve hata denetimi | TCP, UDP |
-| 3 | Ağ (Network) | Yönlendirme ve mantıksal adresleme | IP (IPv4/IPv6), ICMP, ARP |
-| 2 | Veri Bağı (Data Link) | Fiziksel adresleme (MAC) | Ethernet, Switch protokolleri |
+| 3 | Ağ (Network) | Yönlendirme ve mantıksal adresleme | IP (IPv4/IPv6), ICMP|
+| 2 | Veri Bağı (Data Link) | Fiziksel adresleme (MAC) | Ethernet, ARP, Switch protokolleri |
 
 ## En Yaygın Ağ Protokolleri
 
