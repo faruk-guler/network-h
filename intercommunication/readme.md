@@ -1,4 +1,4 @@
-# Haberleşme Türleri
+# 🗣 Haberleşme Türleri
 
 Bir ağdaki cihazlar birbirleriyle üç farklı şekilde haberleşirler: **Unicast**, **Multicast** ve **Broadcast**.
 
