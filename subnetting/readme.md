@@ -73,3 +73,80 @@ Bir şirketin 16 departmanı var. Her departmanın 512 IP talebi olduğunu varsa
 | **Broadcast Adresi** | Subnet'in son adresidir. Tüm cihazlara mesaj göndermek için kullanılır, atanamaz. |
 | **CIDR (/xx)** | Ağ maskesinin kaç bitlik olduğunu gösterir. Örn: /24, /26 |
 | **Artış (Block Size)** | Bir subnet'in kaç IP'den oluştuğunu gösterir. 256 − Maske ile bulunur. |
+
+
+---
+
+## 🔎 Bu IP Hangi Subnet'te?
+
+Formüllerimizi kullanarak herhangi bir IP adresinin **hangi subnet'e ait olduğunu** ve o subnet'in sınırlarını bulabiliriz.
+
+> 💡 **Yöntem:** Formül 1 (Artış) ve Formül 3 (Ağ Adresi) yeterlidir.
+
+```
+Adım 1: Artış = 256 − Maske
+Adım 2: İlgili oktetin değerini Artış'a böl → aşağı yuvarla
+Adım 3: Ağ Adresi = yuvarlanmış sonuç × Artış
+Adım 4: Broadcast = Ağ Adresi + Artış − 1
+Adım 5: Kullanılabilir = Ağ+1  →  Broadcast−1
+```
+
+---
+
+### 📌 Örnek 1 — 4. Oktet (Kolay)
+
+**Soru:** `10.5.10.70/26` adresi hangi subnet'te?
+
+```
+/26 → Maske: 255.255.255.192  →  Artış: 256 − 192 = 64
+İlgili oktet: 70
+
+70 ÷ 64 = 1.09  →  aşağı yuvarla → 1
+Ağ Adresi  : 1 × 64 = 64    →  10.5.10.64
+Broadcast  : 64 + 64 − 1    →  10.5.10.127
+
+✅ Ağ Adresi      : 10.5.10.64
+✅ Broadcast      : 10.5.10.127
+✅ Kullanılabilir : 10.5.10.65 – 10.5.10.126  (62 cihaz)
+```
+
+---
+
+### 📌 Örnek 2 — 3. Oktet (Orta)
+
+**Soru:** `172.16.37.5/22` adresi hangi subnet'te?
+
+```
+/22 → Maske: 255.255.252.0  →  Artış: 256 − 252 = 4
+İlgili oktet: 3. oktet (37)
+
+37 ÷ 4 = 9.25  →  aşağı yuvarla → 9
+Ağ Adresi  : 9 × 4 = 36    →  172.16.36.0
+Broadcast  : 36 + 4 − 1 = 39  →  172.16.39.255
+
+✅ Ağ Adresi      : 172.16.36.0
+✅ Broadcast      : 172.16.39.255
+✅ Kullanılabilir : 172.16.36.1 – 172.16.39.254  (1022 cihaz)
+```
+
+---
+
+### 📌 Örnek 3 — 3. Oktet (Zor)
+
+**Soru:** `192.168.100.200/21` adresi hangi subnet'te?
+
+```
+/21 → Maske: 255.255.248.0  →  Artış: 256 − 248 = 8
+İlgili oktet: 3. oktet (100)
+
+100 ÷ 8 = 12.5  →  aşağı yuvarla → 12
+Ağ Adresi  : 12 × 8 = 96    →  192.168.96.0
+Broadcast  : 96 + 8 − 1 = 103  →  192.168.103.255
+
+✅ Ağ Adresi      : 192.168.96.0
+✅ Broadcast      : 192.168.103.255
+✅ Kullanılabilir : 192.168.96.1 – 192.168.103.254  (2046 cihaz)
+```
+
+> ⚠️ **Dikkat:** Maskenin hangi oktetin üzerinde işlem yapılacağını belirler.  
+> `/24` altı → 4. oktet | `/16` ile `/24` arası → 3. oktet | `/8` ile `/16` arası → 2. oktet
