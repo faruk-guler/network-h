@@ -149,9 +149,8 @@ Bilgi güvenliğinin temel modelidir: Gizlilik (Yetkisiz erişimi önleme), Büt
 İşletim sistemi veya DNS sunucusunun daha önce çözümlenmiş domain → IP eşleşmelerini geçici olarak saklamasıdır. Sorgu hızını artırır.
 
 ## FQDN (Fully Qualified Domain Name)
-Bir cihazın veya servisin tam alan adıdır. Örnek: www.google.com.
 
-## 
+Bir cihazın veya servisin tam alan adıdır. Örnek: www.google.com.
 
 ## Connection-Oriented (Bağlantı Odaklı)
 
