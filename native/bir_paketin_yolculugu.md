@@ -12,7 +12,7 @@ Parmağın ekrana dokunduğu an, telefonundaki uygulama bir istek oluşturur:
 
 Ama internet bu cümleyi anlamaz. İnternet yalnızca sayıları anlar — daha doğrusu, küçük küçük **paketleri.**
 
-Uygulaман bu isteği alır ve bir zarfa koyar gibi paketler. Bu zarfın üzerinde iki adres vardır:
+Uygulama bu isteği alır ve bir zarfa koyar gibi paketler. Bu zarfın üzerinde iki adres vardır:
 
 - **Nereden geldiği:** Senin telefonunun IP adresi (Örn: `192.168.1.42`)
 - **Nereye gideceği:** Instagram'ın sunucusunun IP adresi (Örn: `157.240.241.174`)
