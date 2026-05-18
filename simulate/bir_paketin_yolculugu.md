@@ -1,4 +1,4 @@
-# Bir Paketin Yolculuğu
+# 📍🗺️ Bir Paketin Yolculuğu
 
 > *İstanbul'daki bir kafede oturuyorsun. Telefonunu çıkarıyorsun, Instagram'ı açıyorsun ve arkadaşının fotoğrafı ekranında beliriyor. Üç saniye bile sürmedi. Ama o üç saniyede, senin adına dünyayı turladı.*
 
