@@ -47,4 +47,5 @@ C ----> |192.168.0.      |.0         |
 ```
 
 > 💡 Host ID, teorik olarak min 0 (Network Adresi) ile max 255 (Broadcast Adresi) değerlerini alır.
+
 > Ancak bu iki uç adres cihazlara atanamaz. Cihazlara atanabilir aralık her subnet'te .1 ile .254 arasındadır.
