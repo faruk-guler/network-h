@@ -68,6 +68,7 @@ Teknik olarak routing'den bağımsız bir işlemdir; ancak router üzerinde çal
 | IP Aralığı | Türü |
 |:---|:---|
 | `10.0.0.0 – 10.255.255.255` | Private (Özel) |
+| `172.16.0.0 – 172.31.255.255` | Private (Özel) |
 | `192.168.0.0 – 192.168.255.255` | Private (Özel) |
 | `193.156.56.164` gibi adresler | Public (Genel) — internette geçerli |
 
