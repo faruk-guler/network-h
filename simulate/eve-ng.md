@@ -1,4 +1,4 @@
-# 🧪 EVE-NG: Kurulum ve Kullanım Kılavuzu
+# 🧪 EVE-NG: Kurulum ve Simülasyon Kılavuzu
 
 EVE-NG (Emulated Virtual Environment - Next Generation), tarayıcı tabanlı arayüzüyle ağ cihazlarını sanallaştırmak için kullanılan güçlü bir simülasyon platformudur. Bu bölümde EVE-NG'yi sıfırdan kurarak ilk laboratuvarınızı oluşturacaksınız.
 
