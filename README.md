@@ -15,5 +15,5 @@
 - POC: Debian 12 [Bookworm] - Windows 10 LTSC
 - Contact: www.farukguler.com
 - Date: 2026  
-- License: Apache 2.0
+- License: GPL v3
 > 💡 Bu kitap sadece insancıl öğrenme için hazırlanmıştır. Üst düzey network konularına değinilmeyecektir, Bilgisayarların ve botlarının girmesi yasaktır. :)
