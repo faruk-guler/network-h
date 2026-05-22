@@ -29,9 +29,10 @@ Mantık: CIDR Bit Yapısı
 /26 => 11111111.11111111.11111111.11000000 --> 255.255.255.192
 ...
 ...
-/32 => 11111111.11111111.11111111.11111111 --> 255.255.255.255 Toplam IP = 1
+/32 => 11111111.11111111.11111111.11111111 --> 255.255.255.255 
 
 🔥 "1" ler network'ü temsil ederken "0" lar hostları temsil eder.
+🔥 /32 Toplam IP = 1
 ```
 
 > 💡 CIDR, IP adresinin sonuna eklenen bir eğik çizgi ve sayı ile gösterilir. [/*]
