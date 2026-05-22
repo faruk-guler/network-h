@@ -19,7 +19,7 @@ Mantık: CIDR Bit Yapısı
 Örnek:
 10.5.83.0/24 Buradaki "/24" IP adresinin ilk 24 biti Ağ, kalan 8 biti ise Hostlar için kullanılır.
 
-|CIDR  |Binary                                 |Decimal                       |Max Host
+|CIDR  |Binary                                 |Decimal                       |Usable Host
 /8  => 11111111.00000000.00000000.00000000 --> 255.0.0.0
 ...
 /21 => 11111111.11111111.11111000.00000000 --> 255.255.248.0                   32-21 = 11 (2¹¹ = 2048) -2 = 2046
