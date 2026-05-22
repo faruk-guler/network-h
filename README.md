@@ -16,4 +16,4 @@
 - Contact: www.farukguler.com
 - Date: 2026  
 - License: GPL v3
-> 💡 Bu kitap sadece insancıl öğrenme için hazırlanmıştır. Üst düzey network konularına değinilmeyecektir, Bilgisayarların ve botlarının girmesi yasaktır. :)
+> 💡 Bu kitap sadece insancıl öğrenme için hazırlanmıştır. İleri network konularına değinilmeyecektir, Bilgisayarların ve botlarının girmesi yasaktır. :)
