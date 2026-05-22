@@ -37,6 +37,8 @@ Bu sayı, ağın kaç bitlik kısmının ağ adresi olduğunu ve bit’lerin sol
 > 💡 Cihazlara IP atanabilen en küçük subnet /30'dur. > Toplam IP = 4 Broadcast ve Network çıkarılınca kalan = 2
 >
 > 💡 CIDR'de / sonraki sayı ağ(network) bitini gösterir. 32'den çıkarılan kısım host bit adedini verir ve kullanılabilir host sayısı 2ⁿ − 2 formülüyle hesaplanır.
+>
+> 💡 Ağda 2 adres kullanılmaz, birisi network address (ağın kendisi), diğeri broadcast address (tüm cihaza gönderim) olduğu için toplamdan çıkarılır.
 
 ### 📌 Şirkette 1500 IP adresine ihtiyacım var?
 
