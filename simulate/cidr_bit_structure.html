@@ -1,0 +1,185 @@
+
+<style>
+  .cidr-root { padding: 1rem 0; font-family: var(--font-sans); }
+  .controls { display: flex; align-items: center; gap: 16px; margin-bottom: 1.5rem; flex-wrap: wrap; }
+  .controls label { font-size: 13px; color: var(--color-text-secondary); }
+  .slider-wrap { display: flex; align-items: center; gap: 10px; flex: 1; min-width: 200px; }
+  .cidr-val { font-size: 22px; font-weight: 500; color: var(--color-text-primary); min-width: 48px; }
+  .bit-grid { display: grid; grid-template-columns: repeat(32, 1fr); gap: 2px; margin-bottom: 8px; }
+  .bit-cell {
+    height: 32px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 500;
+    border-radius: 3px;
+    transition: background 0.18s, color 0.18s;
+    cursor: default;
+    border: 0.5px solid transparent;
+  }
+  .bit-net  { background: #CECBF6; color: #3C3489; border-color: #AFA9EC; }
+  .bit-host { background: #E1F5EE; color: #085041; border-color: #5DCAA5; }
+  .bit-net.dark-mode  { background: #3C3489; color: #CECBF6; border-color: #534AB7; }
+  .bit-host.dark-mode { background: #085041; color: #9FE1CB; border-color: #1D9E75; }
+  @media (prefers-color-scheme: dark) {
+    .bit-net  { background: #3C3489; color: #CECBF6; border-color: #534AB7; }
+    .bit-host { background: #085041; color: #9FE1CB; border-color: #1D9E75; }
+  }
+  .octet-labels { display: grid; grid-template-columns: repeat(32, 1fr); gap: 2px; margin-bottom: 4px; }
+  .octet-label { font-size: 9px; color: var(--color-text-tertiary); text-align: center; }
+  .sep { grid-column: span 1; }
+  .info-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin: 1rem 0; }
+  .info-card { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 0.75rem 1rem; }
+  .info-card .lbl { font-size: 12px; color: var(--color-text-secondary); margin-bottom: 4px; }
+  .info-card .val { font-size: 15px; font-weight: 500; color: var(--color-text-primary); font-family: var(--font-mono); }
+  .legend { display: flex; gap: 16px; font-size: 12px; color: var(--color-text-secondary); margin-bottom: 0.75rem; align-items: center; flex-wrap: wrap; }
+  .legend-dot { width: 12px; height: 12px; border-radius: 2px; display: inline-block; margin-right: 4px; vertical-align: middle; }
+  .dot-net  { background: #7F77DD; }
+  .dot-host { background: #1D9E75; }
+  .ip-input-row { display: flex; align-items: center; gap: 8px; margin-bottom: 1rem; flex-wrap: wrap; }
+  .ip-input-row label { font-size: 13px; color: var(--color-text-secondary); }
+  .ip-input-row input { font-family: var(--font-mono); font-size: 14px; padding: 5px 10px; border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-md); background: var(--color-background-primary); color: var(--color-text-primary); width: 160px; }
+  .binary-row { display: grid; grid-template-columns: repeat(32, 1fr); gap: 2px; margin-bottom: 4px; }
+  .bin-cell { height: 22px; display: flex; align-items: center; justify-content: center; font-size: 10px; font-family: var(--font-mono); color: var(--color-text-secondary); }
+  .dot-cell { display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; color: var(--color-text-tertiary); }
+  .section-label { font-size: 11px; color: var(--color-text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin: 0.5rem 0 0.25rem; }
+  .octet-dots { display: grid; grid-template-columns: repeat(32, 1fr); gap: 2px; margin-bottom: 2px; pointer-events: none; }
+  .odot { height: 10px; display: flex; align-items: center; justify-content: center; font-size: 11px; color: var(--color-text-tertiary); font-weight: 700; }
+</style>
+
+<div class="cidr-root">
+  <h2 class="sr-only">CIDR bit yapısı etkileşimli görselleştirici</h2>
+  
+  <div class="controls">
+    <label>CIDR Değeri</label>
+    <div class="slider-wrap">
+      <input type="range" min="1" max="32" value="24" id="cidr-slider" style="flex:1">
+    </div>
+    <span class="cidr-val" id="cidr-display">/24</span>
+  </div>
+
+  <div class="legend">
+    <span><span class="legend-dot dot-net"></span>Ağ bitleri (1'ler)</span>
+    <span><span class="legend-dot dot-host"></span>Host bitleri (0'lar)</span>
+  </div>
+
+  <div class="section-label">Subnet Maskesi — Bit görünümü</div>
+
+  <div class="octet-dots" id="oct-dots"></div>
+  <div class="bit-grid" id="bit-grid"></div>
+
+  <div class="section-label" style="margin-top:0.75rem">IP adresi üzerindeki etki</div>
+
+  <div class="ip-input-row">
+    <label>IP adresi:</label>
+    <input type="text" id="ip-input" value="192.168.10.50" placeholder="192.168.10.50">
+  </div>
+
+  <div class="octet-dots" id="ip-oct-dots"></div>
+  <div class="binary-row" id="ip-binary"></div>
+  <div class="bit-grid" id="ip-bit-grid"></div>
+
+  <div class="info-row" id="info-row"></div>
+</div>
+
+<script>
+const slider = document.getElementById('cidr-slider');
+const display = document.getElementById('cidr-display');
+const bitGrid = document.getElementById('bit-grid');
+const octDots = document.getElementById('oct-dots');
+const ipInput = document.getElementById('ip-input');
+const ipBinary = document.getElementById('ip-binary');
+const ipBitGrid = document.getElementById('ip-bit-grid');
+const ipOctDots = document.getElementById('ip-oct-dots');
+const infoRow = document.getElementById('info-row');
+
+function parseIP(str) {
+  const parts = str.trim().split('.').map(Number);
+  if (parts.length !== 4 || parts.some(p => isNaN(p) || p < 0 || p > 255)) return null;
+  return parts;
+}
+
+function ipToNum(parts) {
+  return (parts[0] << 24 | parts[1] << 16 | parts[2] << 8 | parts[3]) >>> 0;
+}
+
+function numToIP(n) {
+  return [(n >>> 24) & 255, (n >>> 16) & 255, (n >>> 8) & 255, n & 255].join('.');
+}
+
+function maskToDecimal(prefix) {
+  const n = prefix === 0 ? 0 : (0xFFFFFFFF << (32 - prefix)) >>> 0;
+  return numToIP(n);
+}
+
+function render() {
+  const prefix = parseInt(slider.value);
+  display.textContent = '/' + prefix;
+
+  // Subnet mask bit grid
+  bitGrid.innerHTML = '';
+  octDots.innerHTML = '';
+  for (let i = 0; i < 32; i++) {
+    const isNet = i < prefix;
+    const cell = document.createElement('div');
+    cell.className = 'bit-cell ' + (isNet ? 'bit-net' : 'bit-host');
+    cell.textContent = isNet ? '1' : '0';
+    bitGrid.appendChild(cell);
+
+    const dot = document.createElement('div');
+    dot.className = 'odot';
+    dot.textContent = (i === 7 || i === 15 || i === 23) ? '·' : '';
+    octDots.appendChild(dot);
+  }
+
+  // IP binary overlay
+  const ipParts = parseIP(ipInput.value);
+  const mask = prefix === 0 ? 0 : (0xFFFFFFFF << (32 - prefix)) >>> 0;
+  
+  ipBinary.innerHTML = '';
+  ipBitGrid.innerHTML = '';
+  ipOctDots.innerHTML = '';
+
+  if (ipParts) {
+    const ipNum = ipToNum(ipParts);
+    const ipBits = [];
+    for (let i = 31; i >= 0; i--) ipBits.unshift((ipNum >> i) & 1);
+
+    for (let i = 0; i < 32; i++) {
+      const isNet = i < prefix;
+      
+      const bc = document.createElement('div');
+      bc.className = 'bin-cell' + ((i === 7 || i === 15 || i === 23) ? ' dot-cell' : '');
+      bc.textContent = (i === 7 || i === 15 || i === 23) ? '.' : ipBits[i];
+      ipBinary.appendChild(bc);
+
+      const cell = document.createElement('div');
+      cell.className = 'bit-cell ' + (isNet ? 'bit-net' : 'bit-host');
+      cell.textContent = ipBits[i];
+      ipBitGrid.appendChild(cell);
+
+      const dot = document.createElement('div');
+      dot.className = 'odot';
+      dot.textContent = (i === 7 || i === 15 || i === 23) ? '·' : '';
+      ipOctDots.appendChild(dot);
+    }
+
+    const netAddr = (ipNum & mask) >>> 0;
+    const broadcast = (netAddr | (~mask >>> 0)) >>> 0;
+    const hostCount = prefix === 32 ? 1 : prefix === 31 ? 2 : Math.pow(2, 32 - prefix) - 2;
+    const usable = prefix >= 31 ? hostCount : hostCount;
+
+    infoRow.innerHTML = `
+      <div class="info-card"><div class="lbl">Subnet maskesi</div><div class="val">${maskToDecimal(prefix)}</div></div>
+      <div class="info-card"><div class="lbl">Ağ adresi</div><div class="val">${numToIP(netAddr)}</div></div>
+      <div class="info-card"><div class="lbl">Broadcast</div><div class="val">${numToIP(broadcast)}</div></div>
+      <div class="info-card"><div class="lbl">Kullanılabilir host</div><div class="val">${usable.toLocaleString('tr-TR')}</div></div>
+      <div class="info-card"><div class="lbl">Host bitleri</div><div class="val">${32 - prefix} bit</div></div>
+    `;
+  } else {
+    infoRow.innerHTML = `<div class="info-card"><div class="lbl" style="color:var(--color-text-danger)">Geçersiz IP adresi</div></div>`;
+  }
+}
+
+slider.addEventListener('input', render);
+ipInput.addEventListener('input', render);
+render();
+</script>
