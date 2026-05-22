@@ -63,7 +63,7 @@ Teknik olarak routing'den bağımsız bir işlemdir; ancak router üzerinde çal
 
 ### ❓ Neden NAT'a İhtiyaç Var?
 
-İç ağlarda kullanılan IP adresleri **özel (private)** adréslerdir ve internette geçersizdir.
+İç ağlarda kullanılan IP adresleri **özel (private)** adreslerdir ve internette geçersizdir.
 
 | IP Aralığı | Türü |
 |:---|:---|
