@@ -164,13 +164,14 @@ function render() {
 
     const netAddr = (ipNum & mask) >>> 0;
     const broadcast = (netAddr | (~mask >>> 0)) >>> 0;
-    const hostCount = prefix === 32 ? 1 : prefix === 31 ? 2 : Math.pow(2, 32 - prefix) - 2;
-    const usable = prefix >= 31 ? hostCount : hostCount;
+    const totalIPs = Math.pow(2, 32 - prefix);
+    const usable = prefix === 32 ? 1 : prefix === 31 ? 2 : totalIPs - 2;
 
     infoRow.innerHTML = `
       <div class="info-card"><div class="lbl">Subnet maskesi</div><div class="val">${maskToDecimal(prefix)}</div></div>
       <div class="info-card"><div class="lbl">Ağ adresi</div><div class="val">${numToIP(netAddr)}</div></div>
       <div class="info-card"><div class="lbl">Broadcast</div><div class="val">${numToIP(broadcast)}</div></div>
+      <div class="info-card"><div class="lbl">Toplam IP</div><div class="val">${totalIPs.toLocaleString('tr-TR')}</div></div>
       <div class="info-card"><div class="lbl">Kullanılabilir host</div><div class="val">${usable.toLocaleString('tr-TR')}</div></div>
       <div class="info-card"><div class="lbl">Host bitleri</div><div class="val">${32 - prefix} bit</div></div>
     `;
