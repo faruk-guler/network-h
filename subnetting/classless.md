@@ -41,6 +41,8 @@ Bu sayı, ağın kaç bitlik kısmının ağ adresi olduğunu ve bit’lerin sol
 > 💡 **Prefix**, IP adresinin ağ kısmını belirten bit sayısıdır. Örnek: `/18`
 > 
 > 💡 Cihazlara IP atanabilen en küçük subnet /30'dur. > Toplam IP = 4 Broadcast ve Network çıkarılınca kalan = 2
+>
+> 💡 CIDR’de / sonrası sayı ağ(network) bitlerini gösterir, 32’den çıkarılan kısım host bit sayısını verir ve kullanılabilir host sayısı 2ⁿ − 2 formülüyle hesaplanır.
 
 ### 📌 Şirkette 1500 IP adresine ihtiyacım var?
 
