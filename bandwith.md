@@ -1,4 +1,4 @@
-# 🛣️ Bant Genişliği (Bandwidth) ve Ağ Hızı
+# 🔋 Bant Genişliği (Bandwidth) ve Ağ Hızı
 
 Ağ dünyasında hızlardan bahsederken sıkça duyduğumuz kavramlar vardır: **Kbps, Mbps, Gbps**... İnternet sağlayıcılarının reklamlarında *"100 Megabit Fiber!"* diye bağırdığını mutlaka duymuşsunuzdur. Peki bu terimler gerçekten ne anlama geliyor? 
 
