@@ -19,7 +19,7 @@ Senin cihazın              →    google.com sunucusu
 
 ---
 
-## IP adresinin iki versiyonu vardır
+## IP adresinin iki (2) versiyonu vardır
 
 | | IPv4 | IPv6 |
 |---|---|---|
