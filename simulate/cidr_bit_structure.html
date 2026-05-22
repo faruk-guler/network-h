@@ -1,86 +1,49 @@
 <style>
   .cr { padding: 1rem 0; font-family: var(--font-sans); }
-  /* Nav */
-  .nav { display: flex; gap: 4px; margin-bottom: 1.5rem; flex-wrap: wrap; border-bottom: 0.5px solid var(--color-border-tertiary); padding-bottom: 0; }
-  .nav-btn {
-    font-size: 13px; font-weight: 500; padding: 7px 14px; border: none;
-    background: transparent; color: var(--color-text-secondary); cursor: pointer;
-    border-bottom: 2px solid transparent; margin-bottom: -1px;
-    border-radius: 0; transition: color 0.15s, border-color 0.15s;
-  }
-  .nav-btn:hover { color: var(--color-text-primary); }
-  .nav-btn.active { color: var(--color-text-primary); border-bottom-color: #7F77DD; }
-  /* Panel */
-  .panel { display: none; }
-  .panel.active { display: block; }
-  /* CIDR slider */
-  .controls { display: flex; align-items: center; gap: 16px; margin-bottom: 1.25rem; flex-wrap: wrap; }
-  .controls label { font-size: 13px; color: var(--color-text-secondary); }
-  .cidr-val { font-size: 22px; font-weight: 500; color: var(--color-text-primary); min-width: 48px; }
-  /* Bits */
-  .bit-grid { display: grid; grid-template-columns: repeat(32, 1fr); gap: 2px; margin-bottom: 6px; }
-  .bit-cell {
-    height: 30px; display: flex; align-items: center; justify-content: center;
-    font-size: 11px; font-weight: 500; border-radius: 3px;
-    transition: background 0.18s; cursor: default; border: 0.5px solid transparent;
-  }
-  .bit-net  { background: #CECBF6; color: #3C3489; border-color: #AFA9EC; }
-  .bit-host { background: #E1F5EE; color: #085041; border-color: #5DCAA5; }
-  @media (prefers-color-scheme: dark) {
-    .bit-net  { background: #3C3489; color: #CECBF6; border-color: #534AB7; }
-    .bit-host { background: #085041; color: #9FE1CB; border-color: #1D9E75; }
-  }
-  .odots { display: grid; grid-template-columns: repeat(32, 1fr); gap: 2px; margin-bottom: 2px; pointer-events: none; }
-  .odot { height: 10px; display: flex; align-items: center; justify-content: center; font-size: 11px; color: var(--color-text-tertiary); font-weight: 700; }
-  .bin-row { display: grid; grid-template-columns: repeat(32, 1fr); gap: 2px; margin-bottom: 3px; }
-  .bin-cell { height: 20px; display: flex; align-items: center; justify-content: center; font-size: 10px; font-family: var(--font-mono); color: var(--color-text-secondary); }
-  /* Legend */
-  .legend { display: flex; gap: 16px; font-size: 12px; color: var(--color-text-secondary); margin-bottom: 0.75rem; flex-wrap: wrap; }
-  .ldot { width: 10px; height: 10px; border-radius: 2px; display: inline-block; margin-right: 4px; vertical-align: middle; }
-  /* Section label */
-  .slbl { font-size: 11px; color: var(--color-text-tertiary); text-transform: uppercase; letter-spacing: 0.05em; margin: 0.75rem 0 0.25rem; }
-  /* Info cards */
-  .info-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin: 1rem 0; }
-  .ic { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 0.75rem 1rem; }
-  .ic .lbl { font-size: 12px; color: var(--color-text-secondary); margin-bottom: 4px; }
-  .ic .val { font-size: 15px; font-weight: 500; color: var(--color-text-primary); font-family: var(--font-mono); }
-  /* IP input */
-  .ip-row { display: flex; align-items: center; gap: 8px; margin-bottom: 1rem; flex-wrap: wrap; }
-  .ip-row label { font-size: 13px; color: var(--color-text-secondary); }
-  .ip-row input { font-family: var(--font-mono); font-size: 14px; padding: 5px 10px; border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-md); background: var(--color-background-primary); color: var(--color-text-primary); width: 160px; }
-  /* Badges */
-  .badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: 4px; }
-  .b-priv { background:#E1F5EE; color:#085041; } .b-pub { background:#EEEDFE; color:#3C3489; }
-  .b-A { background:#FAECE7; color:#993C1D; } .b-B { background:#FAEEDA; color:#633806; }
-  .b-C { background:#E6F1FB; color:#0C447C; } .b-D { background:#FBEAF0; color:#72243E; }
-  .b-E { background:#F1EFE8; color:#444441; }
-  @media (prefers-color-scheme: dark) {
-    .b-priv{background:#085041;color:#9FE1CB;} .b-pub{background:#3C3489;color:#CECBF6;}
-    .b-A{background:#4A1B0C;color:#F0997B;} .b-B{background:#412402;color:#FAC775;}
-    .b-C{background:#042C53;color:#85B7EB;} .b-D{background:#4B1528;color:#ED93B1;}
-    .b-E{background:#2C2C2A;color:#B4B2A9;}
-  }
-  /* AND */
-  .and-row { display: grid; grid-template-columns: 90px 1fr; gap: 8px; align-items: center; margin-bottom: 4px; }
-  .and-lbl { font-size: 11px; font-family: var(--font-mono); color: var(--color-text-secondary); text-align: right; padding-right: 6px; }
-  .and-bits { display: grid; grid-template-columns: repeat(32, 1fr); gap: 2px; }
-  .ab { height: 26px; display: flex; align-items: center; justify-content: center; font-size: 10px; font-family: var(--font-mono); font-weight: 500; border-radius: 2px; background: var(--color-background-secondary); color: var(--color-text-secondary); border: 0.5px solid var(--color-border-tertiary); }
-  .ab.n1{background:#CECBF6;color:#3C3489;border-color:#AFA9EC;}
-  .ab.n0{background:#E1F5EE;color:#085041;border-color:#5DCAA5;}
-  .ab.r1{background:#7F77DD;color:#fff;}
-  .ab.r0{background:var(--color-background-secondary);color:var(--color-text-tertiary);}
-  @media(prefers-color-scheme:dark){
-    .ab.n1{background:#3C3489;color:#CECBF6;border-color:#534AB7;}
-    .ab.n0{background:#085041;color:#9FE1CB;border-color:#1D9E75;}
-    .ab.r1{background:#534AB7;color:#EEEDFE;}
-  }
+  .nav { display:flex; gap:4px; margin-bottom:1.5rem; flex-wrap:wrap; border-bottom:0.5px solid var(--color-border-tertiary); }
+  .nav-btn { font-size:13px; font-weight:500; padding:7px 14px; border:none; background:transparent; color:var(--color-text-secondary); cursor:pointer; border-bottom:2px solid transparent; margin-bottom:-1px; border-radius:0; transition:color 0.15s, border-color 0.15s; }
+  .nav-btn:hover { color:var(--color-text-primary); }
+  .nav-btn.active { color:var(--color-text-primary); border-bottom-color:#7F77DD; }
+  .panel { display:none; } .panel.active { display:block; }
+  .controls { display:flex; align-items:center; gap:16px; margin-bottom:1.25rem; flex-wrap:wrap; }
+  .controls label { font-size:13px; color:var(--color-text-secondary); }
+  .cidr-val { font-size:22px; font-weight:500; color:var(--color-text-primary); min-width:48px; }
+  .bit-grid { display:grid; grid-template-columns:repeat(32,1fr); gap:2px; margin-bottom:6px; }
+  .bit-cell { height:30px; display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:500; border-radius:3px; transition:background 0.18s; cursor:default; border:0.5px solid transparent; }
+  .bit-net  { background:#CECBF6; color:#3C3489; border-color:#AFA9EC; }
+  .bit-host { background:#E1F5EE; color:#085041; border-color:#5DCAA5; }
+  @media(prefers-color-scheme:dark){ .bit-net{background:#3C3489;color:#CECBF6;border-color:#534AB7;} .bit-host{background:#085041;color:#9FE1CB;border-color:#1D9E75;} }
+  .odots { display:grid; grid-template-columns:repeat(32,1fr); gap:2px; margin-bottom:2px; pointer-events:none; }
+  .odot { height:10px; display:flex; align-items:center; justify-content:center; font-size:11px; color:var(--color-text-tertiary); font-weight:700; }
+  .bin-row { display:grid; grid-template-columns:repeat(32,1fr); gap:2px; margin-bottom:3px; }
+  .bin-cell { height:20px; display:flex; align-items:center; justify-content:center; font-size:10px; font-family:var(--font-mono); color:var(--color-text-secondary); }
+  .legend { display:flex; gap:16px; font-size:12px; color:var(--color-text-secondary); margin-bottom:0.75rem; flex-wrap:wrap; }
+  .ldot { width:10px; height:10px; border-radius:2px; display:inline-block; margin-right:4px; vertical-align:middle; }
+  .slbl { font-size:11px; color:var(--color-text-tertiary); text-transform:uppercase; letter-spacing:0.05em; margin:0.75rem 0 0.25rem; }
+  .info-row { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:10px; margin:1rem 0; }
+  .ic { background:var(--color-background-secondary); border-radius:var(--border-radius-md); padding:0.75rem 1rem; }
+  .ic .lbl { font-size:12px; color:var(--color-text-secondary); margin-bottom:4px; }
+  .ic .val { font-size:15px; font-weight:500; color:var(--color-text-primary); font-family:var(--font-mono); }
+  .ip-row { display:flex; align-items:center; gap:8px; margin-bottom:1rem; flex-wrap:wrap; }
+  .ip-row label { font-size:13px; color:var(--color-text-secondary); }
+  .ip-row input { font-family:var(--font-mono); font-size:14px; padding:5px 10px; border:0.5px solid var(--color-border-secondary); border-radius:var(--border-radius-md); background:var(--color-background-primary); color:var(--color-text-primary); width:160px; }
+  .badge { display:inline-block; font-size:11px; font-weight:500; padding:2px 8px; border-radius:4px; }
+  .b-priv{background:#E1F5EE;color:#085041;} .b-pub{background:#EEEDFE;color:#3C3489;}
+  .b-A{background:#FAECE7;color:#993C1D;} .b-B{background:#FAEEDA;color:#633806;}
+  .b-C{background:#E6F1FB;color:#0C447C;} .b-D{background:#FBEAF0;color:#72243E;} .b-E{background:#F1EFE8;color:#444441;}
+  @media(prefers-color-scheme:dark){ .b-priv{background:#085041;color:#9FE1CB;} .b-pub{background:#3C3489;color:#CECBF6;} .b-A{background:#4A1B0C;color:#F0997B;} .b-B{background:#412402;color:#FAC775;} .b-C{background:#042C53;color:#85B7EB;} .b-D{background:#4B1528;color:#ED93B1;} .b-E{background:#2C2C2A;color:#B4B2A9;} }
+  .and-row { display:grid; grid-template-columns:90px 1fr; gap:8px; align-items:center; margin-bottom:4px; }
+  .and-lbl { font-size:11px; font-family:var(--font-mono); color:var(--color-text-secondary); text-align:right; padding-right:6px; }
+  .and-bits { display:grid; grid-template-columns:repeat(32,1fr); gap:2px; }
+  .ab { height:26px; display:flex; align-items:center; justify-content:center; font-size:10px; font-family:var(--font-mono); font-weight:500; border-radius:2px; background:var(--color-background-secondary); color:var(--color-text-secondary); border:0.5px solid var(--color-border-tertiary); }
+  .ab.n1{background:#CECBF6;color:#3C3489;border-color:#AFA9EC;} .ab.n0{background:#E1F5EE;color:#085041;border-color:#5DCAA5;}
+  .ab.r1{background:#7F77DD;color:#fff;} .ab.r0{background:var(--color-background-secondary);color:var(--color-text-tertiary);}
+  @media(prefers-color-scheme:dark){ .ab.n1{background:#3C3489;color:#CECBF6;border-color:#534AB7;} .ab.n0{background:#085041;color:#9FE1CB;border-color:#1D9E75;} .ab.r1{background:#534AB7;color:#EEEDFE;} }
   .and-div { grid-column:2; height:1px; background:var(--color-border-secondary); margin:2px 0; }
-  /* Map */
   .map-bar { width:100%; height:52px; border-radius:6px; overflow:hidden; display:flex; border:0.5px solid var(--color-border-secondary); }
   .map-net  { background:#7F77DD; display:flex; align-items:center; justify-content:center; font-size:11px; color:#fff; font-weight:500; transition:width 0.3s; white-space:nowrap; overflow:hidden; }
   .map-host { background:#1D9E75; flex:1; display:flex; align-items:center; justify-content:center; font-size:11px; color:#fff; font-weight:500; white-space:nowrap; overflow:hidden; }
   .map-leg { display:flex; gap:16px; margin-top:6px; font-size:12px; color:var(--color-text-secondary); }
-  /* Divider */
   .div-box { background:var(--color-background-secondary); border-radius:var(--border-radius-md); padding:1rem; border:0.5px solid var(--color-border-tertiary); }
   .div-row { display:flex; align-items:center; gap:10px; flex-wrap:wrap; font-size:13px; color:var(--color-text-secondary); margin-bottom:1rem; }
   .div-row input[type=range] { flex:1; min-width:120px; }
@@ -90,25 +53,58 @@
   .dc .lbl { font-size:11px; color:var(--color-text-secondary); margin-bottom:2px; }
   .dc .val { font-size:14px; font-weight:500; font-family:var(--font-mono); color:var(--color-text-primary); }
   .warn { font-size:12px; color:var(--color-text-danger); margin-top:8px; }
+  /* VLSM */
+  .vlsm-base { display:flex; align-items:center; gap:8px; margin-bottom:1rem; flex-wrap:wrap; }
+  .vlsm-base label { font-size:13px; color:var(--color-text-secondary); }
+  .vlsm-base input { font-family:var(--font-mono); font-size:14px; padding:5px 10px; border:0.5px solid var(--color-border-secondary); border-radius:var(--border-radius-md); background:var(--color-background-primary); color:var(--color-text-primary); width:160px; }
+  .dept-list { display:flex; flex-direction:column; gap:8px; margin-bottom:1rem; }
+  .dept-row { display:flex; align-items:center; gap:8px; }
+  .dept-row input[type=text] { font-size:13px; padding:5px 10px; border:0.5px solid var(--color-border-secondary); border-radius:var(--border-radius-md); background:var(--color-background-primary); color:var(--color-text-primary); width:120px; }
+  .dept-row input[type=number] { font-family:var(--font-mono); font-size:13px; padding:5px 10px; border:0.5px solid var(--color-border-secondary); border-radius:var(--border-radius-md); background:var(--color-background-primary); color:var(--color-text-primary); width:90px; }
+  .dept-row label { font-size:12px; color:var(--color-text-secondary); }
+  .btn-rm { background:transparent; border:0.5px solid var(--color-border-secondary); border-radius:var(--border-radius-md); color:var(--color-text-secondary); cursor:pointer; padding:4px 8px; font-size:12px; }
+  .btn-rm:hover { color:var(--color-text-danger); border-color:var(--color-border-danger); }
+  .btn-add { background:transparent; border:0.5px solid var(--color-border-secondary); border-radius:var(--border-radius-md); color:var(--color-text-secondary); cursor:pointer; padding:6px 14px; font-size:13px; }
+  .btn-add:hover { background:var(--color-background-secondary); }
+  .vlsm-table { width:100%; border-collapse:collapse; font-size:13px; margin-top:1rem; }
+  .vlsm-table th { font-size:11px; font-weight:500; color:var(--color-text-secondary); text-align:left; padding:6px 8px; border-bottom:0.5px solid var(--color-border-secondary); }
+  .vlsm-table td { padding:8px; border-bottom:0.5px solid var(--color-border-tertiary); font-family:var(--font-mono); font-size:12px; color:var(--color-text-primary); }
+  .vlsm-table tr:last-child td { border-bottom:none; }
+  .vlsm-table td.name { font-family:var(--font-sans); font-weight:500; }
+  .vlsm-color { display:inline-block; width:8px; height:8px; border-radius:2px; margin-right:6px; vertical-align:middle; }
+  .vlsm-bar-wrap { display:flex; height:32px; border-radius:6px; overflow:hidden; border:0.5px solid var(--color-border-secondary); margin-bottom:1rem; }
+  .vlsm-seg { display:flex; align-items:center; justify-content:center; font-size:10px; color:#fff; font-weight:500; overflow:hidden; white-space:nowrap; transition:width 0.3s; }
+  /* Supernet */
+  .sn-list { display:flex; flex-direction:column; gap:8px; margin-bottom:1rem; }
+  .sn-row { display:flex; align-items:center; gap:8px; }
+  .sn-row input { font-family:var(--font-mono); font-size:13px; padding:5px 10px; border:0.5px solid var(--color-border-secondary); border-radius:var(--border-radius-md); background:var(--color-background-primary); color:var(--color-text-primary); width:200px; }
+  .sn-result { background:var(--color-background-secondary); border-radius:var(--border-radius-md); padding:1rem; margin-top:1rem; border:0.5px solid var(--color-border-tertiary); }
+  .sn-bit-compare { display:grid; gap:3px; margin:0.75rem 0; }
+  .sn-brow { display:grid; grid-template-columns:110px 1fr; gap:6px; align-items:center; }
+  .sn-blbl { font-size:11px; font-family:var(--font-mono); color:var(--color-text-secondary); text-align:right; padding-right:6px; }
+  .sn-bbits { display:grid; grid-template-columns:repeat(32,1fr); gap:2px; }
+  .sb { height:22px; display:flex; align-items:center; justify-content:center; font-size:9px; font-family:var(--font-mono); border-radius:2px; border:0.5px solid var(--color-border-tertiary); background:var(--color-background-secondary); color:var(--color-text-secondary); }
+  .sb.match { background:#CECBF6; color:#3C3489; border-color:#AFA9EC; }
+  .sb.diff  { background:#FAECE7; color:#993C1D; border-color:#F0997B; }
+  @media(prefers-color-scheme:dark){ .sb.match{background:#3C3489;color:#CECBF6;border-color:#534AB7;} .sb.diff{background:#4A1B0C;color:#F0997B;border-color:#D85A30;} }
 </style>
 
 <div class="cr">
   <h2 class="sr-only">CIDR bit yapısı etkileşimli görselleştirici</h2>
-
-  <!-- Global CIDR slider — her zaman görünür -->
   <div class="controls">
     <label>CIDR Değeri</label>
     <input type="range" min="1" max="32" value="24" id="cidr-slider" style="flex:1;min-width:200px">
     <span class="cidr-val" id="cidr-display">/24</span>
   </div>
 
-  <!-- Navigasyon -->
   <nav class="nav">
     <button class="nav-btn active" data-panel="bit">Bit görünümü</button>
     <button class="nav-btn" data-panel="ip">IP analizi</button>
     <button class="nav-btn" data-panel="and">Binary AND</button>
     <button class="nav-btn" data-panel="map">Subnet haritası</button>
     <button class="nav-btn" data-panel="div">Subnet bölücü</button>
+    <button class="nav-btn" data-panel="vlsm">VLSM planlayıcı</button>
+    <button class="nav-btn" data-panel="super">Supernet</button>
   </nav>
 
   <!-- Panel 1: Bit görünümü -->
@@ -168,8 +164,7 @@
     <p style="font-size:13px;color:var(--color-text-secondary);margin:0 0 1rem">Mevcut bloğu daha küçük subnetlere böldüğünde kaç subnet ve host elde edersin?</p>
     <div class="div-box">
       <div class="div-row">
-        <span>Bu /</span>
-        <span class="mono" id="div-cur">24</span>
+        <span>Bu /</span><span class="mono" id="div-cur">24</span>
         <span>bloğunu /</span>
         <input type="range" id="div-slider" min="1" max="32" value="26">
         <span class="mono" id="div-lbl" style="min-width:28px">26</span>
@@ -178,6 +173,30 @@
       <div class="div-cards" id="div-cards"></div>
       <div class="warn" id="div-warn"></div>
     </div>
+  </div>
+
+  <!-- Panel 6: VLSM planlayıcı -->
+  <div class="panel" id="panel-vlsm">
+    <p style="font-size:13px;color:var(--color-text-secondary);margin:0 0 1rem">
+      Her departman için gereken host sayısını gir. Blok en büyükten en küçüğe sıralanarak bölünür (VLSM).
+    </p>
+    <div class="vlsm-base">
+      <label>Temel ağ:</label>
+      <input type="text" id="vlsm-base" value="10.0.0.0/8" placeholder="10.0.0.0/8">
+    </div>
+    <div class="dept-list" id="dept-list"></div>
+    <button class="btn-add" id="btn-add-dept">+ Departman ekle</button>
+    <div id="vlsm-output"></div>
+  </div>
+
+  <!-- Panel 7: Supernet -->
+  <div class="panel" id="panel-super">
+    <p style="font-size:13px;color:var(--color-text-secondary);margin:0 0 1rem">
+      Birden fazla subnet'i tek bir özet route ile temsil etmek için ortak prefix'i hesaplar.
+    </p>
+    <div class="sn-list" id="sn-list"></div>
+    <button class="btn-add" id="btn-add-sn">+ Subnet ekle</button>
+    <div id="sn-output"></div>
   </div>
 </div>
 
@@ -188,12 +207,22 @@ const ipInput  = document.getElementById('ip-input');
 const ipInputA = document.getElementById('ip-input-and');
 const divSlider= document.getElementById('div-slider');
 
+/* ── helpers ── */
 function parseIP(s){const p=s.trim().split('.').map(Number);return p.length===4&&!p.some(x=>isNaN(x)||x<0||x>255)?p:null;}
 function ip2n(p){return(p[0]<<24|p[1]<<16|p[2]<<8|p[3])>>>0;}
 function n2ip(n){return[(n>>>24)&255,(n>>>16)&255,(n>>>8)&255,n&255].join('.');}
 function mask2dec(pfx){return n2ip(pfx===0?0:(0xFFFFFFFF<<(32-pfx))>>>0);}
 function getClass(o){return o<128?'A':o<192?'B':o<224?'C':o<240?'D':'E';}
 function isPrivate(p){return p[0]===10||(p[0]===172&&p[1]>=16&&p[1]<=31)||(p[0]===192&&p[1]===168)||p[0]===127;}
+function parseCIDR(s){
+  const m=s.trim().match(/^(\d+\.\d+\.\d+\.\d+)\/(\d+)$/);
+  if(!m) return null;
+  const p=parseIP(m[1]); const pfx=parseInt(m[2]);
+  if(!p||pfx<0||pfx>32) return null;
+  const mask=pfx===0?0:(0xFFFFFFFF<<(32-pfx))>>>0;
+  const net=(ip2n(p)&mask)>>>0;
+  return{net,pfx,mask};
+}
 
 function makeBits(row,bits,cls){
   row.innerHTML='';
@@ -204,30 +233,23 @@ function makeOdots(el){
   for(let i=0;i<32;i++){const d=document.createElement('div');d.className='odot';d.textContent=(i===7||i===15||i===23)?'·':'';el.appendChild(d);}
 }
 
+/* ── main render ── */
 function render(){
   const pfx=parseInt(slider.value);
   display.textContent='/'+pfx;
   document.getElementById('div-cur').textContent=pfx;
-
   const mask=pfx===0?0:(0xFFFFFFFF<<(32-pfx))>>>0;
 
-  // Panel 1: bit grid
-  const bg=document.getElementById('bit-grid');
-  const od=document.getElementById('oct-dots');
+  const bg=document.getElementById('bit-grid'),od=document.getElementById('oct-dots');
   bg.innerHTML=''; makeOdots(od);
   for(let i=0;i<32;i++){
     const c=document.createElement('div');
     c.className='bit-cell '+(i<pfx?'bit-net':'bit-host');
-    c.textContent=i<pfx?'1':'0';
-    bg.appendChild(c);
+    c.textContent=i<pfx?'1':'0'; bg.appendChild(c);
   }
 
-  // Panel 2 & 3: IP-dependent
-  const ipSrc = document.activeElement===ipInputA ? ipInputA.value : ipInput.value;
-  // keep both inputs in sync
   if(document.activeElement!==ipInputA) ipInputA.value=ipInput.value;
-  if(document.activeElement!==ipInput) ipInput.value=ipInputA.value;
-
+  if(document.activeElement!==ipInput)  ipInput.value=ipInputA.value;
   const ipParts=parseIP(ipInput.value);
   renderIPPanel(ipParts,pfx,mask);
   renderAND(ipParts,pfx,mask);
@@ -236,39 +258,19 @@ function render(){
 }
 
 function renderIPPanel(ipParts,pfx,mask){
-  const ipBG=document.getElementById('ip-bit-grid');
-  const ipBin=document.getElementById('ip-binary');
-  const ipOD=document.getElementById('ip-oct-dots');
-  const infoRow=document.getElementById('info-row');
+  const ipBG=document.getElementById('ip-bit-grid'),ipBin=document.getElementById('ip-binary'),ipOD=document.getElementById('ip-oct-dots'),infoRow=document.getElementById('info-row');
   ipBG.innerHTML=''; ipBin.innerHTML=''; makeOdots(ipOD);
-
   if(!ipParts){infoRow.innerHTML=`<div class="ic"><div class="lbl" style="color:var(--color-text-danger)">Geçersiz IP</div></div>`;return;}
-
-  const ipNum=ip2n(ipParts);
-  const bits=[];
+  const ipNum=ip2n(ipParts),bits=[];
   for(let i=31;i>=0;i--) bits.unshift((ipNum>>i)&1);
-
   for(let i=0;i<32;i++){
-    const bc=document.createElement('div');
-    bc.className='bin-cell';
-    bc.textContent=bits[i];
-    ipBin.appendChild(bc);
-    const c=document.createElement('div');
-    c.className='bit-cell '+(i<pfx?'bit-net':'bit-host');
-    c.textContent=bits[i];
-    ipBG.appendChild(c);
+    const bc=document.createElement('div');bc.className='bin-cell';bc.textContent=bits[i];ipBin.appendChild(bc);
+    const c=document.createElement('div');c.className='bit-cell '+(i<pfx?'bit-net':'bit-host');c.textContent=bits[i];ipBG.appendChild(c);
   }
-
-  const net=(ipNum&mask)>>>0;
-  const bc2=(net|(~mask>>>0))>>>0;
-  const total=Math.pow(2,32-pfx);
+  const net=(ipNum&mask)>>>0,bc2=(net|(~mask>>>0))>>>0,total=Math.pow(2,32-pfx);
   const usable=pfx===32?1:pfx===31?2:total-2;
-  const first=pfx===32?n2ip(net):n2ip(net+1);
-  const last=pfx===32?n2ip(net):pfx===31?n2ip(bc2):n2ip(bc2-1);
-  const wc=n2ip(~mask>>>0);
-  const cls=getClass(ipParts[0]);
-  const priv=isPrivate(ipParts);
-
+  const first=pfx===32?n2ip(net):n2ip(net+1),last=pfx===32?n2ip(net):pfx===31?n2ip(bc2):n2ip(bc2-1);
+  const wc=n2ip(~mask>>>0),cls=getClass(ipParts[0]),priv=isPrivate(ipParts);
   infoRow.innerHTML=`
     <div class="ic"><div class="lbl">Subnet maskesi</div><div class="val">${mask2dec(pfx)}</div></div>
     <div class="ic"><div class="lbl">Wildcard maskesi</div><div class="val">${wc}</div></div>
@@ -279,77 +281,203 @@ function renderIPPanel(ipParts,pfx,mask){
     <div class="ic"><div class="lbl">Toplam IP</div><div class="val">${total.toLocaleString('tr-TR')}</div></div>
     <div class="ic"><div class="lbl">Kullanılabilir host</div><div class="val">${usable.toLocaleString('tr-TR')}</div></div>
     <div class="ic"><div class="lbl">IP sınıfı</div><div class="val"><span class="badge b-${cls}">Class ${cls}</span></div></div>
-    <div class="ic"><div class="lbl">Tür</div><div class="val"><span class="badge ${priv?'b-priv':'b-pub'}">${priv?'Private':'Public'}</span></div></div>
-  `;
+    <div class="ic"><div class="lbl">Tür</div><div class="val"><span class="badge ${priv?'b-priv':'b-pub'}">${priv?'Private':'Public'}</span></div></div>`;
 }
 
 function renderAND(ipParts,pfx,mask){
-  const aiEl=document.getElementById('and-ip');
-  const amEl=document.getElementById('and-mask');
-  const arEl=document.getElementById('and-result');
-  const aiInfo=document.getElementById('and-info');
+  const aiEl=document.getElementById('and-ip'),amEl=document.getElementById('and-mask'),arEl=document.getElementById('and-result'),aiInfo=document.getElementById('and-info');
   if(!ipParts){aiEl.innerHTML='';amEl.innerHTML='';arEl.innerHTML='';aiInfo.innerHTML='';return;}
-
-  const ipNum=ip2n(ipParts);
-  const ipBits=[],maskBits=[];
+  const ipNum=ip2n(ipParts),ipBits=[],maskBits=[];
   for(let i=31;i>=0;i--){ipBits.unshift((ipNum>>i)&1);maskBits.unshift((mask>>i)&1);}
   const res=ipBits.map((b,i)=>b&maskBits[i]);
-
   makeBits(aiEl,ipBits,b=>b?'n1':'n0');
   makeBits(amEl,maskBits,b=>b?'n1':'n0');
   makeBits(arEl,res,b=>b?'r1':'r0');
-
   const net=(ipNum&mask)>>>0;
-  aiInfo.innerHTML=`
-    <div class="ic"><div class="lbl">IP adresi</div><div class="val">${n2ip(ipNum)}</div></div>
-    <div class="ic"><div class="lbl">Subnet maskesi</div><div class="val">${mask2dec(pfx)}</div></div>
-    <div class="ic"><div class="lbl">= Ağ adresi</div><div class="val">${n2ip(net)}</div></div>
-  `;
+  aiInfo.innerHTML=`<div class="ic"><div class="lbl">IP adresi</div><div class="val">${n2ip(ipNum)}</div></div><div class="ic"><div class="lbl">Subnet maskesi</div><div class="val">${mask2dec(pfx)}</div></div><div class="ic"><div class="lbl">= Ağ adresi</div><div class="val">${n2ip(net)}</div></div>`;
 }
 
 function renderMap(pfx,ipParts,mask){
   const pct=(pfx/32)*100;
-  const mn=document.getElementById('map-net');
-  const mh=document.getElementById('map-host');
-  mn.style.width=pct+'%';
-  mn.textContent=pct>=12?pfx+' bit':'';
+  const mn=document.getElementById('map-net'),mh=document.getElementById('map-host');
+  mn.style.width=pct+'%'; mn.textContent=pct>=12?pfx+' bit':'';
   mh.textContent=(100-pct)>=8?(32-pfx)+' bit':'';
   document.getElementById('map-nb').textContent=pfx;
   document.getElementById('map-hb').textContent=32-pfx;
-
   if(ipParts){
-    const ipNum=ip2n(ipParts);
-    const net=(ipNum&mask)>>>0;
-    const bc=(net|(~mask>>>0))>>>0;
-    const total=Math.pow(2,32-pfx);
-    const usable=pfx===32?1:pfx===31?2:total-2;
-    document.getElementById('map-info').innerHTML=`
-      <div class="ic"><div class="lbl">Ağ adresi</div><div class="val">${n2ip(net)}</div></div>
-      <div class="ic"><div class="lbl">Broadcast</div><div class="val">${n2ip(bc)}</div></div>
-      <div class="ic"><div class="lbl">Toplam IP</div><div class="val">${total.toLocaleString('tr-TR')}</div></div>
-      <div class="ic"><div class="lbl">Kullanılabilir host</div><div class="val">${usable.toLocaleString('tr-TR')}</div></div>
-    `;
+    const ipNum=ip2n(ipParts),net=(ipNum&mask)>>>0,bc=(net|(~mask>>>0))>>>0,total=Math.pow(2,32-pfx),usable=pfx===32?1:pfx===31?2:total-2;
+    document.getElementById('map-info').innerHTML=`<div class="ic"><div class="lbl">Ağ adresi</div><div class="val">${n2ip(net)}</div></div><div class="ic"><div class="lbl">Broadcast</div><div class="val">${n2ip(bc)}</div></div><div class="ic"><div class="lbl">Toplam IP</div><div class="val">${total.toLocaleString('tr-TR')}</div></div><div class="ic"><div class="lbl">Kullanılabilir host</div><div class="val">${usable.toLocaleString('tr-TR')}</div></div>`;
   }
 }
 
 function renderDivider(pfx){
   const target=parseInt(divSlider.value);
   document.getElementById('div-lbl').textContent=target;
-  const warn=document.getElementById('div-warn');
-  const cards=document.getElementById('div-cards');
+  const warn=document.getElementById('div-warn'),cards=document.getElementById('div-cards');
   if(target<=pfx){warn.textContent='Hedef prefix mevcut prefixten büyük olmalı.';cards.innerHTML='';return;}
   warn.textContent='';
-  const sc=Math.pow(2,target-pfx);
-  const hps=target===32?1:target===31?2:Math.pow(2,32-target)-2;
-  cards.innerHTML=`
-    <div class="dc"><div class="lbl">Oluşan subnet</div><div class="val">${sc.toLocaleString('tr-TR')}</div></div>
-    <div class="dc"><div class="lbl">Subnet başına host</div><div class="val">${hps.toLocaleString('tr-TR')}</div></div>
-    <div class="dc"><div class="lbl">Toplam kullanılabilir</div><div class="val">${(sc*hps).toLocaleString('tr-TR')}</div></div>
-    <div class="dc"><div class="lbl">Ödünç bit</div><div class="val">${target-pfx} bit</div></div>
-  `;
+  const sc=Math.pow(2,target-pfx),hps=target===32?1:target===31?2:Math.pow(2,32-target)-2;
+  cards.innerHTML=`<div class="dc"><div class="lbl">Oluşan subnet</div><div class="val">${sc.toLocaleString('tr-TR')}</div></div><div class="dc"><div class="lbl">Subnet başına host</div><div class="val">${hps.toLocaleString('tr-TR')}</div></div><div class="dc"><div class="lbl">Toplam kullanılabilir</div><div class="val">${(sc*hps).toLocaleString('tr-TR')}</div></div><div class="dc"><div class="lbl">Ödünç bit</div><div class="val">${target-pfx} bit</div></div>`;
 }
 
-// Nav
+/* ── VLSM ── */
+const VLSM_COLORS=['#7F77DD','#1D9E75','#BA7517','#D85A30','#185FA5','#3B6D11','#993556','#5F5E5A'];
+let depts=[{name:'Yönetim',hosts:50},{name:'Muhasebe',hosts:25},{name:'IT',hosts:10},{name:'Misafir',hosts:5}];
+
+function renderDeptList(){
+  const list=document.getElementById('dept-list');
+  list.innerHTML='';
+  depts.forEach((d,i)=>{
+    const row=document.createElement('div'); row.className='dept-row';
+    row.innerHTML=`
+      <span style="width:14px;height:14px;border-radius:3px;background:${VLSM_COLORS[i%VLSM_COLORS.length]};display:inline-block;flex-shrink:0"></span>
+      <input type="text" placeholder="Departman adı" value="${d.name}" data-i="${i}" data-f="name">
+      <label>Host:</label>
+      <input type="number" min="1" max="65534" value="${d.hosts}" data-i="${i}" data-f="hosts">
+      <button class="btn-rm" data-i="${i}">Sil</button>`;
+    list.appendChild(row);
+  });
+  list.querySelectorAll('input').forEach(inp=>inp.addEventListener('input',e=>{
+    const i=+e.target.dataset.i,f=e.target.dataset.f;
+    depts[i][f]=f==='hosts'?Math.max(1,parseInt(e.target.value)||1):e.target.value;
+    renderVLSM();
+  }));
+  list.querySelectorAll('.btn-rm').forEach(btn=>btn.addEventListener('click',e=>{
+    depts.splice(+e.target.dataset.i,1); renderDeptList(); renderVLSM();
+  }));
+}
+
+function renderVLSM(){
+  const out=document.getElementById('vlsm-output');
+  const base=parseCIDR(document.getElementById('vlsm-base').value);
+  if(!base){out.innerHTML=`<p class="warn">Geçersiz temel ağ. Örnek: 10.0.0.0/8</p>`;return;}
+  if(depts.length===0){out.innerHTML='';return;}
+
+  const sorted=[...depts].map((d,i)=>({...d,origIdx:i})).sort((a,b)=>b.hosts-a.hosts);
+  let cursor=base.net;
+  const results=[];
+
+  for(const d of sorted){
+    const needed=d.hosts+2;
+    let bits=0; while(Math.pow(2,bits)<needed) bits++;
+    const pfx=32-bits;
+    if(pfx<base.pfx){results.push({...d,error:'Temel ağa sığmıyor'});continue;}
+    const size=Math.pow(2,bits);
+    const usable=pfx===32?1:pfx===31?2:size-2;
+    const netAddr=cursor>>>0;
+    const bc=(netAddr+size-1)>>>0;
+    const first=pfx<32?n2ip(netAddr+1):n2ip(netAddr);
+    const last=pfx<32?(pfx===31?n2ip(bc):n2ip(bc-1)):n2ip(netAddr);
+    results.push({...d,pfx,netAddr,bc,first,last,usable,size});
+    cursor=(netAddr+size)>>>0;
+  }
+
+  const totalSize=base.mask===0?Math.pow(2,32):Math.pow(2,32-base.pfx);
+  const usedSize=results.reduce((s,r)=>s+(r.size||0),0);
+
+  // Bar
+  let barHTML='';
+  results.forEach((r,i)=>{
+    if(r.error) return;
+    const pct=(r.size/totalSize)*100;
+    const col=VLSM_COLORS[r.origIdx%VLSM_COLORS.length];
+    barHTML+=`<div class="vlsm-seg" style="width:${pct}%;background:${col}" title="${r.name}">${pct>4?r.name:''}</div>`;
+  });
+  const remPct=((totalSize-usedSize)/totalSize)*100;
+  if(remPct>0) barHTML+=`<div class="vlsm-seg" style="width:${remPct}%;background:var(--color-border-tertiary)"></div>`;
+
+  let tableHTML=`<table class="vlsm-table"><thead><tr><th>Departman</th><th>Ağ adresi/Prefix</th><th>İlk host</th><th>Son host</th><th>Broadcast</th><th>Kullanılabilir</th></tr></thead><tbody>`;
+  results.forEach((r,i)=>{
+    const col=VLSM_COLORS[r.origIdx%VLSM_COLORS.length];
+    if(r.error) tableHTML+=`<tr><td class="name"><span class="vlsm-color" style="background:${col}"></span>${r.name}</td><td colspan="5" style="color:var(--color-text-danger)">${r.error}</td></tr>`;
+    else tableHTML+=`<tr><td class="name"><span class="vlsm-color" style="background:${col}"></span>${r.name}</td><td>${n2ip(r.netAddr)}/${r.pfx}</td><td>${r.first}</td><td>${r.last}</td><td>${n2ip(r.bc)}</td><td>${r.usable.toLocaleString('tr-TR')}</td></tr>`;
+  });
+  tableHTML+=`</tbody></table>`;
+
+  out.innerHTML=`<div class="vlsm-bar-wrap" style="margin-top:1rem">${barHTML}</div>${tableHTML}`;
+}
+
+document.getElementById('btn-add-dept').addEventListener('click',()=>{
+  depts.push({name:'Departman '+(depts.length+1),hosts:20});
+  renderDeptList(); renderVLSM();
+});
+renderDeptList();
+setTimeout(renderVLSM,0);
+document.getElementById('vlsm-base').addEventListener('input',renderVLSM);
+
+/* ── Supernet ── */
+let snets=['192.168.0.0/24','192.168.1.0/24','192.168.2.0/24','192.168.3.0/24'];
+
+function renderSNList(){
+  const list=document.getElementById('sn-list');
+  list.innerHTML='';
+  snets.forEach((s,i)=>{
+    const row=document.createElement('div'); row.className='sn-row';
+    row.innerHTML=`<input type="text" value="${s}" placeholder="192.168.0.0/24" data-i="${i}"><button class="btn-rm" data-i="${i}">Sil</button>`;
+    list.appendChild(row);
+  });
+  list.querySelectorAll('input').forEach(inp=>inp.addEventListener('input',e=>{snets[+e.target.dataset.i]=e.target.value;renderSupernet();}));
+  list.querySelectorAll('.btn-rm').forEach(btn=>btn.addEventListener('click',e=>{snets.splice(+e.target.dataset.i,1);renderSNList();renderSupernet();}));
+}
+
+function renderSupernet(){
+  const out=document.getElementById('sn-output');
+  const parsed=snets.map(s=>parseCIDR(s)).filter(Boolean);
+  if(parsed.length<2){out.innerHTML=`<p class="warn" style="margin-top:1rem">En az 2 geçerli subnet girin.</p>`;return;}
+
+  const nums=parsed.map(p=>p.net);
+  let commonPfx=0;
+  for(let bit=31;bit>=0;bit--){
+    const val=(nums[0]>>bit)&1;
+    if(nums.every(n=>((n>>bit)&1)===val)) commonPfx++; else break;
+  }
+
+  const superMask=commonPfx===0?0:(0xFFFFFFFF<<(32-commonPfx))>>>0;
+  const superNet=(nums[0]&superMask)>>>0;
+  const superBC=(superNet|(~superMask>>>0))>>>0;
+  const superTotal=Math.pow(2,32-commonPfx);
+  const superUsable=commonPfx===32?1:commonPfx===31?2:superTotal-2;
+
+  // Bit karşılaştırma görselleştirmesi
+  let bitsHTML='';
+  parsed.forEach((p,idx)=>{
+    const bits=[];
+    for(let i=31;i>=0;i--) bits.unshift((p.net>>i)&1);
+    bitsHTML+=`<div class="sn-brow"><div class="sn-blbl">${snets[snets.findIndex((_,j)=>parseCIDR(snets[j])&&parseCIDR(snets[j]).net===p.net&&parseCIDR(snets[j]).pfx===p.pfx)]||'—'}</div><div class="sn-bbits">`;
+    bits.forEach((b,i)=>{
+      const cls=i<commonPfx?'match':'diff';
+      bitsHTML+=`<div class="sb ${cls}">${b}</div>`;
+    });
+    bitsHTML+=`</div></div>`;
+  });
+  // Supernet satırı
+  const superBits=[];
+  for(let i=31;i>=0;i--) superBits.unshift((superNet>>i)&1);
+  bitsHTML+=`<div class="sn-brow" style="margin-top:6px"><div class="sn-blbl" style="font-weight:500;color:var(--color-text-primary)">Supernet</div><div class="sn-bbits">`;
+  superBits.forEach((b,i)=>{ bitsHTML+=`<div class="sb ${i<commonPfx?'match':''}">${i<commonPfx?b:'*'}</div>`; });
+  bitsHTML+=`</div></div>`;
+
+  out.innerHTML=`
+    <div class="sn-result">
+      <div class="info-row" style="margin:0 0 1rem">
+        <div class="ic"><div class="lbl">Supernet</div><div class="val">${n2ip(superNet)}/${commonPfx}</div></div>
+        <div class="ic"><div class="lbl">Subnet maskesi</div><div class="val">${mask2dec(commonPfx)}</div></div>
+        <div class="ic"><div class="lbl">Broadcast</div><div class="val">${n2ip(superBC)}</div></div>
+        <div class="ic"><div class="lbl">Toplam IP</div><div class="val">${superTotal.toLocaleString('tr-TR')}</div></div>
+        <div class="ic"><div class="lbl">Ortak prefix</div><div class="val">${commonPfx} bit</div></div>
+      </div>
+      <div class="slbl">Bit karşılaştırması — mor: eşleşen, kırmızı: farklı</div>
+      <div class="sn-bit-compare">${bitsHTML}</div>
+    </div>`;
+}
+
+document.getElementById('btn-add-sn').addEventListener('click',()=>{
+  snets.push(''); renderSNList(); renderSupernet();
+});
+renderSNList();
+setTimeout(renderSupernet,0);
+
+/* ── Nav ── */
 document.querySelectorAll('.nav-btn').forEach(btn=>{
   btn.addEventListener('click',()=>{
     document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
@@ -359,7 +487,6 @@ document.querySelectorAll('.nav-btn').forEach(btn=>{
   });
 });
 
-// Sync IP inputs
 ipInput.addEventListener('input',()=>{ipInputA.value=ipInput.value;render();});
 ipInputA.addEventListener('input',()=>{ipInput.value=ipInputA.value;render();});
 slider.addEventListener('input',render);
