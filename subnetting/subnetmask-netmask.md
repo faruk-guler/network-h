@@ -48,7 +48,7 @@ Decimal:   87     . 120    . 0      . 0
 🔢 Adım 3: Broadcast Adresi (Host Bitleri = 1)
 Broadcast Adresi;
 Network:   01010111.01111000.00000000.00000000
-Hostleri 1 yap:
+Host bitlerini 1 yap:
            01010111.01111011.11111111.11111111
 Decimal:   87     . 123    . 255    . 255
 
