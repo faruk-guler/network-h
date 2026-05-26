@@ -1,3 +1,10 @@
+# Gateway (Ağ Geçidi) Nedir?
+
+Gateway genel bir ağ elemanıdır. Farklı protokoller, yapılar veya ağlar kullanan iki sistemi birbirine bağlayan bir "tercüman" veya "kapı" gibidir.
+
+- Sadece IP yönlendirmesi yapmaz; gerekirse verinin formatını da değiştirir.
+- Örnek: Şirket içi yerel ağınızı (LAN) internete (WAN) bağlayan router bir gateway'dir. Veya iki farklı haberleşme dilini konuşan (örneğin ses trafiği ile veri trafiği) sistemleri birbirine bağlayan cihaz bir "Voice Gateway"dir.
+
 ## 🚪 Default Gateway (Varsayılan Ağ Geçidi)
 
 **Default Gateway**, bir cihazın kendi yerel ağı (subnet) dışına çıkmak istediğinde trafiği gönderdiği ilk router (yönlendirici) adresidir. 
