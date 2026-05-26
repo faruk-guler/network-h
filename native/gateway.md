@@ -1,4 +1,4 @@
-# 🚪 Default Gateway (Varsayılan Ağ Geçidi)
+## 🚪 Default Gateway (Varsayılan Ağ Geçidi)
 
 **Default Gateway**, bir cihazın kendi yerel ağı (subnet) dışına çıkmak istediğinde trafiği gönderdiği ilk router (yönlendirici) adresidir. 
 
