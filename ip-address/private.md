@@ -34,6 +34,6 @@ DHCP sunucusuna ulaşılamadığında işletim sisteminin cihaza **otomatik olar
 - APIPA Aralığı: `169.254.0.0` – `169.254.255.255`
 - ⚠️ Bir cihazın `169.254.x.x` adresi aldığı görülüyorsa DHCP sunucusuna ulaşılamıyor demektir.
 
-## Multicast-IP addres:
+## Multicast-IP addres
 
 224.0.0.0 – 239.255.255.255 aralığında bulunur. Bu sistemde veri, tek bir bilgisayara gönderilmek yerine bu aralıktaki sanal bir grup adresine postalanır. O veriye ihtiyacı olan tüm cihazlar ise aynı adrese akort olup beklemeye geçer. Böylece kaynak cihaz sadece bir kez yayın yapar, ama o adrese kulak kabartan herkes veriyi aynı anda ve ağ trafiğini hiç yormadan alır.
