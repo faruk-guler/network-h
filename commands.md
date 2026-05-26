@@ -1,3 +1,5 @@
+Bir ağın nasıl çalıştığını anlamanın yolu; IP adresleri, DNS, subnetting ve `ping`, `nslookup`, `traceroute` gibi temel araçları öğrenmekte yarar vardır. Bu bölümde ağ dünyasınında kullanılan bazı komutları sade ve anlaşılır şekilde inceleyeceğiz.
+
 ## 1. ping — Bağlantı Testi
 
 **Ping**, bir ağ üzerindeki cihazların erişilebilir olup olmadığını test etmek için kullanılan temel araçtır. 1983 yılında *Mike Muuss* tarafından geliştirilmiştir.
