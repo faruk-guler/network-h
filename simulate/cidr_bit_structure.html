@@ -53,7 +53,25 @@
   .dc .lbl { font-size:11px; color:var(--color-text-secondary); margin-bottom:2px; }
   .dc .val { font-size:14px; font-weight:500; font-family:var(--font-mono); color:var(--color-text-primary); }
   .warn { font-size:12px; color:var(--color-text-danger); margin-top:8px; }
-  /* VLSM */
+  /* Host→Subnet */
+  .hs-match { border:1.5px solid #7F77DD; border-radius:var(--border-radius-md); padding:1rem; margin-bottom:1rem; background:var(--color-background-secondary); }
+  .hs-match-label { font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; color:#7F77DD; margin-bottom:.5rem; }
+  .hs-prefix { font-size:36px; font-weight:600; font-family:var(--font-mono); color:var(--color-text-primary); }
+  .hs-nearby { display:flex; flex-direction:column; gap:8px; }
+  .hs-row { display:grid; grid-template-columns:60px 1fr 1fr 1fr 1fr; gap:8px; align-items:center; padding:8px 10px; border-radius:var(--border-radius-md); background:var(--color-background-secondary); border:0.5px solid var(--color-border-tertiary); font-size:13px; }
+  .hs-row.exact { border-color:#7F77DD; }
+  .hs-row.small { opacity:.55; }
+  .hs-col-hd { font-size:11px; color:var(--color-text-tertiary); font-weight:500; padding:0 10px; display:grid; grid-template-columns:60px 1fr 1fr 1fr 1fr; gap:8px; margin-bottom:2px; }
+  .hs-pfx { font-family:var(--font-mono); font-weight:600; font-size:15px; color:var(--color-text-primary); }
+  .hs-val { font-family:var(--font-mono); font-size:12px; color:var(--color-text-secondary); }
+  .hs-tag { font-size:10px; font-weight:500; padding:2px 6px; border-radius:3px; }
+  .hs-tag-fit  { background:#E1F5EE; color:#085041; }
+  .hs-tag-small{ background:#FAECE7; color:#993C1D; }
+  .hs-tag-big  { background:#F1EEF9; color:#5B2D8E; }
+  @media(prefers-color-scheme:dark){ .hs-tag-fit{background:#085041;color:#9FE1CB;} .hs-tag-small{background:#4A1B0C;color:#F0997B;} .hs-tag-big{background:#2E1950;color:#C49DEA;} }
+  .hs-waste { font-size:11px; color:var(--color-text-tertiary); }
+  .hs-bits-row { display:grid; grid-template-columns:repeat(32,1fr); gap:2px; margin-top:.75rem; }
+
   .vlsm-base { display:flex; align-items:center; gap:8px; margin-bottom:1rem; flex-wrap:wrap; }
   .vlsm-base label { font-size:13px; color:var(--color-text-secondary); }
   .vlsm-base input { font-family:var(--font-mono); font-size:14px; padding:5px 10px; border:0.5px solid var(--color-border-secondary); border-radius:var(--border-radius-md); background:var(--color-background-primary); color:var(--color-text-primary); width:160px; }
@@ -93,7 +111,7 @@
   <h2 class="sr-only">CIDR bit yapısı etkileşimli görselleştirici</h2>
   <div class="controls">
     <label>CIDR Değeri</label>
-    <input type="range" min="1" max="32" value="24" id="cidr-slider" style="flex:1;min-width:200px">
+    <input type="range" min="0" max="32" value="24" id="cidr-slider" style="flex:1;min-width:200px">
     <span class="cidr-val" id="cidr-display">/24</span>
   </div>
 
@@ -105,6 +123,7 @@
     <button class="nav-btn" data-panel="div">Subnet bölücü</button>
     <button class="nav-btn" data-panel="vlsm">VLSM planlayıcı</button>
     <button class="nav-btn" data-panel="super">Supernet</button>
+    <button class="nav-btn" data-panel="host">Host → Subnet</button>
   </nav>
 
   <!-- Panel 1: Bit görünümü -->
@@ -187,6 +206,19 @@
     <div class="dept-list" id="dept-list"></div>
     <button class="btn-add" id="btn-add-dept">+ Departman ekle</button>
     <div id="vlsm-output"></div>
+  </div>
+
+  <!-- Panel 8: Host → Subnet -->
+  <div class="panel" id="panel-host">
+    <p style="font-size:13px;color:var(--color-text-secondary);margin:0 0 1rem">
+      Kaç IP adresine ihtiyacın var? Sana en uygun subnet'i ve komşu seçenekleri gösterir.
+    </p>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:1.5rem;flex-wrap:wrap">
+      <label style="font-size:13px;color:var(--color-text-secondary)">Gereken host sayısı:</label>
+      <input type="number" id="host-input" min="1" max="16777214" value="630"
+        style="font-family:var(--font-mono);font-size:18px;font-weight:500;padding:6px 12px;width:140px;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);background:var(--color-background-primary);color:var(--color-text-primary)">
+    </div>
+    <div id="host-output"></div>
   </div>
 
   <!-- Panel 7: Supernet -->
@@ -476,6 +508,78 @@ document.getElementById('btn-add-sn').addEventListener('click',()=>{
 });
 renderSNList();
 setTimeout(renderSupernet,0);
+
+/* ── Host → Subnet ── */
+function renderHostSubnet(){
+  const needed = parseInt(document.getElementById('host-input').value)||0;
+  const out = document.getElementById('host-output');
+  if(needed < 1){ out.innerHTML='<p class="warn">En az 1 host girin.</p>'; return; }
+  if(needed > 16777214){ out.innerHTML='<p class="warn">IPv4\'te maksimum 16.777.214 host bulunabilir (/8).</p>'; return; }
+
+  // Find exact fit prefix
+  let fitPfx = 32;
+  for(let p=1;p<=32;p++){
+    const u = p===32?1:p===31?2:Math.pow(2,32-p)-2;
+    if(u>=needed){ fitPfx=p; break; }
+  }
+
+  // Build rows: 2 above (bigger subnets), exact, 2 below (smaller)
+  const rows=[];
+  for(let p=Math.max(1,fitPfx-2); p<=Math.min(32,fitPfx+2); p++){
+    const total=Math.pow(2,32-p);
+    const usable=p===32?1:p===31?2:total-2;
+    const mask=mask2dec(p);
+    const waste=usable-needed;
+    const fits=usable>=needed;
+    rows.push({p,total,usable,mask,waste,fits,exact:p===fitPfx});
+  }
+
+  // Bit bar for exact fit
+  const bitBar = Array.from({length:32},(_,i)=>{
+    const isNet=i<fitPfx;
+    return `<div class="bit-cell ${isNet?'bit-net':'bit-host'}" style="height:24px;font-size:10px">${isNet?'1':'0'}</div>`;
+  }).join('');
+
+  const exactRow = rows.find(r=>r.exact);
+
+  let html=`
+    <div class="hs-match">
+      <div class="hs-match-label">✓ En uygun subnet</div>
+      <div style="display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:.5rem">
+        <span class="hs-prefix">/${fitPfx}</span>
+        <span style="font-size:15px;font-family:var(--font-mono);color:var(--color-text-secondary)">${exactRow.mask}</span>
+      </div>
+      <div class="info-row" style="margin:0 0 .75rem">
+        <div class="ic"><div class="lbl">Toplam IP</div><div class="val">${exactRow.total.toLocaleString('tr-TR')}</div></div>
+        <div class="ic"><div class="lbl">Kullanılabilir host</div><div class="val">${exactRow.usable.toLocaleString('tr-TR')}</div></div>
+        <div class="ic"><div class="lbl">İsraf</div><div class="val">${exactRow.waste.toLocaleString('tr-TR')} host</div></div>
+        <div class="ic"><div class="lbl">Host bitleri</div><div class="val">${32-fitPfx} bit</div></div>
+      </div>
+      <div class="bit-grid">${bitBar}</div>
+    </div>
+    <div class="hs-col-hd"><span>Prefix</span><span>Subnet mask</span><span>Kullanılabilir</span><span>Toplam IP</span><span></span></div>
+    <div class="hs-nearby">`;
+
+  rows.forEach(r=>{
+    const tag = r.exact
+      ? `<span class="hs-tag hs-tag-fit">✓ En uygun</span>`
+      : r.fits
+        ? `<span class="hs-tag hs-tag-big">▲ Fazla büyük</span>`
+        : `<span class="hs-tag hs-tag-small">✗ Yetersiz</span>`;
+    html+=`<div class="hs-row ${r.exact?'exact':''} ${!r.fits?'small':''}">
+      <span class="hs-pfx">/${r.p}</span>
+      <span class="hs-val">${r.mask}</span>
+      <span class="hs-val">${r.usable.toLocaleString('tr-TR')}</span>
+      <span class="hs-val">${r.total.toLocaleString('tr-TR')}</span>
+      <span>${tag}</span>
+    </div>`;
+  });
+  html+=`</div>`;
+  out.innerHTML=html;
+}
+
+document.getElementById('host-input').addEventListener('input', renderHostSubnet);
+setTimeout(renderHostSubnet, 0);
 
 /* ── Nav ── */
 document.querySelectorAll('.nav-btn').forEach(btn=>{
