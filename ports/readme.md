@@ -25,5 +25,5 @@ nmap -p 1-1000 192.168.1.1
 # Bir portun erişilebilir olup olmadığını kontrol et
 telnet server.com 443                # Windows/Linux
 nc -zv server.com 443                # Linux (netcat)
-tnc server.com -Port 443             # PowerShell
+tnc server.com -port 443             # PowerShell
 ```
