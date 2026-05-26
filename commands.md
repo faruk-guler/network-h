@@ -1,4 +1,4 @@
-Bir ağın nasıl çalıştığını anlamanın yolu; IP adresleri, DNS, subnetting ve `ping`, `nslookup`, `traceroute` gibi temel araçları öğrenmekte yarar vardır. Bu bölümde ağ dünyasınında kullanılan bazı komutları sade ve anlaşılır şekilde inceleyeceğiz.
+Bir ağın nasıl çalıştığını anlamak için; IP adresleri, DNS, subnetting ve `ping`, `nslookup`, `traceroute` gibi temel araçları ve komutları öğrenmekte yarar vardır. Bu bölümde ağ dünyasınında kullanılan bazı komutları sade ve anlaşılır şekilde inceleyeceğiz.
 
 ## 1. ping — Bağlantı Testi
 
