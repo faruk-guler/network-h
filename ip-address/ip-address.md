@@ -38,7 +38,7 @@ Network ID      Host ID
 ```
 ---
 
-**1. Sınıflı (Classful) IP Adresleme Yapısı**
+### 1. Sınıflı (Classful) IP Adresleme Yapısı
 Bu sistem, IP adresinin hangi sınıf olduğuna ilk oktetine (bölümüne) bakarak karar verir:
 
 ```
@@ -49,7 +49,7 @@ Bu sistem, IP adresinin hangi sınıf olduğuna ilk oktetine (bölümüne) bakar
 | **C Sınıfı** | 192 - 223 | Ağ.Ağ.Ağ.Host   |
 ```
 
-**2. Özel (Private) IP Blokları (RFC 1918)**
+### 2. Özel (Private) IP Blokları (RFC 1918)
 Modemlerimizde veya iç ağlarımızda gördüğümüz ücretsiz ve internete direkt çıkamayan adreslerdir. Yukarıdaki sınıflardan "özel kullanım" için ayrılmışlardır:
 
 ```
