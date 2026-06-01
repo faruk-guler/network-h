@@ -34,7 +34,7 @@ Bu sayı, ağın kaç bitlik kısmının ağ adresi olduğunu ve bit’lerin sol
 ```
 > 💡 **Prefix**: IP adresinin ağ kısmını belirten bit sayısıdır. Örnek: `/18`
 > 
-> 💡 Cihazlara IP atanabilen en küçük subnet /30'dur. > Toplam IP = 4 Broadcast ve Network çıkarılınca kalan = 2
+> 💡 Geleneksel ağlarda cihazlara IP atanabilen en küçük subnet /30'dur (Toplam IP = 4, Broadcast ve Network çıkarılınca kalan = 2). Ancak modern router bağlantılarında (noktadan noktaya) /31 de kullanılabilir (Bkz: RFC 3021)
 >
 > 💡 CIDR'de / sonraki sayı ağ(network) bitini gösterir. 32'den çıkarılan kısım host bit adedini verir ve kullanılabilir host sayısı 2ⁿ − 2 formülüyle hesaplanır.
 >
