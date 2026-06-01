@@ -42,7 +42,7 @@ Bu sistem, IP adresinin hangi sınıf olduğuna ilk oktetine (bölümüne) bakar
 ```
 | Sınıf | İlk Oktet Aralığı | Varsayılan Yapı | Örnek |
 |---|---|---|---|
-| **A Sınıfı** | 1 - 126 | `Ağ.Host.Host.Host` | `8 . 8.8.8` |
+| **A Sınıfı** | 1 - 126 | .0.0.0  | `8 . 8.8.8` |
 | **B Sınıfı** | 128 - 191 | `Ağ.Ağ.Host.Host` | `172.16 . 32.170` |
 | **C Sınıfı** | 192 - 223 | `Ağ.Ağ.Ağ.Host` | `192.168.1 . 5` |
 ```
