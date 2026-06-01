@@ -32,7 +32,7 @@ Senin cihazın              →    google.com sunucusu
 ## 🧪🧪 IP Adresi Formatı
 IP "Network ID" ve "Host ID" olmak üzere iki bölümden oluşmaktadır ve Adres Sınıflarına göre farklılık göstermektedir. Network ağı, Host ise uç cihazları ifade eder.
 ```
-xxx . xx. xx .   xx
+xxx . xxx. xx .   xx
 └─────────────┘ └──┘
 Network ID      Host ID
 > 💡 C class örneği
