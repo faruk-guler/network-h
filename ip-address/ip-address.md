@@ -42,10 +42,10 @@ Network ID      Host ID
 Bu sistem, IP adresinin hangi sınıf olduğuna ilk oktetine (bölümüne) bakarak karar verir:
 
 ```
-| Sınıf | Oktet Aralığı | Varsayılan Yapı |
-| A | 1 - 126 | Ağ.Host.Host.Host |
-| B | 128 - 191 | Ağ.Ağ.Host.Host |
-| C | 192 - 223 | Ağ.Ağ.Ağ.Host   |
+| Sınıf   | Oktet Aralığı | Varsayılan Yapı   |
+| A ----> | 1 - 126       | Ağ.Host.Host.Host |
+| B ----> | 128 - 191     | Ağ.Ağ.Host.Host   |
+| C ----> | 192 - 223     | Ağ.Ağ.Ağ.Host     |
 ```
 
 ### 2. Özel (Private) IP Blokları (RFC 1918)
