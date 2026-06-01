@@ -1,4 +1,4 @@
-# 🌍-🌎-🌏 İnternet Nasıl Çalışır?.
+# 🌍-🌎-🌏 İnternet Nasıl Çalışır?
 
 > *1969'da iki üniversite bilgisayarı arasında ilk mesaj gönderildi. Mesaj "LOGIN" kelimesiydi. Sistem ikinci harfte çöktü. Karşı tarafa yalnızca "LO" ulaştı. İnternet böyle başladı — mütevazı, hatalı ve insani.*
 
