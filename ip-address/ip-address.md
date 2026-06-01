@@ -44,9 +44,9 @@ Bu sistem, IP adresinin hangi sınıf olduğuna ilk oktetine (bölümüne) bakar
 ```
 | Sınıf | İlk Oktet Aralığı | Varsayılan Yapı |
 |---|---|---|---|
-| **A Sınıfı** | 1 - 126 | Ağ.Host.Host.Host |
-| **B Sınıfı** | 128 - 191 | Ağ.Ağ.Host.Host |
-| **C Sınıfı** | 192 - 223 | Ağ.Ağ.Ağ.Host   |
+| A | 1 - 126 | Ağ.Host.Host.Host |
+| B | 128 - 191 | Ağ.Ağ.Host.Host |
+| C | 192 - 223 | Ağ.Ağ.Ağ.Host   |
 ```
 
 ### 2. Özel (Private) IP Blokları (RFC 1918)
