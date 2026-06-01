@@ -20,7 +20,7 @@
 |--------|--------|-----|-------|-------|
 | Nibble | 4 bitlik yarım bayt | İngilizce "nibble" (ısırmak) | `1010` = `A` (hex) | Her hex karakteri tam olarak 1 nibble'a karşılık gelir |
  
-> 💡 **İpucu:** 1 Octet = 2 Nibble = 8 bit. Bu yüzden binary→hex dönüşümünde ikişer ikişer gruplandırılır.
+> 💡 **İpucu:** 1 Octet = 2 Nibble = 8 bit. Bu yüzden binary→hex dönüşümünde dörder dörder gruplandırılır.
  
 ---
  
