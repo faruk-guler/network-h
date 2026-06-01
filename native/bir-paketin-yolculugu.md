@@ -99,13 +99,15 @@ Bir adım geri gidelim. Uygulama aslında `157.240.241.174` adresini önceden bi
 
 Bu ismi IP adresine çeviren sisteme **DNS (Domain Name System)** denir — internetin telefon rehberi.
 
-Paket yola çıkmadan önce şu arka planda döner:
+### 🏢 DNS Rehberlik Bürosu: Hiyerarşik Yolculuk
 
-1. Telefon DNS sunucusuna sorar: *"`instagram.com`'un IP adresi nedir?"*
-2. DNS sunucusu cevaplar: *"`157.240.241.174`"*
-3. Artık paket hedefe gönderilebilir.
+Telefonunuz `instagram.com` yazıp arattığında, IP adresini bulmak için şu 3 danışma masasına sırayla başvurulur:
 
-Bu sorgu da kendisi bir pakettir ve genellikle **1-5 milisaniyede** tamamlanır.
+1. **Kök Sunucu (Root DNS):** *"instagram.com'un yerini bilmem, ama .com masasının adresini bilirim. Oraya sor."*
+2. **Üst Düzey Sunucu (TLD DNS):** *".com masasıyım, instagram.com'u tescil eden Instagram'ın kendi sunucu adresini veriyorum, ona sor."*
+3. **Yetkili Sunucu (Authoritative DNS):** *"Instagram sunucusuyum. instagram.com'un IP adresi tam olarak `157.240.241.174`'tür."*
+
+Bu süreçte aracı olan **Yerel DNS Sunucunuz**, aldığı cevabı aklında tutar (**DNS Cache**) ve telefonunuza iletir. Bu devasa sorgu zinciri milisaniyeler içinde biter!
 
 ---
 
