@@ -138,15 +138,3 @@ Bu süreçte aracı olan **Yerel DNS Sunucunuz**, aldığı cevabı aklında tut
     │
     └──── Cevap aynı yoldan (ya da farklı bir yoldan) geri döner
 ```
-
----
-
-## Bu Kitapta Neler Göreceksin?
-
-Az önce okuduğun bu yolculuk, her gün milyarlarca kez yaşanıyor. Ve bu kitap o yolculuğun her durağını — router'dan switch'e, protokollerden güvenlik duvarlarına, dağıtık sistemlerden veri merkezlerine — sana göstermeye çalışıyor.
-
-Teknik bilgi vermek için değil.
-
-İnternetin altındaki **insani emeği ve mühendislik harikasını** görmeni sağlamak için.
-
----
