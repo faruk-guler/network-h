@@ -37,10 +37,10 @@ xxx . xx. xx .   xx
 Network ID      Host ID
 ```
 ```
-|Class  |Network         |Host       |
-A ----> |10.             |.0.0.0     |
-B ----> |172.16.         |.0.0       |
-C ----> |192.168.0.      |.0         |
+|Class   |Network         |Host       |
+|A ----> |10.             |.0.0.0     |
+|B ----> |172.16.         |.0.0       |
+|C ----> |192.168.0.      |.0         |
 
 |Network |Host  |
 |172.16  |32.170| > B class örneği
