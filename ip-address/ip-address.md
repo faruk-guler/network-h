@@ -36,15 +36,17 @@ xxx . xx. xx .   xx
 └─────────────┘ └──┘
 Network ID      Host ID
 ```
+---
+
 **1. Sınıflı (Classful) IP Adresleme Yapısı**
 Bu sistem, IP adresinin hangi sınıf olduğuna ilk oktetine (bölümüne) bakarak karar verir:
 
 ```
-| Sınıf | İlk Oktet Aralığı | Varsayılan Yapı | Örnek |
+| Sınıf | İlk Oktet Aralığı | Varsayılan Yapı |
 |---|---|---|---|
-| **A Sınıfı** | 1 - 126 | .0.0.0  | `8 . 8.8.8` |
-| **B Sınıfı** | 128 - 191 | `Ağ.Ağ.Host.Host` | `172.16 . 32.170` |
-| **C Sınıfı** | 192 - 223 | `Ağ.Ağ.Ağ.Host` | `192.168.1 . 5` |
+| **A Sınıfı** | 1 - 126 | Ağ.Host.Host.Host |
+| **B Sınıfı** | 128 - 191 | Ağ.Ağ.Host.Host |
+| **C Sınıfı** | 192 - 223 | Ağ.Ağ.Ağ.Host   |
 ```
 
 **2. Özel (Private) IP Blokları (RFC 1918)**
