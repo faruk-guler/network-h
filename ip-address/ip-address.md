@@ -35,6 +35,7 @@ IP "Network ID" ve "Host ID" olmak üzere iki bölümden oluşmaktadır ve Adres
 xxx . xx. xx .   xx
 └─────────────┘ └──┘
 Network ID      Host ID
+> 💡 C class örneği
 ```
 ---
 
@@ -58,7 +59,7 @@ Modemlerimizde veya iç ağlarımızda gördüğümüz ücretsiz ve internete di
 |C ----> |192.168.0.      |.0         |
 
 |Network |Host  |
-|172.16  |32.170| > B class örneği
+|172.16  |32.170| > 💡 B class örneği
 ```
 
 > 💡 Host ID, teorik olarak min 0 (Network Adresi) ile max 255 (Broadcast Adresi) değerlerini alır.
