@@ -14,7 +14,7 @@
 
 > 💡 Her oktette tekrar "0" dan başlanmalıdır.
 
-> 💡 Üslü sayıların kuralı gereği herhangi sıfır hariç herhangi bir sayının 0. kuvveti 1 olur
+> 💡 Üslü sayıların kuralı gereği sıfır hariç herhangi bir sayının 0. kuvveti 1 olur
 
 ---
 
