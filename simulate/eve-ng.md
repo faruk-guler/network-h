@@ -241,22 +241,22 @@ Sanal switch, bulut bağlantısı veya internet erişimi için:
 Sunucuya SSH ile bağlanıp yönetim işlemleri yapabilirsiniz:
 
 ```bash
-# Servis durumunu kontrol etme
+# Servis durumunu kontrol et
 systemctl status eve-ng
 
-# Servisyi yeniden başlatma
+# Servisi yeniden başlat
 systemctl restart eve-ng
 
-# İzinleri düzeltme (görüntü yüklemesinden sonra)
+# İzinleri düzelt (görüntü yüklemesinden sonra)
 /opt/unetlab/wrappers/unl_wrapper -a fixpermissions
 
-# Çalışan labları listeleme
+# Çalışan labları listele
 ls /opt/unetlab/tmp/0/
 
 # Disk kullanımı
 df -h
 
-# Görüntüleri listeleme
+# Görüntüleri listele
 ls /opt/unetlab/addons/dynamips/
 ls /opt/unetlab/addons/qemu/
 ```
