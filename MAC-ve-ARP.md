@@ -1,6 +1,4 @@
-## 🆔 MAC Adresi (Media Access Control)
-
-### MAC Adresi Nedir?
+## 🆔 MAC Adresi (Media Access Control) Nedir?
 
 Her ağ kartının (NIC) fabrikada atanan **benzersiz fiziksel adresidir**.
 
@@ -54,9 +52,8 @@ ifconfig                # "ether" satırı
 ifconfig en0            # "ether" satırı
 ```
 
-## 🔗 ARP (Address Resolution Protocol)
+## 🔗 ARP (Address Resolution Protocol) Nedir?
 
-### ARP Nedir?
 RFC 826 ile tanımlanan, IP adresinden MAC adresini bulan protokoldür. Öğrenilen IP-MAC eşleşmeleri RAM'de geçici olarak saklanır. Bilgisayar kapatılınca veya süre dolunca silinir. Bu sayede aynı cihaza her veri gönderildiğinde tekrar ARP isteği yapılmaz.
 
 > **"IP adresini biliyorum, ama kapıyı çalmak için isim lazım."**
