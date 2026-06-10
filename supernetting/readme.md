@@ -223,8 +223,8 @@ Eğer her küçük ağı ayrı ayrı duyursalardı, internet router'larının li
 
 ## Supernetting İpuçları
 
-**1. Doğru routing protokolünü kullanın**
-Eski protokoller (RIPv1 gibi) supernetting'i desteklemez. RIPv2, OSPF, EIGRP veya BGP kullanmanız gerekir.
+**1. Modern bir routing protokolü kullanın**
+Supernetting, tüm modern routing protokolleri tarafından desteklenir. Eski protokoller bu özelliği desteklemeyebilir.
 
 **2. Çakışmadan kaçının**
 Aynı IP bloğunu iki farklı yerde özetlemeyin. Router'lar hangi yolu seçeceğini bilemez ve trafik yanlış yere gider.
