@@ -14,6 +14,7 @@ Protokoller genellikle OSI (Open Systems Interconnection) modelindeki yedi katma
 | 3 | Ağ (Network) | Yönlendirme ve mantıksal adresleme | IP (IPv4/IPv6), ICMP|
 | 2 | Veri Bağı (Data Link) | Fiziksel adresleme (MAC) | Ethernet, ARP, Switch protokolleri |
 
+> 💡 Katman 5 ve 6 pratikte ayrı protokollerle temsil edilmez; bu yüzden tabloda yer verilmemiştir.
 ## En Yaygın Ağ Protokolleri
 
 ### Uygulama Katmanı Protokolleri
