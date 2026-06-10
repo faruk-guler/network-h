@@ -34,7 +34,7 @@ Veri paketi yalnızca o gruba kayıtlı cihazlara ulaşır. Gruba dahil olmayan 
 
 Bir cihazdan **ağdaki tüm** cihazlara yapılan iletimdir.
 
-Veri paketi, ağdaki her cihaza ulaşır. İstemeseler de tüm cihazlar bu iletiyi alır. Ağın son host IP adresi olan `.255` adresi broadcast için kullanılır.
+Veri paketi, ağdaki her cihaza ulaşır. İstemeseler de tüm cihazlar bu iletiyi alır. Subnet içindeki en son IP adresi broadcast adresidir. Örneğin /24 ağında bu .255'tir, ancak farklı subnet mask'larda bu değişir."
 
 **Örnekler:**
 
