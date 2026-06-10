@@ -21,7 +21,7 @@ Bir subnet içindeki son IP adresi broadcast adresidir, bu adrese gönderilen pa
 - Belirli Bir Network'te Bulunan Tüm Cihazlara Veri Göndermek İçin Kullanılır
 - IP Adresinin Kullanıcı İçin Ayrılmış Oktetlerinde Tüm Bitleri Binary "1" Yapılarak Elde Edilir.
 
-**Network:** `172.16.0.0`
+**Network:** `172.16.0.0/16`
 
 **Directed Broadcast Adres:** `172.16.255.255`
 
