@@ -87,23 +87,16 @@ SD-WAN, elindeki tüm bağlantı türlerini (MPLS, Fiber İnternet, 4G/LTE) **te
 
 ---
 
-## ☁️ Bulut Ağı (Cloud Networking) Temelleri
+## ☁️ Bulut Ağı — Kısa Bir Bakış
 
-Modern ağ dünyası artık sadece ofisleri değil, bulutu da (AWS, Azure, Google Cloud) kapsıyor.
+Modern ağ dünyası artık sadece ofisler ve WAN hatlarıyla sınırlı değil; **AWS, Azure, Google Cloud** gibi bulut sağlayıcıları da ağın bir parçası hâline geldi.
 
-### Temel Kavramlar
+Temel olarak bilmeniz gereken üç kavram:
 
-#### 1. VPC (Virtual Private Cloud)
+- **VPC (Virtual Private Cloud):** Bulut sağlayıcısının veri merkezinde size ayrılmış izole sanal ağdır. Kendi IP bloğunuzu seçer, subnet'lere böler, routing kurallarınızı yazarsınız — sanki bulutta kendi küçük veri merkeziniz varmış gibi.
 
-Bulut sağlayıcısının veri merkezinde size ayrılmış **sanal özel ağdır**. Kendi IP bloğunuzu seçer, subnet'lere böler ve router'ları yönetirsiniz. Sanki bulutta kendi fiziksel veri merkeziniz varmış gibi!
+- **Region ve Availability Zone:** Bulut sağlayıcıları dünya genelinde bölgelere (Region) ayrılmış veri merkezleri işletir. Her region içinde birbirinden fiziksel olarak ayrılmış birden fazla veri merkezi (Availability Zone) bulunur. Biri arıza yaparsa diğeri devreye girer.
 
-#### 2. Region (Bölge) ve Zone (Alan)
+- **Hybrid Cloud (Hibrit Bulut):** Şirketin kendi fiziksel sunucuları ile buluttaki sanal sunucuların VPN veya özel hat üzerinden birbirine bağlanmasıdır. Hassas veriler şirket içinde, geri kalan iş yükü bulutta çalışır.
 
-- **Region:** Coğrafi konum (Örn: Frankfurt, İstanbul).
-- **Zone (Availability Zone):** Bir region içindeki birbirinden bağımsız, yedekli veri merkezleri. Biri yanarsa diğeri çalışır.
-
-#### 3. Hybrid Cloud (Hibrit Bulut)
-
-Ofisinizdeki fiziksel sunucular ile Bulut'taki sunucuların birbirine VPN veya Direct Connect (özel hat) ile bağlanmasıdır.
-
----
+> 💡 Bu konular bu kitabın kapsamının ötesindedir. Temel ağ bilginizi oturdurduktan sonra cloud networking konusuna ayrıca bakmanızı öneririz.
