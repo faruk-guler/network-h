@@ -1,4 +1,4 @@
-# 📢 Broadcast Adres:
+## 📢 Broadcast Adres:
 Bir subnet içindeki son IP adresi broadcast adresidir, bu adrese gönderilen paket tüm hostlara iletilir. Host bitlerinin tamamı 1 olduğunda oluşur.
 
 ## Local Broadcast Adresler
@@ -27,7 +27,7 @@ Bir subnet içindeki son IP adresi broadcast adresidir, bu adrese gönderilen pa
 
 > Router Broadcast Paketlerini Geçirmek için yapılandırılabilir.
 
-# 🖥️ Network Adres:
+## 🖥️ Network Adres:
 Subnet içindeki cihazların iletişimi için kullanılır ve hiçbir host 'a atanamaz. Genellikle subnet’in ilk adresidir ve tüm host bitleri 0’dır.
 
 Örneğin, 192.168.1.0
