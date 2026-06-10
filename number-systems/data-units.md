@@ -1,11 +1,12 @@
 # 🗃️ Veri Birimleri:
 
 ## Octet
-🔍 "Octet" bir sayı sistemi değildir. 8 bitten oluşan bir veri birimi/gruplama kavramıdır. Octal ile karıştırılmamalıdır.
+🔍 "Octet", Latince *octo* (sekiz) kelimesinden türemiştir ve tam olarak 8 bitten oluşan veri grubunu ifade eder. Bir sayı sistemi değildir. IPv4 adresleri 4 octet'ten oluşur.
 | Sistem | Slogan | Kök | Örnek | Kullanım |
 |---|---|---|---|---|
 | Octet | 8 parçalı | Latince “octo” (8) | her octet min 0, max 255 değerini alabilir | IPv4 adresleri 4 octet'ten oluşur |
 
+> 📝 **Not:** Octet ve Octal aynı kökten gelir. Her ikisi de Latince *octo* (sekiz) kelimesinden türemiştir. Ancak Octet 8 bitlik veri grubunu, Octal ise 8 tabanlı sayı sistemini ifade eder.
 ## Hextet
 🔍 "Hextet" bir sayı sistemi değildir. 16 bitten oluşan bir veri birimi/gruplama kavramıdır. Hexadecimal ile ilişkilidir ama aynı şey değildir.
 
