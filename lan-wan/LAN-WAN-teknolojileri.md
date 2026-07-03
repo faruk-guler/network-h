@@ -84,19 +84,3 @@ SD-WAN, elindeki tüm bağlantı türlerini (MPLS, Fiber İnternet, 4G/LTE) **te
 1. **Küçük Ofis:** Standart Fiber İnternet + VPN.
 2. **Çok Şubeli Mağaza Zinciri:** SD-WAN (Merkezi yönetim ve maliyet avantajı).
 3. **Banka / Hastane:** MPLS veya Leased Line (Kesinti ve gecikme kabul edilemez).
-
----
-
-## ☁️ Bulut Ağı — Kısa Bir Bakış
-
-Modern ağ dünyası artık sadece ofisler ve WAN hatlarıyla sınırlı değil; **AWS, Azure, Google Cloud** gibi bulut sağlayıcıları da ağın bir parçası hâline geldi.
-
-Temel olarak bilmeniz gereken üç kavram:
-
-- **VPC (Virtual Private Cloud):** Bulut sağlayıcısının veri merkezinde size ayrılmış izole sanal ağdır. Kendi IP bloğunuzu seçer, subnet'lere böler, routing kurallarınızı yazarsınız — sanki bulutta kendi küçük veri merkeziniz varmış gibi.
-
-- **Region ve Availability Zone:** Bulut sağlayıcıları dünya genelinde bölgelere (Region) ayrılmış veri merkezleri işletir. Her region içinde birbirinden fiziksel olarak ayrılmış birden fazla veri merkezi (Availability Zone) bulunur. Biri arıza yaparsa diğeri devreye girer.
-
-- **Hybrid Cloud (Hibrit Bulut):** Şirketin kendi fiziksel sunucuları ile buluttaki sanal sunucuların VPN veya özel hat üzerinden birbirine bağlanmasıdır. Hassas veriler şirket içinde, geri kalan iş yükü bulutta çalışır.
-
-> 💡 Bu konular bu kitabın kapsamının ötesindedir. Temel ağ bilginiz oturdurduktan sonra cloud networking konusuna ayrıca bakmanızı öneririz.
