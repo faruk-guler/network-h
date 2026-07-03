@@ -99,4 +99,4 @@ Temel olarak bilmeniz gereken üç kavram:
 
 - **Hybrid Cloud (Hibrit Bulut):** Şirketin kendi fiziksel sunucuları ile buluttaki sanal sunucuların VPN veya özel hat üzerinden birbirine bağlanmasıdır. Hassas veriler şirket içinde, geri kalan iş yükü bulutta çalışır.
 
-> 💡 Bu konular bu kitabın kapsamının ötesindedir. Temel ağ bilginizi oturdurduktan sonra cloud networking konusuna ayrıca bakmanızı öneririz.
+> 💡 Bu konular bu kitabın kapsamının ötesindedir. Temel ağ bilginiz oturdurduktan sonra cloud networking konusuna ayrıca bakmanızı öneririz.
