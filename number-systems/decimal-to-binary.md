@@ -9,6 +9,12 @@
 
 - ...
 - 2⁷ = 2 × 2 × 2 × 2 × 2 × 2 × 2 = 128
+- 2^8 = 256
+- 2^9 = 512
+- 2^10 = 1024
+- 2^11 = 2048
+- 2^12 = 4096
+- ...
  
 > 💡 Eğer bit `1` ise tablodaki değer **toplanır**, `0` ise o değer **yok sayılır**. Çünkü 0 varsa veri yok, 1 varsa veri var demektir.
 
