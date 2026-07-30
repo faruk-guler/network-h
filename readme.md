@@ -9,11 +9,13 @@
 <img src="images/book-cover.jpg" alt="alt text" width="280" height="330">
 
 🅽🅴🆃🆆🅾🆁🅺 - 🅵🅾🆁 - 🅷🆄🅼🅰🅽🅸🆃🆈
+
 - Name: Network for Humanity  
 - Author: faruk-guler
 - Description: Network for Humanity  Basic Networking Handbook
 - POC: Debian 12 [Bookworm] - Windows 10 LTSC
-- Contact: www.farukguler.com
+- Contact: <www.farukguler.com>
 - Date: 2026  
 - License: GPL v3
+
 > 💡 Bu kitap sadece insancıl öğrenme için hazırlanmıştır. İleri network konularına değinilmeyecektir, Bilgisayarların ve botlarının girmesi yasaktır. :)

@@ -1,8 +1,57 @@
 # >_ Komutlar
 
-Bir ağın nasıl çalıştığını anlamak için; IP adresleri, DNS, subnetting ve `ping`, `nslookup`, `traceroute` gibi temel araçları ve komutları öğrenmekte yarar vardır. Bu bölümde ağ dünyasınında kullanılan bazı komutları sade ve anlaşılır şekilde inceleyeceğiz.
+Bir ağın nasıl çalıştığını anlamak için; IP adresleri, DNS, subnetting ve `ping`, `nslookup`, `traceroute` gibi temel araçları ve komutları öğrenmekte yarar vardır. Bu bölümde ağ dünyasında kullanılan bazı komutları sade ve anlaşılır şekilde inceleyeceğiz.
 
-## 1. ping — Bağlantı Testi
+## 1. ipconfig / ip addr — Ağ Yapılandırmasını Görme
+
+Cihazınızın IP adresi, subnet mask, default gateway ve DNS sunucusu gibi temel ağ bilgilerini görmek için kullanılan en temel komuttur. Bir ağ sorununu çözmeye başlamadan önce **ilk bakılacak yer** burasıdır.
+
+| Bilgi | Açıklama |
+|---|---|
+| IP Adresi | Cihazın ağdaki kimliği |
+| Subnet Mask | Ağ ve host kısmını ayıran maske |
+| Default Gateway | Dış ağlara çıkış kapısı (router) |
+| DNS Sunucusu | Alan adlarını IP'ye çeviren sunucu |
+
+### Kullanım
+
+```cmd
+:: Windows
+ipconfig                  # Temel ağ bilgilerini göster
+ipconfig /all             # Tüm detayları göster (MAC, DNS, DHCP bilgileri)
+ipconfig /release         # DHCP ile alınan IP adresini bırak
+ipconfig /renew           # DHCP'den yeni IP adresi al
+ipconfig /flushdns        # DNS önbelleğini temizle
+ipconfig /displaydns      # DNS önbelleğini göster
+```
+
+```bash
+# Linux
+ip addr                   # Tüm arayüzlerin IP bilgilerini göster
+ip addr show eth0         # Belirli bir arayüzün bilgilerini göster
+ifconfig                  # Eski yöntem (hâlâ yaygın)
+```
+
+### Örnek Çıktı (Windows)
+
+```
+C:\> ipconfig
+
+Windows IP Yapılandırması
+
+Ethernet bağdaştırıcısı Ethernet:
+
+   Bağlantıya Özgü DNS Son Eki  . :
+   IPv4 Adresi. . . . . . . . . . : 192.168.1.100
+   Alt Ağ Maskesi . . . . . . . . : 255.255.255.0
+   Varsayılan Ağ Geçidi . . . . . : 192.168.1.1
+```
+
+> **💡 İpucu:** Bir cihazın `169.254.x.x` adresini aldığını görüyorsanız, DHCP sunucusuna ulaşılamıyor demektir (APIPA). Önce kablo bağlantısını kontrol edin, ardından `ipconfig /renew` komutunu deneyin.
+
+---
+
+## 2. ping — Bağlantı Testi
 
 **Ping**, bir ağ üzerindeki cihazların erişilebilir olup olmadığını test etmek için kullanılan temel araçtır. 1983 yılında *Mike Muuss* tarafından geliştirilmiştir.
 
@@ -44,7 +93,7 @@ Gidiş dönüş sürelerinin yaklaşık değeri (milisaniye cinsinden):
 
 ---
 
-## 2. tracert — Rota İzleme
+## 3. tracert — Rota İzleme
 
 Paketlerin hedefe ulaşırken **hangi güzergahı izlediğini** ve **hangi router'lardan geçtiğini** gösterir. Ağdaki gecikme veya kopukluğun tam olarak nerede yaşandığını tespit etmek için kullanılır.
 
@@ -78,7 +127,7 @@ En fazla 30 atlama:
 
 ---
 
-## 3. arp -a — MAC Adresi Tablosu
+## 4. arp -a — MAC Adresi Tablosu
 
 Ağdaki cihazlarla haberleşmek için IP adresi yeterli değildir, **MAC adresi** de gerekir. ARP protokolü bu iki bilgi arasındaki köprüyü kurar ve öğrenilen eşleşmeleri **ARP önbelleğinde** saklar. Böylece her seferinde broadcast yapmak zorunda kalınmaz.
 
@@ -106,7 +155,7 @@ Arabirim: 192.168.1.100 --- 0x5
 
 ---
 
-## 4. nslookup — DNS Sorgulama
+## 5. nslookup — DNS Sorgulama
 
 **nslookup**, domain adları ile IP adresleri arasındaki ilişkiyi sorgulamak için kullanılan bir DNS aracıdır. TCP/IP protokol paketiyle birlikte gelir.
 
@@ -147,7 +196,7 @@ Address:  8.8.8.8
 google.com    MX preference = 10, mail exchanger = smtp.google.com
 ```
 
-## 5. traceroute — Rota İzleme
+## 6. traceroute — Rota İzleme (Linux)
 
 **traceroute**, bir paketin hedefe ulaşırken **hangi router'lardan (hop)** geçtiğini ve her atlamadaki **gecikme süresini** gösteren ağ tanılama aracıdır. Ağdaki gecikme, yönlendirme veya bağlantı problemlerinin hangi noktada oluştuğunu tespit etmek için kullanılır.
 

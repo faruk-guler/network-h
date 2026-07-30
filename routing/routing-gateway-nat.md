@@ -1,11 +1,61 @@
-# 🌐 Routing ve NAT (Yönlendirme ve Adres Çevirisi)
+# 🌐 Routing, Gateway ve NAT
 
-Bir veri paketinin kaynaktan hedefe ulaşması iki temel mekanizmaya dayanır:  
-**Routing** paketi nereye göndereceğine karar verir; **NAT** ise paketin kimliğini değiştirir.
+Bir veri paketinin kaynaktan hedefe ulaşması üç temel kavrama dayanır:  
+**Gateway** paketin çıkış kapısıdır; **Routing** paketi nereye göndereceğine karar verir; **NAT** ise paketin kimliğini değiştirir.
 
 ---
 
-## 1. Routing (Yönlendirme)
+## 1. Gateway (Ağ Geçidi)
+
+Gateway genel bir ağ elemanıdır. Farklı protokoller, yapılar veya ağlar kullanan iki sistemi birbirine bağlayan bir "tercüman" veya "kapı" gibidir.
+
+- Sadece IP yönlendirmesi yapmaz; gerekirse verinin formatını da değiştirir.
+- Örnek: Şirket içi yerel ağınızı (LAN) internete (WAN) bağlayan router bir gateway'dir. Veya iki farklı haberleşme dilini konuşan (örneğin ses trafiği ile veri trafiği) sistemleri birbirine bağlayan cihaz bir "Voice Gateway"dir.
+
+### 🚪 Default Gateway (Varsayılan Ağ Geçidi)
+
+**Default Gateway**, bir cihazın kendi yerel ağı (subnet) dışına çıkmak istediğinde trafiği gönderdiği ilk router (yönlendirici) adresidir. 
+
+Basit bir ifadeyle: **Cihazın "dış dünya kapısı"** veya **"varsayılan çıkış noktası"** dır.
+
+- Yerel ağın **"çıkış kapısı"**dır. Genellikle router'ın LAN IP'sidir: `10.5.10.1`
+- Cihaz, kendi subnet'inde olmayan **tüm paketleri** buraya gönderir.
+- ⚠️ Gateway tanımlanmamışsa cihaz sadece yerel ağda çalışır; internete **çıkamaz.**
+
+> **Örnek:** Evinizdeki bir bilgisayar Google'a (8.8.8.8) bağlanmak istiyorsa, önce bu paketi modeminize (default gateway) gönderir. Modem de sıradaki adıma iletir. Sıradaki adımda standart ev kullanıcıları için ISP Router olur.
+
+### Görsel Örnek
+
+Aşağıdaki şemada **default gateway** kavramını iki farklı seviyede görebilirsiniz:
+
+```
+                  INTERNET
+                     │
+                     │
+          ┌──────────▼─────┐
+          │   ISP Router   │ ← Default Gateway (Modem için)
+          │                │
+          └───────┬────────┘
+                  │
+                  │
+    ┌─────────────|─────────────┐
+    │          EV |             │
+    │             |             │
+    │    ┌────────|─────┐       │
+    │    │ ADSL/Kablo   │       │
+    │    │    MODEM     │ ← Default Gateway (Bilgisayar için)
+    │    └──────────────┘       │
+    │         │  │ │            │
+    │  ┌──────┘  │ └──┐         │
+    │  │         │    │         │
+    │ Laptop    PC  Telefon     │
+    │                           │
+    └───────────────────────────┘
+```
+
+---
+
+## 2. Routing (Yönlendirme)
 
 Routing; veri paketlerinin kaynaktan hedefe giderken **en uygun yolu bulma** sürecidir.  
 Bu kararı veren cihaz **router (yönlendirici)**'dır.
@@ -46,15 +96,7 @@ Basit bir örnek:
 
 ---
 
-### 🚪 Varsayılan Ağ Geçidi (Default Gateway)
-
-- Yerel ağın **"çıkış kapısı"**dır. Genellikle router'ın LAN IP'sidir: `10.5.10.1`
-- Cihaz, kendi subnet'inde olmayan **tüm paketleri** buraya gönderir.
-- ⚠️ Gateway tanımlanmamışsa cihaz sadece yerel ağda çalışır; internete **çıkamaz.**
-
----
-
-## 2. NAT (Network Address Translation — Ağ Adresi Çevirisi)
+## 3. NAT (Network Address Translation — Ağ Adresi Çevirisi)
 
 NAT, iç ağdaki cihazların **tek bir Public IP** üzerinden internete çıkmasını sağlayan mekanizmadır.  
 Teknik olarak routing'den bağımsız bir işlemdir; ancak router üzerinde çalıştığı için ikisi birlikte ele alınır.
@@ -96,6 +138,7 @@ Evde 5 cihazın olduğunu düşün. Hepsinin farklı private IP'si var ama inter
 
 ## 📌 Kısa Özet
 
+> 🔹 **Gateway** → Cihazın dış dünya kapısı (genellikle router)  
 > 🔹 **Aynı ağ** → Doğrudan git (Gateway yok)  
 > 🔹 **Farklı ağ** → Gateway'e ver, router yönlendirir  
 > 🔹 **Routing Table** → Router'ın karar defteri  

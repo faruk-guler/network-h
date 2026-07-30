@@ -32,35 +32,40 @@ Senin cihazın              →    google.com sunucusu
 ## 🧪🧪 IP Adresi Formatı
 IP "Network ID" ve "Host ID" olmak üzere iki bölümden oluşmaktadır ve Adres Sınıflarına göre farklılık göstermektedir. Network ağı, Host ise uç cihazları ifade eder.
 ```
-xxx . xxx. xx .   xx
+xxx . xxx . xx .  xx
 └─────────────┘ └──┘
-Network ID      Host ID
-> 💡 C class örneği
+ Network ID     Host ID
 ```
+> 💡 Yukarıdaki örnek C sınıfı adresleme yapısını göstermektedir.
+
 ---
 
 ### 1. Sınıflı (Classful) IP Adresleme Yapısı
 Bu sistem, IP adresinin hangi sınıf olduğuna ilk oktetine (bölümüne) bakarak karar verir:
 
-```
-| Sınıf   | Oktet Aralığı | Varsayılan Yapı   |
-| A ----> | 1 - 126       | Ağ.Host.Host.Host |
-| B ----> | 128 - 191     | Ağ.Ağ.Host.Host   |
-| C ----> | 192 - 223     | Ağ.Ağ.Ağ.Host     |
-```
+| Sınıf | Oktet Aralığı | Varsayılan Yapı |
+|---|---|---|
+| **A** | 1 – 126 | Ağ.Host.Host.Host |
+| **B** | 128 – 191 | Ağ.Ağ.Host.Host |
+| **C** | 192 – 223 | Ağ.Ağ.Ağ.Host |
+
+> 💡 `0.x.x.x` reserved (RFC 1122), `127.x.x.x` loopback olduğu için A sınıfına dahil edilmez.
 
 ### 2. Özel (Private) IP Blokları (RFC 1918)
 Modemlerimizde veya iç ağlarımızda gördüğümüz ücretsiz ve internete direkt çıkamayan adreslerdir. Yukarıdaki sınıflardan "özel kullanım" için ayrılmışlardır:
 
-```
-|Class   |Network         |Host       |
-|A ----> |10.             |.0.0.0     |
-|B ----> |172.16.         |.0.0       |
-|C ----> |192.168.0.      |.0         |
+| Sınıf | Ağ Aralığı | Varsayılan Yapı |
+|---|---|---|
+| **A** | 10.0.0.0 – 10.255.255.255 | Ağ.Host.Host.Host |
+| **B** | 172.16.0.0 – 172.31.255.255 | Ağ.Ağ.Host.Host |
+| **C** | 192.168.0.0 – 192.168.255.255 | Ağ.Ağ.Ağ.Host |
 
-|Network |Host  |
-|172.16  |32.170| > 💡 B class örneği
 ```
+Örnek (B Sınıfı):
+|Network |Host  |
+|172.16  |32.170|
+```
+> 💡 B sınıfında ilk iki oktet (172.16) ağı, son iki oktet (32.170) host'u temsil eder.
 
 > 💡 Host ID, teorik olarak min 0 (Network Adresi) ile max 255 (Broadcast Adresi) değerlerini alır.
 
