@@ -14,7 +14,7 @@
 - Author: faruk-guler
 - Description: Network for Humanity  Basic Networking Handbook
 - POC: Debian 12 [Bookworm] - Windows 10 LTSC
-- Contact: <www.farukguler.com>
+- Contact: www.farukguler.com
 - Date: 2026  
 - License: GPL v3
 
