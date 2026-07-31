@@ -25,7 +25,7 @@ Kontrol sırası:
 3. Router önbelleği
 ```
 
-Eğer kayıt bulunursa sorgu burada biter — hızlı ve verimldir.
+Eğer kayıt bulunursa sorgu burada biter — hızlı ve verimlidir.
 
 ### Adım 2: Recursive DNS Sunucusu
 

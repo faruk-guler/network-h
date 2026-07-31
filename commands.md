@@ -55,7 +55,7 @@ Ethernet bağdaştırıcısı Ethernet:
 
 **Ping**, bir ağ üzerindeki cihazların erişilebilir olup olmadığını test etmek için kullanılan temel araçtır. 1983 yılında *Mike Muuss* tarafından geliştirilmiştir.
 
-Hedef cihaza **32 byte** boyutunda bir **ICMP paketi** gönderilir ve geri dönen yanıt analiz edilir:
+Hedef cihaza **ICMP Echo Request** paketi gönderilir ve geri dönen yanıt analiz edilir. Windows'ta varsayılan veri (payload) boyutu **32 byte**, Linux'ta ise **56 byte**'tır. Bu veriye ICMP başlığı (8 byte) ve IP başlığı (20 byte) eklenerek toplam paket oluşur:
 
 | Bilgi | Açıklama |
 |---|---|
