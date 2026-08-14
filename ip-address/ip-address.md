@@ -48,24 +48,22 @@ Bu sistem, IP adresinin hangi sınıf olduğuna ilk oktetine (bölümüne) bakar
 | **A** | 1 – 126 | Ağ.Host.Host.Host |
 | **B** | 128 – 191 | Ağ.Ağ.Host.Host |
 | **C** | 192 – 223 | Ağ.Ağ.Ağ.Host |
+| **D** | 224 – 239 | Multicast — kullanıcılara atanmaz |
+| **E** | 240 – 255 | Deneysel / Ayrılmış — atanmaz |
 
 > 💡 `0.x.x.x` reserved (RFC 1122), `127.x.x.x` loopback olduğu için A sınıfına dahil edilmez.
+> 💡 D ve E sınıfları unicast host adresi olarak kullanılamaz.
 
 ### 2. Özel (Private) IP Blokları (RFC 1918)
-Modemlerimizde veya iç ağlarımızda gördüğümüz ücretsiz ve internete direkt çıkamayan adreslerdir. Yukarıdaki sınıflardan "özel kullanım" için ayrılmışlardır:
+Modemlerimizde veya iç ağlarımızda gördüğümüz, internete doğrudan çıkamayan adreslerdir. Yukarıdaki sınıflardan "özel kullanım" için ayrılmışlardır:
 
-| Sınıf | Ağ Aralığı | Varsayılan Yapı |
+| Sınıf | Ağ Aralığı | Toplam Adres |
 |---|---|---|
-| **A** | 10.0.0.0 – 10.255.255.255 | Ağ.Host.Host.Host |
-| **B** | 172.16.0.0 – 172.31.255.255 | Ağ.Ağ.Host.Host |
-| **C** | 192.168.0.0 – 192.168.255.255 | Ağ.Ağ.Ağ.Host |
+| **A** | 10.0.0.0 – 10.255.255.255 | 16.777.216 |
+| **B** | 172.16.0.0 – 172.31.255.255 | 1.048.576 |
+| **C** | 192.168.0.0 – 192.168.255.255 | 65.536 |
 
-```
-Örnek (B Sınıfı):
-|Network |Host  |
-|172.16  |32.170|
-```
-> 💡 B sınıfında ilk iki oktet (172.16) ağı, son iki oktet (32.170) host'u temsil eder.
+> 💡 Bu adresler internette yönlendirilemez; router üzerinden NAT ile public IP'ye dönüştürülürler.
 
 > 💡 Host ID, teorik olarak min 0 (Network Adresi) ile max 255 (Broadcast Adresi) değerlerini alır.
 

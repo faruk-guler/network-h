@@ -76,7 +76,7 @@ Bu kararı veren cihaz **router (yönlendirici)**'dır.
 Cihaz, paket göndermeden önce şu 3 adımlı kararı verir:
 
 1. **Subnet Kontrolü:** Hedef IP, kendi Subnet Mask'i ile aynı ağda mı?
-2. **✅ Aynı Ağda ise:** Doğrudan hedefe gönderilir. *(→ Bkz. ARP Bölümü: MAC adresi bu aşamada devreye girer.)*
+2. **✅ Aynı Ağda ise:** Doğrudan hedefe gönderilir.
 3. **❌ Farklı Ağda ise:** Paket **Varsayılan Ağ Geçidi**'ne teslim edilir. Router, Routing Table'a bakarak en uygun çıkış portunu seçer.
 
 ---

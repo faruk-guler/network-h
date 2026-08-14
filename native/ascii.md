@@ -1,3 +1,5 @@
+# 🔤 ASCII — Karakter Kodlama Sistemi
+
 ## ASCII Nedir? (American Standard Code for Information Interchange)
 ASCII (okunuşu: aski), bilgisayarlarda harfleri, sayıları ve sembolleri temsil etmek için kullanılan bir kodlama sistemidir.
 

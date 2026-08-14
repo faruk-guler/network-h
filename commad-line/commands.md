@@ -93,16 +93,34 @@ Gidiş dönüş sürelerinin yaklaşık değeri (milisaniye cinsinden):
 
 ---
 
-## 3. tracert — Rota İzleme
+## 3. tracert / traceroute — Rota İzleme
+
+> 🪟 **Windows:** `tracert` | 🐧 **Linux/macOS:** `traceroute`
 
 Paketlerin hedefe ulaşırken **hangi güzergahı izlediğini** ve **hangi router'lardan geçtiğini** gösterir. Ağdaki gecikme veya kopukluğun tam olarak nerede yaşandığını tespit etmek için kullanılır.
+
+| Bilgi | Açıklama |
+|---|---|
+| İzlenen Rota | Paketin geçtiği ağ cihazları (hop) |
+| Gecikme (ms) | Her atlamadaki yanıt süresi |
+| Sorun Tespiti | Gecikme veya bağlantı kopukluğunun oluştuğu nokta |
+
+> **💡 Hop (Atlama):** Paketin geçtiği her router bir **hop** olarak adlandırılır. Her hop'ta paketin **TTL (Time to Live)** değeri 1 azalır. TTL değeri 0 olduğunda paket düşürülür ve böylece sonsuz yönlendirme döngüleri önlenir.
 
 ### Kullanım
 
 ```cmd
+:: Windows
 tracert google.com
 tracert 192.168.1.1
 tracert -d google.com     # DNS çözümlemesi yapma, daha hızlı sonuç
+```
+
+```bash
+# Linux / macOS
+traceroute google.com
+traceroute 192.168.1.1
+traceroute -n google.com    # DNS çözümlemesi yapma
 ```
 
 ### Örnek Çıktı
@@ -123,7 +141,7 @@ En fazla 30 atlama:
 İzleme tamamlandı.
 ```
 
-> **💡 İpucu:** Eğer bir satırda `* * *` görüyorsanız, o router ICMP paketlerine yanıt vermiyordur ya da paket kaybolmuştur.
+> **💡 İpucu:** Bir satırda `* * *` görüyorsanız, o router ICMP paketlerine yanıt vermiyor, güvenlik duvarı tarafından engelleniyor veya o noktada paket kaybı yaşanıyor olabilir.
 
 ---
 
@@ -160,6 +178,7 @@ Arabirim: 192.168.1.100 --- 0x5
 **nslookup**, domain adları ile IP adresleri arasındaki ilişkiyi sorgulamak için kullanılan bir DNS aracıdır. TCP/IP protokol paketiyle birlikte gelir.
 
 Temel kullanım alanları:
+
 - Bir domain'in hangi IP adresine çözümlendiğini öğrenmek
 - DNS sunucusunun düzgün çalışıp çalışmadığını kontrol etmek
 - A, MX, NS gibi DNS kayıtlarını incelemek
@@ -195,41 +214,3 @@ Address:  8.8.8.8
 
 google.com    MX preference = 10, mail exchanger = smtp.google.com
 ```
-
-## 6. traceroute — Rota İzleme (Linux)
-
-**traceroute**, bir paketin hedefe ulaşırken **hangi router'lardan (hop)** geçtiğini ve her atlamadaki **gecikme süresini** gösteren ağ tanılama aracıdır. Ağdaki gecikme, yönlendirme veya bağlantı problemlerinin hangi noktada oluştuğunu tespit etmek için kullanılır.
-
-| Bilgi         | Açıklama                                          |
-| ------------- | ------------------------------------------------- |
-| İzlenen Rota  | Paketin geçtiği ağ cihazları (hop)                |
-| Gecikme (ms)  | Her atlamadaki yanıt süresi                       |
-| Sorun Tespiti | Gecikme veya bağlantı kopukluğunun oluştuğu nokta |
-
-> **💡 Hop (Atlama):** Paketin geçtiği her router bir **hop** olarak adlandırılır. Her hop'ta paketin **TTL (Time to Live)** değeri 1 azalır. TTL değeri 0 olduğunda paket düşürülür ve böylece sonsuz yönlendirme döngüleri önlenir.
-
-### Kullanım
-
-```bash
-traceroute google.com
-traceroute 192.168.1.1
-traceroute -n google.com    # DNS çözümlemesi yapma
-```
-
-### Örnek Çıktı
-
-```text
-$ traceroute google.com
-
-traceroute to google.com (142.250.185.78), 30 hops max, 60 byte packets
- 1  192.168.1.1           0.8 ms   0.7 ms   0.8 ms
- 2  10.20.30.1           10.5 ms  10.8 ms  10.6 ms
- 3  ankara-gw.isp.net    13.2 ms  13.1 ms  13.3 ms
- 4  istanbul-gw.isp.net  20.4 ms  20.2 ms  20.5 ms
- 5  72.14.203.1          22.0 ms  21.8 ms  22.1 ms
- 6  142.250.185.78       14.2 ms  14.0 ms  14.1 ms
-```
-
-> **💡 İpucu:** Bir satırda `* * *` görüyorsanız ilgili router ICMP paketlerine yanıt vermiyor, güvenlik duvarı tarafından engelleniyor veya o noktada paket kaybı yaşanıyor olabilir.
-
----

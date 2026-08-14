@@ -4,17 +4,20 @@ Kabloları ortadan kaldıran Wi-Fi, verileri **radyo dalgalarıyla** havadan ta�
 
 ---
 
-## 1. Yol Ayrımı: 2.4 GHz mi, 5 GHz mi?
+## 1. Yol Ayrımı: 2.4 GHz mi, 5 GHz mi, 6 GHz mi?
 
-Modeminiz havaya iki farklı türde dalga yayar:
+Modeminiz havaya farklı türde dalgalar yayabilir:
 
-| Özellik | 🐢 2.4 GHz (Eski/İnatçı) | 🏃 5 GHz (Yeni/Hızlı) |
-| :--- | :--- | :--- |
-| **Hız** | Düşük (Metin, müzik için) | Çok Yüksek (Video, oyun için) |
-| **Mesafe** | Uzun (Duvarlardan geçer) | Kısa (Duvarlarda takılır) |
-| **Kalabalık** | Çok kalabalık (Parazitli) | Sakin ve temiz |
+| Özellik | 🐢 2.4 GHz (Eski/İnatçı) | 🏃 5 GHz (Yeni/Hızlı) | 🚀 6 GHz (Wi-Fi 6E/7) |
+| :--- | :--- | :--- | :--- |
+| **Hız** | Düşük (Metin, müzik için) | Çok Yüksek (Video, oyun için) | Ultra Yüksek (8K, AR/VR) |
+| **Mesafe** | Uzun (Duvarlardan geçer) | Kısa (Duvarlarda takılır) | Çok Kısa (Aynı oda) |
+| **Kalabalık** | Çok kalabalık (Parazitli) | Sakin ve temiz | Neredeyse boş (yeni standard) |
+| **Gereken cihaz** | Tüm Wi-Fi cihazları | Wi-Fi 5+ | Wi-Fi 6E / Wi-Fi 7 |
 
-> 💡 **Pratik Kural:** Modemle aynı odadaysanız **5 GHz**'e, arka odalara geçiyorsanız **2.4 GHz**'e bağlanın.
+> 💡 **Pratik Kural:** Modemle aynı odadaysanız **5 GHz veya 6 GHz**'e, arka odalara geçiyorsanız **2.4 GHz**'e bağlanın.
+
+> 💡 **2024+:** **Wi-Fi 6E** (802.11ax) ve **Wi-Fi 7** (802.11be) ile birlikte 6 GHz bandı kullanıma girdi. Destekleyen cihazlarda çok daha temiz ve hızlı bir bağlantı sunar. Eski cihazlar bu bandı göremez.
 
 ---
 

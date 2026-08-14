@@ -30,7 +30,4 @@
 
 ---
 
-- ASCII tablosu (harf → binary → decimal → hex karşılıkları) tablosuna ulaşmak için:
-<https://www.asciitable.com>
-
-> 📝 **Not:** Standart ASCII 7-bittir (0–127 arası). Modern sistemler genellikle 8-bit genişletilmiş ASCII veya **UTF-8** kullanır; UTF-8 bugün web ve işletim sistemlerinde fiili standarttır.
+- [tr.wikipedia.org/wiki/ASCII](https://tr.wikipedia.org/wiki/ASCII) *(ASCII tablosu için)*

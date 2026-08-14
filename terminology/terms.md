@@ -158,7 +158,7 @@ Herhangi bir veri transfer edilmeden önce sanal bir devre oluşturan veri trans
 
 ## Connectionless (Bağlantısız)
 
-Bir sanal devre yaratmaksızın olan veri transferidir. Düşük ek yüke sahiptir, en güçlü taşımayı kullanır ancak güvenli değildir. **UDP** bu yöntemi kullanır.
+Bir sanal devre yaratmaksızın olan veri transferidir. Düşük ek yüke sahiptir ve hızlıdır; ancak teslim garantisi yoktur (best-effort delivery). **UDP** bu yöntemi kullanır.
 
 ## Crossover Kablo
 

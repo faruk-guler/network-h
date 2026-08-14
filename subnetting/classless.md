@@ -77,7 +77,10 @@ VLSM ile içini böl:
 ├── 192.168.10.224/28  → Sunucular →  14 IP  (ihtiyaç:  10)
 └── 192.168.10.240/29  → Müdürlük  →   6 IP  (ihtiyaç:   5)
 ```
+
 > 💡 Aynı ağ içinde; örneğin hem 2 kişilik hemde 50 vb. kişilik odalar (alt ağlar) oluşturmanıza izin verir.
+>
+> ⚠️ **Dikkat:** `192.168.10.248 – 192.168.10.255` aralığı (8 IP, /29 bloğu) bu bölümlemede atanmamış olarak kalır. Bu kaçınılmazdır — VLSM'de kullanılan subnet boyutları 2'nin kuvveti olduğundan, tam doldurmak her zaman mümkün değildir. Bu blok ilerleyen dönemde yeni bir departman veya router-arası (P2P) bağlantı için kullanılabilir.
 
 ## HESAP ARAÇLARI:
 - IP Calculator https://jodies.de/ipcalc

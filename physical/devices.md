@@ -85,7 +85,7 @@ Analog sinyali dijitale, dijitali analoga çevirir. ADSL, fiber veya kablo altya
 
 - İnternet bağlantısının giriş noktasıdır
 - ISS'den gelen sinyali ağın anlayacağı formata dönüştürür
-- Modem + Router birleşimi cihazlara "gateway" denir
+- Modem + Router birleşimi cihazlara genellikle **modem-router** veya **ev gateway'i (residential gateway)** denir
 
 ---
 
