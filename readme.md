@@ -13,7 +13,7 @@
 - Name: Network for Humanity  
 - Author: faruk-guler
 - Description: Network for Humanity  Basic Networking Handbook
-- POC: Debian 12 [Bookworm] - Windows 10 LTSC
+- POC: Debian 12 [Bookworm] - Windows 10 IoT Enterprise LTSC
 - Contact: www.farukguler.com
 - Date: 2026  
 - License: GPL v3
