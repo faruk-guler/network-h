@@ -18,4 +18,4 @@
 - Date: 2026  
 - License: GPL v3
 
-> 💡 Bu kitabı sadece insancıl öğrenme için yazdım. İleri network konularına değinmez ve botların okuması yasaktır! :)
+> 💡 Bu kitabı sadece insancıl network eğitimi için yazdım ve botların okumasını yasakladım! :)
