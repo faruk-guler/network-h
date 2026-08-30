@@ -1,0 +1,152 @@
+# 📘 IP Subnetting (Alt Ağlara Bölme)
+
+## Subnetting Nedir?
+Subnetting, büyük bir IP bloğunu, daha yönetilebilir küçük ağlara (subnets) bölme işlemidir. Bunu yapmak için farklı formüller vardır.
+> 💡 256, bir oktetin alabileceği maksimum değerdir (2^8). Maskeden çıkarınca kalan host alanını verir.
+
+| No | Formül | Örnek (/26) | Sonuç |
+|---|--------|-------------|-------|
+| 1 | **Artış** = 256 − Maske | 256 − 192 | **64** |
+| 2 | **Alt Ağ Sayısı** = 2^(Yeni−Eski) | 2^(26−24) | **4** |
+| 3 | **Ağ Adresi** = IP'yi Artış'a böl → aşağı yuvarla × Artış | `10.0.0.70` için: 70 ÷ 64 = 1 → 1 × 64 | **10.0.0.64** |
+| 4 | **Broadcast** = Ağ Adresi + Artış − 1 | 64 + 64 − 1 | **10.0.0.127** |
+
+## 🔍 Kontrol Formülleri (+3 Formül daha)
+> "Bu bölüm yeterli mi?" sorusunu cevaplar
+ 
+| No | Formül | Örnek (/26) | Sonuç | Özet|
+|---|--------|-------------|-------|-------| 
+| 5 | **n** = 32 − CIDR | 32 − 26 | **6** | Host Bit Sayısı: IP adresindeki değişebilen (hostlara ayrılan) bit miktarını gösterir. |
+| 6 | **Toplam IP** = 2ⁿ | 2⁶ | **64** | Blok Boyutu: O ağın kapladığı toplam alan. (Artış miktarına her zaman eşittir) |
+| 7 | **Kullanılabilir IP** = 2ⁿ − 2 | 64 − 2 | **62** | Cihaz Kapasitesi: Network ve Broadcast adresleri çıkarıldıktan sonra cihazlara verilebilecek IP sayısı|
+
+> 💡 Kullanılabilir IP'den 2 çıkarılır çünkü ilk adres **Network**, son adres **Broadcast** için ayrılır.
+
+## Gerçek Dünya Örneği
+ 
+### 🏢 Senaryo
+ 
+Bir şirketin 16 departmanı var. Her departmanın 512 IP talebi olduğunu varsayarak gerekli hesaplamayı yapalım.
+
+> ✅ Networkümüz: 10.5.0.0
+ 
+### Artış sayısı formülü ile hesaplama
+ 
+| Adım | İşlem | Sonuç |
+|------|-------|-------|
+| Toplam IP | 16 × 512 = 2¹³ | **8,192** |
+| Ağ | 8,192 = 2^(32−19) | **10.5.0.0/19** |
+| Artış (3. oktette) | 512 IP = 2 × 256 → 3. oktet 2'şer ilerler | **2** |
+| Kullanılabilir IP/Departman | 512 − 2 | **510 cihaz** |
+ 
+### Subnet Tablosu
+ 
+| No | Departman | Ağ Adresi | Broadcast | Kullanılabilir Aralık |
+|---|-----------|-----------|-----------|----------------------|
+| 1 | Yönetim | 10.5.0.0 | 10.5.1.255 | 10.5.0.1 − 10.5.1.254 |
+| 2 | BT / IT | 10.5.2.0 | 10.5.3.255 | 10.5.2.1 − 10.5.3.254 |
+| 3 | İnsan Kaynakları | 10.5.4.0 | 10.5.5.255 | 10.5.4.1 − 10.5.5.254 |
+| 4 | Muhasebe | 10.5.6.0 | 10.5.7.255 | 10.5.6.1 − 10.5.7.254 |
+| 5 | Satış | 10.5.8.0 | 10.5.9.255 | 10.5.8.1 − 10.5.9.254 |
+| 6 | Pazarlama | 10.5.10.0 | 10.5.11.255 | 10.5.10.1 − 10.5.11.254 |
+| 7 | Ar-Ge | 10.5.12.0 | 10.5.13.255 | 10.5.12.1 − 10.5.13.254 |
+| 8 | Lojistik | 10.5.14.0 | 10.5.15.255 | 10.5.14.1 − 10.5.15.254 |
+| 9 | Depo | 10.5.16.0 | 10.5.17.255 | 10.5.16.1 − 10.5.17.254 |
+| 10 | Güvenlik | 10.5.18.0 | 10.5.19.255 | 10.5.18.1 − 10.5.19.254 |
+| 11 | Teknik Servis | 10.5.20.0 | 10.5.21.255 | 10.5.20.1 − 10.5.21.254 |
+| 12 | Kalite Kontrol | 10.5.22.0 | 10.5.23.255 | 10.5.22.1 − 10.5.23.254 |
+| 13 | Müşteri Hizmetleri | 10.5.24.0 | 10.5.25.255 | 10.5.24.1 − 10.5.25.254 |
+| 14 | Eğitim | 10.5.26.0 | 10.5.27.255 | 10.5.26.1 − 10.5.27.254 |
+| 15 | Satın Alma | 10.5.28.0 | 10.5.29.255 | 10.5.28.1 − 10.5.29.254 |
+| 16 | Sunucu/Server Odası | 10.5.30.0 | 10.5.31.255 | 10.5.30.1 − 10.5.31.254 |
+ 
+> ✅ 10.5.0.0/19 tam olarak 16 eşit parçaya bölündü. 16 zaten 2'nin kuvveti olduğu için yuvarlama yok, hiç rezerve kalmıyor ve ağ sıfır israfla bölünüyor. Her departmana **510 cihaz** bağlanabilir.
+
+> 💡 Departman veya IP sayısı 2'nin kuvvetiyse (8, 16, 32...) doğrudan kullanın. Değilse (13, 18, 22...) bir üst 2'nin kuvvetine yuvarlayın.
+
+
+## 🔑 Temel Kavramlar
+
+| Kavram | Açıklama |
+|--------|----------|
+| **Network Adresi** | Subnet'in ilk adresidir. Cihazlara atanamaz. |
+| **Broadcast Adresi** | Subnet'in son adresidir. Tüm cihazlara mesaj göndermek için kullanılır, atanamaz. |
+| **CIDR (/xx)** | Ağ maskesinin kaç bitlik olduğunu gösterir. Örn: /24, /26 |
+| **Artış (Block Size)** | Bir subnet'in kaç IP'den oluştuğunu gösterir. 256 − Maske ile bulunur. |
+
+
+---
+
+## 🔎 Bu IP Hangi Subnet'te?
+
+Formüllerimizi kullanarak herhangi bir IP adresinin **hangi subnet'e ait olduğunu** ve o subnet'in sınırlarını bulabiliriz.
+
+> 💡 **Yöntem:** Formül 1 (Artış) ve Formül 3 (Ağ Adresi) yeterlidir.
+
+```
+Adım 1: Artış = 256 − Maske
+Adım 2: İlgili oktetin değerini Artış'a böl → aşağı yuvarla
+Adım 3: Ağ Adresi = yuvarlanmış sonuç × Artış
+Adım 4: Broadcast = Ağ Adresi + Artış − 1
+Adım 5: Kullanılabilir = Ağ+1  →  Broadcast−1
+```
+
+---
+
+### 📌 Örnek 1 — 4. Oktet (Kolay)
+
+**Soru:** `10.5.10.70/26` adresi hangi subnet'te?
+
+```
+/26 → Maske: 255.255.255.192  →  Artış: 256 − 192 = 64
+İlgili oktet: 70
+
+70 ÷ 64 = 1.09  →  aşağı yuvarla → 1
+Ağ Adresi  : 1 × 64 = 64    →  10.5.10.64
+Broadcast  : 64 + 64 − 1    →  10.5.10.127
+
+✅ Ağ Adresi      : 10.5.10.64
+✅ Broadcast      : 10.5.10.127
+✅ Kullanılabilir : 10.5.10.65 – 10.5.10.126  (62 cihaz)
+```
+
+---
+
+### 📌 Örnek 2 — 3. Oktet (Orta)
+
+**Soru:** `172.16.37.5/22` adresi hangi subnet'te?
+
+```
+/22 → Maske: 255.255.252.0  →  Artış: 256 − 252 = 4
+İlgili oktet: 3. oktet (37)
+
+37 ÷ 4 = 9.25  →  aşağı yuvarla → 9
+Ağ Adresi  : 9 × 4 = 36    →  172.16.36.0
+Broadcast  : 36 + 4 − 1 = 39  →  172.16.39.255
+
+✅ Ağ Adresi      : 172.16.36.0
+✅ Broadcast      : 172.16.39.255
+✅ Kullanılabilir : 172.16.36.1 – 172.16.39.254  (1022 cihaz)
+```
+
+---
+
+### 📌 Örnek 3 — 3. Oktet (Zor)
+
+**Soru:** `192.168.100.200/21` adresi hangi subnet'te?
+
+```
+/21 → Maske: 255.255.248.0  →  Artış: 256 − 248 = 8
+İlgili oktet: 3. oktet (100)
+
+100 ÷ 8 = 12.5  →  aşağı yuvarla → 12
+Ağ Adresi  : 12 × 8 = 96    →  192.168.96.0
+Broadcast  : 96 + 8 − 1 = 103  →  192.168.103.255
+
+✅ Ağ Adresi      : 192.168.96.0
+✅ Broadcast      : 192.168.103.255
+✅ Kullanılabilir : 192.168.96.1 – 192.168.103.254  (2046 cihaz)
+```
+
+> ⚠️ **Dikkat:** Maskenin hangi oktetin üzerinde işlem yapılacağını belirler.  
+> `/24` altı → 4. oktet | `/16` ile `/24` arası → 3. oktet | `/8` ile `/16` arası → 2. oktet
