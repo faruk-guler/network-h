@@ -33,10 +33,10 @@ Senin cihazın              →    google.com sunucusu
 IP "Network ID" ve "Host ID" olmak üzere iki bölümden oluşmaktadır ve Adres Sınıflarına göre farklılık göstermektedir. Network ağı, Host ise uç cihazları ifade eder.
 ```
 xxx . xxx . xx .  xx
-└─────────────┘ └──┘
+└────────┘ └────────┘
  Network ID     Host ID
 ```
-> 💡 Yukarıdaki örnek C sınıfı adresleme yapısını göstermektedir.
+> 💡 Yukarıdaki örnek B sınıfı adresleme yapısını göstermektedir.
 
 ---
 
