@@ -1,4 +1,4 @@
-# 🤝 İstemci ↔️ Sunucu Modeli (Client-Server)
+# İstemci 🤝 Sunucu Modeli (Client-Server)
 
 Ağ üzerindeki her iletişim bir soru-cevap ilişkisidir. Bu ilişkide her zaman iki taraf vardır: **isteyen** ve **veren**.
 
