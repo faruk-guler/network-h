@@ -27,11 +27,12 @@ Bu sayı, ağın kaç bitlik kısmının ağ adresi olduğunu ve bit’lerin sol
 /26 => 11111111.11111111.11111111.11000000 --> 255.255.255.192                 32-26 = 6 (2⁶ = 64) - 2 = 62
 ...
 ...
-/32 => 11111111.11111111.11111111.11111111 --> 255.255.255.255 
-
-🔥 "1" ler network'ü temsil ederken "0" lar hostları temsil eder.
-🔥 /32 Toplam IP = 1
+/32 => 11111111.11111111.11111111.11111111 --> 255.255.255.255
 ```
+
+> 💡 `1` bitleri **network**'ü, `0` bitleri **host**'ları temsil eder.
+
+> 💡 `/32` toplam IP = 1 (tek bir host adresi — loopback veya statik rota için kullanılır).
 > 💡 **Prefix**: IP adresinin ağ kısmını belirten bit sayısıdır. Örnek: `/18`
 > 
 > 💡 Geleneksel ağlarda cihazlara IP atanabilen en küçük subnet /30'dur (Toplam IP = 4, Broadcast ve Network çıkarılınca kalan = 2). Ancak modern router bağlantılarında (noktadan noktaya) /31 de kullanılabilir (Bkz: RFC 3021)

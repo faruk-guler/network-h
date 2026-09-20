@@ -41,20 +41,7 @@ xxx . xxx . xx .  xx
 ---
 
 ### 1. Sınıflı (Classful) IP Adresleme Yapısı
-Bu sistem, IP adresinin hangi sınıf olduğuna ilk oktetine (bölümüne) bakarak karar verir:
-
-| Sınıf | Oktet Aralığı | Varsayılan Yapı |
-|---|---|---|
-| *(Ayrılmış)* | 0 | Bu ağ — kaynak adres olarak kullanılmaz (RFC 1122) |
-| **A** | 1 – 126 | Ağ.Host.Host.Host |
-| *(Loopback)* | 127 | Cihazın kendisine dönüş adresi — `127.0.0.1` (RFC 1122) |
-| **B** | 128 – 191 | Ağ.Ağ.Host.Host |
-| **C** | 192 – 223 | Ağ.Ağ.Ağ.Host |
-| **D** | 224 – 239 | Multicast — kullanıcılara atanmaz |
-| **E** | 240 – 255 | Deneysel / Ayrılmış — atanmaz |
-
-> 💡 `0.x.x.x` ve `127.x.x.x` blokları özel amaçlı (loopback) olduğundan A sınıfına dahil edilmez.
-> 💡 D ve E sınıfları unicast host adresi olarak kullanılamaz.
+Bu sistem, IP adresinin hangi sınıf olduğuna ilk oktetine (bölümüne) bakarak karar verir. IPv4 adresleri tarihsel olarak A, B, C, D ve E olmak üzere 5 sınıfa ayrılmıştır.
 
 ### 2. Özel (Private) IP Blokları (RFC 1918)
 Modemlerimizde veya iç ağlarımızda gördüğümüz, internete doğrudan çıkamayan adreslerdir. Üç ana aralık vardır: `10.x.x.x`, `172.16–31.x.x` ve `192.168.x.x`. Bu adresler internette yönlendirilemez; router üzerinden NAT ile public IP'ye dönüştürülürler.

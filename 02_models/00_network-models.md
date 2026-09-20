@@ -21,17 +21,20 @@ Pratikte doğrudan kullanılmaz; eğitim ve sorun giderme amaçlı referans olar
 
 ### Enkapsülasyon (Veri Akışı)
 
-Gönderici tarafta veri **yukarıdan aşağıya** inerek her katmanda başlık bilgisi eklenir:
+Gönderici tarafta veri **yukarıdan aşağıya** inerek her katmanda başlık eklenir; alıcı tarafta **aşağıdan yukarıya** çıkarak her katman kendi başlığını söker (dekapsülasyon).
 
-```
-Uygulama   →  Veri
-Taşıma     →  TCP Başlığı  + Veri           (Segment)
-Ağ         →  IP Başlığı   + Segment        (Paket)
-Veri Bağ.  →  MAC Başlığı  + Paket          (Frame)
-Fiziksel   →  101010...                      (Bit)
+```text
+Gönderici                                   Alıcı
+─────────────────────────────────────────────────
+Uygulama  →  Veri                           Veri
+Taşıma    →  [TCP | Veri]             [TCP | Veri]
+Ağ        →  [IP | TCP | Veri]   [IP | TCP | Veri]
+Veri Bağ. →  [MAC | IP | TCP | Veri | FCS]  → → →
+Fiziksel  →  0101010...         ...0101010
 ```
 
-Alıcı tarafta ise **aşağıdan yukarıya** çıkarak her katman kendi başlığını söker (dekapsülasyon).
+> 💡 Bu süreç, katmanlı zarf mantığıyla çalışır: her katman yalnızca kendi başlığını ekler/soyar.
+
 
 ---
 
