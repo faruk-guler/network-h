@@ -1,0 +1,42 @@
+# 🗃️ Veri Birimleri
+
+## Bit ve Byte
+
+| Birim | Slogan | Kök | Değer | Kullanım |
+|---|---|---|---|---|
+| Bit | En küçük veri | Binary Digit | `0` veya `1` | Ağ hızları (Mbps, Gbps) |
+| Byte | 8 bitlik anlam | — | `00000000`–`11111111` (0–255) | Dosya boyutları (KB, MB, GB) |
+
+> 💡 Küçük **b** = bit (hız), Büyük **B** = Byte (boyut). 100 M**b**ps hızla saniyede 100/8 = **12,5 MB** dosya indirilir.
+
+---
+
+## Octet
+
+🔍 "Octet", Latince *octo* (sekiz) kelimesinden türemiştir ve tam olarak 8 bitten oluşan veri grubunu ifade eder. Bir sayı sistemi değildir. IPv4 adresleri 4 octet'ten oluşur.
+
+| Birim | Slogan | Kök | Örnek | Kullanım |
+|---|---|---|---|---|
+| Octet | 8 parçalı | Latince "octo" (8) | her octet min 0, max 255 değerini alabilir | IPv4 adresleri 4 octet'ten oluşur |
+
+> 📝 **Not:** Octet ve Octal aynı kökten gelir. Her ikisi de Latince *octo* (sekiz) kelimesinden türemiştir. Ancak Octet 8 bitlik veri grubunu, Octal ise 8 tabanlı sayı sistemini ifade eder.
+>
+## Hextet
+
+🔍 "Hextet" bir sayı sistemi değildir. 16 bitten oluşan bir veri birimi/gruplama kavramıdır. Hexadecimal ile ilişkilidir ama aynı şey değildir.
+
+| Birim | Slogan | Kök | Örnek | Kullanım |
+|--------|--------|-----|-------|-------|
+| Hextet | 16 bitlik grup | "Hex" (16) + "tet" (grup) | Her hextet 0x0000–0xFFFF (0–65535) arası değer alır | IPv6 adresleri 8 hextet'ten oluşur |
+
+## Nibble
+
+🔍 "Nibble" bir sayı sistemi değildir. 4 bitten oluşan en küçük adreslenebilir veri grubudur. Binary'den Hexadecimal'e dönüşümün temel yapı taşıdır.
+
+| Birim | Slogan | Kök | Örnek | Kullanım |
+|--------|--------|-----|-------|-------|
+| Nibble | 4 bitlik yarım bayt | İngilizce "nibble" (ısırmak) | `1010` = `A` (hex) | Her hex karakteri tam olarak 1 nibble'a karşılık gelir |
+
+> 💡 **İpucu:** 1 Octet = 2 Nibble = 8 bit. Bu yüzden binary→hex dönüşümünde dörder dörder gruplandırılır.
+
+---
