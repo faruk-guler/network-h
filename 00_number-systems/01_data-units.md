@@ -20,7 +20,7 @@
 | Octet | 8 parçalı | Latince "octo" (8) | her octet min 0, max 255 değerini alabilir | IPv4 adresleri 4 octet'ten oluşur |
 
 > 📝 **Not:** Octet ve Octal aynı kökten gelir. Her ikisi de Latince *octo* (sekiz) kelimesinden türemiştir. Ancak Octet 8 bitlik veri grubunu, Octal ise 8 tabanlı sayı sistemini ifade eder.
->
+
 ## Hextet
 
 🔍 "Hextet" bir sayı sistemi değildir. 16 bitten oluşan bir veri birimi/gruplama kavramıdır. Hexadecimal ile ilişkilidir ama aynı şey değildir.
@@ -38,5 +38,23 @@
 | Nibble | 4 bitlik yarım bayt | İngilizce "nibble" (ısırmak) | `1010` = `A` (hex) | Her hex karakteri tam olarak 1 nibble'a karşılık gelir |
 
 > 💡 **İpucu:** 1 Octet = 2 Nibble = 8 bit. Bu yüzden binary→hex dönüşümünde dörder dörder gruplandırılır.
+
+---
+
+## Word
+
+🔍 "Word", 16 bitten (2 Octet) oluşan bir veri birimidir.
+
+| Birim | Slogan | Kök | Örnek | Kullanım |
+|--------|--------|-----|-------|-------|
+| Word | 16 bitlik veri | Bilgisayar mimarisi | `0`–`65535` arası değer alır | Port numaraları (TCP/UDP) 16 bittir |
+
+## Dword
+
+🔍 "Dword" (Double Word), 32 bitten (4 Octet) oluşan veri birimidir.
+
+| Birim | Slogan | Kök | Örnek | Kullanım |
+|--------|--------|-----|-------|-------|
+| Dword | 32 bitlik çift kelime | Double + Word | `192.168.1.1` (toplam 32 bit) | IPv4 adresinin tamamı ve IPv4 başlık satırları |
 
 ---
