@@ -13,34 +13,34 @@ Subnetting, büyük bir IP bloğunu, daha yönetilebilir küçük ağlara (subne
 
 ## 🔍 Kontrol Formülleri (+3 Formül daha)
 > "Bu bölüm yeterli mi?" sorusunu cevaplar
- 
-| No | Formül | Örnek (/26) | Sonuç | Özet|
-|---|--------|-------------|-------|-------| 
+
+| No | Formül | Örnek (/26) | Sonuç | Özet |
+|---|--------|-------------|-------|------|
 | 5 | **n** = 32 − CIDR | 32 − 26 | **6** | Host Bit Sayısı: IP adresindeki değişebilen (hostlara ayrılan) bit miktarını gösterir. |
 | 6 | **Toplam IP** = 2ⁿ | 2⁶ | **64** | Blok Boyutu: O ağın kapladığı toplam alan. (Artış miktarına her zaman eşittir) |
-| 7 | **Kullanılabilir IP** = 2ⁿ − 2 | 64 − 2 | **62** | Cihaz Kapasitesi: Network ve Broadcast adresleri çıkarıldıktan sonra cihazlara verilebilecek IP sayısı|
+| 7 | **Kullanılabilir IP** = 2ⁿ − 2 | 64 − 2 | **62** | Cihaz Kapasitesi: Network ve Broadcast adresleri çıkarıldıktan sonra cihazlara verilebilecek IP sayısı |
 
 > 💡 Kullanılabilir IP'den 2 çıkarılır çünkü ilk adres **Network**, son adres **Broadcast** için ayrılır.
 
 ## Gerçek Dünya Örneği
- 
+
 ### 🏢 Senaryo
- 
+
 Bir şirketin 16 departmanı var. Her departmanın 512 IP talebi olduğunu varsayarak gerekli hesaplamayı yapalım.
 
 > ✅ Networkümüz: 10.5.0.0
- 
+
 ### Artış sayısı formülü ile hesaplama
- 
+
 | Adım | İşlem | Sonuç |
 |------|-------|-------|
 | Toplam IP | 16 × 512 = 2¹³ | **8,192** |
 | Ağ | 8,192 = 2^(32−19) | **10.5.0.0/19** |
 | Artış (3. oktette) | 512 IP = 2 × 256 → 3. oktet 2'şer ilerler | **2** |
 | Kullanılabilir IP/Departman | 512 − 2 | **510 cihaz** |
- 
+
 ### Subnet Tablosu
- 
+
 | No | Departman | Ağ Adresi | Broadcast | Kullanılabilir Aralık |
 |---|-----------|-----------|-----------|----------------------|
 | 1 | Yönetim | 10.5.0.0 | 10.5.1.255 | 10.5.0.1 − 10.5.1.254 |
@@ -59,7 +59,7 @@ Bir şirketin 16 departmanı var. Her departmanın 512 IP talebi olduğunu varsa
 | 14 | Eğitim | 10.5.26.0 | 10.5.27.255 | 10.5.26.1 − 10.5.27.254 |
 | 15 | Satın Alma | 10.5.28.0 | 10.5.29.255 | 10.5.28.1 − 10.5.29.254 |
 | 16 | Sunucu/Server Odası | 10.5.30.0 | 10.5.31.255 | 10.5.30.1 − 10.5.31.254 |
- 
+
 > ✅ 10.5.0.0/19 tam olarak 16 eşit parçaya bölündü. 16 zaten 2'nin kuvveti olduğu için yuvarlama yok, hiç rezerve kalmıyor ve ağ sıfır israfla bölünüyor. Her departmana **510 cihaz** bağlanabilir.
 
 > 💡 Departman veya IP sayısı 2'nin kuvvetiyse (8, 16, 32...) doğrudan kullanın. Değilse (13, 18, 22...) bir üst 2'nin kuvvetine yuvarlayın.
@@ -148,5 +148,27 @@ Broadcast  : 96 + 8 − 1 = 103  →  192.168.103.255
 ✅ Kullanılabilir : 192.168.96.1 – 192.168.103.254  (2046 cihaz)
 ```
 
-> ⚠️ **Dikkat:** Maskenin hangi oktetin üzerinde işlem yapılacağını belirler.  
+> ⚠️ **Dikkat:** Maskenin hangi oktetin üzerinde işlem yapılacağını belirler.
 > `/24` altı → 4. oktet | `/16` ile `/24` arası → 3. oktet | `/8` ile `/16` arası → 2. oktet
+
+---
+
+## ❤️ Hızlı Zihinsel Hesaplama
+
+Subnetting'i ezberleyerek değil, 3 soruyla çözün.
+
+**Soru:** 192.168.10.77/26 hangi ağda?
+
+1️⃣ Blok büyüklüğü: /26 → son oktet maskesi 192 → 256 – 192 = 64
+
+2️⃣ 77, hangi 64'lük bloğa düşüyor? → 64–127
+
+3️⃣ Sonuç:
+- Ağ adresi: 192.168.10.64
+- Broadcast: 192.168.10.127
+- Kullanılabilir host: .65 – .126 (62 host)
+
+> Tabloyu ezberleyen unutur. Mantığı anlayan, hesap makinesine ihtiyaç duymaz.
+
+---
+
