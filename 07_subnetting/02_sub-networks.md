@@ -151,6 +151,8 @@ Broadcast  : 96 + 8 − 1 = 103  →  192.168.103.255
 > ⚠️ **Dikkat:** Maskenin hangi oktetin üzerinde işlem yapılacağını belirler.
 > `/24` altı → 4. oktet | `/16` ile `/24` arası → 3. oktet | `/8` ile `/16` arası → 2. oktet
 
+---
+
 ## ❤️ Hızlı Zihinsel Hesaplama
 
 Subnetting'i ezberleyerek değil, 3 soruyla çözün.
@@ -168,4 +170,5 @@ Subnetting'i ezberleyerek değil, 3 soruyla çözün.
 
 > Tabloyu ezberleyen unutur. Mantığı anlayan, hesap makinesine ihtiyaç duymaz.
 
+---
 
